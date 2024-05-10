@@ -11,9 +11,9 @@ RUN pip install -U pip
 RUN curl -Lk 'https://code.visualstudio.com/sha/download?build=stable&os=cli-alpine-x64' --output vscode_cli.tar.gz
 RUN tar -xf vscode_cli.tar.gz
 
-# RUN rm -rf /app/
-# ADD . /app/
-# WORKDIR /app/
+RUN rm -rf /app/
+ADD . /app/
+WORKDIR /app/
 
 RUN pip install -r requirements.docker.txt
 # For some reason needs to be installed separately
