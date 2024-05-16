@@ -1,0 +1,74 @@
+{
+    "question_template": [
+        "What will be the {property} of {country} in {future}?",
+        "In {future}, what will be the {property} of {country}?",
+        "What will be {country}'s {property} in {future}?",
+        "In {future}, what will be {country}'s {property}?"
+    ],
+    "required_entities": [
+        "property",
+        "country",
+        "data_source"
+    ],
+    "required_data": [
+        "t_min",
+        "t_max",
+        "v_min",
+        "v_max",
+        "steps",
+        "answer",
+        "future"
+    ],
+    "explanation": [
+        {
+            "description": "value",
+            "label": "meta",
+            "explanations": {
+                "low": [
+                    "The {property} of {country} in {future} had to be predicted using historic data",
+                    "Historic data was needed to predict the {property} of {country} in {future}",
+                    "Needed to use historic data to predict the {property} of {country} in {future}"
+                ],
+                "med": [],
+                "high": []
+            }
+        },
+        {
+            "description": "lookup",
+            "label": "object",
+            "explanations": {
+                "low": [
+                    "Data on the {property} of {country} was found between {t_min} and {t_max}",
+                    "Data was found on the {property} of {country} between {t_min} and {t_max}"
+                ],
+                "med": [],
+                "high": []
+            }
+        },
+        {
+            "description": "regress",
+            "label": "object",
+            "explanations": {
+                "low": [
+                    "This data found was used to create a predictive model",
+                    "A predictive model was fit to this data",
+                    "A predictive model was created using this data"
+                ],
+                "med": [],
+                "high": []
+            }
+        },
+        {
+            "description": "predict",
+            "label": "meta",
+            "explanations": {
+                "low": [
+                    "The answer was estimated using this predictive model",
+                    "The predictive model was used to estimate the answer"
+                ],
+                "med": [],
+                "high": []
+            }
+        }
+    ]
+}

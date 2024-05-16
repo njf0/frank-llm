@@ -1,0 +1,35 @@
+{
+    "property": [
+        "population",
+        "rural population",
+        "urban population",
+        "population density",
+        "GDP",
+        "energy consumption",
+        "birth rate",
+        "life expectancy"
+    ],
+    "property2": [
+        "population",
+        "rural population",
+        "urban population",
+        "population density",
+        "GDP",
+        "energy consumption",
+        "birth rate",
+        "life expectancy"
+    ],
+    "operator": [
+        "highest",
+        "lowest"
+    ],
+    "operator_relative": [
+        "higher",
+        "lower"
+    ],
+    "data_source": [
+        "World Bank Open Data",
+        "Wikidata",
+        "United Nations"
+    ]
+}

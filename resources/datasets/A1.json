@@ -1,0 +1,1452 @@
+{
+    "46e19d8ebb024aa8": {
+        "html_choice": "Question<br><strong>In 2026, what will be the population density of Liechtenstein?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "A1",
+        "question": "In 2026, what will be the population density of Liechtenstein?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The population density of Liechtenstein in 2026 had to be predicted using historic data"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the population density of Liechtenstein between 2010 and 2021"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "A predictive model was created using this data"
+            },
+            {
+                "step": 4,
+                "label": "meta",
+                "explanation": "The answer was estimated using this predictive model"
+            }
+        ]
+    },
+    "970d19defb444708": {
+        "html_choice": "Question<br><strong>What will be New Caledonia's urban population in 2029?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "A1",
+        "question": "What will be New Caledonia's urban population in 2029?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Needed to use historic data to predict the urban population of New Caledonia in 2029"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the urban population of New Caledonia between 2010 and 2021"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "A predictive model was created using this data"
+            },
+            {
+                "step": 4,
+                "label": "meta",
+                "explanation": "The answer was estimated using this predictive model"
+            }
+        ]
+    },
+    "5c772a08b5024293": {
+        "html_choice": "Question<br><strong>What will be the energy consumption of American Samoa in 2026?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "A1",
+        "question": "What will be the energy consumption of American Samoa in 2026?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Needed to use historic data to predict the energy consumption of American Samoa in 2026"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the energy consumption of American Samoa was found between 2008 and 2022"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "A predictive model was fit to this data"
+            },
+            {
+                "step": 4,
+                "label": "meta",
+                "explanation": "The answer was estimated using this predictive model"
+            }
+        ]
+    },
+    "b863227a2bb543a7": {
+        "html_choice": "Question<br><strong>What will be the GDP of Cook Islands in 2029?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "A1",
+        "question": "What will be the GDP of Cook Islands in 2029?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Needed to use historic data to predict the GDP of Cook Islands in 2029"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the GDP of Cook Islands between 2008 and 2023"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data found was used to create a predictive model"
+            },
+            {
+                "step": 4,
+                "label": "meta",
+                "explanation": "The predictive model was used to estimate the answer"
+            }
+        ]
+    },
+    "24891bb689534d71": {
+        "html_choice": "Question<br><strong>What will be Jordan's energy consumption in 2030?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "A1",
+        "question": "What will be Jordan's energy consumption in 2030?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Needed to use historic data to predict the energy consumption of Jordan in 2030"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the energy consumption of Jordan was found between 2011 and 2021"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "A predictive model was fit to this data"
+            },
+            {
+                "step": 4,
+                "label": "meta",
+                "explanation": "The answer was estimated using this predictive model"
+            }
+        ]
+    },
+    "29dfc16a7c7f4873": {
+        "html_choice": "Question<br><strong>What will be Cuba's life expectancy in 2029?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "A1",
+        "question": "What will be Cuba's life expectancy in 2029?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the life expectancy of Cuba in 2029"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the life expectancy of Cuba between 2010 and 2023"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "A predictive model was created using this data"
+            },
+            {
+                "step": 4,
+                "label": "meta",
+                "explanation": "The predictive model was used to estimate the answer"
+            }
+        ]
+    },
+    "46b03859c6394888": {
+        "html_choice": "Question<br><strong>What will be the GDP of Thailand in 2029?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "A1",
+        "question": "What will be the GDP of Thailand in 2029?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The GDP of Thailand in 2029 had to be predicted using historic data"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the GDP of Thailand between 2010 and 2022"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data found was used to create a predictive model"
+            },
+            {
+                "step": 4,
+                "label": "meta",
+                "explanation": "The answer was estimated using this predictive model"
+            }
+        ]
+    },
+    "906a35a29cc84441": {
+        "html_choice": "Question<br><strong>In 2027, what will be Indonesia's population density?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "A1",
+        "question": "In 2027, what will be Indonesia's population density?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the population density of Indonesia in 2027"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the population density of Indonesia was found between 2010 and 2022"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "A predictive model was fit to this data"
+            },
+            {
+                "step": 4,
+                "label": "meta",
+                "explanation": "The predictive model was used to estimate the answer"
+            }
+        ]
+    },
+    "ff0527e5af0e47b5": {
+        "html_choice": "Question<br><strong>What will be the population of Cuba in 2029?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "A1",
+        "question": "What will be the population of Cuba in 2029?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The population of Cuba in 2029 had to be predicted using historic data"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the population of Cuba between 2010 and 2021"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "A predictive model was fit to this data"
+            },
+            {
+                "step": 4,
+                "label": "meta",
+                "explanation": "The answer was estimated using this predictive model"
+            }
+        ]
+    },
+    "d8355e7263e04ab0": {
+        "html_choice": "Question<br><strong>In 2029, what will be Democratic Republic of the Congo's GDP?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "A1",
+        "question": "In 2029, what will be Democratic Republic of the Congo's GDP?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Needed to use historic data to predict the GDP of Democratic Republic of the Congo in 2029"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the GDP of Democratic Republic of the Congo between 2009 and 2023"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "A predictive model was created using this data"
+            },
+            {
+                "step": 4,
+                "label": "meta",
+                "explanation": "The answer was estimated using this predictive model"
+            }
+        ]
+    },
+    "14cfb3e530694aad": {
+        "html_choice": "Question<br><strong>In 2029, what will be the GDP of Tanzania?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "A1",
+        "question": "In 2029, what will be the GDP of Tanzania?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Needed to use historic data to predict the GDP of Tanzania in 2029"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the GDP of Tanzania between 2009 and 2021"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "A predictive model was created using this data"
+            },
+            {
+                "step": 4,
+                "label": "meta",
+                "explanation": "The predictive model was used to estimate the answer"
+            }
+        ]
+    },
+    "3647f9c5e36f4f93": {
+        "html_choice": "Question<br><strong>What will be United States Minor Outlying Islands's population density in 2028?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "A1",
+        "question": "What will be United States Minor Outlying Islands's population density in 2028?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Needed to use historic data to predict the population density of United States Minor Outlying Islands in 2028"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the population density of United States Minor Outlying Islands was found between 2008 and 2023"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "A predictive model was created using this data"
+            },
+            {
+                "step": 4,
+                "label": "meta",
+                "explanation": "The answer was estimated using this predictive model"
+            }
+        ]
+    },
+    "6c5d9edea1844a19": {
+        "html_choice": "Question<br><strong>In 2027, what will be Mauritius's population density?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "A1",
+        "question": "In 2027, what will be Mauritius's population density?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the population density of Mauritius in 2027"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the population density of Mauritius was found between 2008 and 2021"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "A predictive model was fit to this data"
+            },
+            {
+                "step": 4,
+                "label": "meta",
+                "explanation": "The answer was estimated using this predictive model"
+            }
+        ]
+    },
+    "8f76275cc7004919": {
+        "html_choice": "Question<br><strong>In 2029, what will be Ecuador's urban population?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "A1",
+        "question": "In 2029, what will be Ecuador's urban population?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The urban population of Ecuador in 2029 had to be predicted using historic data"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the urban population of Ecuador between 2009 and 2023"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "A predictive model was fit to this data"
+            },
+            {
+                "step": 4,
+                "label": "meta",
+                "explanation": "The predictive model was used to estimate the answer"
+            }
+        ]
+    },
+    "753654588be74cfe": {
+        "html_choice": "Question<br><strong>What will be the life expectancy of Djibouti in 2026?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "A1",
+        "question": "What will be the life expectancy of Djibouti in 2026?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The life expectancy of Djibouti in 2026 had to be predicted using historic data"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the life expectancy of Djibouti was found between 2011 and 2021"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data found was used to create a predictive model"
+            },
+            {
+                "step": 4,
+                "label": "meta",
+                "explanation": "The predictive model was used to estimate the answer"
+            }
+        ]
+    },
+    "19a2344ab56d4a4f": {
+        "html_choice": "Question<br><strong>What will be Libya's GDP in 2027?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "A1",
+        "question": "What will be Libya's GDP in 2027?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Needed to use historic data to predict the GDP of Libya in 2027"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the GDP of Libya between 2009 and 2021"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "A predictive model was created using this data"
+            },
+            {
+                "step": 4,
+                "label": "meta",
+                "explanation": "The answer was estimated using this predictive model"
+            }
+        ]
+    },
+    "a74172430d0b4397": {
+        "html_choice": "Question<br><strong>What will be Bosnia and Herzegovina's population in 2026?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "A1",
+        "question": "What will be Bosnia and Herzegovina's population in 2026?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the population of Bosnia and Herzegovina in 2026"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the population of Bosnia and Herzegovina was found between 2011 and 2021"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data found was used to create a predictive model"
+            },
+            {
+                "step": 4,
+                "label": "meta",
+                "explanation": "The answer was estimated using this predictive model"
+            }
+        ]
+    },
+    "dfc5e7396a994dd0": {
+        "html_choice": "Question<br><strong>What will be the population of Seychelles in 2026?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "A1",
+        "question": "What will be the population of Seychelles in 2026?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the population of Seychelles in 2026"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the population of Seychelles between 2011 and 2021"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "A predictive model was fit to this data"
+            },
+            {
+                "step": 4,
+                "label": "meta",
+                "explanation": "The predictive model was used to estimate the answer"
+            }
+        ]
+    },
+    "5ead046ffca748ef": {
+        "html_choice": "Question<br><strong>What will be the rural population of Angola in 2029?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "A1",
+        "question": "What will be the rural population of Angola in 2029?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The rural population of Angola in 2029 had to be predicted using historic data"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the rural population of Angola between 2008 and 2023"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "A predictive model was fit to this data"
+            },
+            {
+                "step": 4,
+                "label": "meta",
+                "explanation": "The predictive model was used to estimate the answer"
+            }
+        ]
+    },
+    "744469b504064969": {
+        "html_choice": "Question<br><strong>What will be the population of Samoa in 2027?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "A1",
+        "question": "What will be the population of Samoa in 2027?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the population of Samoa in 2027"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the population of Samoa was found between 2011 and 2023"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data found was used to create a predictive model"
+            },
+            {
+                "step": 4,
+                "label": "meta",
+                "explanation": "The predictive model was used to estimate the answer"
+            }
+        ]
+    },
+    "555bfa52cd864005": {
+        "html_choice": "Question<br><strong>In 2026, what will be the rural population of Liechtenstein?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "A1",
+        "question": "In 2026, what will be the rural population of Liechtenstein?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the rural population of Liechtenstein in 2026"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the rural population of Liechtenstein was found between 2010 and 2021"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "A predictive model was created using this data"
+            },
+            {
+                "step": 4,
+                "label": "meta",
+                "explanation": "The answer was estimated using this predictive model"
+            }
+        ]
+    },
+    "1b10d9518f804c45": {
+        "html_choice": "Question<br><strong>What will be Sudan's GDP in 2030?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "A1",
+        "question": "What will be Sudan's GDP in 2030?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Needed to use historic data to predict the GDP of Sudan in 2030"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the GDP of Sudan between 2009 and 2021"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data found was used to create a predictive model"
+            },
+            {
+                "step": 4,
+                "label": "meta",
+                "explanation": "The predictive model was used to estimate the answer"
+            }
+        ]
+    },
+    "097dc8b7f098433e": {
+        "html_choice": "Question<br><strong>In 2028, what will be \u00c5land Islands's GDP?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "A1",
+        "question": "In 2028, what will be \u00c5land Islands's GDP?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The GDP of \u00c5land Islands in 2028 had to be predicted using historic data"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the GDP of \u00c5land Islands between 2010 and 2021"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "A predictive model was created using this data"
+            },
+            {
+                "step": 4,
+                "label": "meta",
+                "explanation": "The answer was estimated using this predictive model"
+            }
+        ]
+    },
+    "49b05e11178442f4": {
+        "html_choice": "Question<br><strong>What will be the population of Serbia in 2028?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "A1",
+        "question": "What will be the population of Serbia in 2028?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Needed to use historic data to predict the population of Serbia in 2028"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the population of Serbia between 2011 and 2022"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "A predictive model was fit to this data"
+            },
+            {
+                "step": 4,
+                "label": "meta",
+                "explanation": "The predictive model was used to estimate the answer"
+            }
+        ]
+    },
+    "1f48179c1cb74072": {
+        "html_choice": "Question<br><strong>In 2030, what will be the rural population of Liechtenstein?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "A1",
+        "question": "In 2030, what will be the rural population of Liechtenstein?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Needed to use historic data to predict the rural population of Liechtenstein in 2030"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the rural population of Liechtenstein between 2010 and 2022"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "A predictive model was created using this data"
+            },
+            {
+                "step": 4,
+                "label": "meta",
+                "explanation": "The answer was estimated using this predictive model"
+            }
+        ]
+    },
+    "c41e8fd240544855": {
+        "html_choice": "Question<br><strong>What will be the GDP of Uganda in 2030?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "A1",
+        "question": "What will be the GDP of Uganda in 2030?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the GDP of Uganda in 2030"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the GDP of Uganda was found between 2008 and 2022"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data found was used to create a predictive model"
+            },
+            {
+                "step": 4,
+                "label": "meta",
+                "explanation": "The predictive model was used to estimate the answer"
+            }
+        ]
+    },
+    "f83d09fa97144d54": {
+        "html_choice": "Question<br><strong>What will be the rural population of Syria in 2029?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "A1",
+        "question": "What will be the rural population of Syria in 2029?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the rural population of Syria in 2029"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the rural population of Syria was found between 2011 and 2021"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "A predictive model was fit to this data"
+            },
+            {
+                "step": 4,
+                "label": "meta",
+                "explanation": "The predictive model was used to estimate the answer"
+            }
+        ]
+    },
+    "b91545a349df4e47": {
+        "html_choice": "Question<br><strong>In 2030, what will be the population of Liberia?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "A1",
+        "question": "In 2030, what will be the population of Liberia?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Needed to use historic data to predict the population of Liberia in 2030"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the population of Liberia was found between 2009 and 2022"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "A predictive model was created using this data"
+            },
+            {
+                "step": 4,
+                "label": "meta",
+                "explanation": "The predictive model was used to estimate the answer"
+            }
+        ]
+    },
+    "59c39daa65774dfc": {
+        "html_choice": "Question<br><strong>In 2029, what will be Austria's GDP?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "A1",
+        "question": "In 2029, what will be Austria's GDP?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The GDP of Austria in 2029 had to be predicted using historic data"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the GDP of Austria between 2011 and 2021"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data found was used to create a predictive model"
+            },
+            {
+                "step": 4,
+                "label": "meta",
+                "explanation": "The predictive model was used to estimate the answer"
+            }
+        ]
+    },
+    "739e164ddece4b58": {
+        "html_choice": "Question<br><strong>In 2030, what will be the birth rate of Tokelau?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "A1",
+        "question": "In 2030, what will be the birth rate of Tokelau?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The birth rate of Tokelau in 2030 had to be predicted using historic data"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the birth rate of Tokelau between 2011 and 2023"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data found was used to create a predictive model"
+            },
+            {
+                "step": 4,
+                "label": "meta",
+                "explanation": "The answer was estimated using this predictive model"
+            }
+        ]
+    },
+    "3fbdaf6689b441b0": {
+        "html_choice": "Question<br><strong>In 2028, what will be the birth rate of Ghana?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "A1",
+        "question": "In 2028, what will be the birth rate of Ghana?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Needed to use historic data to predict the birth rate of Ghana in 2028"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the birth rate of Ghana between 2008 and 2022"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "A predictive model was fit to this data"
+            },
+            {
+                "step": 4,
+                "label": "meta",
+                "explanation": "The answer was estimated using this predictive model"
+            }
+        ]
+    },
+    "c134ad8d73124ad2": {
+        "html_choice": "Question<br><strong>What will be the urban population of Guam in 2028?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "A1",
+        "question": "What will be the urban population of Guam in 2028?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Needed to use historic data to predict the urban population of Guam in 2028"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the urban population of Guam was found between 2008 and 2023"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data found was used to create a predictive model"
+            },
+            {
+                "step": 4,
+                "label": "meta",
+                "explanation": "The predictive model was used to estimate the answer"
+            }
+        ]
+    },
+    "b955cc32232b4679": {
+        "html_choice": "Question<br><strong>In 2026, what will be Venezuela's urban population?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "A1",
+        "question": "In 2026, what will be Venezuela's urban population?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the urban population of Venezuela in 2026"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the urban population of Venezuela was found between 2010 and 2022"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data found was used to create a predictive model"
+            },
+            {
+                "step": 4,
+                "label": "meta",
+                "explanation": "The answer was estimated using this predictive model"
+            }
+        ]
+    },
+    "86e591752e7142b8": {
+        "html_choice": "Question<br><strong>What will be the rural population of Romania in 2027?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "A1",
+        "question": "What will be the rural population of Romania in 2027?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The rural population of Romania in 2027 had to be predicted using historic data"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the rural population of Romania was found between 2011 and 2021"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data found was used to create a predictive model"
+            },
+            {
+                "step": 4,
+                "label": "meta",
+                "explanation": "The predictive model was used to estimate the answer"
+            }
+        ]
+    },
+    "39a355ac684041c9": {
+        "html_choice": "Question<br><strong>What will be the population of French Polynesia in 2030?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "A1",
+        "question": "What will be the population of French Polynesia in 2030?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Needed to use historic data to predict the population of French Polynesia in 2030"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the population of French Polynesia was found between 2009 and 2022"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "A predictive model was fit to this data"
+            },
+            {
+                "step": 4,
+                "label": "meta",
+                "explanation": "The answer was estimated using this predictive model"
+            }
+        ]
+    },
+    "7490ca6b650d4496": {
+        "html_choice": "Question<br><strong>What will be the life expectancy of Mozambique in 2026?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "A1",
+        "question": "What will be the life expectancy of Mozambique in 2026?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The life expectancy of Mozambique in 2026 had to be predicted using historic data"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the life expectancy of Mozambique was found between 2009 and 2023"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "A predictive model was fit to this data"
+            },
+            {
+                "step": 4,
+                "label": "meta",
+                "explanation": "The answer was estimated using this predictive model"
+            }
+        ]
+    },
+    "aeee289699b345c3": {
+        "html_choice": "Question<br><strong>In 2030, what will be Guam's energy consumption?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "A1",
+        "question": "In 2030, what will be Guam's energy consumption?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the energy consumption of Guam in 2030"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the energy consumption of Guam was found between 2009 and 2021"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data found was used to create a predictive model"
+            },
+            {
+                "step": 4,
+                "label": "meta",
+                "explanation": "The predictive model was used to estimate the answer"
+            }
+        ]
+    },
+    "51da148ce6374e45": {
+        "html_choice": "Question<br><strong>In 2026, what will be the population of Dominica?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "A1",
+        "question": "In 2026, what will be the population of Dominica?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Needed to use historic data to predict the population of Dominica in 2026"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the population of Dominica was found between 2008 and 2022"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data found was used to create a predictive model"
+            },
+            {
+                "step": 4,
+                "label": "meta",
+                "explanation": "The answer was estimated using this predictive model"
+            }
+        ]
+    },
+    "ab91e040d6944aac": {
+        "html_choice": "Question<br><strong>In 2027, what will be Norfolk Island's urban population?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "A1",
+        "question": "In 2027, what will be Norfolk Island's urban population?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the urban population of Norfolk Island in 2027"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the urban population of Norfolk Island was found between 2010 and 2021"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "A predictive model was fit to this data"
+            },
+            {
+                "step": 4,
+                "label": "meta",
+                "explanation": "The answer was estimated using this predictive model"
+            }
+        ]
+    },
+    "f92c0a21f6a94042": {
+        "html_choice": "Question<br><strong>In 2027, what will be Georgia's rural population?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "A1",
+        "question": "In 2027, what will be Georgia's rural population?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the rural population of Georgia in 2027"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the rural population of Georgia between 2008 and 2021"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "A predictive model was fit to this data"
+            },
+            {
+                "step": 4,
+                "label": "meta",
+                "explanation": "The answer was estimated using this predictive model"
+            }
+        ]
+    },
+    "f231757f82fc4beb": {
+        "html_choice": "Question<br><strong>What will be the GDP of Puerto Rico in 2026?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "A1",
+        "question": "What will be the GDP of Puerto Rico in 2026?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Needed to use historic data to predict the GDP of Puerto Rico in 2026"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the GDP of Puerto Rico was found between 2011 and 2021"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "A predictive model was created using this data"
+            },
+            {
+                "step": 4,
+                "label": "meta",
+                "explanation": "The answer was estimated using this predictive model"
+            }
+        ]
+    },
+    "066b1f91b901457e": {
+        "html_choice": "Question<br><strong>In 2030, what will be Sri Lanka's energy consumption?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "A1",
+        "question": "In 2030, what will be Sri Lanka's energy consumption?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the energy consumption of Sri Lanka in 2030"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the energy consumption of Sri Lanka was found between 2009 and 2023"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "A predictive model was created using this data"
+            },
+            {
+                "step": 4,
+                "label": "meta",
+                "explanation": "The answer was estimated using this predictive model"
+            }
+        ]
+    },
+    "52bf274cf0f64924": {
+        "html_choice": "Question<br><strong>What will be the rural population of Malta in 2026?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "A1",
+        "question": "What will be the rural population of Malta in 2026?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the rural population of Malta in 2026"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the rural population of Malta between 2010 and 2021"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "A predictive model was fit to this data"
+            },
+            {
+                "step": 4,
+                "label": "meta",
+                "explanation": "The answer was estimated using this predictive model"
+            }
+        ]
+    },
+    "95010f11612b4d3e": {
+        "html_choice": "Question<br><strong>What will be the birth rate of Ukraine in 2029?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "A1",
+        "question": "What will be the birth rate of Ukraine in 2029?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Needed to use historic data to predict the birth rate of Ukraine in 2029"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the birth rate of Ukraine between 2010 and 2023"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "A predictive model was created using this data"
+            },
+            {
+                "step": 4,
+                "label": "meta",
+                "explanation": "The answer was estimated using this predictive model"
+            }
+        ]
+    },
+    "904393ac26ef4f2e": {
+        "html_choice": "Question<br><strong>In 2028, what will be the population of Benin?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "A1",
+        "question": "In 2028, what will be the population of Benin?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Needed to use historic data to predict the population of Benin in 2028"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the population of Benin between 2009 and 2022"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data found was used to create a predictive model"
+            },
+            {
+                "step": 4,
+                "label": "meta",
+                "explanation": "The answer was estimated using this predictive model"
+            }
+        ]
+    },
+    "eb164db0ab5d4f8f": {
+        "html_choice": "Question<br><strong>In 2026, what will be the urban population of Mayotte?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "A1",
+        "question": "In 2026, what will be the urban population of Mayotte?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the urban population of Mayotte in 2026"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the urban population of Mayotte was found between 2008 and 2022"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "A predictive model was fit to this data"
+            },
+            {
+                "step": 4,
+                "label": "meta",
+                "explanation": "The answer was estimated using this predictive model"
+            }
+        ]
+    },
+    "136f8bb3231347e9": {
+        "html_choice": "Question<br><strong>What will be the GDP of the Vatican City in 2026?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "A1",
+        "question": "What will be the GDP of the Vatican City in 2026?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The GDP of the Vatican City in 2026 had to be predicted using historic data"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the GDP of the Vatican City was found between 2011 and 2021"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data found was used to create a predictive model"
+            },
+            {
+                "step": 4,
+                "label": "meta",
+                "explanation": "The answer was estimated using this predictive model"
+            }
+        ]
+    },
+    "bd826af375784f3e": {
+        "html_choice": "Question<br><strong>What will be the urban population of Saint Kitts and Nevis in 2027?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "A1",
+        "question": "What will be the urban population of Saint Kitts and Nevis in 2027?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The urban population of Saint Kitts and Nevis in 2027 had to be predicted using historic data"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the urban population of Saint Kitts and Nevis was found between 2010 and 2021"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data found was used to create a predictive model"
+            },
+            {
+                "step": 4,
+                "label": "meta",
+                "explanation": "The predictive model was used to estimate the answer"
+            }
+        ]
+    },
+    "6111b333326441a7": {
+        "html_choice": "Question<br><strong>In 2030, what will be United States's population density?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "A1",
+        "question": "In 2030, what will be United States's population density?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the population density of United States in 2030"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the population density of United States between 2010 and 2021"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "A predictive model was created using this data"
+            },
+            {
+                "step": 4,
+                "label": "meta",
+                "explanation": "The predictive model was used to estimate the answer"
+            }
+        ]
+    },
+    "3f0f60281a294fff": {
+        "html_choice": "Question<br><strong>What will be Tonga's urban population in 2030?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "A1",
+        "question": "What will be Tonga's urban population in 2030?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The urban population of Tonga in 2030 had to be predicted using historic data"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the urban population of Tonga was found between 2010 and 2021"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "A predictive model was fit to this data"
+            },
+            {
+                "step": 4,
+                "label": "meta",
+                "explanation": "The answer was estimated using this predictive model"
+            }
+        ]
+    }
+}

@@ -1,0 +1,81 @@
+{
+    "question_template": [
+        "Which country will have the {operator_relative} {property} in {future}: {country1} or {country2}?",
+        "In {future}, will the {property} of {country1} be {operator_relative} than that of {country2}?",
+        "In {future}, will {country1} have a {operator_relative} {property} than {country2}?",
+        "Will {country1} or {country2} have a {operator_relative} {property} in {future}?"
+    ],
+    "required_entities": [
+        "property",
+        "country1",
+        "country2",
+        "operator_relative"
+    ],
+    "required_data": [
+        "future",
+        "t_min1",
+        "t_max1",
+        "t_min2",
+        "t_max2"
+    ],
+    "explanation": [
+        {
+            "description": "declare-subgoal",
+            "label": "meta",
+            "explanations": {
+                "low": [
+                    "Historic data was needed to predict the {property} of {country1} and {country2} in {future}",
+                    "The {property} of {country1} and {country2} in {future} had to be predicted using historic data"
+                ],
+                "med": [],
+                "high": []
+            }
+        },
+        {
+            "description": "data-result",
+            "label": "object",
+            "explanations": {
+                "low": [
+                    "Data on the {property} of both countries was found between {t_min1} and {t_max1}",
+                    "Data was found on the {property} of both countries between {t_min1} and {t_max1}"
+                ],
+                "med": [],
+                "high": []
+            }
+        },
+        {
+            "description": "fit-model",
+            "label": "object",
+            "explanations": {
+                "low": [
+                    "This data was used to create predictive models for the {property} of each of the countries",
+                    "Predictive models were created for the {property} of each of the countries"
+                ],
+                "med": [],
+                "high": []
+            }
+        },
+        {
+            "description": "predict-value",
+            "label": "object",
+            "explanations": {
+                "low": [
+                    "The {property} of both countries in {future} were predicted using the models"
+                ],
+                "med": [],
+                "high": []
+            }
+        },
+        {
+            "description": "answer-method",
+            "label": "meta",
+            "explanations": {
+                "low": [
+                    "The final answer was estimated by comparing the predicted values"
+                ],
+                "med": [],
+                "high": []
+            }
+        }
+    ]
+}

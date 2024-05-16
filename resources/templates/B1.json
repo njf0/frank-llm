@@ -1,0 +1,79 @@
+{
+    "question_template": [
+        "Which country in {region} had the {operator} {property} in {past}?",
+        "In {past}, which country in {region} had the {operator} {property}?",
+        "In {region}, which country had the {operator} {property} in {past}?"
+    ],
+    "required_entities": [
+        "region",
+        "operator",
+        "property",
+        "data_source"
+    ],
+    "required_data": [
+        "countries",
+        "n_countries",
+        "answer",
+        "past"
+    ],
+    "explanation": [
+        {
+            "description": "value",
+            "label": "meta",
+            "explanations": {
+                "low": [
+                    "A list of countries in {region} was needed",
+                    "A list of countries located in {region} was needed"
+                ],
+                "med": [],
+                "high": []
+            }
+        },
+        {
+            "description": "comp",
+            "label": "object",
+            "explanations": {
+                "low": [
+                    "{n_countries} countries were found in {region}, including {country_sample}",
+                    "{n_countries} countries, including {country_sample}, were found in {region}",
+                    "{n_countries} countries in {region}, including {country_sample}, were found"
+                ],
+                "med": [],
+                "high": []
+            }
+        },
+        {
+            "description": "comp",
+            "label": "meta",
+            "explanations": {
+                "low": [
+                    "The {property} for each of these countries in {past} was needed for a comparison"
+                ],
+                "med": [],
+                "high": []
+            }
+        },
+        {
+            "description": "comp",
+            "label": "object",
+            "explanations": {
+                "low": [
+                    "Data for each country's {property} in {past} was found"
+                ],
+                "med": [],
+                "high": []
+            }
+        },
+        {
+            "description": "comp",
+            "label": "meta",
+            "explanations": {
+                "low": [
+                    "The answer was found by comparing the values to each other"
+                ],
+                "med": [],
+                "high": []
+            }
+        }
+    ]
+}

@@ -1,0 +1,3402 @@
+{
+    "6ab9291eb34f4edc": {
+        "html_choice": "Question<br><strong>In Latin America and the Caribbean, which country had the lowest GDP in 2020?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In Latin America and the Caribbean, which country had the lowest GDP in 2020?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries in Latin America and the Caribbean was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "49 countries in Latin America and the Caribbean, including Guadeloupe, Chile and Cuba, were found"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The GDP for each of these countries in 2020 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's GDP in 2020 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "1503b5f8a99e44f0": {
+        "html_choice": "Question<br><strong>Which country in South-eastern Asia had the highest rural population in 2019?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "Which country in South-eastern Asia had the highest rural population in 2019?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries located in South-eastern Asia was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "11 countries were found in South-eastern Asia, including Timor-Leste, Lao and Singapore"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The rural population for each of these countries in 2019 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's rural population in 2019 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "782e9540ef6a4a7d": {
+        "html_choice": "Question<br><strong>Which country in Micronesia had the lowest rural population in 2013?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "Which country in Micronesia had the lowest rural population in 2013?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries in Micronesia was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "8 countries in Micronesia, including Nauru, the Marshall Islands and Northern Mariana Islands, were found"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The rural population for each of these countries in 2013 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's rural population in 2013 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "81fd574645604450": {
+        "html_choice": "Question<br><strong>Which country in Northern America had the highest life expectancy in 2018?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "Which country in Northern America had the highest life expectancy in 2018?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries in Northern America was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "4 countries were found in Northern America, including United States, Greenland and Bermuda"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The life expectancy for each of these countries in 2018 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's life expectancy in 2018 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "9ff0c61525d64c91": {
+        "html_choice": "Question<br><strong>In Western Europe, which country had the highest rural population in 2019?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In Western Europe, which country had the highest rural population in 2019?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries located in Western Europe was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "9 countries were found in Western Europe, including Belgium, Liechtenstein and Monaco"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The rural population for each of these countries in 2019 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's rural population in 2019 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "48464ecee9dd4ba3": {
+        "html_choice": "Question<br><strong>Which country in Central Asia had the lowest birth rate in 2017?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "Which country in Central Asia had the lowest birth rate in 2017?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries located in Central Asia was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "5 countries were found in Central Asia, including Uzbekistan, Kazakhstan and Turkmenistan"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The birth rate for each of these countries in 2017 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's birth rate in 2017 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "ddc5ae5f88f54a48": {
+        "html_choice": "Question<br><strong>In Sub-Saharan Africa, which country had the lowest urban population in 2014?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In Sub-Saharan Africa, which country had the lowest urban population in 2014?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries located in Sub-Saharan Africa was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "51 countries, including South Africa, Sao Tome and Principe and Sierra Leone, were found in Sub-Saharan Africa"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The urban population for each of these countries in 2014 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's urban population in 2014 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "932392c2f7814fc1": {
+        "html_choice": "Question<br><strong>In Latin America and the Caribbean, which country had the lowest urban population in 2013?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In Latin America and the Caribbean, which country had the lowest urban population in 2013?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries in Latin America and the Caribbean was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "49 countries, including Costa Rica, Panama and French Guiana, were found in Latin America and the Caribbean"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The urban population for each of these countries in 2013 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's urban population in 2013 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "42d03faae4e04b9c": {
+        "html_choice": "Question<br><strong>In 2020, which country in Central Asia had the lowest energy consumption?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In 2020, which country in Central Asia had the lowest energy consumption?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries in Central Asia was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "5 countries in Central Asia, including Uzbekistan, Turkmenistan and Kazakhstan, were found"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The energy consumption for each of these countries in 2020 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's energy consumption in 2020 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "458f68e3c1654489": {
+        "html_choice": "Question<br><strong>In 2014, which country in Eastern Asia had the lowest rural population?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In 2014, which country in Eastern Asia had the lowest rural population?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries located in Eastern Asia was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "8 countries in Eastern Asia, including Hong Kong, Japan and North Korea, were found"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The rural population for each of these countries in 2014 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's rural population in 2014 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "50f5877fbeea47b0": {
+        "html_choice": "Question<br><strong>In 2018, which country in Northern Africa had the highest birth rate?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In 2018, which country in Northern Africa had the highest birth rate?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries located in Northern Africa was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "6 countries in Northern Africa, including Algeria, Morocco and Sudan, were found"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The birth rate for each of these countries in 2018 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's birth rate in 2018 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "47fe92e19ff64304": {
+        "html_choice": "Question<br><strong>In Australasia, which country had the highest GDP in 2021?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In Australasia, which country had the highest GDP in 2021?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries in Australasia was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "10 countries were found in Australasia, including New Zealand, Vanuatu and Christmas Island"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The GDP for each of these countries in 2021 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's GDP in 2021 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "46073e74b12d40a1": {
+        "html_choice": "Question<br><strong>Which country in Southern Asia had the lowest rural population in 2020?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "Which country in Southern Asia had the lowest rural population in 2020?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries located in Southern Asia was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "9 countries in Southern Asia, including Bhutan, Bangladesh and Iran, were found"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The rural population for each of these countries in 2020 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's rural population in 2020 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "4574410e7c644a20": {
+        "html_choice": "Question<br><strong>Which country in Micronesia had the lowest population density in 2013?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "Which country in Micronesia had the lowest population density in 2013?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries located in Micronesia was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "8 countries were found in Micronesia, including the Marshall Islands, Guam and Palau"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The population density for each of these countries in 2013 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's population density in 2013 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "af639da5c35841e1": {
+        "html_choice": "Question<br><strong>Which country in Northern Africa had the highest GDP in 2014?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "Which country in Northern Africa had the highest GDP in 2014?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries in Northern Africa was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "6 countries in Northern Africa, including Sudan, Algeria and Tunisia, were found"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The GDP for each of these countries in 2014 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's GDP in 2014 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "a8515d025673469e": {
+        "html_choice": "Question<br><strong>In 2017, which country in Western Europe had the lowest population density?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In 2017, which country in Western Europe had the lowest population density?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries located in Western Europe was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "9 countries in Western Europe, including Switzerland, Monaco and France, were found"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The population density for each of these countries in 2017 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's population density in 2017 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "d86334f358154647": {
+        "html_choice": "Question<br><strong>Which country in Australasia had the lowest life expectancy in 2013?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "Which country in Australasia had the lowest life expectancy in 2013?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries in Australasia was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "10 countries, including New Caledonia, Fiji and New Zealand, were found in Australasia"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The life expectancy for each of these countries in 2013 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's life expectancy in 2013 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "0fdf6b416e6e4fea": {
+        "html_choice": "Question<br><strong>In 2014, which country in Micronesia had the highest population density?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In 2014, which country in Micronesia had the highest population density?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries in Micronesia was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "8 countries, including United States Minor Outlying Islands, Palau and Guam, were found in Micronesia"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The population density for each of these countries in 2014 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's population density in 2014 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "c3ba336873d2432f": {
+        "html_choice": "Question<br><strong>In 2014, which country in Western Asia had the highest rural population?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In 2014, which country in Western Asia had the highest rural population?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries located in Western Asia was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "18 countries in Western Asia, including Armenia, Syria and Kuwait, were found"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The rural population for each of these countries in 2014 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's rural population in 2014 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "6db9940535d7499a": {
+        "html_choice": "Question<br><strong>In Micronesia, which country had the lowest GDP in 2020?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In Micronesia, which country had the lowest GDP in 2020?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries located in Micronesia was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "8 countries in Micronesia, including Micronesia, Palau and the Marshall Islands, were found"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The GDP for each of these countries in 2020 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's GDP in 2020 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "ac82e87cf4be46f4": {
+        "html_choice": "Question<br><strong>In Central Asia, which country had the lowest life expectancy in 2012?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In Central Asia, which country had the lowest life expectancy in 2012?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries in Central Asia was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "5 countries in Central Asia, including Uzbekistan, Tajikistan and Kyrgyzstan, were found"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The life expectancy for each of these countries in 2012 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's life expectancy in 2012 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "9ff8836e9e344485": {
+        "html_choice": "Question<br><strong>In 2018, which country in Australasia had the highest population density?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In 2018, which country in Australasia had the highest population density?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries in Australasia was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "10 countries in Australasia, including the Solomon Islands, New Zealand and Norfolk Island, were found"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The population density for each of these countries in 2018 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's population density in 2018 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "219782552d81465e": {
+        "html_choice": "Question<br><strong>Which country in Western Europe had the highest rural population in 2018?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "Which country in Western Europe had the highest rural population in 2018?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries in Western Europe was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "9 countries, including Luxembourg, the Netherlands and Liechtenstein, were found in Western Europe"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The rural population for each of these countries in 2018 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's rural population in 2018 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "8f991c5c6a83469a": {
+        "html_choice": "Question<br><strong>In Southern Asia, which country had the lowest rural population in 2014?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In Southern Asia, which country had the lowest rural population in 2014?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries located in Southern Asia was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "9 countries were found in Southern Asia, including Sri Lanka, India and Pakistan"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The rural population for each of these countries in 2014 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's rural population in 2014 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "754ceac2d02c4a82": {
+        "html_choice": "Question<br><strong>In Micronesia, which country had the lowest energy consumption in 2013?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In Micronesia, which country had the lowest energy consumption in 2013?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries in Micronesia was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "8 countries, including Guam, Kiribati and the Marshall Islands, were found in Micronesia"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The energy consumption for each of these countries in 2013 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's energy consumption in 2013 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "ea6b94e3b6cd471c": {
+        "html_choice": "Question<br><strong>In Western Asia, which country had the highest rural population in 2018?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In Western Asia, which country had the highest rural population in 2018?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries in Western Asia was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "18 countries, including Armenia, Lebanon and Azerbaijan, were found in Western Asia"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The rural population for each of these countries in 2018 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's rural population in 2018 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "393f150fca7141ef": {
+        "html_choice": "Question<br><strong>Which country in Southern Europe had the highest energy consumption in 2013?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "Which country in Southern Europe had the highest energy consumption in 2013?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries located in Southern Europe was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "16 countries were found in Southern Europe, including Slovenia, North Macedonia and Portugal"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The energy consumption for each of these countries in 2013 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's energy consumption in 2013 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "ce6dadda862e4b55": {
+        "html_choice": "Question<br><strong>In Northern Africa, which country had the highest rural population in 2013?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In Northern Africa, which country had the highest rural population in 2013?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries located in Northern Africa was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "6 countries were found in Northern Africa, including Algeria, Tunisia and Morocco"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The rural population for each of these countries in 2013 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's rural population in 2013 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "661d7b4173fb4118": {
+        "html_choice": "Question<br><strong>In 2018, which country in Australasia had the highest birth rate?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In 2018, which country in Australasia had the highest birth rate?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries located in Australasia was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "10 countries in Australasia, including Christmas Island, Vanuatu and Norfolk Island, were found"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The birth rate for each of these countries in 2018 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's birth rate in 2018 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "8e9a56c7992c46af": {
+        "html_choice": "Question<br><strong>In 2015, which country in Eastern Europe had the highest population?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In 2015, which country in Eastern Europe had the highest population?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries located in Eastern Europe was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "10 countries, including Slovakia, Hungary and Bulgaria, were found in Eastern Europe"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The population for each of these countries in 2015 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's population in 2015 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "b94c853baa6e4d9d": {
+        "html_choice": "Question<br><strong>In Western Europe, which country had the highest population in 2013?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In Western Europe, which country had the highest population in 2013?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries located in Western Europe was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "9 countries, including Austria, France and Germany, were found in Western Europe"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The population for each of these countries in 2013 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's population in 2013 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "f9e7949ebe7d4cdc": {
+        "html_choice": "Question<br><strong>In Western Asia, which country had the highest rural population in 2019?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In Western Asia, which country had the highest rural population in 2019?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries in Western Asia was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "18 countries in Western Asia, including Lebanon, Syria and Azerbaijan, were found"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The rural population for each of these countries in 2019 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's rural population in 2019 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "d71f85ca6a0140cd": {
+        "html_choice": "Question<br><strong>Which country in Northern America had the highest GDP in 2020?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "Which country in Northern America had the highest GDP in 2020?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries in Northern America was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "4 countries in Northern America, including Greenland, United States and Canada, were found"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The GDP for each of these countries in 2020 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's GDP in 2020 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "b31d9a741c4d4ebe": {
+        "html_choice": "Question<br><strong>Which country in Northern Europe had the lowest rural population in 2015?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "Which country in Northern Europe had the lowest rural population in 2015?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries located in Northern Europe was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "16 countries in Northern Europe, including United Kingdom, Estonia and Latvia, were found"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The rural population for each of these countries in 2015 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's rural population in 2015 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "82a6ab25fc194b56": {
+        "html_choice": "Question<br><strong>In 2017, which country in Polynesia had the lowest population density?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In 2017, which country in Polynesia had the lowest population density?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries in Polynesia was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "9 countries, including Tuvalu, American Samoa and Cook Islands, were found in Polynesia"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The population density for each of these countries in 2017 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's population density in 2017 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "0c32babb251a4dac": {
+        "html_choice": "Question<br><strong>Which country in Northern America had the lowest energy consumption in 2017?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "Which country in Northern America had the lowest energy consumption in 2017?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries in Northern America was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "4 countries were found in Northern America, including Bermuda, Greenland and Canada"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The energy consumption for each of these countries in 2017 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's energy consumption in 2017 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "67458af827e64490": {
+        "html_choice": "Question<br><strong>In Western Europe, which country had the highest urban population in 2016?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In Western Europe, which country had the highest urban population in 2016?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries in Western Europe was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "9 countries were found in Western Europe, including Belgium, Monaco and Switzerland"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The urban population for each of these countries in 2016 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's urban population in 2016 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "4231eadaf6c446ee": {
+        "html_choice": "Question<br><strong>In 2012, which country in Polynesia had the lowest population density?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In 2012, which country in Polynesia had the lowest population density?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries located in Polynesia was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "9 countries, including Tonga, Samoa and Tuvalu, were found in Polynesia"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The population density for each of these countries in 2012 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's population density in 2012 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "2f288ecafcd2483f": {
+        "html_choice": "Question<br><strong>In Polynesia, which country had the lowest energy consumption in 2016?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In Polynesia, which country had the lowest energy consumption in 2016?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries in Polynesia was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "9 countries were found in Polynesia, including American Samoa, Tonga and Cook Islands"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The energy consumption for each of these countries in 2016 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's energy consumption in 2016 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "b072f147fc974990": {
+        "html_choice": "Question<br><strong>Which country in Western Asia had the highest population in 2020?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "Which country in Western Asia had the highest population in 2020?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries in Western Asia was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "18 countries in Western Asia, including Syria, Iraq and Israel, were found"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The population for each of these countries in 2020 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's population in 2020 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "74430fc7a22044d0": {
+        "html_choice": "Question<br><strong>Which country in Southern Asia had the lowest energy consumption in 2016?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "Which country in Southern Asia had the lowest energy consumption in 2016?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries located in Southern Asia was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "9 countries were found in Southern Asia, including Iran, Bhutan and Nepal"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The energy consumption for each of these countries in 2016 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's energy consumption in 2016 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "a3f33f3dd51849b9": {
+        "html_choice": "Question<br><strong>In 2019, which country in Northern Africa had the highest urban population?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In 2019, which country in Northern Africa had the highest urban population?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries in Northern Africa was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "6 countries, including Egypt, Sudan and Morocco, were found in Northern Africa"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The urban population for each of these countries in 2019 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's urban population in 2019 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "a4321df060c5485e": {
+        "html_choice": "Question<br><strong>Which country in Australasia had the highest GDP in 2020?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "Which country in Australasia had the highest GDP in 2020?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries in Australasia was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "10 countries in Australasia, including Fiji, New Zealand and the Solomon Islands, were found"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The GDP for each of these countries in 2020 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's GDP in 2020 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "e9a9b624fb9d4087": {
+        "html_choice": "Question<br><strong>Which country in Eastern Asia had the highest rural population in 2012?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "Which country in Eastern Asia had the highest rural population in 2012?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries in Eastern Asia was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "8 countries were found in Eastern Asia, including Mongolia, North Korea and Macao"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The rural population for each of these countries in 2012 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's rural population in 2012 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "9f6d2074e5a34c66": {
+        "html_choice": "Question<br><strong>In Eastern Europe, which country had the lowest urban population in 2013?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In Eastern Europe, which country had the lowest urban population in 2013?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries in Eastern Europe was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "10 countries in Eastern Europe, including Ukraine, Poland and Belarus, were found"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The urban population for each of these countries in 2013 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's urban population in 2013 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "ee128b2aafc84e30": {
+        "html_choice": "Question<br><strong>In 2020, which country in Northern America had the lowest population density?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In 2020, which country in Northern America had the lowest population density?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries located in Northern America was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "4 countries were found in Northern America, including Bermuda, Canada and Greenland"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The population density for each of these countries in 2020 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's population density in 2020 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "1a048ce23e8e4990": {
+        "html_choice": "Question<br><strong>In Australasia, which country had the lowest rural population in 2021?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In Australasia, which country had the lowest rural population in 2021?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries in Australasia was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "10 countries in Australasia, including Norfolk Island, Vanuatu and New Zealand, were found"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The rural population for each of these countries in 2021 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's rural population in 2021 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "7b81645d8f304e10": {
+        "html_choice": "Question<br><strong>Which country in Northern Europe had the highest energy consumption in 2014?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "Which country in Northern Europe had the highest energy consumption in 2014?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries located in Northern Europe was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "16 countries in Northern Europe, including the Isle of Man, Norway and Lithuania, were found"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The energy consumption for each of these countries in 2014 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's energy consumption in 2014 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "ba42fcbea0904047": {
+        "html_choice": "Question<br><strong>In 2012, which country in Western Asia had the highest energy consumption?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In 2012, which country in Western Asia had the highest energy consumption?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries located in Western Asia was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "18 countries, including Lebanon, Qatar and Georgia, were found in Western Asia"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The energy consumption for each of these countries in 2012 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's energy consumption in 2012 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "0359e4c33dad4614": {
+        "html_choice": "Question<br><strong>Which country in Australasia had the lowest birth rate in 2015?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "Which country in Australasia had the lowest birth rate in 2015?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries located in Australasia was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "10 countries were found in Australasia, including New Caledonia, Vanuatu and Cocos Islands"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The birth rate for each of these countries in 2015 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's birth rate in 2015 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "6e834e3f076d4f93": {
+        "html_choice": "Question<br><strong>In Northern Africa, which country had the lowest GDP in 2020?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In Northern Africa, which country had the lowest GDP in 2020?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries in Northern Africa was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "6 countries were found in Northern Africa, including Tunisia, Sudan and Egypt"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The GDP for each of these countries in 2020 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's GDP in 2020 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "8ae3c95451264b14": {
+        "html_choice": "Question<br><strong>In Southern Asia, which country had the lowest population density in 2021?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In Southern Asia, which country had the lowest population density in 2021?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries located in Southern Asia was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "9 countries, including the Maldives, Nepal and Afghanistan, were found in Southern Asia"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The population density for each of these countries in 2021 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's population density in 2021 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "9666f5c62a6c4eb0": {
+        "html_choice": "Question<br><strong>In 2018, which country in Southern Asia had the lowest life expectancy?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In 2018, which country in Southern Asia had the lowest life expectancy?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries in Southern Asia was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "9 countries, including Bhutan, Iran and Sri Lanka, were found in Southern Asia"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The life expectancy for each of these countries in 2018 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's life expectancy in 2018 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "c9363bdf11f340dd": {
+        "html_choice": "Question<br><strong>Which country in Eastern Asia had the lowest urban population in 2016?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "Which country in Eastern Asia had the lowest urban population in 2016?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries in Eastern Asia was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "8 countries were found in Eastern Asia, including Mongolia, South Korea and Japan"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The urban population for each of these countries in 2016 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's urban population in 2016 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "7253a179c6bd4b8f": {
+        "html_choice": "Question<br><strong>In 2018, which country in Central Asia had the highest urban population?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In 2018, which country in Central Asia had the highest urban population?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries located in Central Asia was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "5 countries were found in Central Asia, including Tajikistan, Turkmenistan and Uzbekistan"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The urban population for each of these countries in 2018 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's urban population in 2018 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "3f515e45385b41b5": {
+        "html_choice": "Question<br><strong>In Sub-Saharan Africa, which country had the highest rural population in 2013?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In Sub-Saharan Africa, which country had the highest rural population in 2013?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries in Sub-Saharan Africa was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "51 countries, including Eswatini, Mauritius and R\u00e9union, were found in Sub-Saharan Africa"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The rural population for each of these countries in 2013 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's rural population in 2013 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "dc1acea101d54db9": {
+        "html_choice": "Question<br><strong>Which country in Northern Europe had the highest GDP in 2021?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "Which country in Northern Europe had the highest GDP in 2021?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries located in Northern Europe was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "16 countries were found in Northern Europe, including Estonia, Latvia and the Isle of Man"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The GDP for each of these countries in 2021 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's GDP in 2021 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "56711bc7fa884830": {
+        "html_choice": "Question<br><strong>In Western Asia, which country had the lowest population density in 2021?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In Western Asia, which country had the lowest population density in 2021?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries located in Western Asia was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "18 countries, including Cyprus, United Arab Emirates and Jordan, were found in Western Asia"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The population density for each of these countries in 2021 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's population density in 2021 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "e8e2ff8cfb544fb1": {
+        "html_choice": "Question<br><strong>In Eastern Europe, which country had the lowest population in 2015?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In Eastern Europe, which country had the lowest population in 2015?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries in Eastern Europe was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "10 countries were found in Eastern Europe, including Slovakia, Czechia and Hungary"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The population for each of these countries in 2015 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's population in 2015 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "bac2d5e100bc4e32": {
+        "html_choice": "Question<br><strong>Which country in Eastern Asia had the lowest birth rate in 2021?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "Which country in Eastern Asia had the lowest birth rate in 2021?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries in Eastern Asia was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "8 countries were found in Eastern Asia, including China, Mongolia and Macao"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The birth rate for each of these countries in 2021 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's birth rate in 2021 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "2f632724bce6415c": {
+        "html_choice": "Question<br><strong>In 2020, which country in Eastern Europe had the highest population density?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In 2020, which country in Eastern Europe had the highest population density?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries located in Eastern Europe was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "10 countries, including Hungary, Russian Federation and Ukraine, were found in Eastern Europe"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The population density for each of these countries in 2020 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's population density in 2020 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "cd6817cfc7034084": {
+        "html_choice": "Question<br><strong>Which country in Sub-Saharan Africa had the highest population density in 2017?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "Which country in Sub-Saharan Africa had the highest population density in 2017?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries located in Sub-Saharan Africa was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "51 countries, including Central African Republic, Angola and Kenya, were found in Sub-Saharan Africa"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The population density for each of these countries in 2017 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's population density in 2017 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "43a49278d0c84b02": {
+        "html_choice": "Question<br><strong>In South-eastern Asia, which country had the lowest urban population in 2013?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In South-eastern Asia, which country had the lowest urban population in 2013?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries located in South-eastern Asia was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "11 countries, including Brunei, Myanmar and Indonesia, were found in South-eastern Asia"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The urban population for each of these countries in 2013 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's urban population in 2013 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "4480ead1c3254319": {
+        "html_choice": "Question<br><strong>In Central Asia, which country had the highest birth rate in 2013?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In Central Asia, which country had the highest birth rate in 2013?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries located in Central Asia was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "5 countries, including Turkmenistan, Uzbekistan and Tajikistan, were found in Central Asia"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The birth rate for each of these countries in 2013 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's birth rate in 2013 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "ddfb064dbe674a35": {
+        "html_choice": "Question<br><strong>In 2018, which country in Western Europe had the lowest rural population?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In 2018, which country in Western Europe had the lowest rural population?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries located in Western Europe was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "9 countries, including Austria, Luxembourg and Monaco, were found in Western Europe"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The rural population for each of these countries in 2018 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's rural population in 2018 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "405ab0a8bfb342f7": {
+        "html_choice": "Question<br><strong>In Sub-Saharan Africa, which country had the lowest life expectancy in 2012?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In Sub-Saharan Africa, which country had the lowest life expectancy in 2012?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries in Sub-Saharan Africa was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "51 countries in Sub-Saharan Africa, including Angola, Tanzania and Ethiopia, were found"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The life expectancy for each of these countries in 2012 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's life expectancy in 2012 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "f568f87719994cd0": {
+        "html_choice": "Question<br><strong>In 2013, which country in Micronesia had the highest birth rate?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In 2013, which country in Micronesia had the highest birth rate?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries in Micronesia was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "8 countries in Micronesia, including the Marshall Islands, Kiribati and Nauru, were found"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The birth rate for each of these countries in 2013 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's birth rate in 2013 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "df03a22282914b01": {
+        "html_choice": "Question<br><strong>In Eastern Europe, which country had the lowest rural population in 2021?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In Eastern Europe, which country had the lowest rural population in 2021?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries located in Eastern Europe was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "10 countries were found in Eastern Europe, including Russian Federation, Ukraine and Hungary"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The rural population for each of these countries in 2021 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's rural population in 2021 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "6670ccf6847443dd": {
+        "html_choice": "Question<br><strong>Which country in Western Asia had the highest birth rate in 2018?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "Which country in Western Asia had the highest birth rate in 2018?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries in Western Asia was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "18 countries in Western Asia, including Yemen, Georgia and United Arab Emirates, were found"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The birth rate for each of these countries in 2018 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's birth rate in 2018 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "17366e5550d7418f": {
+        "html_choice": "Question<br><strong>Which country in Northern America had the lowest birth rate in 2014?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "Which country in Northern America had the lowest birth rate in 2014?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries located in Northern America was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "4 countries were found in Northern America, including United States, Canada and Greenland"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The birth rate for each of these countries in 2014 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's birth rate in 2014 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "ef6a059d15a44eb4": {
+        "html_choice": "Question<br><strong>In Northern Africa, which country had the highest energy consumption in 2014?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In Northern Africa, which country had the highest energy consumption in 2014?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries located in Northern Africa was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "6 countries in Northern Africa, including Libya, Sudan and Morocco, were found"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The energy consumption for each of these countries in 2014 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's energy consumption in 2014 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "5bb45d3ee6ae457d": {
+        "html_choice": "Question<br><strong>In Eastern Asia, which country had the highest life expectancy in 2020?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In Eastern Asia, which country had the highest life expectancy in 2020?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries in Eastern Asia was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "8 countries, including China, Hong Kong and Japan, were found in Eastern Asia"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The life expectancy for each of these countries in 2020 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's life expectancy in 2020 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "cd9c675a311a4979": {
+        "html_choice": "Question<br><strong>In 2014, which country in Southern Europe had the highest population?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In 2014, which country in Southern Europe had the highest population?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries located in Southern Europe was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "16 countries in Southern Europe, including Spain, the Vatican City and Malta, were found"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The population for each of these countries in 2014 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's population in 2014 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "bbf84410dc9341ee": {
+        "html_choice": "Question<br><strong>In Central Asia, which country had the highest population density in 2019?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In Central Asia, which country had the highest population density in 2019?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries in Central Asia was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "5 countries were found in Central Asia, including Uzbekistan, Kyrgyzstan and Kazakhstan"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The population density for each of these countries in 2019 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's population density in 2019 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "b1ff1a5f0d5c44d4": {
+        "html_choice": "Question<br><strong>In 2012, which country in Northern Africa had the highest rural population?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In 2012, which country in Northern Africa had the highest rural population?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries located in Northern Africa was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "6 countries, including Tunisia, Egypt and Morocco, were found in Northern Africa"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The rural population for each of these countries in 2012 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's rural population in 2012 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "ff541aebbaeb4532": {
+        "html_choice": "Question<br><strong>In Micronesia, which country had the highest population density in 2013?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In Micronesia, which country had the highest population density in 2013?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries located in Micronesia was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "8 countries in Micronesia, including the Marshall Islands, Guam and Kiribati, were found"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The population density for each of these countries in 2013 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's population density in 2013 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "0aeffffacf5d49f0": {
+        "html_choice": "Question<br><strong>In Northern America, which country had the lowest birth rate in 2015?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In Northern America, which country had the lowest birth rate in 2015?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries in Northern America was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "4 countries, including Greenland, United States and Canada, were found in Northern America"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The birth rate for each of these countries in 2015 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's birth rate in 2015 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "b05237a014e14465": {
+        "html_choice": "Question<br><strong>Which country in Southern Asia had the highest rural population in 2018?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "Which country in Southern Asia had the highest rural population in 2018?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries located in Southern Asia was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "9 countries, including the Maldives, Nepal and Bangladesh, were found in Southern Asia"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The rural population for each of these countries in 2018 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's rural population in 2018 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "9ba69b16877e4abc": {
+        "html_choice": "Question<br><strong>In Western Europe, which country had the highest birth rate in 2018?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In Western Europe, which country had the highest birth rate in 2018?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries located in Western Europe was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "9 countries in Western Europe, including Switzerland, Germany and Austria, were found"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The birth rate for each of these countries in 2018 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's birth rate in 2018 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "111551562b0140f6": {
+        "html_choice": "Question<br><strong>In 2017, which country in Northern Europe had the highest GDP?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In 2017, which country in Northern Europe had the highest GDP?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries located in Northern Europe was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "16 countries, including United Kingdom, Iceland and the Isle of Man, were found in Northern Europe"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The GDP for each of these countries in 2017 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's GDP in 2017 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "f1773753bd2c452b": {
+        "html_choice": "Question<br><strong>In 2019, which country in Central Asia had the highest energy consumption?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In 2019, which country in Central Asia had the highest energy consumption?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries in Central Asia was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "5 countries were found in Central Asia, including Turkmenistan, Tajikistan and Uzbekistan"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The energy consumption for each of these countries in 2019 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's energy consumption in 2019 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "b35aefe176b64879": {
+        "html_choice": "Question<br><strong>In 2014, which country in Central Asia had the highest population density?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In 2014, which country in Central Asia had the highest population density?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries in Central Asia was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "5 countries, including Tajikistan, Kyrgyzstan and Uzbekistan, were found in Central Asia"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The population density for each of these countries in 2014 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's population density in 2014 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "e86126070a53432f": {
+        "html_choice": "Question<br><strong>Which country in Australasia had the highest birth rate in 2018?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "Which country in Australasia had the highest birth rate in 2018?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries in Australasia was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "10 countries were found in Australasia, including New Caledonia, Norfolk Island and Cocos Islands"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The birth rate for each of these countries in 2018 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's birth rate in 2018 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "daae65b1f18b47f4": {
+        "html_choice": "Question<br><strong>Which country in Western Asia had the lowest birth rate in 2016?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "Which country in Western Asia had the lowest birth rate in 2016?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries in Western Asia was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "18 countries were found in Western Asia, including Oman, Palestine and Armenia"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The birth rate for each of these countries in 2016 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's birth rate in 2016 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "75e0c9ca115c4edd": {
+        "html_choice": "Question<br><strong>In 2018, which country in Australasia had the highest population density?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In 2018, which country in Australasia had the highest population density?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries located in Australasia was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "10 countries, including Norfolk Island, Cocos Islands and New Caledonia, were found in Australasia"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The population density for each of these countries in 2018 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's population density in 2018 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "1e4c8caa852643ab": {
+        "html_choice": "Question<br><strong>In 2021, which country in Latin America and the Caribbean had the highest rural population?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In 2021, which country in Latin America and the Caribbean had the highest rural population?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries in Latin America and the Caribbean was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "49 countries, including Argentina, Dominica and Haiti, were found in Latin America and the Caribbean"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The rural population for each of these countries in 2021 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's rural population in 2021 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "ccfb8396101c47b3": {
+        "html_choice": "Question<br><strong>Which country in Australasia had the highest birth rate in 2019?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "Which country in Australasia had the highest birth rate in 2019?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries located in Australasia was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "10 countries, including Vanuatu, New Zealand and Christmas Island, were found in Australasia"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The birth rate for each of these countries in 2019 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's birth rate in 2019 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "0a6379c5e7ba4089": {
+        "html_choice": "Question<br><strong>Which country in Southern Asia had the highest population in 2019?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "Which country in Southern Asia had the highest population in 2019?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries located in Southern Asia was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "9 countries were found in Southern Asia, including Bhutan, Pakistan and the Maldives"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The population for each of these countries in 2019 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's population in 2019 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "eeac11021d174e8e": {
+        "html_choice": "Question<br><strong>In Eastern Asia, which country had the highest rural population in 2017?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In Eastern Asia, which country had the highest rural population in 2017?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries located in Eastern Asia was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "8 countries, including Mongolia, Hong Kong and China, were found in Eastern Asia"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The rural population for each of these countries in 2017 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's rural population in 2017 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "ca1a710bee7e406e": {
+        "html_choice": "Question<br><strong>Which country in Latin America and the Caribbean had the lowest GDP in 2013?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "Which country in Latin America and the Caribbean had the lowest GDP in 2013?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries located in Latin America and the Caribbean was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "49 countries, including Ecuador, Grenada and Brazil, were found in Latin America and the Caribbean"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The GDP for each of these countries in 2013 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's GDP in 2013 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "7c5ad86eeebc4784": {
+        "html_choice": "Question<br><strong>In Western Asia, which country had the highest population in 2019?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In Western Asia, which country had the highest population in 2019?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries located in Western Asia was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "18 countries were found in Western Asia, including Qatar, Iraq and Lebanon"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The population for each of these countries in 2019 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's population in 2019 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "cc4d7ccc757a413c": {
+        "html_choice": "Question<br><strong>In 2015, which country in Eastern Europe had the highest birth rate?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In 2015, which country in Eastern Europe had the highest birth rate?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries in Eastern Europe was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "10 countries in Eastern Europe, including Hungary, Moldova and Ukraine, were found"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The birth rate for each of these countries in 2015 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's birth rate in 2015 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "78bb5c7800484fe8": {
+        "html_choice": "Question<br><strong>In Northern Africa, which country had the lowest rural population in 2017?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In Northern Africa, which country had the lowest rural population in 2017?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries in Northern Africa was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "6 countries were found in Northern Africa, including Morocco, Tunisia and Libya"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The rural population for each of these countries in 2017 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's rural population in 2017 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "610aff57ec0b4054": {
+        "html_choice": "Question<br><strong>In Eastern Europe, which country had the highest population density in 2013?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In Eastern Europe, which country had the highest population density in 2013?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries in Eastern Europe was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "10 countries were found in Eastern Europe, including Czechia, Ukraine and Bulgaria"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The population density for each of these countries in 2013 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's population density in 2013 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "cf17de439b5b46ec": {
+        "html_choice": "Question<br><strong>In 2012, which country in Western Europe had the highest birth rate?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In 2012, which country in Western Europe had the highest birth rate?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries in Western Europe was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "9 countries in Western Europe, including Belgium, Liechtenstein and Luxembourg, were found"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The birth rate for each of these countries in 2012 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's birth rate in 2012 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "e91a7d63d2bd4b6d": {
+        "html_choice": "Question<br><strong>In 2014, which country in Southern Europe had the lowest life expectancy?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In 2014, which country in Southern Europe had the lowest life expectancy?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries located in Southern Europe was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "16 countries in Southern Europe, including Gibraltar, Malta and Portugal, were found"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The life expectancy for each of these countries in 2014 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's life expectancy in 2014 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "5395403d468b4395": {
+        "html_choice": "Question<br><strong>In Western Europe, which country had the highest population in 2018?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In Western Europe, which country had the highest population in 2018?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries located in Western Europe was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "9 countries, including Switzerland, Austria and France, were found in Western Europe"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The population for each of these countries in 2018 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's population in 2018 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "7bc53b066a984614": {
+        "html_choice": "Question<br><strong>Which country in Northern Europe had the highest urban population in 2021?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "Which country in Northern Europe had the highest urban population in 2021?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries located in Northern Europe was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "16 countries, including Latvia, the Isle of Man and Iceland, were found in Northern Europe"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The urban population for each of these countries in 2021 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's urban population in 2021 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "bb06562415da46ae": {
+        "html_choice": "Question<br><strong>Which country in Eastern Asia had the highest population density in 2013?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "Which country in Eastern Asia had the highest population density in 2013?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries located in Eastern Asia was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "8 countries in Eastern Asia, including Hong Kong, Macao and Japan, were found"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The population density for each of these countries in 2013 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's population density in 2013 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    },
+    "555ad629b284401a": {
+        "html_choice": "Question<br><strong>In Micronesia, which country had the lowest urban population in 2019?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected.<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "B1",
+        "question": "In Micronesia, which country had the lowest urban population in 2019?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "A list of countries in Micronesia was needed"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "8 countries were found in Micronesia, including Guam, the Marshall Islands and Nauru"
+            },
+            {
+                "step": 3,
+                "label": "meta",
+                "explanation": "The urban population for each of these countries in 2019 was needed for a comparison"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Data for each country's urban population in 2019 was found"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The answer was found by comparing the values to each other"
+            }
+        ]
+    }
+}

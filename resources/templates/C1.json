@@ -1,0 +1,146 @@
+{
+    "question_template": [
+        "In {future}, what will be the {property} of the country in {region} which had the {operator} {property2} in {past}?",
+        "What will be the {property} in {future} of the country in {region} that had the {operator} {property2} in {past}?",
+        "For the country in {region} that had the {operator} {property2} in {past}, what will be its {property} in {future}?"
+    ],
+    "required_entities": [
+        "region",
+        "operator",
+        "property",
+        "property2",
+        "data_source"
+    ],
+    "required_data": [
+        "past",
+        "future",
+        "$x",
+        "answer",
+        "t_min",
+        "t_max",
+        "v_min",
+        "v_max",
+        "n_countries",
+        "country_sample"
+    ],
+    "explanation": [
+        {
+            "description": "declare-subgoal",
+            "label": "meta",
+            "explanations": {
+                "low": [
+                    "The country in {region} that had the {operator} {property2} in {past} had to be found"
+                ],
+                "med": [],
+                "high": []
+            }
+        },
+        {
+            "description": "subgoal-partition",
+            "label": "meta",
+            "explanations": {
+                "low": [
+                    "A list of countries in this region was needed",
+                    "A list of countries located in this region was needed"
+                ],
+                "med": [],
+                "high": []
+            }
+        },
+        {
+            "description": "data-result",
+            "label": "object",
+            "explanations": {
+                "low": [
+                    "{n_countries} countries in {region} were found, including {country_sample}",
+                    "{n_countries} countries, including {country_sample}, were found in {region}"
+                ],
+                "med": [],
+                "high": []
+            }
+        },
+        {
+            "description": "subgoal-temporal",
+            "label": "meta",
+            "explanations": {
+                "low": [
+                    "The {property} for each of these countries in {past} was needed for a comparison"
+                ],
+                "med": [],
+                "high": []
+            }
+        },
+        {
+            "description": "data-source",
+            "label": "object",
+            "explanations": {
+                "low": [
+                    "Data for each country's {property} in {past} was found"
+                ],
+                "med": [],
+                "high": []
+            }
+        },
+        {
+            "description": "subgoal-solve",
+            "label": "meta",
+            "explanations": {
+                "low": [
+                    "The country with the {operator} {property2} in {past} was found by comparing these values, and was {$x}",
+                    "By comparing these values, the country with the {operator} {property2} in {past} was found to be {$x}"
+                ],
+                "med": [],
+                "high": []
+            }
+        },
+        {
+            "description": "main-goal",
+            "label": "meta",
+            "explanations": {
+                "low": [
+                    "The {property} of {$x} in {future} had to be predicted using historic data",
+                    "Historic data was needed to predict the {property} of {$x} in {future}",
+                    "Needed to use historic data to predict the {property} of {$x} in {future}"
+                ],
+                "med": [],
+                "high": []
+            }
+        },
+        {
+            "description": "data-result",
+            "label": "object",
+            "explanations": {
+                "low": [
+                    "Data for the {property} of {$x} between {t_min} and {t_max} was found",
+                    "Data was found for the {property} of {$x} between {t_min} and {t_max}"
+                ],
+                "med": [],
+                "high": []
+            }
+        },
+        {
+            "description": "fit-model",
+            "label": "object",
+            "explanations": {
+                "low": [
+                    "This data was used to fit a predictive model",
+                    "A predictive model was fit to this data"
+                ],
+                "med": [],
+                "high": []
+            }
+        },
+        {
+            "description": "predict-value",
+            "label": "meta",
+            "explanations": {
+                "low": [
+                    "The predictive model was used to estimate the answer",
+                    "The answer was estimated using the predictive model"
+                ],
+                "med": [],
+                "high": []
+            }
+        }
+    ]
+}

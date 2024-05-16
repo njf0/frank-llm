@@ -1,0 +1,3402 @@
+{
+    "8617286db7ea4714": {
+        "html_choice": "Question<br><strong>In 2030, will the population density of Honduras be higher than that of Egypt?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "In 2030, will the population density of Honduras be higher than that of Egypt?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The population density of Honduras and Egypt in 2030 had to be predicted using historic data"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the population density of both countries was found between 2011 and 2022"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data was used to create predictive models for the population density of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The population density of both countries in 2030 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "89738c66904042da": {
+        "html_choice": "Question<br><strong>In 2027, will Czechia have a lower GDP than Chile?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "In 2027, will Czechia have a lower GDP than Chile?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The GDP of Czechia and Chile in 2027 had to be predicted using historic data"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the GDP of both countries was found between 2010 and 2022"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data was used to create predictive models for the GDP of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The GDP of both countries in 2027 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "e88901fd4762434e": {
+        "html_choice": "Question<br><strong>In 2026, will U.S. Virgin Islands  have a higher life expectancy than Luxembourg?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "In 2026, will U.S. Virgin Islands  have a higher life expectancy than Luxembourg?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The life expectancy of U.S. Virgin Islands  and Luxembourg in 2026 had to be predicted using historic data"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the life expectancy of both countries between 2009 and 2022"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Predictive models were created for the life expectancy of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The life expectancy of both countries in 2026 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "ce73e3144ba64fc3": {
+        "html_choice": "Question<br><strong>Which country will have the higher population density in 2026: Andorra or Cyprus?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "Which country will have the higher population density in 2026: Andorra or Cyprus?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the population density of Andorra and Cyprus in 2026"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the population density of both countries was found between 2011 and 2021"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Predictive models were created for the population density of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The population density of both countries in 2026 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "12844aee41f84663": {
+        "html_choice": "Question<br><strong>Which country will have the higher life expectancy in 2028: Fiji or Ireland?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "Which country will have the higher life expectancy in 2028: Fiji or Ireland?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The life expectancy of Fiji and Ireland in 2028 had to be predicted using historic data"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the life expectancy of both countries between 2011 and 2022"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data was used to create predictive models for the life expectancy of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The life expectancy of both countries in 2028 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "41e37463580d45a6": {
+        "html_choice": "Question<br><strong>In 2029, will Botswana have a higher life expectancy than Seychelles?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "In 2029, will Botswana have a higher life expectancy than Seychelles?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The life expectancy of Botswana and Seychelles in 2029 had to be predicted using historic data"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the life expectancy of both countries between 2010 and 2023"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data was used to create predictive models for the life expectancy of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The life expectancy of both countries in 2029 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "9207bb18dba349d8": {
+        "html_choice": "Question<br><strong>In 2028, will the birth rate of Cocos Islands be lower than that of Jamaica?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "In 2028, will the birth rate of Cocos Islands be lower than that of Jamaica?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the birth rate of Cocos Islands and Jamaica in 2028"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the birth rate of both countries was found between 2008 and 2023"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Predictive models were created for the birth rate of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The birth rate of both countries in 2028 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "70b38748a96e4137": {
+        "html_choice": "Question<br><strong>Which country will have the higher life expectancy in 2030: Papua New Guinea or Australia?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "Which country will have the higher life expectancy in 2030: Papua New Guinea or Australia?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The life expectancy of Papua New Guinea and Australia in 2030 had to be predicted using historic data"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the life expectancy of both countries was found between 2008 and 2021"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data was used to create predictive models for the life expectancy of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The life expectancy of both countries in 2030 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "940c05f1b338469a": {
+        "html_choice": "Question<br><strong>In 2030, will South Africa have a lower energy consumption than Pakistan?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "In 2030, will South Africa have a lower energy consumption than Pakistan?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the energy consumption of South Africa and Pakistan in 2030"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the energy consumption of both countries between 2008 and 2023"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Predictive models were created for the energy consumption of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The energy consumption of both countries in 2030 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "d238bb1c09454108": {
+        "html_choice": "Question<br><strong>Which country will have the lower life expectancy in 2030: Italy or Mauritania?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "Which country will have the lower life expectancy in 2030: Italy or Mauritania?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The life expectancy of Italy and Mauritania in 2030 had to be predicted using historic data"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the life expectancy of both countries between 2011 and 2022"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Predictive models were created for the life expectancy of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The life expectancy of both countries in 2030 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "3050e3e1ed2a492c": {
+        "html_choice": "Question<br><strong>In 2029, will Bahrain have a higher life expectancy than Cocos Islands?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "In 2029, will Bahrain have a higher life expectancy than Cocos Islands?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the life expectancy of Bahrain and Cocos Islands in 2029"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the life expectancy of both countries between 2011 and 2021"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data was used to create predictive models for the life expectancy of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The life expectancy of both countries in 2029 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "64180058afe54ce8": {
+        "html_choice": "Question<br><strong>Will Uzbekistan or Samoa have a lower birth rate in 2029?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "Will Uzbekistan or Samoa have a lower birth rate in 2029?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the birth rate of Uzbekistan and Samoa in 2029"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the birth rate of both countries between 2011 and 2021"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Predictive models were created for the birth rate of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The birth rate of both countries in 2029 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "e1abd5a298ec4d7b": {
+        "html_choice": "Question<br><strong>In 2030, will Guinea-Bissau have a lower GDP than Wallis and Futuna?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "In 2030, will Guinea-Bissau have a lower GDP than Wallis and Futuna?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the GDP of Guinea-Bissau and Wallis and Futuna in 2030"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the GDP of both countries was found between 2011 and 2023"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data was used to create predictive models for the GDP of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The GDP of both countries in 2030 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "7a879fc9e2a94427": {
+        "html_choice": "Question<br><strong>Will Serbia or Comoros have a lower GDP in 2030?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "Will Serbia or Comoros have a lower GDP in 2030?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The GDP of Serbia and Comoros in 2030 had to be predicted using historic data"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the GDP of both countries between 2011 and 2023"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Predictive models were created for the GDP of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The GDP of both countries in 2030 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "27c1fe8f3cb94f1f": {
+        "html_choice": "Question<br><strong>Will Lebanon or Saint Martin have a lower urban population in 2028?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "Will Lebanon or Saint Martin have a lower urban population in 2028?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the urban population of Lebanon and Saint Martin in 2028"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the urban population of both countries was found between 2010 and 2023"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data was used to create predictive models for the urban population of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The urban population of both countries in 2028 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "ebe52b44674f45c2": {
+        "html_choice": "Question<br><strong>In 2027, will the GDP of Cayman Islands be lower than that of Thailand?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "In 2027, will the GDP of Cayman Islands be lower than that of Thailand?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the GDP of Cayman Islands and Thailand in 2027"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the GDP of both countries was found between 2010 and 2022"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data was used to create predictive models for the GDP of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The GDP of both countries in 2027 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "0db225e9524a4755": {
+        "html_choice": "Question<br><strong>In 2026, will Cabo Verde have a lower birth rate than Sao Tome and Principe?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "In 2026, will Cabo Verde have a lower birth rate than Sao Tome and Principe?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The birth rate of Cabo Verde and Sao Tome and Principe in 2026 had to be predicted using historic data"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the birth rate of both countries between 2009 and 2022"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Predictive models were created for the birth rate of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The birth rate of both countries in 2026 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "12dd4f7c38df457c": {
+        "html_choice": "Question<br><strong>Will Belize or the Falkland Islands have a lower birth rate in 2026?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "Will Belize or the Falkland Islands have a lower birth rate in 2026?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the birth rate of Belize and the Falkland Islands in 2026"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the birth rate of both countries was found between 2008 and 2022"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Predictive models were created for the birth rate of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The birth rate of both countries in 2026 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "7d594868f04a4fc6": {
+        "html_choice": "Question<br><strong>In 2026, will Montserrat have a higher birth rate than Mongolia?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "In 2026, will Montserrat have a higher birth rate than Mongolia?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the birth rate of Montserrat and Mongolia in 2026"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the birth rate of both countries between 2011 and 2021"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data was used to create predictive models for the birth rate of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The birth rate of both countries in 2026 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "ae4ec27d4f074582": {
+        "html_choice": "Question<br><strong>Will Cayman Islands or Sweden have a lower rural population in 2028?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "Will Cayman Islands or Sweden have a lower rural population in 2028?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The rural population of Cayman Islands and Sweden in 2028 had to be predicted using historic data"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the rural population of both countries between 2010 and 2022"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data was used to create predictive models for the rural population of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The rural population of both countries in 2028 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "c797527dcdf540b6": {
+        "html_choice": "Question<br><strong>Which country will have the higher population in 2027: Niger or Saint Lucia?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "Which country will have the higher population in 2027: Niger or Saint Lucia?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the population of Niger and Saint Lucia in 2027"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the population of both countries between 2009 and 2023"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Predictive models were created for the population of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The population of both countries in 2027 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "95aa5846ce5f4b29": {
+        "html_choice": "Question<br><strong>Will United Kingdom or Montserrat have a lower rural population in 2029?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "Will United Kingdom or Montserrat have a lower rural population in 2029?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the rural population of United Kingdom and Montserrat in 2029"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the rural population of both countries between 2008 and 2021"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Predictive models were created for the rural population of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The rural population of both countries in 2029 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "b991b7beda2147bc": {
+        "html_choice": "Question<br><strong>In 2026, will Cyprus have a higher population than Germany?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "In 2026, will Cyprus have a higher population than Germany?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the population of Cyprus and Germany in 2026"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the population of both countries between 2011 and 2021"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data was used to create predictive models for the population of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The population of both countries in 2026 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "f6423e3a7264474d": {
+        "html_choice": "Question<br><strong>Which country will have the higher population density in 2027: the Isle of Man or United Arab Emirates?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "Which country will have the higher population density in 2027: the Isle of Man or United Arab Emirates?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the population density of the Isle of Man and United Arab Emirates in 2027"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the population density of both countries was found between 2008 and 2021"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Predictive models were created for the population density of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The population density of both countries in 2027 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "516896c21e334b9f": {
+        "html_choice": "Question<br><strong>In 2027, will Martinique have a lower urban population than Djibouti?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "In 2027, will Martinique have a lower urban population than Djibouti?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The urban population of Martinique and Djibouti in 2027 had to be predicted using historic data"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the urban population of both countries between 2011 and 2022"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Predictive models were created for the urban population of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The urban population of both countries in 2027 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "82bf34ef7196476a": {
+        "html_choice": "Question<br><strong>In 2030, will Romania have a lower rural population than Nepal?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "In 2030, will Romania have a lower rural population than Nepal?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the rural population of Romania and Nepal in 2030"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the rural population of both countries was found between 2009 and 2022"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data was used to create predictive models for the rural population of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The rural population of both countries in 2030 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "80ce934e82bd4e4a": {
+        "html_choice": "Question<br><strong>In 2030, will the rural population of United Kingdom be lower than that of Belarus?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "In 2030, will the rural population of United Kingdom be lower than that of Belarus?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The rural population of United Kingdom and Belarus in 2030 had to be predicted using historic data"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the rural population of both countries was found between 2008 and 2023"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data was used to create predictive models for the rural population of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The rural population of both countries in 2030 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "74c64c14dada4fa6": {
+        "html_choice": "Question<br><strong>In 2026, will Andorra have a higher energy consumption than Ethiopia?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "In 2026, will Andorra have a higher energy consumption than Ethiopia?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the energy consumption of Andorra and Ethiopia in 2026"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the energy consumption of both countries was found between 2008 and 2022"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data was used to create predictive models for the energy consumption of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The energy consumption of both countries in 2026 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "6e92f6f00a994a09": {
+        "html_choice": "Question<br><strong>In 2028, will Malaysia have a higher GDP than India?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "In 2028, will Malaysia have a higher GDP than India?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the GDP of Malaysia and India in 2028"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the GDP of both countries was found between 2009 and 2021"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Predictive models were created for the GDP of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The GDP of both countries in 2028 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "e6c974f5bf044535": {
+        "html_choice": "Question<br><strong>Will Chad or Peru have a lower population in 2028?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "Will Chad or Peru have a lower population in 2028?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the population of Chad and Peru in 2028"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the population of both countries between 2010 and 2023"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Predictive models were created for the population of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The population of both countries in 2028 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "0b36ee6c0a1c491c": {
+        "html_choice": "Question<br><strong>In 2027, will Lebanon have a higher rural population than Benin?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "In 2027, will Lebanon have a higher rural population than Benin?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The rural population of Lebanon and Benin in 2027 had to be predicted using historic data"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the rural population of both countries was found between 2010 and 2023"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Predictive models were created for the rural population of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The rural population of both countries in 2027 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "0b6a0914740a4579": {
+        "html_choice": "Question<br><strong>In 2030, will Costa Rica have a lower population density than Sierra Leone?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "In 2030, will Costa Rica have a lower population density than Sierra Leone?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the population density of Costa Rica and Sierra Leone in 2030"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the population density of both countries was found between 2008 and 2021"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Predictive models were created for the population density of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The population density of both countries in 2030 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "0e641802e5f44a59": {
+        "html_choice": "Question<br><strong>Which country will have the lower energy consumption in 2029: Moldova or Iran?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "Which country will have the lower energy consumption in 2029: Moldova or Iran?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The energy consumption of Moldova and Iran in 2029 had to be predicted using historic data"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the energy consumption of both countries between 2008 and 2022"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data was used to create predictive models for the energy consumption of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The energy consumption of both countries in 2029 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "7f3d8b1307114186": {
+        "html_choice": "Question<br><strong>Will Wallis and Futuna or Fiji have a lower urban population in 2027?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "Will Wallis and Futuna or Fiji have a lower urban population in 2027?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the urban population of Wallis and Futuna and Fiji in 2027"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the urban population of both countries between 2011 and 2023"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Predictive models were created for the urban population of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The urban population of both countries in 2027 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "abd24ca5de43431d": {
+        "html_choice": "Question<br><strong>Will Nepal or Cook Islands have a higher birth rate in 2029?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "Will Nepal or Cook Islands have a higher birth rate in 2029?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The birth rate of Nepal and Cook Islands in 2029 had to be predicted using historic data"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the birth rate of both countries between 2010 and 2023"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data was used to create predictive models for the birth rate of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The birth rate of both countries in 2029 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "0bda175583a942de": {
+        "html_choice": "Question<br><strong>In 2028, will Libya have a lower birth rate than Chile?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "In 2028, will Libya have a lower birth rate than Chile?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the birth rate of Libya and Chile in 2028"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the birth rate of both countries was found between 2010 and 2021"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Predictive models were created for the birth rate of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The birth rate of both countries in 2028 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "b26aa8d1fee7475c": {
+        "html_choice": "Question<br><strong>Which country will have the lower energy consumption in 2026: French Polynesia or Gambia?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "Which country will have the lower energy consumption in 2026: French Polynesia or Gambia?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the energy consumption of French Polynesia and Gambia in 2026"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the energy consumption of both countries between 2008 and 2022"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Predictive models were created for the energy consumption of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The energy consumption of both countries in 2026 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "81de7cd66ed54c75": {
+        "html_choice": "Question<br><strong>In 2030, will the birth rate of South Sudan be higher than that of Svalbard and Jan Mayen?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "In 2030, will the birth rate of South Sudan be higher than that of Svalbard and Jan Mayen?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The birth rate of South Sudan and Svalbard and Jan Mayen in 2030 had to be predicted using historic data"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the birth rate of both countries between 2010 and 2022"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data was used to create predictive models for the birth rate of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The birth rate of both countries in 2030 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "e9361ab8fa1949ee": {
+        "html_choice": "Question<br><strong>In 2030, will Greenland have a higher energy consumption than Algeria?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "In 2030, will Greenland have a higher energy consumption than Algeria?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the energy consumption of Greenland and Algeria in 2030"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the energy consumption of both countries between 2010 and 2021"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data was used to create predictive models for the energy consumption of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The energy consumption of both countries in 2030 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "2d6217abf92b4e58": {
+        "html_choice": "Question<br><strong>Will Guadeloupe or Trinidad and Tobago have a higher GDP in 2030?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "Will Guadeloupe or Trinidad and Tobago have a higher GDP in 2030?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the GDP of Guadeloupe and Trinidad and Tobago in 2030"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the GDP of both countries between 2011 and 2022"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data was used to create predictive models for the GDP of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The GDP of both countries in 2030 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "402a578b81954548": {
+        "html_choice": "Question<br><strong>In 2027, will Thailand have a higher life expectancy than Democratic Republic of the Congo?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "In 2027, will Thailand have a higher life expectancy than Democratic Republic of the Congo?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The life expectancy of Thailand and Democratic Republic of the Congo in 2027 had to be predicted using historic data"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the life expectancy of both countries between 2008 and 2021"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data was used to create predictive models for the life expectancy of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The life expectancy of both countries in 2027 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "b0fa117c1c714130": {
+        "html_choice": "Question<br><strong>In 2028, will Botswana have a lower birth rate than Saint Vincent and the Grenadines?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "In 2028, will Botswana have a lower birth rate than Saint Vincent and the Grenadines?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the birth rate of Botswana and Saint Vincent and the Grenadines in 2028"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the birth rate of both countries was found between 2008 and 2022"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Predictive models were created for the birth rate of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The birth rate of both countries in 2028 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "b14c04c297584b5a": {
+        "html_choice": "Question<br><strong>In 2026, will the life expectancy of U.S. Virgin Islands  be lower than that of Azerbaijan?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "In 2026, will the life expectancy of U.S. Virgin Islands  be lower than that of Azerbaijan?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the life expectancy of U.S. Virgin Islands  and Azerbaijan in 2026"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the life expectancy of both countries between 2008 and 2021"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data was used to create predictive models for the life expectancy of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The life expectancy of both countries in 2026 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "5a88660f2a9d4bf0": {
+        "html_choice": "Question<br><strong>Which country will have the higher energy consumption in 2027: Svalbard and Jan Mayen or Turkmenistan?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "Which country will have the higher energy consumption in 2027: Svalbard and Jan Mayen or Turkmenistan?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The energy consumption of Svalbard and Jan Mayen and Turkmenistan in 2027 had to be predicted using historic data"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the energy consumption of both countries was found between 2010 and 2023"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Predictive models were created for the energy consumption of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The energy consumption of both countries in 2027 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "61114f7c03de4f07": {
+        "html_choice": "Question<br><strong>Will Iraq or Botswana have a higher birth rate in 2028?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "Will Iraq or Botswana have a higher birth rate in 2028?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the birth rate of Iraq and Botswana in 2028"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the birth rate of both countries between 2008 and 2022"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Predictive models were created for the birth rate of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The birth rate of both countries in 2028 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "2b3cb8bf9f53493c": {
+        "html_choice": "Question<br><strong>In 2029, will Gabon have a lower rural population than United Arab Emirates?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "In 2029, will Gabon have a lower rural population than United Arab Emirates?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the rural population of Gabon and United Arab Emirates in 2029"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the rural population of both countries between 2009 and 2023"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data was used to create predictive models for the rural population of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The rural population of both countries in 2029 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "64adfa3509b74159": {
+        "html_choice": "Question<br><strong>Which country will have the higher population density in 2030: Papua New Guinea or Croatia?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "Which country will have the higher population density in 2030: Papua New Guinea or Croatia?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the population density of Papua New Guinea and Croatia in 2030"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the population density of both countries between 2011 and 2021"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Predictive models were created for the population density of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The population density of both countries in 2030 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "c013cdf2ff3343a5": {
+        "html_choice": "Question<br><strong>In 2026, will Sweden have a higher energy consumption than Northern Mariana Islands?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "In 2026, will Sweden have a higher energy consumption than Northern Mariana Islands?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The energy consumption of Sweden and Northern Mariana Islands in 2026 had to be predicted using historic data"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the energy consumption of both countries was found between 2009 and 2023"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Predictive models were created for the energy consumption of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The energy consumption of both countries in 2026 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "7409ad26e69d48c7": {
+        "html_choice": "Question<br><strong>Will Taiwan or Qatar have a higher rural population in 2029?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "Will Taiwan or Qatar have a higher rural population in 2029?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the rural population of Taiwan and Qatar in 2029"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the rural population of both countries was found between 2011 and 2022"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Predictive models were created for the rural population of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The rural population of both countries in 2029 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "e18cf4f547774081": {
+        "html_choice": "Question<br><strong>Will Burkina Faso or Guyana have a lower population density in 2027?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "Will Burkina Faso or Guyana have a lower population density in 2027?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The population density of Burkina Faso and Guyana in 2027 had to be predicted using historic data"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the population density of both countries was found between 2008 and 2021"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Predictive models were created for the population density of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The population density of both countries in 2027 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "c042a7cc1e144891": {
+        "html_choice": "Question<br><strong>Which country will have the higher life expectancy in 2029: Indonesia or Belize?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "Which country will have the higher life expectancy in 2029: Indonesia or Belize?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The life expectancy of Indonesia and Belize in 2029 had to be predicted using historic data"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the life expectancy of both countries between 2008 and 2023"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data was used to create predictive models for the life expectancy of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The life expectancy of both countries in 2029 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "93aa0cba0af04191": {
+        "html_choice": "Question<br><strong>Which country will have the higher population in 2028: Finland or Bahrain?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "Which country will have the higher population in 2028: Finland or Bahrain?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the population of Finland and Bahrain in 2028"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the population of both countries was found between 2010 and 2023"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data was used to create predictive models for the population of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The population of both countries in 2028 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "ada7c284ead34fe5": {
+        "html_choice": "Question<br><strong>In 2027, will Fiji have a lower energy consumption than Cocos Islands?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "In 2027, will Fiji have a lower energy consumption than Cocos Islands?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The energy consumption of Fiji and Cocos Islands in 2027 had to be predicted using historic data"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the energy consumption of both countries between 2011 and 2023"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data was used to create predictive models for the energy consumption of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The energy consumption of both countries in 2027 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "926dc5a637404a94": {
+        "html_choice": "Question<br><strong>Will Cayman Islands or Indonesia have a lower birth rate in 2028?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "Will Cayman Islands or Indonesia have a lower birth rate in 2028?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The birth rate of Cayman Islands and Indonesia in 2028 had to be predicted using historic data"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the birth rate of both countries between 2010 and 2022"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Predictive models were created for the birth rate of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The birth rate of both countries in 2028 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "1daa71a2582d4de9": {
+        "html_choice": "Question<br><strong>In 2029, will Mongolia have a higher urban population than South Korea?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "In 2029, will Mongolia have a higher urban population than South Korea?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the urban population of Mongolia and South Korea in 2029"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the urban population of both countries between 2009 and 2022"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Predictive models were created for the urban population of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The urban population of both countries in 2029 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "7ae96c3cfbe34f2b": {
+        "html_choice": "Question<br><strong>Will Brazil or Turkey have a lower energy consumption in 2027?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "Will Brazil or Turkey have a lower energy consumption in 2027?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the energy consumption of Brazil and Turkey in 2027"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the energy consumption of both countries between 2010 and 2023"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data was used to create predictive models for the energy consumption of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The energy consumption of both countries in 2027 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "59e4421673884032": {
+        "html_choice": "Question<br><strong>Which country will have the lower life expectancy in 2027: Saint Barth\u00e9lemy or Saint Kitts and Nevis?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "Which country will have the lower life expectancy in 2027: Saint Barth\u00e9lemy or Saint Kitts and Nevis?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the life expectancy of Saint Barth\u00e9lemy and Saint Kitts and Nevis in 2027"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the life expectancy of both countries was found between 2009 and 2022"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Predictive models were created for the life expectancy of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The life expectancy of both countries in 2027 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "1ad904dad1674d52": {
+        "html_choice": "Question<br><strong>In 2027, will Liechtenstein have a higher population density than Canada?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "In 2027, will Liechtenstein have a higher population density than Canada?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The population density of Liechtenstein and Canada in 2027 had to be predicted using historic data"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the population density of both countries between 2011 and 2023"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Predictive models were created for the population density of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The population density of both countries in 2027 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "ff8d592a030c457b": {
+        "html_choice": "Question<br><strong>Which country will have the higher GDP in 2027: R\u00e9union or Qatar?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "Which country will have the higher GDP in 2027: R\u00e9union or Qatar?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The GDP of R\u00e9union and Qatar in 2027 had to be predicted using historic data"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the GDP of both countries between 2011 and 2022"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Predictive models were created for the GDP of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The GDP of both countries in 2027 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "55d9105f65184d10": {
+        "html_choice": "Question<br><strong>Will Yemen or the Falkland Islands have a higher birth rate in 2027?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "Will Yemen or the Falkland Islands have a higher birth rate in 2027?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The birth rate of Yemen and the Falkland Islands in 2027 had to be predicted using historic data"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the birth rate of both countries was found between 2008 and 2022"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data was used to create predictive models for the birth rate of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The birth rate of both countries in 2027 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "c19e6d6127814915": {
+        "html_choice": "Question<br><strong>In 2030, will the population density of Saint Kitts and Nevis be higher than that of Saint Barth\u00e9lemy?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "In 2030, will the population density of Saint Kitts and Nevis be higher than that of Saint Barth\u00e9lemy?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The population density of Saint Kitts and Nevis and Saint Barth\u00e9lemy in 2030 had to be predicted using historic data"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the population density of both countries was found between 2009 and 2023"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data was used to create predictive models for the population density of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The population density of both countries in 2030 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "9ab4db8f84b84dab": {
+        "html_choice": "Question<br><strong>Will India or Macao have a higher urban population in 2030?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "Will India or Macao have a higher urban population in 2030?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the urban population of India and Macao in 2030"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the urban population of both countries was found between 2008 and 2022"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data was used to create predictive models for the urban population of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The urban population of both countries in 2030 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "7b6ec39d52414e70": {
+        "html_choice": "Question<br><strong>In 2029, will the GDP of Vanuatu be lower than that of Uganda?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "In 2029, will the GDP of Vanuatu be lower than that of Uganda?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the GDP of Vanuatu and Uganda in 2029"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the GDP of both countries between 2008 and 2022"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data was used to create predictive models for the GDP of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The GDP of both countries in 2029 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "5a253e14dc4a4652": {
+        "html_choice": "Question<br><strong>In 2029, will the birth rate of Democratic Republic of the Congo be lower than that of United Arab Emirates?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "In 2029, will the birth rate of Democratic Republic of the Congo be lower than that of United Arab Emirates?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the birth rate of Democratic Republic of the Congo and United Arab Emirates in 2029"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the birth rate of both countries between 2009 and 2022"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data was used to create predictive models for the birth rate of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The birth rate of both countries in 2029 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "10a7d7eeee9a41a9": {
+        "html_choice": "Question<br><strong>Will United States or Antigua and Barbuda have a lower birth rate in 2027?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "Will United States or Antigua and Barbuda have a lower birth rate in 2027?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The birth rate of United States and Antigua and Barbuda in 2027 had to be predicted using historic data"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the birth rate of both countries between 2010 and 2022"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Predictive models were created for the birth rate of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The birth rate of both countries in 2027 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "2423a0395e3e4fd1": {
+        "html_choice": "Question<br><strong>In 2027, will the life expectancy of United States Minor Outlying Islands be higher than that of Peru?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "In 2027, will the life expectancy of United States Minor Outlying Islands be higher than that of Peru?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the life expectancy of United States Minor Outlying Islands and Peru in 2027"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the life expectancy of both countries between 2009 and 2023"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data was used to create predictive models for the life expectancy of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The life expectancy of both countries in 2027 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "79cedea3bdc44e6a": {
+        "html_choice": "Question<br><strong>Which country will have the lower rural population in 2030: Panama or Bosnia and Herzegovina?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "Which country will have the lower rural population in 2030: Panama or Bosnia and Herzegovina?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the rural population of Panama and Bosnia and Herzegovina in 2030"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the rural population of both countries was found between 2008 and 2023"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data was used to create predictive models for the rural population of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The rural population of both countries in 2030 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "68605ac2d4a44081": {
+        "html_choice": "Question<br><strong>In 2029, will Ghana have a lower urban population than Lebanon?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "In 2029, will Ghana have a lower urban population than Lebanon?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the urban population of Ghana and Lebanon in 2029"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the urban population of both countries between 2010 and 2023"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Predictive models were created for the urban population of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The urban population of both countries in 2029 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "d9b3edf3a746415b": {
+        "html_choice": "Question<br><strong>In 2027, will Suriname have a lower GDP than Bolivia?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "In 2027, will Suriname have a lower GDP than Bolivia?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the GDP of Suriname and Bolivia in 2027"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the GDP of both countries was found between 2011 and 2023"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data was used to create predictive models for the GDP of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The GDP of both countries in 2027 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "185b49b31e744256": {
+        "html_choice": "Question<br><strong>In 2026, will the urban population of Bermuda be lower than that of Comoros?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "In 2026, will the urban population of Bermuda be lower than that of Comoros?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The urban population of Bermuda and Comoros in 2026 had to be predicted using historic data"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the urban population of both countries was found between 2010 and 2022"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data was used to create predictive models for the urban population of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The urban population of both countries in 2026 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "a18dd098ef3844e0": {
+        "html_choice": "Question<br><strong>Which country will have the higher GDP in 2030: Morocco or Costa Rica?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "Which country will have the higher GDP in 2030: Morocco or Costa Rica?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the GDP of Morocco and Costa Rica in 2030"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the GDP of both countries between 2010 and 2022"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data was used to create predictive models for the GDP of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The GDP of both countries in 2030 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "c1d2d1a287454863": {
+        "html_choice": "Question<br><strong>In 2028, will the birth rate of Kenya be lower than that of United Arab Emirates?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "In 2028, will the birth rate of Kenya be lower than that of United Arab Emirates?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the birth rate of Kenya and United Arab Emirates in 2028"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the birth rate of both countries was found between 2008 and 2022"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data was used to create predictive models for the birth rate of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The birth rate of both countries in 2028 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "f8942ef25427427f": {
+        "html_choice": "Question<br><strong>Will Germany or Djibouti have a lower rural population in 2029?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "Will Germany or Djibouti have a lower rural population in 2029?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The rural population of Germany and Djibouti in 2029 had to be predicted using historic data"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the rural population of both countries was found between 2011 and 2021"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Predictive models were created for the rural population of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The rural population of both countries in 2029 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "6245b564692c4de8": {
+        "html_choice": "Question<br><strong>In 2030, will the population density of Tokelau be lower than that of Ireland?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "In 2030, will the population density of Tokelau be lower than that of Ireland?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The population density of Tokelau and Ireland in 2030 had to be predicted using historic data"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the population density of both countries between 2008 and 2023"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Predictive models were created for the population density of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The population density of both countries in 2030 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "48debbecf2624dc3": {
+        "html_choice": "Question<br><strong>In 2026, will Uganda have a lower urban population than Greenland?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "In 2026, will Uganda have a lower urban population than Greenland?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the urban population of Uganda and Greenland in 2026"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the urban population of both countries was found between 2010 and 2023"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Predictive models were created for the urban population of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The urban population of both countries in 2026 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "87c9c322b7614a30": {
+        "html_choice": "Question<br><strong>In 2029, will the GDP of Honduras be lower than that of Andorra?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "In 2029, will the GDP of Honduras be lower than that of Andorra?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The GDP of Honduras and Andorra in 2029 had to be predicted using historic data"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the GDP of both countries was found between 2009 and 2023"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data was used to create predictive models for the GDP of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The GDP of both countries in 2029 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "101af1355f804a1b": {
+        "html_choice": "Question<br><strong>Which country will have the higher life expectancy in 2029: Slovenia or San Marino?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "Which country will have the higher life expectancy in 2029: Slovenia or San Marino?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the life expectancy of Slovenia and San Marino in 2029"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the life expectancy of both countries was found between 2011 and 2023"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data was used to create predictive models for the life expectancy of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The life expectancy of both countries in 2029 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "7571c7f2c99f498e": {
+        "html_choice": "Question<br><strong>In 2029, will Sierra Leone have a lower rural population than Tuvalu?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "In 2029, will Sierra Leone have a lower rural population than Tuvalu?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the rural population of Sierra Leone and Tuvalu in 2029"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the rural population of both countries between 2009 and 2023"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Predictive models were created for the rural population of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The rural population of both countries in 2029 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "2443b8cbae3a472a": {
+        "html_choice": "Question<br><strong>In 2029, will the rural population of Indonesia be higher than that of Malawi?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "In 2029, will the rural population of Indonesia be higher than that of Malawi?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The rural population of Indonesia and Malawi in 2029 had to be predicted using historic data"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the rural population of both countries was found between 2009 and 2023"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Predictive models were created for the rural population of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The rural population of both countries in 2029 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "4459ecf803b742ba": {
+        "html_choice": "Question<br><strong>Will Saint Kitts and Nevis or Palau have a lower birth rate in 2029?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "Will Saint Kitts and Nevis or Palau have a lower birth rate in 2029?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the birth rate of Saint Kitts and Nevis and Palau in 2029"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the birth rate of both countries between 2008 and 2022"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Predictive models were created for the birth rate of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The birth rate of both countries in 2029 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "a0281eb010394bcb": {
+        "html_choice": "Question<br><strong>In 2030, will Greece have a higher urban population than Norway?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "In 2030, will Greece have a higher urban population than Norway?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The urban population of Greece and Norway in 2030 had to be predicted using historic data"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the urban population of both countries between 2010 and 2022"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data was used to create predictive models for the urban population of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The urban population of both countries in 2030 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "b8c1180b124c48c5": {
+        "html_choice": "Question<br><strong>In 2030, will Madagascar have a lower population density than the Isle of Man?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "In 2030, will Madagascar have a lower population density than the Isle of Man?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the population density of Madagascar and the Isle of Man in 2030"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the population density of both countries between 2011 and 2023"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data was used to create predictive models for the population density of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The population density of both countries in 2030 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "6ff3c6a180d24447": {
+        "html_choice": "Question<br><strong>Will Venezuela or France have a higher birth rate in 2026?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "Will Venezuela or France have a higher birth rate in 2026?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the birth rate of Venezuela and France in 2026"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the birth rate of both countries between 2008 and 2022"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data was used to create predictive models for the birth rate of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The birth rate of both countries in 2026 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "c25e9da8b2f142a8": {
+        "html_choice": "Question<br><strong>In 2028, will Germany have a higher birth rate than Iceland?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "In 2028, will Germany have a higher birth rate than Iceland?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the birth rate of Germany and Iceland in 2028"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the birth rate of both countries was found between 2008 and 2023"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data was used to create predictive models for the birth rate of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The birth rate of both countries in 2028 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "741bde419b464a79": {
+        "html_choice": "Question<br><strong>In 2026, will Seychelles have a lower population density than Belgium?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "In 2026, will Seychelles have a lower population density than Belgium?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The population density of Seychelles and Belgium in 2026 had to be predicted using historic data"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the population density of both countries was found between 2009 and 2021"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data was used to create predictive models for the population density of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The population density of both countries in 2026 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "b2170999ebc442e5": {
+        "html_choice": "Question<br><strong>In 2026, will the population density of Bhutan be lower than that of Vietnam?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "In 2026, will the population density of Bhutan be lower than that of Vietnam?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the population density of Bhutan and Vietnam in 2026"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the population density of both countries between 2011 and 2022"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Predictive models were created for the population density of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The population density of both countries in 2026 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "76b021d3585f4d24": {
+        "html_choice": "Question<br><strong>Will Turks and Caicos Islands or Barbados have a higher life expectancy in 2029?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "Will Turks and Caicos Islands or Barbados have a higher life expectancy in 2029?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The life expectancy of Turks and Caicos Islands and Barbados in 2029 had to be predicted using historic data"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the life expectancy of both countries was found between 2008 and 2021"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data was used to create predictive models for the life expectancy of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The life expectancy of both countries in 2029 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "3c7e3e1931144771": {
+        "html_choice": "Question<br><strong>In 2029, will the population of Saudi Arabia be higher than that of Belgium?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "In 2029, will the population of Saudi Arabia be higher than that of Belgium?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The population of Saudi Arabia and Belgium in 2029 had to be predicted using historic data"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the population of both countries between 2010 and 2021"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data was used to create predictive models for the population of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The population of both countries in 2029 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "be35db8acf184529": {
+        "html_choice": "Question<br><strong>Which country will have the higher urban population in 2027: the Netherlands or Latvia?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "Which country will have the higher urban population in 2027: the Netherlands or Latvia?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the urban population of the Netherlands and Latvia in 2027"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the urban population of both countries was found between 2008 and 2023"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Predictive models were created for the urban population of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The urban population of both countries in 2027 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "f2fb70f212b24d63": {
+        "html_choice": "Question<br><strong>In 2027, will the birth rate of Portugal be lower than that of Azerbaijan?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "In 2027, will the birth rate of Portugal be lower than that of Azerbaijan?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The birth rate of Portugal and Azerbaijan in 2027 had to be predicted using historic data"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the birth rate of both countries between 2010 and 2023"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data was used to create predictive models for the birth rate of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The birth rate of both countries in 2027 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "200cd1fbd1654056": {
+        "html_choice": "Question<br><strong>In 2030, will the GDP of Chile be lower than that of Turkmenistan?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "In 2030, will the GDP of Chile be lower than that of Turkmenistan?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the GDP of Chile and Turkmenistan in 2030"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the GDP of both countries was found between 2008 and 2023"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data was used to create predictive models for the GDP of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The GDP of both countries in 2030 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "1debd4f8e9064cae": {
+        "html_choice": "Question<br><strong>In 2030, will Barbados have a lower energy consumption than Saint Martin?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "In 2030, will Barbados have a lower energy consumption than Saint Martin?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the energy consumption of Barbados and Saint Martin in 2030"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the energy consumption of both countries between 2008 and 2022"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Predictive models were created for the energy consumption of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The energy consumption of both countries in 2030 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "34bcc40f4e614eae": {
+        "html_choice": "Question<br><strong>Which country will have the lower urban population in 2027: Senegal or Guinea?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "Which country will have the lower urban population in 2027: Senegal or Guinea?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The urban population of Senegal and Guinea in 2027 had to be predicted using historic data"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the urban population of both countries between 2009 and 2021"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Predictive models were created for the urban population of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The urban population of both countries in 2027 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "1ff00334fa884813": {
+        "html_choice": "Question<br><strong>In 2026, will Saint Martin have a lower birth rate than Chad?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "In 2026, will Saint Martin have a lower birth rate than Chad?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The birth rate of Saint Martin and Chad in 2026 had to be predicted using historic data"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the birth rate of both countries between 2010 and 2022"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data was used to create predictive models for the birth rate of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The birth rate of both countries in 2026 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "ca93c71f206a4c5e": {
+        "html_choice": "Question<br><strong>In 2027, will Mexico have a lower population density than Guinea-Bissau?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "In 2027, will Mexico have a lower population density than Guinea-Bissau?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The population density of Mexico and Guinea-Bissau in 2027 had to be predicted using historic data"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the population density of both countries between 2009 and 2022"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data was used to create predictive models for the population density of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The population density of both countries in 2027 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "1cb61056882a4eda": {
+        "html_choice": "Question<br><strong>In 2026, will Latvia have a higher GDP than Zambia?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "In 2026, will Latvia have a higher GDP than Zambia?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The GDP of Latvia and Zambia in 2026 had to be predicted using historic data"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data on the GDP of both countries was found between 2011 and 2022"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Predictive models were created for the GDP of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The GDP of both countries in 2026 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "f1f85a1748e647a9": {
+        "html_choice": "Question<br><strong>Will Bangladesh or Switzerland have a lower life expectancy in 2027?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "Will Bangladesh or Switzerland have a lower life expectancy in 2027?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the life expectancy of Bangladesh and Switzerland in 2027"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the life expectancy of both countries between 2008 and 2023"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Predictive models were created for the life expectancy of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The life expectancy of both countries in 2027 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "e238b9a9fe5f468f": {
+        "html_choice": "Question<br><strong>In 2030, will Germany have a higher life expectancy than Micronesia?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "In 2030, will Germany have a higher life expectancy than Micronesia?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the life expectancy of Germany and Micronesia in 2030"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the life expectancy of both countries between 2010 and 2022"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Predictive models were created for the life expectancy of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The life expectancy of both countries in 2030 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "efda5df0117c480b": {
+        "html_choice": "Question<br><strong>In 2030, will the urban population of Portugal be lower than that of Romania?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "In 2030, will the urban population of Portugal be lower than that of Romania?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the urban population of Portugal and Romania in 2030"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the urban population of both countries between 2009 and 2021"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Predictive models were created for the urban population of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The urban population of both countries in 2030 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    },
+    "16d33521ec2045d9": {
+        "html_choice": "Question<br><strong>In 2029, will India have a higher rural population than Mozambique?</strong><br><br>Select the steps that you would&nbsp;<strong>include</strong>&nbsp;in a summary of the process.",
+        "html_free": "Here are the steps you selected:<br><br>${q://QID1/ChoiceGroup/SelectedChoices}<br><br>Please rewrite these steps into a summary of the process used to reach the answer.<br>",
+        "mode": "select",
+        "template_id": "D1",
+        "question": "In 2029, will India have a higher rural population than Mozambique?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Historic data was needed to predict the rural population of India and Mozambique in 2029"
+            },
+            {
+                "step": 2,
+                "label": "object",
+                "explanation": "Data was found on the rural population of both countries between 2010 and 2021"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "This data was used to create predictive models for the rural population of each of the countries"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "The rural population of both countries in 2029 were predicted using the models"
+            },
+            {
+                "step": 5,
+                "label": "meta",
+                "explanation": "The final answer was estimated by comparing the predicted values"
+            }
+        ]
+    }
+}
