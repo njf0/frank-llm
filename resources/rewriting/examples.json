@@ -1,0 +1,34 @@
+[
+    {
+        "question": "What will be the population of France in 2026?",
+        "explanation": [
+            "The value of the population of France in 2026 is 69247799. HOW: Generated a regression function from times between 2010 and 2018.The predicted value of the population of France in 2026 is 69247799. Retrieved fact(s) from the World Bank and Wikidata knowledge sources.. WHY: Could not find the population of France in 2026. Attempted to infer the required value in 2026 by finding the population of France at other times between 2010 and 2018."
+        ]
+    },
+    {
+        "question": "Country in Africa with the lowest urban population in 2010?",
+        "explanation": [
+            "The entity whose urban population in 2010 has the minimum value of 47880.0 is Seychelles. HOW: Retrieved fact(s) from the World Bank and Wikidata knowl- edge sources. Had to solve the sub-queries before determining the urban popula- tion in 2010.",
+            "The entity whose urban population in 2010 has the minimum value of 47880.0 is Seychelles. HOW: The country values found for the sub-query include: Botswana, Algeria, Cameroon, Angola, Benin, Burundi, Cape Verde, etc. Re- trieved fact(s) from the World Bank and Wikidata knowledge sources. Had to solve the sub-queries before determining the urban population in 2010."
+        ]
+    },
+    {
+        "question": "Country in Asia with the highest en- ergy consumption in 2012?",
+        "explanation": [
+            "The entity whose energy consumption in 2010 has the maximum value of 61093297.293516 is People's Republic of China. HOW: The country values found for the sub-query include: Israel, Laos, Malaysia, Jordan, Bahrain, Japan, etc. Retrieved fact(s) from the World Bank and Wikidata knowledge sources. Had to solve the sub-queries before determining the energy consumption in 2010."
+        ]
+    },
+    {
+        "question": "What will be the population in 2025 of the country in Europe with the highest gdp in 2010?",
+        "explanation": [
+            "The value of the population of Germany in 2025 is 85632039.0. HOW: The entity whose gdp in 2010 has the maximum value of 3417094562648.95 is Germany. The entity whose gdp in 2010 has the maximum value of 3417094562648.95 is Germany. The value of the population of Germany in 2025 is 85632039. Gen- erated a regression function from times between 2010 and 2018.The predicted value of the population of Germany in 2025 is 85632039.0. Retrieved fact(s) from the World Bank and Wikidata knowledge sources. Had to solve the sub- queries before determining the population in 2025."
+        ]
+    },
+    {
+        "question": "Will the population of Ghana in 2022 be greater than the population of Belgium in 2030?",
+        "explanation": [
+            "Inferred value is 'true'. Did a comparison to determine if 31890697 is greater than 12224774. WHY: Need to solve the sub-queries to determine the items to compare. HOW: An input value for operation is 31890697.399999857. An input value for operation is 12224774.890931368. Retrieved fact(s) from the World Bank and Wikidata knowledge sources.",
+            "Inferred value is 'true'. Did a comparison to determine if 31890697 is greater than 12214670. WHY: Need to solve the sub-queries to determine the items to compare. HOW: The value of the population of Ghana in 2022 is 31890697. Generated a regression function from times between 2010 and 2018. The pre- dicted value of the population of Ghana in 2022 is 31890697. An input value for operation is 12214670. The value of the population of Belgium in 2030 is 12214670. Generated a regression function from times between 2010 and 2018. The predicted value of the population of Belgium in 2030 is 12214670. Retrieved fact(s) from the World Bank and Wikidata knowledge sources."
+        ]
+    }
+]
