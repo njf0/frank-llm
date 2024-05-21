@@ -13,7 +13,7 @@
         ]
     },
     {
-        "question": "Country in Asia with the highest en- ergy consumption in 2012?",
+        "question": "Country in Asia with the highest energy consumption in 2012?",
         "explanation": [
             "The entity whose energy consumption in 2010 has the maximum value of 61093297.293516 is People's Republic of China. HOW: The country values found for the sub-query include: Israel, Laos, Malaysia, Jordan, Bahrain, Japan, etc. Retrieved fact(s) from the World Bank and Wikidata knowledge sources. Had to solve the sub-queries before determining the energy consumption in 2010."
         ]
