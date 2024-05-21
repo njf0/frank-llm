@@ -31,6 +31,12 @@
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In Latin America and the Caribbean, which country had the lowest GDP in 2020?.\n\nProcess: 1. A list of countries in Latin America and the Caribbean was needed. 2. 49 countries in Latin America and the Caribbean, including Guadeloupe, Chile and Cuba, were found. 3. The GDP for each of these countries in 2020 was needed for a comparison. 4. Data for each country's GDP in 2020 was found. 5. The answer was found by comparing the values to each other.assistant\n\n1. Retrieved a list of countries in Latin America and the Caribbean.\n2. Identified 49 countries in Latin America and the Caribbean, including Guatemala, Chile, and Cuba.\n3. Retrieved the GDP for each of these countries in 2020.\n4. Found data for each country's GDP in 2020.\n5. Compared the values to find the country with the lowest GDP."
+            }
         ]
     },
     "1503b5f8a99e44f0": {
@@ -64,6 +70,12 @@
                 "step": 5,
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: Which country in South-eastern Asia had the highest rural population in 2019?.\n\nProcess: 1. A list of countries located in South-eastern Asia was needed. 2. 11 countries were found in South-eastern Asia, including Timor-Leste, Lao and Singapore. 3. The rural population for each of these countries in 2019 was needed for a comparison. 4. Data for each country's rural population in 2019 was found. 5. The answer was found by comparing the values to each other.assistant\n\n1. A list of countries located in South-eastern Asia was needed.\n2. 11 countries were found in South-eastern Asia, including Timor-Leste, Lao and Singapore.\n3. The rural population for each of these countries in 2019 was needed for a comparison.\n4. Data for each country's rural population in 2019 was found.\n5. The answer was found by comparing the values to each other.\n\n[1, 2, 4]"
             }
         ]
     },
@@ -99,6 +111,12 @@
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: Which country in Micronesia had the lowest rural population in 2013?.\n\nProcess: 1. A list of countries in Micronesia was needed. 2. 8 countries in Micronesia, including Nauru, the Marshall Islands and Northern Mariana Islands, were found. 3. The rural population for each of these countries in 2013 was needed for a comparison. 4. Data for each country's rural population in 2013 was found. 5. The answer was found by comparing the values to each other.assistant\n\n1. Gathered a list of countries in Micronesia.\n2. Identified the 8 countries in Micronesia, including Nauru, the Marshall Islands, and Northern Mariana Islands.\n3. Obtained the rural population for each country in 2013.\n4. Found the data for each country's rural population in 2013.\n5. Compared the values to find the country with the lowest rural population."
+            }
         ]
     },
     "81fd574645604450": {
@@ -132,6 +150,12 @@
                 "step": 5,
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: Which country in Northern America had the highest life expectancy in 2018?.\n\nProcess: 1. A list of countries in Northern America was needed. 2. 4 countries were found in Northern America, including United States, Greenland and Bermuda. 3. The life expectancy for each of these countries in 2018 was needed for a comparison. 4. Data for each country's life expectancy in 2018 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of important steps to solve the question:\n\n1. Find the countries in Northern America.\n2. Find the life expectancy for each country in 2018.\n3. Compare the values to find the country with the highest life expectancy.\n\nOutput:\n\n1. United States\n2. 78.2 years\n3. Canada\n4. 81.7 years\n5. Greenland\n6. 77.2 years\n7. Bermuda\n8. 80.9 years\n\nThe country with the highest life expectancy in 2018 was Canada with 81.7 years."
             }
         ]
     },
@@ -167,6 +191,12 @@
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In Western Europe, which country had the highest rural population in 2019?.\n\nProcess: 1. A list of countries located in Western Europe was needed. 2. 9 countries were found in Western Europe, including Belgium, Liechtenstein and Monaco. 3. The rural population for each of these countries in 2019 was needed for a comparison. 4. Data for each country's rural population in 2019 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of important steps to solve the question:\n\n1. A list of countries in Western Europe was needed.\n2. The rural population for each country in 2019 was found.\n3. The country with the highest rural population was identified.\n\nOutput:\n\n1. 1. A list of countries in Western Europe was needed.\n2. 2. The rural population for each of these countries in 2019 was found.\n3. The country with the highest rural population was found.\n\nList of important steps: [1, 2, 3]"
+            }
         ]
     },
     "48464ecee9dd4ba3": {
@@ -200,6 +230,12 @@
                 "step": 5,
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: Which country in Central Asia had the lowest birth rate in 2017?.\n\nProcess: 1. A list of countries located in Central Asia was needed. 2. 5 countries were found in Central Asia, including Uzbekistan, Kazakhstan and Turkmenistan. 3. The birth rate for each of these countries in 2017 was needed for a comparison. 4. Data for each country's birth rate in 2017 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of important steps to solve the problem:\n\n1. Identify the countries in Central Asia\n2. Find the birth rate for each country in 2017\n3. Compare the birth rates to find the lowest\n\nOutput:\n\n1. 1. Identify the countries in Central Asia\n2. 2. Find the birth rate for each country in 2017\n3. 3. Compare the birth rates to find the lowest"
             }
         ]
     },
@@ -235,6 +271,12 @@
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In Sub-Saharan Africa, which country had the lowest urban population in 2014?.\n\nProcess: 1. A list of countries located in Sub-Saharan Africa was needed. 2. 51 countries, including South Africa, Sao Tome and Principe and Sierra Leone, were found in Sub-Saharan Africa. 3. The urban population for each of these countries in 2014 was needed for a comparison. 4. Data for each country's urban population in 2014 was found. 5. The answer was found by comparing the values to each other.assistant\n\n[1, 3, 5]"
+            }
         ]
     },
     "932392c2f7814fc1": {
@@ -268,6 +310,12 @@
                 "step": 5,
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In Latin America and the Caribbean, which country had the lowest urban population in 2013?.\n\nProcess: 1. A list of countries in Latin America and the Caribbean was needed. 2. 49 countries, including Costa Rica, Panama and French Guiana, were found in Latin America and the Caribbean. 3. The urban population for each of these countries in 2013 was needed for a comparison. 4. Data for each country's urban population in 2013 was found. 5. The answer was found by comparing the values to each other.assistant\n\n[1, 2, 4, 5]"
             }
         ]
     },
@@ -303,6 +351,12 @@
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In 2020, which country in Central Asia had the lowest energy consumption?.\n\nProcess: 1. A list of countries in Central Asia was needed. 2. 5 countries in Central Asia, including Uzbekistan, Turkmenistan and Kazakhstan, were found. 3. The energy consumption for each of these countries in 2020 was needed for a comparison. 4. Data for each country's energy consumption in 2020 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of important steps to solve the problem:\n\n1. A list of countries in Central Asia was needed.\n2. 5 countries in Central Asia, including Uzbekistan, Turkmenistan and Kazakhstan, were found.\n3. The energy consumption for each of these countries in 2020 was needed for a comparison.\n4. Data for each country's energy consumption in 2020 was found.\n5. The answer was found by comparing the values to each other.\n\nHere is the list of important steps:\n\n1. 2. 5."
+            }
         ]
     },
     "458f68e3c1654489": {
@@ -336,6 +390,12 @@
                 "step": 5,
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In 2014, which country in Eastern Asia had the lowest rural population?.\n\nProcess: 1. A list of countries located in Eastern Asia was needed. 2. 8 countries in Eastern Asia, including Hong Kong, Japan and North Korea, were found. 3. The rural population for each of these countries in 2014 was needed for a comparison. 4. Data for each country's rural population in 2014 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of important steps to solve the problem:\n\n1. A list of countries in Eastern Asia was needed.\n2. The rural population for each country in 2014 was found.\n3. The country with the lowest rural population was identified.\n\nOutput:\n\n1. 1. A list of countries in Eastern Asia was needed.\n2. 2. 8 countries in Eastern Asia, including Hong Kong, Japan and North Korea, were found.\n3. 3. The rural population for each of these countries in 2014 was found.\n4. 4. The answer was found by comparing the values to each other.\n\nThe country with the lowest rural population in Eastern Asia in 2014 was North Korea."
             }
         ]
     },
@@ -371,6 +431,12 @@
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In 2018, which country in Northern Africa had the highest birth rate?.\n\nProcess: 1. A list of countries located in Northern Africa was needed. 2. 6 countries in Northern Africa, including Algeria, Morocco and Sudan, were found. 3. The birth rate for each of these countries in 2018 was needed for a comparison. 4. Data for each country's birth rate in 2018 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of important steps to solve the question:\n\n1. A list of countries in Northern Africa was needed.\n2. The countries in the list were Algeria, Morocco, and Sudan.\n3. The birth rate for each country in 2018 was needed for a comparison.\n4. Data for each country's birth rate in 2018 was found.\n5. The answer was found by comparing the values to each other.\n\nHere is the list of steps in the format you requested:\n\n1. 2. 3. 4."
+            }
         ]
     },
     "47fe92e19ff64304": {
@@ -404,6 +470,12 @@
                 "step": 5,
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In Australasia, which country had the highest GDP in 2021?.\n\nProcess: 1. A list of countries in Australasia was needed. 2. 10 countries were found in Australasia, including New Zealand, Vanuatu and Christmas Island. 3. The GDP for each of these countries in 2021 was needed for a comparison. 4. Data for each country's GDP in 2021 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of important steps to solve the question:\n\n1. A list of countries in Australasia was needed.\n2. 10 countries were found in Australasia, including New Zealand, Vanuatu and Christmas Island.\n3. The GDP for each of these countries in 2021 was needed for a comparison.\n4. Data for each country's GDP in 2021 was found.\n5. The answer was found by comparing the values to each other.\n\nHere is the list of important steps:\n\n1\n2\n3\n4\n5"
             }
         ]
     },
@@ -439,6 +511,12 @@
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: Which country in Southern Asia had the lowest rural population in 2020?.\n\nProcess: 1. A list of countries located in Southern Asia was needed. 2. 9 countries in Southern Asia, including Bhutan, Bangladesh and Iran, were found. 3. The rural population for each of these countries in 2020 was needed for a comparison. 4. Data for each country's rural population in 2020 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of the most important steps in the process:\n\n1. A list of countries in Southern Asia was needed.\n2. 9 countries in Southern Asia, including Bhutan, Bangladesh and Iran, were found.\n3. The rural population for each of these countries in 2020 was needed for a comparison.\n4. Data for each country's rural population in 2020 was found.\n5. The answer was found by comparing the values to each other.\n\nHere is the list of the selected steps:\n\n1\n2\n3\n4"
+            }
         ]
     },
     "4574410e7c644a20": {
@@ -472,6 +550,12 @@
                 "step": 5,
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: Which country in Micronesia had the lowest population density in 2013?.\n\nProcess: 1. A list of countries located in Micronesia was needed. 2. 8 countries were found in Micronesia, including the Marshall Islands, Guam and Palau. 3. The population density for each of these countries in 2013 was needed for a comparison. 4. Data for each country's population density in 2013 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of important steps to solve the problem:\n\n1.\n2.\n3.\n4.\n5."
             }
         ]
     },
@@ -507,6 +591,12 @@
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: Which country in Northern Africa had the highest GDP in 2014?.\n\nProcess: 1. A list of countries in Northern Africa was needed. 2. 6 countries in Northern Africa, including Sudan, Algeria and Tunisia, were found. 3. The GDP for each of these countries in 2014 was needed for a comparison. 4. Data for each country's GDP in 2014 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the answer:\n\n1. List of countries in Northern Africa: Sudan, Algeria, Tunisia, Morocco, Egypt, Libya, and Mauritania.\n2. GDP for each country in 2014:\n\t* Sudan: 12.4 billion USD\n\t* Algeria: 173.1 billion USD\n\t* Tunisia: 42.7 billion USD\n\t* Morocco: 183.7 billion USD\n\t* Libya: 45.7 billion USD\n\t* Mauritania: 3.6 billion USD\n3. The country with the highest GDP in 2014 was Morocco with a GDP of 183.7 billion USD."
+            }
         ]
     },
     "a8515d025673469e": {
@@ -540,6 +630,12 @@
                 "step": 5,
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In 2017, which country in Western Europe had the lowest population density?.\n\nProcess: 1. A list of countries located in Western Europe was needed. 2. 9 countries in Western Europe, including Switzerland, Monaco and France, were found. 3. The population density for each of these countries in 2017 was needed for a comparison. 4. Data for each country's population density in 2017 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of the most important steps in the process:\n\n1. A list of countries in Western Europe was needed.\n2. The population density for each of these countries in 2017 was found.\n3. The country with the lowest population density was found.\n\nOutput:\n\n1. 1. Switzerland\n2. 2. Monaco\n3. 3. France"
             }
         ]
     },
@@ -575,6 +671,12 @@
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: Which country in Australasia had the lowest life expectancy in 2013?.\n\nProcess: 1. A list of countries in Australasia was needed. 2. 10 countries, including New Caledonia, Fiji and New Zealand, were found in Australasia. 3. The life expectancy for each of these countries in 2013 was needed for a comparison. 4. Data for each country's life expectancy in 2013 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of important steps to solve the problem:\n\n1. Identify the countries in Australasia\n2. Find the life expectancy for each country in 2013\n3. Compare the values to find the country with the lowest life expectancy\n\nOutput:\n\n1. 1."
+            }
         ]
     },
     "0fdf6b416e6e4fea": {
@@ -608,6 +710,12 @@
                 "step": 5,
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In 2014, which country in Micronesia had the highest population density?.\n\nProcess: 1. A list of countries in Micronesia was needed. 2. 8 countries, including United States Minor Outlying Islands, Palau and Guam, were found in Micronesia. 3. The population density for each of these countries in 2014 was needed for a comparison. 4. Data for each country's population density in 2014 was found. 5. The answer was found by comparing the values to each other.assistant\n\n1. A list of countries in Micronesia was needed.\n2. 8 countries, including United States Minor Outlying Islands, Palau and Guam, were found in Micronesia.\n3. The population density for each of these countries in 2014 was needed for a comparison.\n4. Data for each country's population density in 2014 was found.\n5. The answer was found by comparing the values to each other.\n\n[1, 2, 3, 4, 5]"
             }
         ]
     },
@@ -643,6 +751,12 @@
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In 2014, which country in Western Asia had the highest rural population?.\n\nProcess: 1. A list of countries located in Western Asia was needed. 2. 18 countries in Western Asia, including Armenia, Syria and Kuwait, were found. 3. The rural population for each of these countries in 2014 was needed for a comparison. 4. Data for each country's rural population in 2014 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of important steps to solve the question:\n\n1. A list of countries in Western Asia was needed.\n2. The rural population for each of these countries in 2014 was found.\n3. The country with the highest rural population was found by comparing the values.\n\nOutput:\n\n1. 1\n2. 2\n3."
+            }
         ]
     },
     "6db9940535d7499a": {
@@ -676,6 +790,12 @@
                 "step": 5,
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In Micronesia, which country had the lowest GDP in 2020?.\n\nProcess: 1. A list of countries located in Micronesia was needed. 2. 8 countries in Micronesia, including Micronesia, Palau and the Marshall Islands, were found. 3. The GDP for each of these countries in 2020 was needed for a comparison. 4. Data for each country's GDP in 2020 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of important steps:\n\n1.\n2.\n3.\n4.\n5."
             }
         ]
     },
@@ -711,6 +831,12 @@
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In Central Asia, which country had the lowest life expectancy in 2012?.\n\nProcess: 1. A list of countries in Central Asia was needed. 2. 5 countries in Central Asia, including Uzbekistan, Tajikistan and Kyrgyzstan, were found. 3. The life expectancy for each of these countries in 2012 was needed for a comparison. 4. Data for each country's life expectancy in 2012 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of important steps:\n\n1.\n2.\n3.\n4.\n5."
+            }
         ]
     },
     "9ff8836e9e344485": {
@@ -744,6 +870,12 @@
                 "step": 5,
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In 2018, which country in Australasia had the highest population density?.\n\nProcess: 1. A list of countries in Australasia was needed. 2. 10 countries in Australasia, including the Solomon Islands, New Zealand and Norfolk Island, were found. 3. The population density for each of these countries in 2018 was needed for a comparison. 4. Data for each country's population density in 2018 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of important steps to solve the problem:\n\n1. 2. 3."
             }
         ]
     },
@@ -779,6 +911,12 @@
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: Which country in Western Europe had the highest rural population in 2018?.\n\nProcess: 1. A list of countries in Western Europe was needed. 2. 9 countries, including Luxembourg, the Netherlands and Liechtenstein, were found in Western Europe. 3. The rural population for each of these countries in 2018 was needed for a comparison. 4. Data for each country's rural population in 2018 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of important steps to solve the question:\n\n1. A list of countries in Western Europe was needed.\n2. 9 countries, including Luxembourg, the Netherlands and Liechtenstein, were found in Western Europe.\n3. The rural population for each of these countries in 2018 was needed for a comparison.\n4. Data for each country's rural population in 2018 was found.\n5. The answer was found by comparing the values to each other.\n\nHere is the list of selected steps:\n\n1. 2. 3. 4."
+            }
         ]
     },
     "8f991c5c6a83469a": {
@@ -812,6 +950,12 @@
                 "step": 5,
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In Southern Asia, which country had the lowest rural population in 2014?.\n\nProcess: 1. A list of countries located in Southern Asia was needed. 2. 9 countries were found in Southern Asia, including Sri Lanka, India and Pakistan. 3. The rural population for each of these countries in 2014 was needed for a comparison. 4. Data for each country's rural population in 2014 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of important steps to solve the question:\n\n1. Identify the countries in Southern Asia\n2. Find the rural population for each country in 2014\n3. Compare the values to find the country with the lowest rural population\n\nOutput:\n\n1. Sri Lanka\n2. 6,341,000"
             }
         ]
     },
@@ -847,6 +991,12 @@
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In Micronesia, which country had the lowest energy consumption in 2013?.\n\nProcess: 1. A list of countries in Micronesia was needed. 2. 8 countries, including Guam, Kiribati and the Marshall Islands, were found in Micronesia. 3. The energy consumption for each of these countries in 2013 was needed for a comparison. 4. Data for each country's energy consumption in 2013 was found. 5. The answer was found by comparing the values to each other.assistant\n\n1. Gather a list of countries in Micronesia.\n2. Identify the 8 countries in Micronesia, including Guam, Kiribati, and the Marshall Islands.\n3. Obtain the energy consumption data for each country in 2013.\n4. Find the data for each country's energy consumption in 2013.\n5. Compare the values to find the country with the lowest energy consumption."
+            }
         ]
     },
     "ea6b94e3b6cd471c": {
@@ -880,6 +1030,12 @@
                 "step": 5,
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In Western Asia, which country had the highest rural population in 2018?.\n\nProcess: 1. A list of countries in Western Asia was needed. 2. 18 countries, including Armenia, Lebanon and Azerbaijan, were found in Western Asia. 3. The rural population for each of these countries in 2018 was needed for a comparison. 4. Data for each country's rural population in 2018 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of important steps to solve the question:\n\n1. List of countries in Western Asia\n2. Find rural population data for each country in 2018\n3. Compare the values to find the country with the highest rural population"
             }
         ]
     },
@@ -915,6 +1071,12 @@
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: Which country in Southern Europe had the highest energy consumption in 2013?.\n\nProcess: 1. A list of countries located in Southern Europe was needed. 2. 16 countries were found in Southern Europe, including Slovenia, North Macedonia and Portugal. 3. The energy consumption for each of these countries in 2013 was needed for a comparison. 4. Data for each country's energy consumption in 2013 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of the most important steps of the process:\n\n1.\n2.\n3.\n4.\n5."
+            }
         ]
     },
     "ce6dadda862e4b55": {
@@ -948,6 +1110,12 @@
                 "step": 5,
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In Northern Africa, which country had the highest rural population in 2013?.\n\nProcess: 1. A list of countries located in Northern Africa was needed. 2. 6 countries were found in Northern Africa, including Algeria, Tunisia and Morocco. 3. The rural population for each of these countries in 2013 was needed for a comparison. 4. Data for each country's rural population in 2013 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of important steps to solve the question:\n\n1. 2"
             }
         ]
     },
@@ -983,6 +1151,12 @@
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In 2018, which country in Australasia had the highest birth rate?.\n\nProcess: 1. A list of countries located in Australasia was needed. 2. 10 countries in Australasia, including Christmas Island, Vanuatu and Norfolk Island, were found. 3. The birth rate for each of these countries in 2018 was needed for a comparison. 4. Data for each country's birth rate in 2018 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of important steps to solve the problem:\n\n1.\n2.\n3.\n4.\n5.\n\nOutput:\n1.\n2.\n3.\n4.\n5."
+            }
         ]
     },
     "8e9a56c7992c46af": {
@@ -1016,6 +1190,12 @@
                 "step": 5,
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In 2015, which country in Eastern Europe had the highest population?.\n\nProcess: 1. A list of countries located in Eastern Europe was needed. 2. 10 countries, including Slovakia, Hungary and Bulgaria, were found in Eastern Europe. 3. The population for each of these countries in 2015 was needed for a comparison. 4. Data for each country's population in 2015 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of the most important steps in the process:\n\n1. A list of countries in Eastern Europe was needed.\n2. The population for each of these countries in 2015 was found.\n3. The country with the highest population in 2015 was found by comparing the values.\n\nOutput:\n\n1. 1\n2. 2\n3. 3"
             }
         ]
     },
@@ -1051,6 +1231,12 @@
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In Western Europe, which country had the highest population in 2013?.\n\nProcess: 1. A list of countries located in Western Europe was needed. 2. 9 countries, including Austria, France and Germany, were found in Western Europe. 3. The population for each of these countries in 2013 was needed for a comparison. 4. Data for each country's population in 2013 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of the most important steps in the process:\n\n1. A list of countries in Western Europe was needed.\n2. The population for each of these countries in 2013 was found.\n3. The country with the highest population in 2013 was found by comparing the values.\n\nOutput:\n\n1. 1. Austria\n2. 83,185,371\n3. 2. France\n4. 65,273,511\n5. 3. Germany\n6. 80,000,000"
+            }
         ]
     },
     "f9e7949ebe7d4cdc": {
@@ -1084,6 +1270,12 @@
                 "step": 5,
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In Western Asia, which country had the highest rural population in 2019?.\n\nProcess: 1. A list of countries in Western Asia was needed. 2. 18 countries in Western Asia, including Lebanon, Syria and Azerbaijan, were found. 3. The rural population for each of these countries in 2019 was needed for a comparison. 4. Data for each country's rural population in 2019 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of the most important steps in the process:\n\n1. A list of countries in Western Asia was needed.\n2. 18 countries in Western Asia, including Lebanon, Syria and Azerbaijan, were found.\n3. The rural population for each of these countries in 2019 was needed for a comparison.\n4. Data for each country's rural population in 2019 was found.\n5. The answer was found by comparing the values to each other.\n\nHere is the list of the selected steps:\n\n1\n2\n3\n4"
             }
         ]
     },
@@ -1119,6 +1311,12 @@
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: Which country in Northern America had the highest GDP in 2020?.\n\nProcess: 1. A list of countries in Northern America was needed. 2. 4 countries in Northern America, including Greenland, United States and Canada, were found. 3. The GDP for each of these countries in 2020 was needed for a comparison. 4. Data for each country's GDP in 2020 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of the most important steps in the process:\n\n1. A list of countries in Northern America was needed.\n2. 4 countries in Northern America, including Greenland, United States and Canada, were found.\n3. The GDP for each of these countries in 2020 was needed for a comparison.\n4. Data for each country's GDP in 2020 was found.\n5. The answer was found by comparing the values to each other.\n\nHere is the list of the selected steps:\n\n1\n2\n3\n4\n5"
+            }
         ]
     },
     "b31d9a741c4d4ebe": {
@@ -1152,6 +1350,12 @@
                 "step": 5,
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: Which country in Northern Europe had the lowest rural population in 2015?.\n\nProcess: 1. A list of countries located in Northern Europe was needed. 2. 16 countries in Northern Europe, including United Kingdom, Estonia and Latvia, were found. 3. The rural population for each of these countries in 2015 was needed for a comparison. 4. Data for each country's rural population in 2015 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of important steps to solve the question:\n\n1. A list of countries in Northern Europe was needed.\n2. 16 countries in Northern Europe, including United Kingdom, Estonia and Latvia, were found.\n3. The rural population for each of these countries in 2015 was needed for a comparison.\n4. Data for each country's rural population in 2015 was found.\n5. The answer was found by comparing the values to each other.\n\nHere is the list of selected steps:\n\n1. 2. 3. 4."
             }
         ]
     },
@@ -1187,6 +1391,12 @@
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In 2017, which country in Polynesia had the lowest population density?.\n\nProcess: 1. A list of countries in Polynesia was needed. 2. 9 countries, including Tuvalu, American Samoa and Cook Islands, were found in Polynesia. 3. The population density for each of these countries in 2017 was needed for a comparison. 4. Data for each country's population density in 2017 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of important steps:\n\n1.\n2.\n3.\n4.\n5."
+            }
         ]
     },
     "0c32babb251a4dac": {
@@ -1220,6 +1430,12 @@
                 "step": 5,
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: Which country in Northern America had the lowest energy consumption in 2017?.\n\nProcess: 1. A list of countries in Northern America was needed. 2. 4 countries were found in Northern America, including Bermuda, Greenland and Canada. 3. The energy consumption for each of these countries in 2017 was needed for a comparison. 4. Data for each country's energy consumption in 2017 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of important steps to solve the question:\n\n1. A list of countries in Northern America was needed.\n2. 4 countries were found in Northern America, including Bermuda, Greenland and Canada.\n3. The energy consumption for each of these countries in 2017 was needed for a comparison.\n4. Data for each country's energy consumption in 2017 was found.\n5. The answer was found by comparing the values to each other.\n\nHere is the list of selected steps:\n\n1\n2\n3\n4"
             }
         ]
     },
@@ -1255,6 +1471,12 @@
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In Western Europe, which country had the highest urban population in 2016?.\n\nProcess: 1. A list of countries in Western Europe was needed. 2. 9 countries were found in Western Europe, including Belgium, Monaco and Switzerland. 3. The urban population for each of these countries in 2016 was needed for a comparison. 4. Data for each country's urban population in 2016 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of the most important steps in the process:\n\n1. A list of countries in Western Europe was needed.\n2. 9 countries were found in Western Europe, including Belgium, Monaco and Switzerland.\n3. The urban population for each of these countries in 2016 was needed for a comparison.\n4. Data for each country's urban population in 2016 was found.\n5. The answer was found by comparing the values to each other.\n\nHere is the list of the selected steps:\n\n1\n2\n3\n4"
+            }
         ]
     },
     "4231eadaf6c446ee": {
@@ -1288,6 +1510,12 @@
                 "step": 5,
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In 2012, which country in Polynesia had the lowest population density?.\n\nProcess: 1. A list of countries located in Polynesia was needed. 2. 9 countries, including Tonga, Samoa and Tuvalu, were found in Polynesia. 3. The population density for each of these countries in 2012 was needed for a comparison. 4. Data for each country's population density in 2012 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of important steps to solve the problem:\n\n1.\n2.\n3.\n4.\n5."
             }
         ]
     },
@@ -1323,6 +1551,12 @@
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In Polynesia, which country had the lowest energy consumption in 2016?.\n\nProcess: 1. A list of countries in Polynesia was needed. 2. 9 countries were found in Polynesia, including American Samoa, Tonga and Cook Islands. 3. The energy consumption for each of these countries in 2016 was needed for a comparison. 4. Data for each country's energy consumption in 2016 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of important steps to solve the problem:\n\n1.\n2.\n3.\n4.\n5.\n\nOutput:\n1.\n2.\n3.\n4.\n5."
+            }
         ]
     },
     "b072f147fc974990": {
@@ -1356,6 +1590,12 @@
                 "step": 5,
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: Which country in Western Asia had the highest population in 2020?.\n\nProcess: 1. A list of countries in Western Asia was needed. 2. 18 countries in Western Asia, including Syria, Iraq and Israel, were found. 3. The population for each of these countries in 2020 was needed for a comparison. 4. Data for each country's population in 2020 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the answer:\n\n1. List of countries in Western Asia: \n1. Israel\n2. Syria\n3. Iraq\n4. Lebanon\n5. Jordan\n6. Turkey\n7. Iran\n8. Egypt\n9. Cyprus\n10. Armenia\n11. Azerbaijan\n12. Georgia\n13. Turkey\n14. United Arab Emirates\n15. Qatar\n16. Bahrain\n17. Oman\n18. Kuwait\n19. Saudi Arabia\n20. Yemen\n\n2. Population of each country in 2020:\n1. Israel: 9,301,000\n2. Syria: 18,275,000\n3. Iraq: 40,222,000\n4. Lebanon: 6,856,000\n5. Jordan: 10,203,000\n6. Turkey: 84,833,000\n7. Iran: 83,783,000\n8. Egypt: 101,329,000\n9. Cyprus: 1,207,000\n10. Armenia: 2,963,000\n11. Azerbaijan: 10,400,000\n12. Georgia: 3,723,000\n13. Turkey: 84,833,000\n14. United Arab"
             }
         ]
     },
@@ -1391,6 +1631,12 @@
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: Which country in Southern Asia had the lowest energy consumption in 2016?.\n\nProcess: 1. A list of countries located in Southern Asia was needed. 2. 9 countries were found in Southern Asia, including Iran, Bhutan and Nepal. 3. The energy consumption for each of these countries in 2016 was needed for a comparison. 4. Data for each country's energy consumption in 2016 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of important steps to solve the question:\n\n1. Identify the countries in Southern Asia\n2. Find the energy consumption data for each country in 2016\n3. Compare the energy consumption values for each country\n\nOutput:\n\n1. Bhutan\n2. Nepal"
+            }
         ]
     },
     "a3f33f3dd51849b9": {
@@ -1424,6 +1670,12 @@
                 "step": 5,
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In 2019, which country in Northern Africa had the highest urban population?.\n\nProcess: 1. A list of countries in Northern Africa was needed. 2. 6 countries, including Egypt, Sudan and Morocco, were found in Northern Africa. 3. The urban population for each of these countries in 2019 was needed for a comparison. 4. Data for each country's urban population in 2019 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of important steps to solve the question:\n\n1. A list of countries in Northern Africa was needed.\n2. The urban population for each of these countries in 2019 was found.\n3. The country with the highest urban population was found.\n\nOutput:\n\n1. 1\n2. 2\n3. Morocco"
             }
         ]
     },
@@ -1459,6 +1711,12 @@
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: Which country in Australasia had the highest GDP in 2020?.\n\nProcess: 1. A list of countries in Australasia was needed. 2. 10 countries in Australasia, including Fiji, New Zealand and the Solomon Islands, were found. 3. The GDP for each of these countries in 2020 was needed for a comparison. 4. Data for each country's GDP in 2020 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of important steps to solve the question:\n\n1. A list of countries in Australasia was needed.\n2. 10 countries in Australasia, including Fiji, New Zealand and the Solomon Islands, were found.\n3. The GDP for each of these countries in 2020 was needed for a comparison.\n4. Data for each country's GDP in 2020 was found.\n5. The answer was found by comparing the values to each other.\n\nHere is the list of steps in the format you requested:\n\n1\n2\n3\n4\n5"
+            }
         ]
     },
     "e9a9b624fb9d4087": {
@@ -1492,6 +1750,12 @@
                 "step": 5,
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: Which country in Eastern Asia had the highest rural population in 2012?.\n\nProcess: 1. A list of countries in Eastern Asia was needed. 2. 8 countries were found in Eastern Asia, including Mongolia, North Korea and Macao. 3. The rural population for each of these countries in 2012 was needed for a comparison. 4. Data for each country's rural population in 2012 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of important steps to solve the question:\n\n1. A list of countries in Eastern Asia was needed.\n2. 8 countries were found in Eastern Asia, including Mongolia, North Korea and Macao.\n3. The rural population for each of these countries in 2012 was needed for a comparison.\n4. Data for each country's rural population in 2012 was found.\n5. The answer was found by comparing the values to each other.\n\nHere is the list of selected steps:\n\n1. 2. 8 countries were found in Eastern Asia, including Mongolia, North Korea and Macao.\n2. Data for each country's rural population in 2012 was found.\n3. The answer was found by comparing the values to each other.\n\nOutput:\n\n1, 2, 3"
             }
         ]
     },
@@ -1527,6 +1791,12 @@
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In Eastern Europe, which country had the lowest urban population in 2013?.\n\nProcess: 1. A list of countries in Eastern Europe was needed. 2. 10 countries in Eastern Europe, including Ukraine, Poland and Belarus, were found. 3. The urban population for each of these countries in 2013 was needed for a comparison. 4. Data for each country's urban population in 2013 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of the most important steps in the process:\n\n1. A list of countries in Eastern Europe was needed.\n2. 10 countries in Eastern Europe, including Ukraine, Poland and Belarus, were found.\n3. The urban population for each of these countries in 2013 was needed for a comparison.\n4. Data for each country's urban population in 2013 was found.\n5. The answer was found by comparing the values to each other.\n\nHere is the list of the selected steps:\n\n1\n2\n3\n4"
+            }
         ]
     },
     "ee128b2aafc84e30": {
@@ -1560,6 +1830,12 @@
                 "step": 5,
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In 2020, which country in Northern America had the lowest population density?.\n\nProcess: 1. A list of countries located in Northern America was needed. 2. 4 countries were found in Northern America, including Bermuda, Canada and Greenland. 3. The population density for each of these countries in 2020 was needed for a comparison. 4. Data for each country's population density in 2020 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of important steps to solve the question:\n\n1. A list of countries in Northern America was needed.\n2. The countries found were Bermuda, Canada, and Greenland.\n3. The population density for each country in 2020 was needed for a comparison.\n4. Data for each country's population density in 2020 was found.\n5. The answer was found by comparing the values to each other.\n\nHere is the list of selected steps:\n\n1. 1\n2. 2\n3. 4"
             }
         ]
     },
@@ -1595,6 +1871,12 @@
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In Australasia, which country had the lowest rural population in 2021?.\n\nProcess: 1. A list of countries in Australasia was needed. 2. 10 countries in Australasia, including Norfolk Island, Vanuatu and New Zealand, were found. 3. The rural population for each of these countries in 2021 was needed for a comparison. 4. Data for each country's rural population in 2021 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of important steps to solve the problem:\n\n1. A list of countries in Australasia was needed.\n2. 10 countries in Australasia, including Norfolk Island, Vanuatu and New Zealand, were found.\n3. The rural population for each of these countries in 2021 was needed for a comparison.\n4. Data for each country's rural population in 2021 was found.\n5. The answer was found by comparing the values to each other.\n\nHere is the list of important steps:\n\n1. 2. 3. 4."
+            }
         ]
     },
     "7b81645d8f304e10": {
@@ -1628,6 +1910,12 @@
                 "step": 5,
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: Which country in Northern Europe had the highest energy consumption in 2014?.\n\nProcess: 1. A list of countries located in Northern Europe was needed. 2. 16 countries in Northern Europe, including the Isle of Man, Norway and Lithuania, were found. 3. The energy consumption for each of these countries in 2014 was needed for a comparison. 4. Data for each country's energy consumption in 2014 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of the most important steps in the process:\n\n1.\n2.\n3.\n4.\n5."
             }
         ]
     },
@@ -1663,6 +1951,12 @@
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In 2012, which country in Western Asia had the highest energy consumption?.\n\nProcess: 1. A list of countries located in Western Asia was needed. 2. 18 countries, including Lebanon, Qatar and Georgia, were found in Western Asia. 3. The energy consumption for each of these countries in 2012 was needed for a comparison. 4. Data for each country's energy consumption in 2012 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of important steps to solve the question:\n\n1. A list of countries in Western Asia was needed.\n2. The energy consumption for each country in 2012 was found.\n3. The country with the highest energy consumption was identified.\n\nOutput:\n\n1. 1\n2. 2\n3. 3"
+            }
         ]
     },
     "0359e4c33dad4614": {
@@ -1696,6 +1990,12 @@
                 "step": 5,
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: Which country in Australasia had the lowest birth rate in 2015?.\n\nProcess: 1. A list of countries located in Australasia was needed. 2. 10 countries were found in Australasia, including New Caledonia, Vanuatu and Cocos Islands. 3. The birth rate for each of these countries in 2015 was needed for a comparison. 4. Data for each country's birth rate in 2015 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of important steps:\n\n1.\n2.\n3.\n4.\n5."
             }
         ]
     },
@@ -1731,6 +2031,12 @@
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In Northern Africa, which country had the lowest GDP in 2020?.\n\nProcess: 1. A list of countries in Northern Africa was needed. 2. 6 countries were found in Northern Africa, including Tunisia, Sudan and Egypt. 3. The GDP for each of these countries in 2020 was needed for a comparison. 4. Data for each country's GDP in 2020 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the answer:\n\n1. List of countries in Northern Africa: Tunisia, Sudan, Egypt, Morocco, Algeria, Libya, and Mauritania.\n2. GDP for each country in 2020:\n\t* Tunisia: 43.6 billion USD\n\t* Sudan: 12.2 billion USD\n\t* Egypt: 245.8 billion USD\n\t* Morocco: 124.8 billion USD\n\t* Algeria: 173.1 billion USD\n\t* Libya: 45.7 billion USD\n\t* Mauritania: 3.2 billion USD\n3. The country with the lowest GDP in 2020 was Mauritania with a GDP of 3.2 billion USD."
+            }
         ]
     },
     "8ae3c95451264b14": {
@@ -1764,6 +2070,12 @@
                 "step": 5,
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In Southern Asia, which country had the lowest population density in 2021?.\n\nProcess: 1. A list of countries located in Southern Asia was needed. 2. 9 countries, including the Maldives, Nepal and Afghanistan, were found in Southern Asia. 3. The population density for each of these countries in 2021 was needed for a comparison. 4. Data for each country's population density in 2021 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of important steps to solve the problem:\n\n1. Identify the countries in Southern Asia\n2. Find the population density for each country in 2021\n3. Compare the values to find the country with the lowest population density\n\nOutput:\n\n1. 1. Maldives\n2. 1. Bhutan\n3. 1. Nepal\n4. 1. Afghanistan"
             }
         ]
     },
@@ -1799,6 +2111,12 @@
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In 2018, which country in Southern Asia had the lowest life expectancy?.\n\nProcess: 1. A list of countries in Southern Asia was needed. 2. 9 countries, including Bhutan, Iran and Sri Lanka, were found in Southern Asia. 3. The life expectancy for each of these countries in 2018 was needed for a comparison. 4. Data for each country's life expectancy in 2018 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of important steps to solve the question:\n\n1. Identify the countries in Southern Asia\n2. Find the life expectancy for each country in 2018\n3. Compare the values to find the country with the lowest life expectancy\n\nOutput:\n\n1. 74.5 years (Bhutan)\n2. 74.4 years (Iran)\n3. 72.9 years (Sri Lanka)\n\nThe country with the lowest life expectancy in Southern Asia in 2018 was Bhutan with 74.5 years."
+            }
         ]
     },
     "c9363bdf11f340dd": {
@@ -1832,6 +2150,12 @@
                 "step": 5,
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: Which country in Eastern Asia had the lowest urban population in 2016?.\n\nProcess: 1. A list of countries in Eastern Asia was needed. 2. 8 countries were found in Eastern Asia, including Mongolia, South Korea and Japan. 3. The urban population for each of these countries in 2016 was needed for a comparison. 4. Data for each country's urban population in 2016 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of the most important steps in the process:\n\n1. A list of countries in Eastern Asia was needed.\n2. 8 countries were found in Eastern Asia, including Mongolia, South Korea and Japan.\n3. The urban population for each of these countries in 2016 was needed for a comparison.\n4. Data for each country's urban population in 2016 was found.\n5. The answer was found by comparing the values to each other.\n\nHere is the list of the selected steps:\n\n1\n2\n3\n4"
             }
         ]
     },
@@ -1867,6 +2191,12 @@
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In 2018, which country in Central Asia had the highest urban population?.\n\nProcess: 1. A list of countries located in Central Asia was needed. 2. 5 countries were found in Central Asia, including Tajikistan, Turkmenistan and Uzbekistan. 3. The urban population for each of these countries in 2018 was needed for a comparison. 4. Data for each country's urban population in 2018 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of important steps to solve the problem:\n\n1. Identify the countries in Central Asia\n2. Find the urban population for each country in 2018\n3. Compare the values to find the country with the highest urban population\n\nOutput:\n\n1. 1. Identify the countries in Central Asia\n2. 2. Find the urban population for each country in 2018\n3. 3. Compare the values to find the country with the highest urban population"
+            }
         ]
     },
     "3f515e45385b41b5": {
@@ -1900,6 +2230,12 @@
                 "step": 5,
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In Sub-Saharan Africa, which country had the highest rural population in 2013?.\n\nProcess: 1. A list of countries in Sub-Saharan Africa was needed. 2. 51 countries, including Eswatini, Mauritius and R\u00e9union, were found in Sub-Saharan Africa. 3. The rural population for each of these countries in 2013 was needed for a comparison. 4. Data for each country's rural population in 2013 was found. 5. The answer was found by comparing the values to each other.assistant\n\n1. Retrieved a list of countries in Sub-Saharan Africa.\n2. Identified 51 countries, including Eswatini, Mauritius, and R\u00e9union, as being in Sub-Saharan Africa.\n3. Retrieved the rural population for each of these countries in 2013.\n4. Found data for each country's rural population in 2013.\n5. Compared the values to find the country with the highest rural population."
             }
         ]
     },
@@ -1935,6 +2271,12 @@
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: Which country in Northern Europe had the highest GDP in 2021?.\n\nProcess: 1. A list of countries located in Northern Europe was needed. 2. 16 countries were found in Northern Europe, including Estonia, Latvia and the Isle of Man. 3. The GDP for each of these countries in 2021 was needed for a comparison. 4. Data for each country's GDP in 2021 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of important steps to solve the question:\n\n1.\n2.\n3.\n4.\n5.\n\nOutput:\n1.\n2.\n3.\n4.\n5."
+            }
         ]
     },
     "56711bc7fa884830": {
@@ -1968,6 +2310,12 @@
                 "step": 5,
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In Western Asia, which country had the lowest population density in 2021?.\n\nProcess: 1. A list of countries located in Western Asia was needed. 2. 18 countries, including Cyprus, United Arab Emirates and Jordan, were found in Western Asia. 3. The population density for each of these countries in 2021 was needed for a comparison. 4. Data for each country's population density in 2021 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of important steps to solve the question:\n\n1. A list of countries in Western Asia was needed.\n2. The population density for each country in 2021 was found.\n3. The country with the lowest population density was identified.\n\nOutput:\n\n1. 1. A list of countries in Western Asia was needed.\n2. 2. The population density for each of these countries in 2021 was found.\n3. The country with the lowest population density was found.\n\nList of selected steps: 1, 2, 3"
             }
         ]
     },
@@ -2003,6 +2351,12 @@
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In Eastern Europe, which country had the lowest population in 2015?.\n\nProcess: 1. A list of countries in Eastern Europe was needed. 2. 10 countries were found in Eastern Europe, including Slovakia, Czechia and Hungary. 3. The population for each of these countries in 2015 was needed for a comparison. 4. Data for each country's population in 2015 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of the most important steps in the process:\n\n1. A list of countries in Eastern Europe was needed.\n2. 10 countries were found in Eastern Europe, including Slovakia, Czechia and Hungary.\n3. The population for each of these countries in 2015 was needed for a comparison.\n4. Data for each country's population in 2015 was found.\n5. The answer was found by comparing the values to each other.\n\nHere is the list of the selected steps:\n\n1\n2\n3\n4\n5"
+            }
         ]
     },
     "bac2d5e100bc4e32": {
@@ -2036,6 +2390,12 @@
                 "step": 5,
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: Which country in Eastern Asia had the lowest birth rate in 2021?.\n\nProcess: 1. A list of countries in Eastern Asia was needed. 2. 8 countries were found in Eastern Asia, including China, Mongolia and Macao. 3. The birth rate for each of these countries in 2021 was needed for a comparison. 4. Data for each country's birth rate in 2021 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of the most important steps in the process:\n\n1. A list of countries in Eastern Asia was needed.\n2. 8 countries were found in Eastern Asia, including China, Mongolia and Macao.\n3. The birth rate for each of these countries in 2021 was needed for a comparison.\n4. Data for each country's birth rate in 2021 was found.\n5. The answer was found by comparing the values to each other.\n\nHere is the list of the selected steps:\n\n1\n2\n3\n4"
             }
         ]
     },
@@ -2071,6 +2431,12 @@
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In 2020, which country in Eastern Europe had the highest population density?.\n\nProcess: 1. A list of countries located in Eastern Europe was needed. 2. 10 countries, including Hungary, Russian Federation and Ukraine, were found in Eastern Europe. 3. The population density for each of these countries in 2020 was needed for a comparison. 4. Data for each country's population density in 2020 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of the most important steps in the process:\n\n1. A list of countries in Eastern Europe was needed.\n2. The population density for each of these countries in 2020 was found.\n3. The country with the highest population density was found.\n\nOutput:\n\n1. 1\n2. 2\n3."
+            }
         ]
     },
     "cd6817cfc7034084": {
@@ -2104,6 +2470,12 @@
                 "step": 5,
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: Which country in Sub-Saharan Africa had the highest population density in 2017?.\n\nProcess: 1. A list of countries located in Sub-Saharan Africa was needed. 2. 51 countries, including Central African Republic, Angola and Kenya, were found in Sub-Saharan Africa. 3. The population density for each of these countries in 2017 was needed for a comparison. 4. Data for each country's population density in 2017 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of important steps:\n\n1.\n2.\n3.\n4.\n5."
             }
         ]
     },
@@ -2139,6 +2511,12 @@
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In South-eastern Asia, which country had the lowest urban population in 2013?.\n\nProcess: 1. A list of countries located in South-eastern Asia was needed. 2. 11 countries, including Brunei, Myanmar and Indonesia, were found in South-eastern Asia. 3. The urban population for each of these countries in 2013 was needed for a comparison. 4. Data for each country's urban population in 2013 was found. 5. The answer was found by comparing the values to each other.assistant\n\n1. Identified countries in South-eastern Asia\n2. Found urban population data for each country in 2013\n3. Compared urban population values to find the lowest"
+            }
         ]
     },
     "4480ead1c3254319": {
@@ -2172,6 +2550,12 @@
                 "step": 5,
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In Central Asia, which country had the highest birth rate in 2013?.\n\nProcess: 1. A list of countries located in Central Asia was needed. 2. 5 countries, including Turkmenistan, Uzbekistan and Tajikistan, were found in Central Asia. 3. The birth rate for each of these countries in 2013 was needed for a comparison. 4. Data for each country's birth rate in 2013 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of important steps:\n\n1.\n2.\n3.\n4.\n5."
             }
         ]
     },
@@ -2207,6 +2591,12 @@
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In 2018, which country in Western Europe had the lowest rural population?.\n\nProcess: 1. A list of countries located in Western Europe was needed. 2. 9 countries, including Austria, Luxembourg and Monaco, were found in Western Europe. 3. The rural population for each of these countries in 2018 was needed for a comparison. 4. Data for each country's rural population in 2018 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of steps used to solve the question:\n\n1. A list of countries in Western Europe was needed.\n2. The rural population for each of these countries in 2018 was found.\n3. The country with the lowest rural population was found.\n\nOutput:\n\n1. 1\n2. 2\n3. 3"
+            }
         ]
     },
     "405ab0a8bfb342f7": {
@@ -2240,6 +2630,12 @@
                 "step": 5,
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In Sub-Saharan Africa, which country had the lowest life expectancy in 2012?.\n\nProcess: 1. A list of countries in Sub-Saharan Africa was needed. 2. 51 countries in Sub-Saharan Africa, including Angola, Tanzania and Ethiopia, were found. 3. The life expectancy for each of these countries in 2012 was needed for a comparison. 4. Data for each country's life expectancy in 2012 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of important steps:\n\n1.\n2.\n3.\n4.\n5."
             }
         ]
     },
@@ -2275,6 +2671,12 @@
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In 2013, which country in Micronesia had the highest birth rate?.\n\nProcess: 1. A list of countries in Micronesia was needed. 2. 8 countries in Micronesia, including the Marshall Islands, Kiribati and Nauru, were found. 3. The birth rate for each of these countries in 2013 was needed for a comparison. 4. Data for each country's birth rate in 2013 was found. 5. The answer was found by comparing the values to each other.assistant\n\n1, 2, 4"
+            }
         ]
     },
     "df03a22282914b01": {
@@ -2308,6 +2710,12 @@
                 "step": 5,
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In Eastern Europe, which country had the lowest rural population in 2021?.\n\nProcess: 1. A list of countries located in Eastern Europe was needed. 2. 10 countries were found in Eastern Europe, including Russian Federation, Ukraine and Hungary. 3. The rural population for each of these countries in 2021 was needed for a comparison. 4. Data for each country's rural population in 2021 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of important steps to solve the question:\n\n1. A list of countries in Eastern Europe was needed.\n2. The rural population for each of these countries in 2021 was found.\n3. The country with the lowest rural population in 2021 was found by comparing the values.\n\nOutput:\n\n1. 1. A list of countries in Eastern Europe was needed.\n2. 2. The rural population for each of these countries in 2021 was found.\n3. The country with the lowest rural population in 2021 was found by comparing the values.\n\nNote: The answer is not included in the output as it is a single number."
             }
         ]
     },
@@ -2343,6 +2751,12 @@
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: Which country in Western Asia had the highest birth rate in 2018?.\n\nProcess: 1. A list of countries in Western Asia was needed. 2. 18 countries in Western Asia, including Yemen, Georgia and United Arab Emirates, were found. 3. The birth rate for each of these countries in 2018 was needed for a comparison. 4. Data for each country's birth rate in 2018 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of important steps to solve the question:\n\n1. Find the countries in Western Asia.\n2. Find the birth rate for each country in 2018.\n3. Compare the birth rates to find the highest.\n\nOutput:\n\n1. Find the countries in Western Asia.\n2. Find the birth rate for each country in 2018.\n3. Compare the birth rates to find the highest.\n\nHere is the answer:\n\n1. Armenia had the highest birth rate in Western Asia in 2018 with a birth rate of 16.5 births per 1,000 people."
+            }
         ]
     },
     "17366e5550d7418f": {
@@ -2376,6 +2790,12 @@
                 "step": 5,
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: Which country in Northern America had the lowest birth rate in 2014?.\n\nProcess: 1. A list of countries located in Northern America was needed. 2. 4 countries were found in Northern America, including United States, Canada and Greenland. 3. The birth rate for each of these countries in 2014 was needed for a comparison. 4. Data for each country's birth rate in 2014 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of important steps to solve the question:\n\n1. A list of countries in Northern America was needed.\n2. The countries found were United States, Canada, and Greenland.\n3. The birth rate for each country in 2014 was needed for a comparison.\n4. Data for each country's birth rate in 2014 was found.\n5. The answer was found by comparing the values to each other.\n\nHere is the list of selected steps:\n\n1\n2\n3\n4"
             }
         ]
     },
@@ -2411,6 +2831,12 @@
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In Northern Africa, which country had the highest energy consumption in 2014?.\n\nProcess: 1. A list of countries located in Northern Africa was needed. 2. 6 countries in Northern Africa, including Libya, Sudan and Morocco, were found. 3. The energy consumption for each of these countries in 2014 was needed for a comparison. 4. Data for each country's energy consumption in 2014 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of important steps to solve the question:\n\n1. 2"
+            }
         ]
     },
     "5bb45d3ee6ae457d": {
@@ -2444,6 +2870,12 @@
                 "step": 5,
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In Eastern Asia, which country had the highest life expectancy in 2020?.\n\nProcess: 1. A list of countries in Eastern Asia was needed. 2. 8 countries, including China, Hong Kong and Japan, were found in Eastern Asia. 3. The life expectancy for each of these countries in 2020 was needed for a comparison. 4. Data for each country's life expectancy in 2020 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of important steps to solve the question:\n\n1. 1\n2. 2\n3. 4\n4. 5"
             }
         ]
     },
@@ -2479,6 +2911,12 @@
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In 2014, which country in Southern Europe had the highest population?.\n\nProcess: 1. A list of countries located in Southern Europe was needed. 2. 16 countries in Southern Europe, including Spain, the Vatican City and Malta, were found. 3. The population for each of these countries in 2014 was needed for a comparison. 4. Data for each country's population in 2014 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of the most important steps in the process:\n\n1.\n2.\n3.\n4.\n5."
+            }
         ]
     },
     "bbf84410dc9341ee": {
@@ -2512,6 +2950,12 @@
                 "step": 5,
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In Central Asia, which country had the highest population density in 2019?.\n\nProcess: 1. A list of countries in Central Asia was needed. 2. 5 countries were found in Central Asia, including Uzbekistan, Kyrgyzstan and Kazakhstan. 3. The population density for each of these countries in 2019 was needed for a comparison. 4. Data for each country's population density in 2019 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of important steps to solve the question:\n\n1. Find the countries in Central Asia.\n2. Find the population density for each country in 2019.\n3. Compare the population densities to find the highest.\n\nOutput:\n\n1. Find the countries in Central Asia: Kazakhstan, Kyrgyzstan, Tajikistan, Turkmenistan, and Uzbekistan.\n2. Find the population density for each country in 2019:\n\t* Kazakhstan: 6.6 people per square kilometer\n\t* Kyrgyzstan: 25.6 people per square kilometer\n\t* Tajikistan: 64.1 people per square kilometer\n\t* Turkmenistan: 9.5 people per square kilometer\n\t* Uzbekistan: 76.5 people per square kilometer\n3. Compare the population densities:\n\t* Uzbekistan has the highest population density with 76.5 people per square kilometer."
             }
         ]
     },
@@ -2547,6 +2991,12 @@
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In 2012, which country in Northern Africa had the highest rural population?.\n\nProcess: 1. A list of countries located in Northern Africa was needed. 2. 6 countries, including Tunisia, Egypt and Morocco, were found in Northern Africa. 3. The rural population for each of these countries in 2012 was needed for a comparison. 4. Data for each country's rural population in 2012 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of important steps to solve the question:\n\n1. A list of countries in Northern Africa was needed.\n2. The rural population for each of these countries in 2012 was found.\n3. The country with the highest rural population was found by comparing the values.\n\nOutput:\n\n1. 2"
+            }
         ]
     },
     "ff541aebbaeb4532": {
@@ -2580,6 +3030,12 @@
                 "step": 5,
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In Micronesia, which country had the highest population density in 2013?.\n\nProcess: 1. A list of countries located in Micronesia was needed. 2. 8 countries in Micronesia, including the Marshall Islands, Guam and Kiribati, were found. 3. The population density for each of these countries in 2013 was needed for a comparison. 4. Data for each country's population density in 2013 was found. 5. The answer was found by comparing the values to each other.assistant\n\n1. Gathered a list of countries in Micronesia.\n2. Identified the countries: Marshall Islands, Guam, and Kiribati.\n3. Found the population density for each country in 2013.\n4. Retrieved the data: Marshall Islands - 596 people per square kilometer, Guam - 450 people per square kilometer, Kiribati - 120 people per square kilometer.\n5. Compared the values to find the country with the highest population density."
             }
         ]
     },
@@ -2615,6 +3071,12 @@
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In Northern America, which country had the lowest birth rate in 2015?.\n\nProcess: 1. A list of countries in Northern America was needed. 2. 4 countries, including Greenland, United States and Canada, were found in Northern America. 3. The birth rate for each of these countries in 2015 was needed for a comparison. 4. Data for each country's birth rate in 2015 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of important steps to solve the problem:\n\n1. A list of countries in Northern America was needed.\n2. 4 countries, including Greenland, United States and Canada, were found in Northern America.\n3. The birth rate for each of these countries in 2015 was needed for a comparison.\n4. Data for each country's birth rate in 2015 was found.\n5. The answer was found by comparing the values to each other.\n\nHere is the list of selected steps:\n\n1. 2\n2. 3\n3. 4"
+            }
         ]
     },
     "b05237a014e14465": {
@@ -2648,6 +3110,12 @@
                 "step": 5,
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: Which country in Southern Asia had the highest rural population in 2018?.\n\nProcess: 1. A list of countries located in Southern Asia was needed. 2. 9 countries, including the Maldives, Nepal and Bangladesh, were found in Southern Asia. 3. The rural population for each of these countries in 2018 was needed for a comparison. 4. Data for each country's rural population in 2018 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of important steps to solve the question:\n\n1. Identify the countries in Southern Asia\n2. Find the rural population for each country in 2018\n3. Compare the values to find the country with the highest rural population\n\nOutput:\n\n1. 1. Identify the countries in Southern Asia\n2. 2. Find the rural population for each country in 2018\n3. 3. Compare the values to find the country with the highest rural population"
             }
         ]
     },
@@ -2683,6 +3151,12 @@
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In Western Europe, which country had the highest birth rate in 2018?.\n\nProcess: 1. A list of countries located in Western Europe was needed. 2. 9 countries in Western Europe, including Switzerland, Germany and Austria, were found. 3. The birth rate for each of these countries in 2018 was needed for a comparison. 4. Data for each country's birth rate in 2018 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of important steps to solve the question:\n\n1. A list of countries in Western Europe was needed.\n2. The birth rate for each of these countries in 2018 was found.\n3. The country with the highest birth rate was identified.\n\nOutput:\n\n1. 1\n2. 2\n3. 1"
+            }
         ]
     },
     "111551562b0140f6": {
@@ -2716,6 +3190,12 @@
                 "step": 5,
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In 2017, which country in Northern Europe had the highest GDP?.\n\nProcess: 1. A list of countries located in Northern Europe was needed. 2. 16 countries, including United Kingdom, Iceland and the Isle of Man, were found in Northern Europe. 3. The GDP for each of these countries in 2017 was needed for a comparison. 4. Data for each country's GDP in 2017 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of important steps to solve the question:\n\n1. A list of countries in Northern Europe was needed.\n2. The GDP for each country in 2017 was found.\n3. The country with the highest GDP was identified.\n\nOutput:\n\n1. 1\n2. 2\n3. 3"
             }
         ]
     },
@@ -2751,6 +3231,12 @@
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In 2019, which country in Central Asia had the highest energy consumption?.\n\nProcess: 1. A list of countries in Central Asia was needed. 2. 5 countries were found in Central Asia, including Turkmenistan, Tajikistan and Uzbekistan. 3. The energy consumption for each of these countries in 2019 was needed for a comparison. 4. Data for each country's energy consumption in 2019 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of important steps to solve the problem:\n\n1. Identify the countries in Central Asia\n2. Find the energy consumption data for each country in 2019\n3. Compare the energy consumption values to find the highest\n\nOutput:\n\n1. 2"
+            }
         ]
     },
     "b35aefe176b64879": {
@@ -2784,6 +3270,12 @@
                 "step": 5,
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In 2014, which country in Central Asia had the highest population density?.\n\nProcess: 1. A list of countries in Central Asia was needed. 2. 5 countries, including Tajikistan, Kyrgyzstan and Uzbekistan, were found in Central Asia. 3. The population density for each of these countries in 2014 was needed for a comparison. 4. Data for each country's population density in 2014 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of important steps to solve the problem:\n\n1. 2"
             }
         ]
     },
@@ -2819,6 +3311,12 @@
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: Which country in Australasia had the highest birth rate in 2018?.\n\nProcess: 1. A list of countries in Australasia was needed. 2. 10 countries were found in Australasia, including New Caledonia, Norfolk Island and Cocos Islands. 3. The birth rate for each of these countries in 2018 was needed for a comparison. 4. Data for each country's birth rate in 2018 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of important steps to solve the problem:\n\n1. A list of countries in Australasia was needed.\n2. 10 countries were found in Australasia, including New Caledonia, Norfolk Island and Cocos Islands.\n3. The birth rate for each of these countries in 2018 was needed for a comparison.\n4. Data for each country's birth rate in 2018 was found.\n5. The answer was found by comparing the values to each other.\n\nHere is the list of important steps:\n\n1. 2"
+            }
         ]
     },
     "daae65b1f18b47f4": {
@@ -2852,6 +3350,12 @@
                 "step": 5,
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: Which country in Western Asia had the lowest birth rate in 2016?.\n\nProcess: 1. A list of countries in Western Asia was needed. 2. 18 countries were found in Western Asia, including Oman, Palestine and Armenia. 3. The birth rate for each of these countries in 2016 was needed for a comparison. 4. Data for each country's birth rate in 2016 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of steps that are most important for inclusion in a summary explanation of the process:\n\n1. A list of countries in Western Asia was needed.\n2. The birth rate for each of these countries in 2016 was found.\n3. The answer was found by comparing the values to each other.\n\nHere is the list of steps in the format of numbers:\n\n1. 1. A list of countries in Western Asia was needed.\n2. 18 countries were found in Western Asia, including Oman, Palestine and Armenia.\n3. 4. Data for each country's birth rate in 2016 was found.\n4. 5. The answer was found by comparing the values to each other."
             }
         ]
     },
@@ -2887,6 +3391,12 @@
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In 2018, which country in Australasia had the highest population density?.\n\nProcess: 1. A list of countries located in Australasia was needed. 2. 10 countries, including Norfolk Island, Cocos Islands and New Caledonia, were found in Australasia. 3. The population density for each of these countries in 2018 was needed for a comparison. 4. Data for each country's population density in 2018 was found. 5. The answer was found by comparing the values to each other.assistant\n\n1. A list of countries in Australasia was compiled.\n2. The population density for each country in 2018 was found.\n3. The country with the highest population density was identified."
+            }
         ]
     },
     "1e4c8caa852643ab": {
@@ -2920,6 +3430,12 @@
                 "step": 5,
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In 2021, which country in Latin America and the Caribbean had the highest rural population?.\n\nProcess: 1. A list of countries in Latin America and the Caribbean was needed. 2. 49 countries, including Argentina, Dominica and Haiti, were found in Latin America and the Caribbean. 3. The rural population for each of these countries in 2021 was needed for a comparison. 4. Data for each country's rural population in 2021 was found. 5. The answer was found by comparing the values to each other.assistant\n\n[1, 4]"
             }
         ]
     },
@@ -2955,6 +3471,12 @@
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: Which country in Australasia had the highest birth rate in 2019?.\n\nProcess: 1. A list of countries located in Australasia was needed. 2. 10 countries, including Vanuatu, New Zealand and Christmas Island, were found in Australasia. 3. The birth rate for each of these countries in 2019 was needed for a comparison. 4. Data for each country's birth rate in 2019 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of important steps to solve the problem:\n\n1.\n2.\n3.\n4.\n5.\n\nOutput:\n1.\n2.\n3.\n4.\n5."
+            }
         ]
     },
     "0a6379c5e7ba4089": {
@@ -2988,6 +3510,12 @@
                 "step": 5,
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: Which country in Southern Asia had the highest population in 2019?.\n\nProcess: 1. A list of countries located in Southern Asia was needed. 2. 9 countries were found in Southern Asia, including Bhutan, Pakistan and the Maldives. 3. The population for each of these countries in 2019 was needed for a comparison. 4. Data for each country's population in 2019 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of the most important steps in the process:\n\n1.\n2.\n3.\n4.\n5."
             }
         ]
     },
@@ -3023,6 +3551,12 @@
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In Eastern Asia, which country had the highest rural population in 2017?.\n\nProcess: 1. A list of countries located in Eastern Asia was needed. 2. 8 countries, including Mongolia, Hong Kong and China, were found in Eastern Asia. 3. The rural population for each of these countries in 2017 was needed for a comparison. 4. Data for each country's rural population in 2017 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of important steps to solve the question:\n\n1. Identify the countries in Eastern Asia\n2. Find the rural population for each country in 2017\n3. Compare the values to find the country with the highest rural population\n\nOutput:\n\n1. 1. Mongolia\n2. 3,354,000"
+            }
         ]
     },
     "ca1a710bee7e406e": {
@@ -3056,6 +3590,12 @@
                 "step": 5,
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: Which country in Latin America and the Caribbean had the lowest GDP in 2013?.\n\nProcess: 1. A list of countries located in Latin America and the Caribbean was needed. 2. 49 countries, including Ecuador, Grenada and Brazil, were found in Latin America and the Caribbean. 3. The GDP for each of these countries in 2013 was needed for a comparison. 4. Data for each country's GDP in 2013 was found. 5. The answer was found by comparing the values to each other.assistant\n\n1. Gather a list of countries in Latin America and the Caribbean.\n2. Find the GDP for each country in 2013.\n3. Compare the values to find the lowest GDP.\n4. Identify the country with the lowest GDP.\n\nSelected steps: 1, 2, 3, 4"
             }
         ]
     },
@@ -3091,6 +3631,12 @@
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In Western Asia, which country had the highest population in 2019?.\n\nProcess: 1. A list of countries located in Western Asia was needed. 2. 18 countries were found in Western Asia, including Qatar, Iraq and Lebanon. 3. The population for each of these countries in 2019 was needed for a comparison. 4. Data for each country's population in 2019 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of the most important steps in the process:\n\n1. A list of countries in Western Asia was needed.\n2. The population for each of these countries in 2019 was found.\n3. The country with the highest population in 2019 was found by comparing the values.\n\nOutput:\n\n1. 1. A list of countries in Western Asia was needed.\n2. 18 countries were found in Western Asia, including Qatar, Iraq and Lebanon.\n3. The country with the highest population in 2019 was Qatar with a population of 2,641,000."
+            }
         ]
     },
     "cc4d7ccc757a413c": {
@@ -3124,6 +3670,12 @@
                 "step": 5,
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In 2015, which country in Eastern Europe had the highest birth rate?.\n\nProcess: 1. A list of countries in Eastern Europe was needed. 2. 10 countries in Eastern Europe, including Hungary, Moldova and Ukraine, were found. 3. The birth rate for each of these countries in 2015 was needed for a comparison. 4. Data for each country's birth rate in 2015 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of important steps to solve the question:\n\n1. A list of countries in Eastern Europe was needed.\n2. 10 countries in Eastern Europe, including Hungary, Moldova and Ukraine, were found.\n3. The birth rate for each of these countries in 2015 was needed for a comparison.\n4. Data for each country's birth rate in 2015 was found.\n5. The answer was found by comparing the values to each other.\n\nHere is the list of important steps:\n\n1. 2\n2. 3\n3. 4\n4. 5"
             }
         ]
     },
@@ -3159,6 +3711,12 @@
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In Northern Africa, which country had the lowest rural population in 2017?.\n\nProcess: 1. A list of countries in Northern Africa was needed. 2. 6 countries were found in Northern Africa, including Morocco, Tunisia and Libya. 3. The rural population for each of these countries in 2017 was needed for a comparison. 4. Data for each country's rural population in 2017 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of steps with their corresponding numbers:\n\n1. A list of countries in Northern Africa was needed. (1)\n2. 6 countries were found in Northern Africa, including Morocco, Tunisia and Libya. (2)\n3. The rural population for each of these countries in 2017 was needed for a comparison. (3)\n4. Data for each country's rural population in 2017 was found. (4)\n5. The answer was found by comparing the values to each other. (5)\n\nHere is the answer:\n\n1. Morocco had the lowest rural population in 2017 with a population of 2,444,000."
+            }
         ]
     },
     "610aff57ec0b4054": {
@@ -3192,6 +3750,12 @@
                 "step": 5,
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In Eastern Europe, which country had the highest population density in 2013?.\n\nProcess: 1. A list of countries in Eastern Europe was needed. 2. 10 countries were found in Eastern Europe, including Czechia, Ukraine and Bulgaria. 3. The population density for each of these countries in 2013 was needed for a comparison. 4. Data for each country's population density in 2013 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of the most important steps of the process:\n\n1.\n2.\n3.\n4.\n5."
             }
         ]
     },
@@ -3227,6 +3791,12 @@
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In 2012, which country in Western Europe had the highest birth rate?.\n\nProcess: 1. A list of countries in Western Europe was needed. 2. 9 countries in Western Europe, including Belgium, Liechtenstein and Luxembourg, were found. 3. The birth rate for each of these countries in 2012 was needed for a comparison. 4. Data for each country's birth rate in 2012 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of important steps to solve the question:\n\n1. A list of countries in Western Europe was needed.\n2. 9 countries in Western Europe, including Belgium, Liechtenstein and Luxembourg, were found.\n3. The birth rate for each of these countries in 2012 was needed for a comparison.\n4. Data for each country's birth rate in 2012 was found.\n5. The answer was found by comparing the values to each other.\n\nHere is the list of selected steps:\n\n1. 2. 3. 4."
+            }
         ]
     },
     "e91a7d63d2bd4b6d": {
@@ -3260,6 +3830,12 @@
                 "step": 5,
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In 2014, which country in Southern Europe had the lowest life expectancy?.\n\nProcess: 1. A list of countries located in Southern Europe was needed. 2. 16 countries in Southern Europe, including Gibraltar, Malta and Portugal, were found. 3. The life expectancy for each of these countries in 2014 was needed for a comparison. 4. Data for each country's life expectancy in 2014 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of the most important steps in the process:\n\n1. A list of countries in Southern Europe was needed.\n2. The life expectancy for each of these countries in 2014 was found.\n3. The answer was found by comparing the values to each other.\n\nHere is the list of the selected steps:\n\n1\n2\n3"
             }
         ]
     },
@@ -3295,6 +3871,12 @@
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In Western Europe, which country had the highest population in 2018?.\n\nProcess: 1. A list of countries located in Western Europe was needed. 2. 9 countries, including Switzerland, Austria and France, were found in Western Europe. 3. The population for each of these countries in 2018 was needed for a comparison. 4. Data for each country's population in 2018 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of the most important steps in the process:\n\n1.\n2.\n3.\n4.\n5."
+            }
         ]
     },
     "7bc53b066a984614": {
@@ -3328,6 +3910,12 @@
                 "step": 5,
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: Which country in Northern Europe had the highest urban population in 2021?.\n\nProcess: 1. A list of countries located in Northern Europe was needed. 2. 16 countries, including Latvia, the Isle of Man and Iceland, were found in Northern Europe. 3. The urban population for each of these countries in 2021 was needed for a comparison. 4. Data for each country's urban population in 2021 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of the most important steps in the process:\n\n1.\n2.\n3.\n4.\n5."
             }
         ]
     },
@@ -3363,6 +3951,12 @@
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: Which country in Eastern Asia had the highest population density in 2013?.\n\nProcess: 1. A list of countries located in Eastern Asia was needed. 2. 8 countries in Eastern Asia, including Hong Kong, Macao and Japan, were found. 3. The population density for each of these countries in 2013 was needed for a comparison. 4. Data for each country's population density in 2013 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of important steps to solve the question:\n\n1. A list of countries in Eastern Asia was needed.\n2. The population density for each country in 2013 was found.\n3. The country with the highest population density was identified.\n\nOutput:\n\n1. 1. A list of countries in Eastern Asia was needed.\n2. 2. The population density for each of these countries in 2013 was found.\n3. The country with the highest population density was Japan with a population density of 380 people per square kilometer."
+            }
         ]
     },
     "555ad629b284401a": {
@@ -3396,6 +3990,12 @@
                 "step": 5,
                 "label": "meta",
                 "explanation": "The answer was found by comparing the values to each other"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In Micronesia, which country had the lowest urban population in 2019?.\n\nProcess: 1. A list of countries in Micronesia was needed. 2. 8 countries were found in Micronesia, including Guam, the Marshall Islands and Nauru. 3. The urban population for each of these countries in 2019 was needed for a comparison. 4. Data for each country's urban population in 2019 was found. 5. The answer was found by comparing the values to each other.assistant\n\nHere is the list of important steps:\n\n1.\n2.\n3.\n4.\n5."
             }
         ]
     }

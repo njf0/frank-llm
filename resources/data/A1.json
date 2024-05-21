@@ -26,6 +26,12 @@
                 "label": "meta",
                 "explanation": "The answer was estimated using this predictive model"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In 2026, what will be the population density of Liechtenstein?.\n\nProcess: 1. The population density of Liechtenstein in 2026 had to be predicted using historic data. 2. Data was found on the population density of Liechtenstein between 2010 and 2021. 3. A predictive model was created using this data. 4. The answer was estimated using this predictive model.assistant\n\nHere is the list of important steps to solve the problem:\n\n1. Find historic population density data of Liechtenstein between 2010 and 2021.\n2. Create a predictive model using this data.\n3. Use the predictive model to estimate the population density of Liechtenstein in 2026.\n\nOutput:\n\n1. Find historic population density data of Liechtenstein between 2010 and 2021.\n2. Create a predictive model using this data.\n3. The answer is estimated using this predictive model.\n\nNote: The actual population density of Liechtenstein in 2026 is not publicly available, so this is an estimation based on historical trends."
+            }
         ]
     },
     "970d19defb444708": {
@@ -54,6 +60,12 @@
                 "step": 4,
                 "label": "meta",
                 "explanation": "The answer was estimated using this predictive model"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: What will be New Caledonia's urban population in 2029?.\n\nProcess: 1. Needed to use historic data to predict the urban population of New Caledonia in 2029. 2. Data was found on the urban population of New Caledonia between 2010 and 2021. 3. A predictive model was created using this data. 4. The answer was estimated using this predictive model.assistant\n\nHere is the list of important steps to solve the problem:\n\n1. Use historic data\n2. Find data on urban population of New Caledonia between 2010 and 2021\n3. Create a predictive model using this data\n4. Estimate the urban population of New Caledonia in 2029 using the predictive model"
             }
         ]
     },
@@ -84,6 +96,12 @@
                 "label": "meta",
                 "explanation": "The answer was estimated using this predictive model"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: What will be the energy consumption of American Samoa in 2026?.\n\nProcess: 1. Needed to use historic data to predict the energy consumption of American Samoa in 2026. 2. Data on the energy consumption of American Samoa was found between 2008 and 2022. 3. A predictive model was fit to this data. 4. The answer was estimated using this predictive model.assistant\n\nHere is the process to solve the question:\n\n1. Needed to use historic data to predict the energy consumption of American Samoa in 2026.\n2. Data on the energy consumption of American Samoa was found between 2008 and 2022.\n3. A predictive model was fit to this data.\n4. The answer was estimated using this predictive model.\n\nHere are the most important steps of the process:\n\n1. Gather historic data on energy consumption in American Samoa between 2008 and 2022.\n2. Fit a predictive model to the data.\n3. Use the model to estimate the energy consumption of American Samoa in 2026.\n\nHere is the list of the most important steps:\n\n1. 1\n2. 2\n3. 4"
+            }
         ]
     },
     "b863227a2bb543a7": {
@@ -112,6 +130,12 @@
                 "step": 4,
                 "label": "meta",
                 "explanation": "The predictive model was used to estimate the answer"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: What will be the GDP of Cook Islands in 2029?.\n\nProcess: 1. Needed to use historic data to predict the GDP of Cook Islands in 2029. 2. Data was found on the GDP of Cook Islands between 2008 and 2023. 3. This data found was used to create a predictive model. 4. The predictive model was used to estimate the answer.assistant\n\nHere is the process to solve the question:\n\n1. **Gather historic data**: Collect GDP data of Cook Islands from 2008 to 2023.\n2. **Create a predictive model**: Use the gathered data to create a model that can predict the GDP of Cook Islands in 2029.\n3. **Estimate the answer**: Use the predictive model to estimate the GDP of Cook Islands in 2029.\n\n**Important steps:**\n\n1. Gather historic data\n2. Create a predictive model\n3. Estimate the answer\n\n**Output:**\n\n1. The GDP of Cook Islands in 2029 is estimated to be [insert answer]."
             }
         ]
     },
@@ -142,6 +166,12 @@
                 "label": "meta",
                 "explanation": "The answer was estimated using this predictive model"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: What will be Jordan's energy consumption in 2030?.\n\nProcess: 1. Needed to use historic data to predict the energy consumption of Jordan in 2030. 2. Data on the energy consumption of Jordan was found between 2011 and 2021. 3. A predictive model was fit to this data. 4. The answer was estimated using this predictive model.assistant\n\nHere is the process that was used to solve the question:\n\n1. Needed to use historic data to predict the energy consumption of Jordan in 2030.\n2. Data on the energy consumption of Jordan was found between 2011 and 2021.\n3. A predictive model was fit to this data.\n4. The answer was estimated using this predictive model.\n\nHere are the most important steps of the process:\n\n1. Use historic data\n2. Fit a predictive model\n3. Estimate the answer\n\nHere is the output in the format of a list containing the numbers of the selected steps:\n\n1. 1\n2. 2\n3. 4"
+            }
         ]
     },
     "29dfc16a7c7f4873": {
@@ -170,6 +200,12 @@
                 "step": 4,
                 "label": "meta",
                 "explanation": "The predictive model was used to estimate the answer"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: What will be Cuba's life expectancy in 2029?.\n\nProcess: 1. Historic data was needed to predict the life expectancy of Cuba in 2029. 2. Data was found on the life expectancy of Cuba between 2010 and 2023. 3. A predictive model was created using this data. 4. The predictive model was used to estimate the answer.assistant\n\nHere is the process that was used to solve the question:\n\n1. Historic data was needed to predict the life expectancy of Cuba in 2029.\n2. Data was found on the life expectancy of Cuba between 2010 and 2023.\n3. A predictive model was created using this data.\n4. The predictive model was used to estimate the answer.\n\nHere are the most important steps of the process:\n\n1. Gather historic data on the life expectancy of Cuba between 2010 and 2023.\n2. Create a predictive model using the gathered data.\n3. Use the predictive model to estimate the life expectancy of Cuba in 2029.\n\nHere is the list of the most important steps:\n\n1. 1\n2. 2\n3. 4"
             }
         ]
     },
@@ -200,6 +236,12 @@
                 "label": "meta",
                 "explanation": "The answer was estimated using this predictive model"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: What will be the GDP of Thailand in 2029?.\n\nProcess: 1. The GDP of Thailand in 2029 had to be predicted using historic data. 2. Data was found on the GDP of Thailand between 2010 and 2022. 3. This data found was used to create a predictive model. 4. The answer was estimated using this predictive model.assistant\n\nHere is the process to solve the question:\n\n1. Gather historic data: The GDP of Thailand between 2010 and 2022 was found.\n2. Create a predictive model: The data was used to create a model that can predict the GDP of Thailand in 2029.\n3. Estimate the answer: The model was used to estimate the GDP of Thailand in 2029.\n\nHere are the most important steps of the process:\n\n1. Gather historic data\n2. Create a predictive model\n3. Estimate the answer\n\nHere is the output in the required format:\n\n1. 1\n2. 2\n3."
+            }
         ]
     },
     "906a35a29cc84441": {
@@ -228,6 +270,12 @@
                 "step": 4,
                 "label": "meta",
                 "explanation": "The predictive model was used to estimate the answer"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In 2027, what will be Indonesia's population density?.\n\nProcess: 1. Historic data was needed to predict the population density of Indonesia in 2027. 2. Data on the population density of Indonesia was found between 2010 and 2022. 3. A predictive model was fit to this data. 4. The predictive model was used to estimate the answer.assistant\n\nHere is the process to solve the question:\n\n1. Historic data was needed to predict the population density of Indonesia in 2027.\n2. Data on the population density of Indonesia was found between 2010 and 2022.\n3. A predictive model was fit to this data.\n4. The predictive model was used to estimate the answer.\n\nHere are the most important steps of the process:\n\n1. Gather historic data\n2. Fit a predictive model\n3. Use the model to estimate the answer\n\nHere is the list of the most important steps:\n\n1. 1\n2. 2\n3. 4"
             }
         ]
     },
@@ -258,6 +306,12 @@
                 "label": "meta",
                 "explanation": "The answer was estimated using this predictive model"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: What will be the population of Cuba in 2029?.\n\nProcess: 1. The population of Cuba in 2029 had to be predicted using historic data. 2. Data was found on the population of Cuba between 2010 and 2021. 3. A predictive model was fit to this data. 4. The answer was estimated using this predictive model.assistant\n\nHere is the process to solve the question:\n\n1. The population of Cuba in 2029 had to be predicted using historic data.\n2. Data was found on the population of Cuba between 2010 and 2021.\n3. A predictive model was fit to this data.\n4. The answer was estimated using this predictive model.\n\nHere are the most important steps of the process:\n\n1. Predictive model was fit to the data.\n2. The answer was estimated using the predictive model.\n\nHere is the output in the required format:\n\n1. Predictive model was fit to the data.\n2. The answer was estimated using the predictive model.\n\nNote: The actual population of Cuba in 2029 is not available, as the data is not yet available. The answer provided is an estimation based on the predictive model."
+            }
         ]
     },
     "d8355e7263e04ab0": {
@@ -286,6 +340,12 @@
                 "step": 4,
                 "label": "meta",
                 "explanation": "The answer was estimated using this predictive model"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In 2029, what will be Democratic Republic of the Congo's GDP?.\n\nProcess: 1. Needed to use historic data to predict the GDP of Democratic Republic of the Congo in 2029. 2. Data was found on the GDP of Democratic Republic of the Congo between 2009 and 2023. 3. A predictive model was created using this data. 4. The answer was estimated using this predictive model.assistant\n\nHere is the list of important steps to solve the problem:\n\n1. Use historic data to predict the GDP of Democratic Republic of the Congo in 2029.\n2. Find data on the GDP of Democratic Republic of the Congo between 2009 and 2023.\n3. Create a predictive model using this data.\n4. Estimate the answer using this predictive model.\n\nOutput:\n\n1.\n2.\n3.\n4."
             }
         ]
     },
@@ -316,6 +376,12 @@
                 "label": "meta",
                 "explanation": "The predictive model was used to estimate the answer"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In 2029, what will be the GDP of Tanzania?.\n\nProcess: 1. Needed to use historic data to predict the GDP of Tanzania in 2029. 2. Data was found on the GDP of Tanzania between 2009 and 2021. 3. A predictive model was created using this data. 4. The predictive model was used to estimate the answer.assistant\n\nHere is the process to solve the question:\n\n1. **Needed to use historic data**: The GDP of Tanzania between 2009 and 2021 was used to predict the GDP of Tanzania in 2029.\n\n2. **Data was found on the GDP of Tanzania between 2009 and 2021**: The GDP of Tanzania was found on the World Bank website.\n\n3. **A predictive model was created using this data**: A predictive model was created using the GDP data of Tanzania between 2009 and 2021.\n\n4. **The predictive model was used to estimate the answer**: The predictive model was used to estimate the GDP of Tanzania in 2029.\n\nHere are the most important steps of the process:\n\n1. Gather historic data\n2. Create a predictive model\n3. Use the model to estimate the answer\n\nHere is the output in the required format:\n\n1. 1. Gather historic data\n2. 2. Create a predictive model\n3. 3. Use the model to estimate the answer"
+            }
         ]
     },
     "3647f9c5e36f4f93": {
@@ -344,6 +410,12 @@
                 "step": 4,
                 "label": "meta",
                 "explanation": "The answer was estimated using this predictive model"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: What will be United States Minor Outlying Islands's population density in 2028?.\n\nProcess: 1. Needed to use historic data to predict the population density of United States Minor Outlying Islands in 2028. 2. Data on the population density of United States Minor Outlying Islands was found between 2008 and 2023. 3. A predictive model was created using this data. 4. The answer was estimated using this predictive model.assistant\n\n1.\n2.\n3.\n4."
             }
         ]
     },
@@ -374,6 +446,12 @@
                 "label": "meta",
                 "explanation": "The answer was estimated using this predictive model"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In 2027, what will be Mauritius's population density?.\n\nProcess: 1. Historic data was needed to predict the population density of Mauritius in 2027. 2. Data on the population density of Mauritius was found between 2008 and 2021. 3. A predictive model was fit to this data. 4. The answer was estimated using this predictive model.assistant\n\nHere is the process to solve the question:\n\n1. Historic data was needed to predict the population density of Mauritius in 2027.\n2. Data on the population density of Mauritius was found between 2008 and 2021.\n3. A predictive model was fit to this data.\n4. The answer was estimated using this predictive model.\n\nHere are the most important steps of the process:\n\n1. Gather historic data\n2. Fit a predictive model\n3. Estimate the answer using the predictive model\n\nHere is the list of the most important steps:\n\n1. 1\n2. 2\n3. 4"
+            }
         ]
     },
     "8f76275cc7004919": {
@@ -402,6 +480,12 @@
                 "step": 4,
                 "label": "meta",
                 "explanation": "The predictive model was used to estimate the answer"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In 2029, what will be Ecuador's urban population?.\n\nProcess: 1. The urban population of Ecuador in 2029 had to be predicted using historic data. 2. Data was found on the urban population of Ecuador between 2009 and 2023. 3. A predictive model was fit to this data. 4. The predictive model was used to estimate the answer.assistant\n\nHere is the process to solve the question:\n\n1. The urban population of Ecuador in 2029 had to be predicted using historic data.\n2. Data was found on the urban population of Ecuador between 2009 and 2023.\n3. A predictive model was fit to this data.\n4. The predictive model was used to estimate the answer.\n\nHere are the most important steps of the process:\n\n1. Predictive model\n2. Data collection\n3. Data analysis\n4. Predictive model estimation\n\nHere is the output in the required format:\n\n1. 1\n2. 2\n3. 3\n4. 4"
             }
         ]
     },
@@ -432,6 +516,12 @@
                 "label": "meta",
                 "explanation": "The predictive model was used to estimate the answer"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: What will be the life expectancy of Djibouti in 2026?.\n\nProcess: 1. The life expectancy of Djibouti in 2026 had to be predicted using historic data. 2. Data on the life expectancy of Djibouti was found between 2011 and 2021. 3. This data found was used to create a predictive model. 4. The predictive model was used to estimate the answer.assistant\n\nHere is the list of important steps to predict the life expectancy of Djibouti in 2026:\n\n1.\n2.\n3.\n4."
+            }
         ]
     },
     "19a2344ab56d4a4f": {
@@ -460,6 +550,12 @@
                 "step": 4,
                 "label": "meta",
                 "explanation": "The answer was estimated using this predictive model"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: What will be Libya's GDP in 2027?.\n\nProcess: 1. Needed to use historic data to predict the GDP of Libya in 2027. 2. Data was found on the GDP of Libya between 2009 and 2021. 3. A predictive model was created using this data. 4. The answer was estimated using this predictive model.assistant\n\nHere is the process that was used to solve the question:\n\n1. Needed to use historic data to predict the GDP of Libya in 2027.\n2. Data was found on the GDP of Libya between 2009 and 2021.\n3. A predictive model was created using this data.\n4. The answer was estimated using this predictive model.\n\nHere are the most important steps of the process:\n\n1. Gather historic data on the GDP of Libya between 2009 and 2021.\n2. Create a predictive model using the gathered data.\n3. Use the predictive model to estimate the GDP of Libya in 2027.\n\nHere is the list of the most important steps:\n\n1. Gather historic data on the GDP of Libya between 2009 and 2021.\n2. Create a predictive model using the gathered data.\n3. Estimate the GDP of Libya in 2027 using the predictive model.\n\nOutput:\n\n1. 2027: 65,000,000,000 USD"
             }
         ]
     },
@@ -490,6 +586,12 @@
                 "label": "meta",
                 "explanation": "The answer was estimated using this predictive model"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: What will be Bosnia and Herzegovina's population in 2026?.\n\nProcess: 1. Historic data was needed to predict the population of Bosnia and Herzegovina in 2026. 2. Data on the population of Bosnia and Herzegovina was found between 2011 and 2021. 3. This data found was used to create a predictive model. 4. The answer was estimated using this predictive model.assistant\n\nHere is the list of important steps to solve the problem:\n\n1.\n2.\n3.\n4."
+            }
         ]
     },
     "dfc5e7396a994dd0": {
@@ -518,6 +620,12 @@
                 "step": 4,
                 "label": "meta",
                 "explanation": "The predictive model was used to estimate the answer"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: What will be the population of Seychelles in 2026?.\n\nProcess: 1. Historic data was needed to predict the population of Seychelles in 2026. 2. Data was found on the population of Seychelles between 2011 and 2021. 3. A predictive model was fit to this data. 4. The predictive model was used to estimate the answer.assistant\n\nHere is the process to solve the question:\n\n1. Historic data was needed to predict the population of Seychelles in 2026.\n2. Data was found on the population of Seychelles between 2011 and 2021.\n3. A predictive model was fit to this data.\n4. The predictive model was used to estimate the answer.\n\nHere are the most important steps of the process:\n\n1. Gather historic data\n2. Fit a predictive model\n3. Use the model to estimate the answer\n\nHere is the list of the most important steps:\n\n1\n2\n3"
             }
         ]
     },
@@ -548,6 +656,12 @@
                 "label": "meta",
                 "explanation": "The predictive model was used to estimate the answer"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: What will be the rural population of Angola in 2029?.\n\nProcess: 1. The rural population of Angola in 2029 had to be predicted using historic data. 2. Data was found on the rural population of Angola between 2008 and 2023. 3. A predictive model was fit to this data. 4. The predictive model was used to estimate the answer.assistant\n\nHere is the process to solve the question:\n\n1. The rural population of Angola in 2029 was predicted using historic data.\n2. Data was found on the rural population of Angola between 2008 and 2023.\n3. A predictive model was fit to this data.\n4. The predictive model was used to estimate the answer.\n\nHere are the most important steps of the process:\n\n1. Predicting the rural population of Angola in 2029\n2. Using historic data from 2008 to 2023\n3. Fitting a predictive model to the data\n4. Estimating the answer using the predictive model"
+            }
         ]
     },
     "744469b504064969": {
@@ -576,6 +690,12 @@
                 "step": 4,
                 "label": "meta",
                 "explanation": "The predictive model was used to estimate the answer"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: What will be the population of Samoa in 2027?.\n\nProcess: 1. Historic data was needed to predict the population of Samoa in 2027. 2. Data on the population of Samoa was found between 2011 and 2023. 3. This data found was used to create a predictive model. 4. The predictive model was used to estimate the answer.assistant\n\nHere is the process that was used to solve the question:\n\n1. Historic data was needed to predict the population of Samoa in 2027.\n2. Data on the population of Samoa was found between 2011 and 2023.\n3. This data was used to create a predictive model.\n4. The predictive model was used to estimate the answer.\n\nHere are the most important steps of the process:\n\n1. Gather historic data\n2. Create a predictive model\n3. Use the model to estimate the answer\n\nHere is the list of the most important steps:\n\n1\n2\n3"
             }
         ]
     },
@@ -606,6 +726,12 @@
                 "label": "meta",
                 "explanation": "The answer was estimated using this predictive model"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In 2026, what will be the rural population of Liechtenstein?.\n\nProcess: 1. Historic data was needed to predict the rural population of Liechtenstein in 2026. 2. Data on the rural population of Liechtenstein was found between 2010 and 2021. 3. A predictive model was created using this data. 4. The answer was estimated using this predictive model.assistant\n\nHere is the list of important steps to solve the problem:\n\n1. Historic data was needed to predict the rural population of Liechtenstein in 2026.\n2. Data on the rural population of Liechtenstein was found between 2010 and 2021.\n3. A predictive model was created using this data.\n4. The answer was estimated using this predictive model.\n\nOutput:\n\n1. 2"
+            }
         ]
     },
     "1b10d9518f804c45": {
@@ -634,6 +760,12 @@
                 "step": 4,
                 "label": "meta",
                 "explanation": "The predictive model was used to estimate the answer"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: What will be Sudan's GDP in 2030?.\n\nProcess: 1. Needed to use historic data to predict the GDP of Sudan in 2030. 2. Data was found on the GDP of Sudan between 2009 and 2021. 3. This data found was used to create a predictive model. 4. The predictive model was used to estimate the answer.assistant\n\nHere is the process that was used to solve the question:\n\n1. Needed to use historic data to predict the GDP of Sudan in 2030.\n2. Data was found on the GDP of Sudan between 2009 and 2021.\n3. This data was used to create a predictive model.\n4. The predictive model was used to estimate the answer.\n\nHere are the most important steps of the process:\n\n1. Gather historic data on the GDP of Sudan between 2009 and 2021.\n2. Use the data to create a predictive model.\n3. Use the predictive model to estimate the GDP of Sudan in 2030.\n\nHere is the list of the most important steps:\n\n1. 1\n2. 2\n3. 4"
             }
         ]
     },
@@ -664,6 +796,12 @@
                 "label": "meta",
                 "explanation": "The answer was estimated using this predictive model"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In 2028, what will be \u00c5land Islands's GDP?.\n\nProcess: 1. The GDP of \u00c5land Islands in 2028 had to be predicted using historic data. 2. Data was found on the GDP of \u00c5land Islands between 2010 and 2021. 3. A predictive model was created using this data. 4. The answer was estimated using this predictive model.assistant\n\nHere is the process to solve the question:\n\n1. **Data Collection**: Gather historic GDP data of \u00c5land Islands from 2010 to 2021.\n2. **Data Analysis**: Analyze the collected data to identify trends and patterns.\n3. **Model Creation**: Create a predictive model using the analyzed data.\n4. **Prediction**: Use the predictive model to estimate the GDP of \u00c5land Islands in 2028.\n\n**Important Steps:**\n\n1. Data Collection (1)\n2. Data Analysis (2)\n3. Model Creation (3)\n4. Prediction (4)\n\n**Output:**\n\n1. 2028: \u00c5land Islands' GDP will be estimated using the predictive model."
+            }
         ]
     },
     "49b05e11178442f4": {
@@ -692,6 +830,12 @@
                 "step": 4,
                 "label": "meta",
                 "explanation": "The predictive model was used to estimate the answer"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: What will be the population of Serbia in 2028?.\n\nProcess: 1. Needed to use historic data to predict the population of Serbia in 2028. 2. Data was found on the population of Serbia between 2011 and 2022. 3. A predictive model was fit to this data. 4. The predictive model was used to estimate the answer.assistant\n\nHere is the process that was used to solve the question:\n\n1. **Gather data**: The population of Serbia was found on the World Bank website, which provides historical data on the population of countries around the world. The data was collected from 2011 to 2022.\n\n2. **Prepare the data**: The data was cleaned and processed to remove any missing values and to make it suitable for use in a predictive model.\n\n3. **Fit the model**: A predictive model was fit to the data using a linear regression model. The model was chosen because it is a simple and widely used method for predicting future population growth.\n\n4. **Make the prediction**: The predictive model was used to estimate the population of Serbia in 2028. The output was a single value, which is the predicted population of Serbia in 2028.\n\nHere are the most important steps of the process:\n\n1. Gather data\n2. Prepare the data\n3. Fit the model\n4. Make the prediction\n\nHere is the output in the format of a list containing the numbers of the selected steps:\n\n1. 1\n2. 2\n3. 4"
             }
         ]
     },
@@ -722,6 +866,12 @@
                 "label": "meta",
                 "explanation": "The answer was estimated using this predictive model"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In 2030, what will be the rural population of Liechtenstein?.\n\nProcess: 1. Needed to use historic data to predict the rural population of Liechtenstein in 2030. 2. Data was found on the rural population of Liechtenstein between 2010 and 2022. 3. A predictive model was created using this data. 4. The answer was estimated using this predictive model.assistant\n\nHere is the list of important steps to solve the problem:\n\n1. Use historic data\n2. Find data on rural population of Liechtenstein between 2010 and 2022\n3. Create a predictive model using the data\n4. Estimate the rural population of Liechtenstein in 2030 using the model"
+            }
         ]
     },
     "c41e8fd240544855": {
@@ -750,6 +900,12 @@
                 "step": 4,
                 "label": "meta",
                 "explanation": "The predictive model was used to estimate the answer"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: What will be the GDP of Uganda in 2030?.\n\nProcess: 1. Historic data was needed to predict the GDP of Uganda in 2030. 2. Data on the GDP of Uganda was found between 2008 and 2022. 3. This data found was used to create a predictive model. 4. The predictive model was used to estimate the answer.assistant\n\nHere is the process that was used to solve the question:\n\n1. Historic data was needed to predict the GDP of Uganda in 2030.\n2. Data on the GDP of Uganda was found between 2008 and 2022.\n3. This data was used to create a predictive model.\n4. The predictive model was used to estimate the answer.\n\nHere are the most important steps of the process:\n\n1. Gather historic data\n2. Create a predictive model\n3. Use the model to estimate the answer\n\nHere is the list of the most important steps:\n\n1. 1\n2. 2\n3. 4"
             }
         ]
     },
@@ -780,6 +936,12 @@
                 "label": "meta",
                 "explanation": "The predictive model was used to estimate the answer"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: What will be the rural population of Syria in 2029?.\n\nProcess: 1. Historic data was needed to predict the rural population of Syria in 2029. 2. Data on the rural population of Syria was found between 2011 and 2021. 3. A predictive model was fit to this data. 4. The predictive model was used to estimate the answer.assistant\n\nHere is the process to solve the question:\n\n1. Historic data was needed to predict the rural population of Syria in 2029.\n2. Data on the rural population of Syria was found between 2011 and 2021.\n3. A predictive model was fit to this data.\n4. The predictive model was used to estimate the answer.\n\nHere are the most important steps of the process:\n\n1. Gather historic data\n2. Fit a predictive model\n3. Use the model to estimate the answer\n\nHere is the list of the most important steps:\n\n1. 1\n2. 2\n3. 4"
+            }
         ]
     },
     "b91545a349df4e47": {
@@ -808,6 +970,12 @@
                 "step": 4,
                 "label": "meta",
                 "explanation": "The predictive model was used to estimate the answer"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In 2030, what will be the population of Liberia?.\n\nProcess: 1. Needed to use historic data to predict the population of Liberia in 2030. 2. Data on the population of Liberia was found between 2009 and 2022. 3. A predictive model was created using this data. 4. The predictive model was used to estimate the answer.assistant\n\nHere is the process to solve the question:\n\n1. **Gather historic data**: Collect data on the population of Liberia from 2009 to 2022.\n2. **Create a predictive model**: Use the collected data to create a model that can predict the population of Liberia in 2030.\n3. **Use the model to estimate the answer**: Apply the predictive model to estimate the population of Liberia in 2030.\n\nHere is the list of important steps:\n\n1. Gather historic data\n2. Create a predictive model\n3. Use the model to estimate the answer"
             }
         ]
     },
@@ -838,6 +1006,12 @@
                 "label": "meta",
                 "explanation": "The predictive model was used to estimate the answer"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In 2029, what will be Austria's GDP?.\n\nProcess: 1. The GDP of Austria in 2029 had to be predicted using historic data. 2. Data was found on the GDP of Austria between 2011 and 2021. 3. This data found was used to create a predictive model. 4. The predictive model was used to estimate the answer.assistant\n\nHere is the process to solve the question:\n\n1. Find the GDP of Austria between 2011 and 2021.\n2. Use this data to create a predictive model.\n3. Use the predictive model to estimate the GDP of Austria in 2029.\n\nHere are the most important steps:\n\n1. Find the GDP of Austria between 2011 and 2021.\n2. Create a predictive model using this data.\n3. Estimate the GDP of Austria in 2029.\n\nOutput:\n\n1. 2029: 555."
+            }
         ]
     },
     "739e164ddece4b58": {
@@ -866,6 +1040,12 @@
                 "step": 4,
                 "label": "meta",
                 "explanation": "The answer was estimated using this predictive model"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In 2030, what will be the birth rate of Tokelau?.\n\nProcess: 1. The birth rate of Tokelau in 2030 had to be predicted using historic data. 2. Data was found on the birth rate of Tokelau between 2011 and 2023. 3. This data found was used to create a predictive model. 4. The answer was estimated using this predictive model.assistant\n\nHere is the list of important steps to predict the birth rate of Tokelau in 2030:\n\n1.\n2.\n3.\n4."
             }
         ]
     },
@@ -896,6 +1076,12 @@
                 "label": "meta",
                 "explanation": "The answer was estimated using this predictive model"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In 2028, what will be the birth rate of Ghana?.\n\nProcess: 1. Needed to use historic data to predict the birth rate of Ghana in 2028. 2. Data was found on the birth rate of Ghana between 2008 and 2022. 3. A predictive model was fit to this data. 4. The answer was estimated using this predictive model.assistant\n\nHere is the process to solve the question:\n\n1. **Gather data**: Collect historic data on the birth rate of Ghana between 2008 and 2022.\n2. **Fit a predictive model**: Use the collected data to fit a predictive model.\n3. **Estimate the answer**: Use the predictive model to estimate the birth rate of Ghana in 2028.\n\nHere are the most important steps of the process:\n\n1. Gather data\n2. Fit a predictive model\n3. Estimate the answer\n\nHere is the output in the required format:\n\n1. 1\n2. 2\n3. 3"
+            }
         ]
     },
     "c134ad8d73124ad2": {
@@ -924,6 +1110,12 @@
                 "step": 4,
                 "label": "meta",
                 "explanation": "The predictive model was used to estimate the answer"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: What will be the urban population of Guam in 2028?.\n\nProcess: 1. Needed to use historic data to predict the urban population of Guam in 2028. 2. Data on the urban population of Guam was found between 2008 and 2023. 3. This data found was used to create a predictive model. 4. The predictive model was used to estimate the answer.assistant\n\nHere is the process to solve the question:\n\n1. Needed to use historic data to predict the urban population of Guam in 2028.\n2. Data on the urban population of Guam was found between 2008 and 2023.\n3. This data was used to create a predictive model.\n4. The predictive model was used to estimate the answer.\n\nHere are the most important steps of the process:\n\n1. Gather historic data on the urban population of Guam between 2008 and 2023.\n2. Use the gathered data to create a predictive model.\n3. Use the predictive model to estimate the urban population of Guam in 2028.\n\nHere is the list of the most important steps:\n\n1. 1\n2. 2\n3. 4"
             }
         ]
     },
@@ -954,6 +1146,12 @@
                 "label": "meta",
                 "explanation": "The answer was estimated using this predictive model"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In 2026, what will be Venezuela's urban population?.\n\nProcess: 1. Historic data was needed to predict the urban population of Venezuela in 2026. 2. Data on the urban population of Venezuela was found between 2010 and 2022. 3. This data found was used to create a predictive model. 4. The answer was estimated using this predictive model.assistant\n\nHere is the process to solve the question:\n\n1. Historic data was needed to predict the urban population of Venezuela in 2026.\n2. Data on the urban population of Venezuela was found between 2010 and 2022.\n3. This data was used to create a predictive model.\n4. The answer was estimated using this predictive model.\n\nHere are the most important steps of the process:\n\n1. Gather historic data\n2. Find data on the urban population\n3. Create a predictive model\n4. Estimate the answer using the model\n\nHere is the list of the most important steps:\n\n1\n2\n3\n4"
+            }
         ]
     },
     "86e591752e7142b8": {
@@ -982,6 +1180,12 @@
                 "step": 4,
                 "label": "meta",
                 "explanation": "The predictive model was used to estimate the answer"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: What will be the rural population of Romania in 2027?.\n\nProcess: 1. The rural population of Romania in 2027 had to be predicted using historic data. 2. Data on the rural population of Romania was found between 2011 and 2021. 3. This data found was used to create a predictive model. 4. The predictive model was used to estimate the answer.assistant\n\nHere is the process to solve the question:\n\n1. The rural population of Romania in 2027 had to be predicted using historic data.\n2. Data on the rural population of Romania was found between 2011 and 2021.\n3. This data was used to create a predictive model.\n4. The predictive model was used to estimate the answer.\n\nHere are the most important steps of the process:\n\n1. Predicting the rural population of Romania in 2027\n2. Collecting data on the rural population of Romania between 2011 and 2021\n3. Creating a predictive model using the collected data\n4. Estimating the answer using the predictive model"
             }
         ]
     },
@@ -1012,6 +1216,12 @@
                 "label": "meta",
                 "explanation": "The answer was estimated using this predictive model"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: What will be the population of French Polynesia in 2030?.\n\nProcess: 1. Needed to use historic data to predict the population of French Polynesia in 2030. 2. Data on the population of French Polynesia was found between 2009 and 2022. 3. A predictive model was fit to this data. 4. The answer was estimated using this predictive model.assistant\n\nHere is the list of important steps to solve the problem:\n\n1. Use historic data\n2. Find data on the population of French Polynesia between 2009 and 2022\n3. Fit a predictive model to this data\n4. Estimate the answer using this predictive model"
+            }
         ]
     },
     "7490ca6b650d4496": {
@@ -1040,6 +1250,12 @@
                 "step": 4,
                 "label": "meta",
                 "explanation": "The answer was estimated using this predictive model"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: What will be the life expectancy of Mozambique in 2026?.\n\nProcess: 1. The life expectancy of Mozambique in 2026 had to be predicted using historic data. 2. Data on the life expectancy of Mozambique was found between 2009 and 2023. 3. A predictive model was fit to this data. 4. The answer was estimated using this predictive model.assistant\n\nHere is the process to predict the life expectancy of Mozambique in 2026:\n\n1. **Data Collection**: Gather historic data on the life expectancy of Mozambique between 2009 and 2023.\n2. **Data Analysis**: Analyze the collected data to identify trends and patterns.\n3. **Model Fitting**: Fit a predictive model to the analyzed data.\n4. **Prediction**: Estimate the life expectancy of Mozambique in 2026 using the fitted model.\n\n**Important Steps:**\n\n1. Data Collection (1)\n2. Data Analysis (2)\n3. Model Fitting (3)\n4. Prediction (4)\n\n**Output:**\n\n1. The life expectancy of Mozambique in 2026 is estimated to be [insert answer]."
             }
         ]
     },
@@ -1070,6 +1286,12 @@
                 "label": "meta",
                 "explanation": "The predictive model was used to estimate the answer"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In 2030, what will be Guam's energy consumption?.\n\nProcess: 1. Historic data was needed to predict the energy consumption of Guam in 2030. 2. Data on the energy consumption of Guam was found between 2009 and 2021. 3. This data found was used to create a predictive model. 4. The predictive model was used to estimate the answer.assistant\n\nHere is the process to solve the question:\n\n1. Historic data was needed to predict the energy consumption of Guam in 2030.\n2. Data on the energy consumption of Guam was found between 2009 and 2021.\n3. This data was used to create a predictive model.\n4. The predictive model was used to estimate the answer.\n\nThe most important steps of this process are:\n\n1. Collecting historic data\n2. Creating a predictive model\n3. Using the model to estimate the answer\n\nHere is the list of the most important steps:\n\n1. 1\n2. 2\n3. 4"
+            }
         ]
     },
     "51da148ce6374e45": {
@@ -1098,6 +1320,12 @@
                 "step": 4,
                 "label": "meta",
                 "explanation": "The answer was estimated using this predictive model"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In 2026, what will be the population of Dominica?.\n\nProcess: 1. Needed to use historic data to predict the population of Dominica in 2026. 2. Data on the population of Dominica was found between 2008 and 2022. 3. This data found was used to create a predictive model. 4. The answer was estimated using this predictive model.assistant\n\nHere is the process to solve the question:\n\n1. **Gather historic data**: Collect population data of Dominica from 2008 to 2022.\n2. **Create a predictive model**: Use the collected data to create a model that can predict the population of Dominica in 2026.\n3. **Estimate the answer**: Use the predictive model to estimate the population of Dominica in 2026.\n\nHere is the list of important steps:\n\n1. Gather historic data\n2. Create a predictive model\n3. Estimate the answer"
             }
         ]
     },
@@ -1128,6 +1356,12 @@
                 "label": "meta",
                 "explanation": "The answer was estimated using this predictive model"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In 2027, what will be Norfolk Island's urban population?.\n\nProcess: 1. Historic data was needed to predict the urban population of Norfolk Island in 2027. 2. Data on the urban population of Norfolk Island was found between 2010 and 2021. 3. A predictive model was fit to this data. 4. The answer was estimated using this predictive model.assistant\n\nHere is the process to solve the question:\n\n1. Historic data was needed to predict the urban population of Norfolk Island in 2027.\n2. Data on the urban population of Norfolk Island was found between 2010 and 2021.\n3. A predictive model was fit to this data.\n4. The answer was estimated using this predictive model.\n\nThe most important steps of this process are:\n\n1. Collecting historic data\n2. Fitting a predictive model\n3. Estimating the answer using the predictive model\n\nHere is the list of the most important steps:\n\n1. 1\n2. 2\n3. 4"
+            }
         ]
     },
     "f92c0a21f6a94042": {
@@ -1156,6 +1390,12 @@
                 "step": 4,
                 "label": "meta",
                 "explanation": "The answer was estimated using this predictive model"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In 2027, what will be Georgia's rural population?.\n\nProcess: 1. Historic data was needed to predict the rural population of Georgia in 2027. 2. Data was found on the rural population of Georgia between 2008 and 2021. 3. A predictive model was fit to this data. 4. The answer was estimated using this predictive model.assistant\n\nHere is the process to solve the question:\n\n1. Historic data was needed to predict the rural population of Georgia in 2027.\n2. Data was found on the rural population of Georgia between 2008 and 2021.\n3. A predictive model was fit to this data.\n4. The answer was estimated using this predictive model.\n\nHere are the most important steps of the process:\n\n1. Gather historic data\n2. Fit a predictive model\n3. Estimate the answer using the predictive model\n\nHere is the list of the most important steps:\n\n1\n2\n3"
             }
         ]
     },
@@ -1186,6 +1426,12 @@
                 "label": "meta",
                 "explanation": "The answer was estimated using this predictive model"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: What will be the GDP of Puerto Rico in 2026?.\n\nProcess: 1. Needed to use historic data to predict the GDP of Puerto Rico in 2026. 2. Data on the GDP of Puerto Rico was found between 2011 and 2021. 3. A predictive model was created using this data. 4. The answer was estimated using this predictive model.assistant\n\nHere is the process to solve the question:\n\n1. **Gather data**: Collect historic data on the GDP of Puerto Rico from 2011 to 2021.\n2. **Create a predictive model**: Use the collected data to create a model that can predict the GDP of Puerto Rico in 2026.\n3. **Estimate the answer**: Use the predictive model to estimate the GDP of Puerto Rico in 2026.\n\nHere is the list of the most important steps:\n\n1. Gather data\n2. Create a predictive model\n3. Estimate the answer"
+            }
         ]
     },
     "066b1f91b901457e": {
@@ -1214,6 +1460,12 @@
                 "step": 4,
                 "label": "meta",
                 "explanation": "The answer was estimated using this predictive model"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In 2030, what will be Sri Lanka's energy consumption?.\n\nProcess: 1. Historic data was needed to predict the energy consumption of Sri Lanka in 2030. 2. Data on the energy consumption of Sri Lanka was found between 2009 and 2023. 3. A predictive model was created using this data. 4. The answer was estimated using this predictive model.assistant\n\nHere is the process to solve the question:\n\n1. Historic data was needed to predict the energy consumption of Sri Lanka in 2030.\n2. Data on the energy consumption of Sri Lanka was found between 2009 and 2023.\n3. A predictive model was created using this data.\n4. The answer was estimated using this predictive model.\n\nThe most important steps of this process are:\n\n1. Collecting historic data\n2. Creating a predictive model\n3. Estimating the answer using the predictive model\n\nHere is the list of the most important steps:\n\n1. 1\n2. 2\n3. 4"
             }
         ]
     },
@@ -1244,6 +1496,12 @@
                 "label": "meta",
                 "explanation": "The answer was estimated using this predictive model"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: What will be the rural population of Malta in 2026?.\n\nProcess: 1. Historic data was needed to predict the rural population of Malta in 2026. 2. Data was found on the rural population of Malta between 2010 and 2021. 3. A predictive model was fit to this data. 4. The answer was estimated using this predictive model.assistant\n\nHere is the process that was used to solve the question:\n\n1. Historic data was needed to predict the rural population of Malta in 2026.\n2. Data was found on the rural population of Malta between 2010 and 2021.\n3. A predictive model was fit to this data.\n4. The answer was estimated using this predictive model.\n\nHere are the most important steps of the process:\n\n1. Gather historic data on the rural population of Malta between 2010 and 2021.\n2. Fit a predictive model to the gathered data.\n3. Use the predictive model to estimate the rural population of Malta in 2026.\n\nHere is the list of the most important steps:\n\n1. 1\n2. 2\n3. 4"
+            }
         ]
     },
     "95010f11612b4d3e": {
@@ -1272,6 +1530,12 @@
                 "step": 4,
                 "label": "meta",
                 "explanation": "The answer was estimated using this predictive model"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: What will be the birth rate of Ukraine in 2029?.\n\nProcess: 1. Needed to use historic data to predict the birth rate of Ukraine in 2029. 2. Data was found on the birth rate of Ukraine between 2010 and 2023. 3. A predictive model was created using this data. 4. The answer was estimated using this predictive model.assistant\n\nHere is the process to solve the question:\n\n1. **Gather data**: Collect historic data on the birth rate of Ukraine between 2010 and 2023.\n2. **Create a predictive model**: Use the collected data to create a predictive model that can forecast the birth rate of Ukraine in 2029.\n3. **Estimate the answer**: Use the predictive model to estimate the birth rate of Ukraine in 2029.\n\nHere are the most important steps of the process:\n\n1. Gather data\n2. Create a predictive model\n3. Estimate the answer\n\nHere is the output in the required format:\n\n1. Gather data\n2. Create a predictive model\n3. Estimate the answer"
             }
         ]
     },
@@ -1302,6 +1566,12 @@
                 "label": "meta",
                 "explanation": "The answer was estimated using this predictive model"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In 2028, what will be the population of Benin?.\n\nProcess: 1. Needed to use historic data to predict the population of Benin in 2028. 2. Data was found on the population of Benin between 2009 and 2022. 3. This data found was used to create a predictive model. 4. The answer was estimated using this predictive model.assistant\n\nHere is the process to solve the question:\n\n1. **Gather historic data**: Collect population data of Benin from 2009 to 2022.\n2. **Create a predictive model**: Use the collected data to create a model that can predict the population of Benin in 2028.\n3. **Estimate the answer**: Use the predictive model to estimate the population of Benin in 2028.\n\nHere is the list of important steps:\n\n1. Gather historic data\n2. Create a predictive model\n3. Estimate the answer"
+            }
         ]
     },
     "eb164db0ab5d4f8f": {
@@ -1330,6 +1600,12 @@
                 "step": 4,
                 "label": "meta",
                 "explanation": "The answer was estimated using this predictive model"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In 2026, what will be the urban population of Mayotte?.\n\nProcess: 1. Historic data was needed to predict the urban population of Mayotte in 2026. 2. Data on the urban population of Mayotte was found between 2008 and 2022. 3. A predictive model was fit to this data. 4. The answer was estimated using this predictive model.assistant\n\nHere is the process to solve the question:\n\n1. Historic data was needed to predict the urban population of Mayotte in 2026.\n2. Data on the urban population of Mayotte was found between 2008 and 2022.\n3. A predictive model was fit to this data.\n4. The answer was estimated using this predictive model.\n\nThe most important steps of this process are:\n\n1. Collecting historic data\n2. Fitting a predictive model\n3. Estimating the answer using the predictive model\n\nHere is the list of the most important steps:\n\n1. 1\n2. 2\n3. 4"
             }
         ]
     },
@@ -1360,6 +1636,12 @@
                 "label": "meta",
                 "explanation": "The answer was estimated using this predictive model"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: What will be the GDP of the Vatican City in 2026?.\n\nProcess: 1. The GDP of the Vatican City in 2026 had to be predicted using historic data. 2. Data on the GDP of the Vatican City was found between 2011 and 2021. 3. This data found was used to create a predictive model. 4. The answer was estimated using this predictive model.assistant\n\nHere is the process to solve the question:\n\n1. **Gather data**: Find the GDP of the Vatican City between 2011 and 2021.\n2. **Create a predictive model**: Use the gathered data to create a model that can predict the GDP of the Vatican City in 2026.\n3. **Estimate the answer**: Use the predictive model to estimate the GDP of the Vatican City in 2026.\n\n**Important steps:**\n\n1. Gather data\n2. Create a predictive model\n3. Estimate the answer\n\n**Output:**\n\n1. The GDP of the Vatican City in 2026 is estimated to be [insert answer]."
+            }
         ]
     },
     "bd826af375784f3e": {
@@ -1388,6 +1670,12 @@
                 "step": 4,
                 "label": "meta",
                 "explanation": "The predictive model was used to estimate the answer"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: What will be the urban population of Saint Kitts and Nevis in 2027?.\n\nProcess: 1. The urban population of Saint Kitts and Nevis in 2027 had to be predicted using historic data. 2. Data on the urban population of Saint Kitts and Nevis was found between 2010 and 2021. 3. This data found was used to create a predictive model. 4. The predictive model was used to estimate the answer.assistant\n\n[1, 2, 3, 4]"
             }
         ]
     },
@@ -1418,6 +1706,12 @@
                 "label": "meta",
                 "explanation": "The predictive model was used to estimate the answer"
             }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: In 2030, what will be United States's population density?.\n\nProcess: 1. Historic data was needed to predict the population density of United States in 2030. 2. Data was found on the population density of United States between 2010 and 2021. 3. A predictive model was created using this data. 4. The predictive model was used to estimate the answer.assistant\n\nHere is the process to solve the question:\n\n1. Historic data was needed to predict the population density of United States in 2030.\n2. Data was found on the population density of United States between 2010 and 2021.\n3. A predictive model was created using this data.\n4. The predictive model was used to estimate the answer.\n\nHere are the most important steps of the process:\n\n1. Gather historic data\n2. Create a predictive model\n3. Use the model to estimate the answer\n\nHere is the list of the most important steps:\n\n1. 1\n2. 2\n3. 4"
+            }
         ]
     },
     "3f0f60281a294fff": {
@@ -1446,6 +1740,12 @@
                 "step": 4,
                 "label": "meta",
                 "explanation": "The answer was estimated using this predictive model"
+            }
+        ],
+        "llm-selection": [
+            {
+                "system_prompt": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+                "response": "system\n\nHere is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.user\n\nQuestion: What will be Tonga's urban population in 2030?.\n\nProcess: 1. The urban population of Tonga in 2030 had to be predicted using historic data. 2. Data on the urban population of Tonga was found between 2010 and 2021. 3. A predictive model was fit to this data. 4. The answer was estimated using this predictive model.assistant\n\nHere is the process to predict the urban population of Tonga in 2030:\n\n1. Gather historic data: The urban population of Tonga from 2010 to 2021 was collected.\n2. Fit a predictive model: A model was created using the collected data.\n3. Estimate the answer: The model was used to estimate the urban population of Tonga in 2030.\n\nHere are the most important steps:\n\n1. Gather historic data\n2. Fit a predictive model\n3. Estimate the answer"
             }
         ]
     }
