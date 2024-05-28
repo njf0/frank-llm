@@ -33,5 +33,15 @@
         "SYSTEM_CONTENT": "Your role is to select, from a list the steps, those that are most important for inclusion in a summary explanation of that process. Format your output as a list, for example [1, 2, 3, 4]. Output only this short summary paragraph and nothing else.",
         "INPUTS": "../resources/data/select.json",
         "DESCRIPTION": "testing"
+    },
+    "2024-05-28T15:29:49.606482": {
+        "MODEL": "mistralai/Mistral-7B-Instruct-v0.3",
+        "TEMPERATURE": 0.3,
+        "BATCH_SIZE": 20,
+        "EXAMPLE": "[1, 2, 3, 4]",
+        "FORMAT_VERSION": 2,
+        "SYSTEM_CONTENT": "Your role is to select, from a list the steps, those that are most important for inclusion in a summary explanation of that process. Format your output as a list, for example [1, 2, 3, 4]. Output only this short summary paragraph and nothing else.",
+        "INPUTS": "../resources/data/select.json",
+        "DESCRIPTION": "testing"
     }
 }
