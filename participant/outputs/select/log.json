@@ -1,0 +1,37 @@
+{
+    "2024-05-24T16:16:02.058704": {
+        "system-content": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps. Output only a list in this format and no other content.",
+        "example": "description of list",
+        "format_version": 1
+    },
+    "2024-05-24T16:16:02.060434": {
+        "system-content": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps, for example, [a, b, c]. Output only a list in this format and no other content.",
+        "example": "[a, b, c]",
+        "format_version": 1
+    },
+    "2024-05-24T16:16:02.061578": {
+        "system-content": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps, for example, [a, b, c, d, e]. Output only a list in this format and no other content.",
+        "example": "[a, b, c, d, e]",
+        "format_version": 1
+    },
+    "2024-05-24T16:16:02.062049": {
+        "system-content": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps, for example, [step_number, other_step_number, ...]. Output only a list in this format and no other content.",
+        "example": "[step_number, other_step_number,...]",
+        "format_version": 1
+    },
+    "2024-05-24T16:16:02.062524": {
+        "system-content": "Here is a question and the process that was used to solve it. Select the steps of that process that are most important for inclusion in a summary explanation of that process. Format the output as a list containing the numbers of the selected steps, for example, [x, y, z]. Output only a list in this format and no other content.",
+        "example": "[x, y, z]",
+        "format_version": 1
+    },
+    "2024-05-28T13:42:42.792181": {
+        "MODEL": "/nfs/public/hf/models/meta-llama/Meta-Llama-3-8B-Instruct",
+        "TEMPERATURE": 0.3,
+        "BATCH_SIZE": 20,
+        "EXAMPLE": "[1, 2, 3, 4]",
+        "FORMAT_VERSION": 2,
+        "SYSTEM_CONTENT": "Your role is to select, from a list the steps, those that are most important for inclusion in a summary explanation of that process. Format your output as a list, for example [1, 2, 3, 4]. Output only this short summary paragraph and nothing else.",
+        "INPUTS": "../resources/data/select.json",
+        "DESCRIPTION": "testing"
+    }
+}
