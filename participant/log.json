@@ -53,5 +53,15 @@
         "SYSTEM_CONTENT": "Your role is to select, from a list the steps, those that are most important for inclusion in a summary explanation of that process. Format your output as a list, for example [1, 2, 3, 4]. Output only this short summary paragraph and nothing else.",
         "INPUTS": "../resources/data/select.json",
         "DESCRIPTION": "testing"
+    },
+    "2024-05-30T15:54:27.080799": {
+        "MODEL": "microsoft/Phi-3-mini-128k-instruct",
+        "TEMPERATURE": 0.3,
+        "BATCH_SIZE": 20,
+        "EXAMPLE": "[1, 2, 3, 4]",
+        "FORMAT_VERSION": 2,
+        "SYSTEM_CONTENT": "Your role is to select, from a list the steps, only those that are most important for inclusion in a summary explanation of that process. Format your output as a list, for example [1, 2, 3, 4]. Output only this short summary paragraph and nothing else.",
+        "INPUTS": "../resources/data/select.json",
+        "DESCRIPTION": "testing"
     }
 }
