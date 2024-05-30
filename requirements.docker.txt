@@ -6,3 +6,6 @@ kubejobs
 networkx
 ipykernel
 git+https://www.github.com/frank-lab-ai/franky@njf
+tiktoken
+flash-attn
+pytest
