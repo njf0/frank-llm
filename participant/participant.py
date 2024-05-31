@@ -138,11 +138,14 @@ class LLMParticipant:
 
         str_shot_dict = {0: 'zero', 1: 'one', 3: 'few'}
         output_filename = datetime.datetime.isoformat(datetime.datetime.now())
-        output_path = Path("outputs",
-                           f"{Path(self.INPUT).stem}",
-                           f"{str_shot_dict[self.config['shot']]}",
-                           f"{output_filename}.json")
-        log = Path('log.json')
+        output_path = Path(
+            "participant",
+            "outputs",
+            f"{Path(self.INPUT).stem}",
+            f"{str_shot_dict[self.shot]}",
+            f"{output_filename}.json"
+        )
+        log = Path('participant/log.json')
         print(f"Saving results in {output_path}... ", end="")
 
         outputs = {
@@ -171,9 +174,9 @@ class LLMParticipant:
         print(f"Assembling messages for {len(self.data)} inputs... ", end="")
         inputs = self.assemble_messages(self.data)
         print("done.")
-        print(f"Generating responses for {len(inputs)} inputs... ")
+        print(f"Generating responses for {len(inputs)} inputs... ", end="")
         responses = self.apply_template_generate_response(inputs)
-        print("Done.")
+        print("done.")
         outputs = []
         for q, r in zip(self.data.keys(), responses):
             t = self.data[q]['template_id']
@@ -231,8 +234,10 @@ if __name__ == '__main__':
             configs = json.load(f)
 
         completed = []
-        for description, config in configs.items():
-            print(f"Processing {description}...")
+        print(f"Processing {len(configs)} configs...")
+        for i, config in enumerate(configs.items(), 1):
+            description, config = config
+            print(f"({i}/{len(configs)}) {description}...")
             participant = LLMParticipant(config)
             participant.participate()
             completed.append(config['DESCRIPTION'])

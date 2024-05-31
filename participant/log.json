@@ -73,5 +73,53 @@
         "SYSTEM_CONTENT": "Your role is to select, from a list the steps, only those that are most important for inclusion in a summary explanation of that process. Format your output as a list, for example [1, 2, 3, 4]. Output only this short summary paragraph and nothing else.",
         "INPUTS": "../resources/data/select.json",
         "DESCRIPTION": "testing"
+    },
+    "2024-05-31T17:45:33.789468": {
+        "MODEL": "/nfs/public/hf/models/meta-llama/Meta-Llama-3-8B-Instruct",
+        "TEMPERATURE": 0.3,
+        "BATCH_SIZE": 20,
+        "SYSTEM_CONTENT": "Your role is to select, from a list of steps, those that are most important for inclusion in a summary explanation of that process. Format your selection as a list. Use the following example to understand your task: [7, 3, 1, 9, 4]. Only output your selection in the form of a list and nothing else.",
+        "EXAMPLE": "[7, 3, 1, 9, 4]",
+        "SHOT": 0,
+        "INPUT": "resources/data/select.json",
+        "DESCRIPTION": "Meta-Llama-3-8B-Instruct:shot=0:temp=0.3",
+        "RUN_ID": "33c32cfeee08417782d7751e4cbd8d94",
+        "FORMAT_VERSION": 2
+    },
+    "2024-05-31T17:47:48.898783": {
+        "MODEL": "/nfs/public/hf/models/meta-llama/Meta-Llama-3-8B-Instruct",
+        "TEMPERATURE": 0.5,
+        "BATCH_SIZE": 20,
+        "SYSTEM_CONTENT": "Your role is to select, from a list of steps, those that are most important for inclusion in a summary explanation of that process. Format your selection as a list. Use the following example to understand your task: [7, 3, 1, 9, 4]. Only output your selection in the form of a list and nothing else.",
+        "EXAMPLE": "[7, 3, 1, 9, 4]",
+        "SHOT": 0,
+        "INPUT": "resources/data/select.json",
+        "DESCRIPTION": "Meta-Llama-3-8B-Instruct:shot=0:temp=0.5",
+        "RUN_ID": "8ae99c5c65044fbdbaadceb690d4f377",
+        "FORMAT_VERSION": 2
+    },
+    "2024-05-31T17:50:01.228600": {
+        "MODEL": "/nfs/public/hf/models/meta-llama/Meta-Llama-3-8B-Instruct",
+        "TEMPERATURE": 0.7,
+        "BATCH_SIZE": 20,
+        "SYSTEM_CONTENT": "Your role is to select, from a list of steps, those that are most important for inclusion in a summary explanation of that process. Format your selection as a list. Use the following example to understand your task: [7, 3, 1, 9, 4]. Only output your selection in the form of a list and nothing else.",
+        "EXAMPLE": "[7, 3, 1, 9, 4]",
+        "SHOT": 0,
+        "INPUT": "resources/data/select.json",
+        "DESCRIPTION": "Meta-Llama-3-8B-Instruct:shot=0:temp=0.7",
+        "RUN_ID": "dccc6cc13acf48259feb99525af3891d",
+        "FORMAT_VERSION": 2
+    },
+    "2024-05-31T17:51:43.821160": {
+        "MODEL": "mistralai/Mistral-7B-Instruct-v0.3",
+        "TEMPERATURE": 0.3,
+        "BATCH_SIZE": 20,
+        "SYSTEM_CONTENT": "Your role is to select, from a list of steps, those that are most important for inclusion in a summary explanation of that process. Format your selection as a list. Use the following example to understand your task: [7, 3, 1, 9, 4]. Only output your selection in the form of a list and nothing else.",
+        "EXAMPLE": "[7, 3, 1, 9, 4]",
+        "SHOT": 0,
+        "INPUT": "resources/data/select.json",
+        "DESCRIPTION": "Mistral-7B-Instruct-v0.3:shot=0:temp=0.3",
+        "RUN_ID": "2b1d4275436749158be3a1b2ab66edbd",
+        "FORMAT_VERSION": 2
     }
 }
