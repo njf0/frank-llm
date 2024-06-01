@@ -46,8 +46,11 @@ class LLMParticipant:
         )
         print("done.")
 
-        self.device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
-        self.model.to(self.device)
+        # if self.model_family not in ['google']:
+        #     self.device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
+        #     self.model.to(self.device)
+
+        self.device = self.model.device
 
         self.tokenizer.pad_token = self.tokenizer.eos_token
         self.tokenizer.pad_token_id = self.tokenizer.eos_token_id
@@ -171,12 +174,12 @@ class LLMParticipant:
             self
         ):
 
-        print(f"Assembling messages for {len(self.data)} inputs... ", end="")
+        print(f"Assembling messages for {len(self.data)} inputs... ", end="", flush=True)
         inputs = self.assemble_messages(self.data)
-        print("done.")
-        print(f"Generating responses for {len(inputs)} inputs... ", end="")
+        print("done.", flush=True)
+        print(f"Generating responses for {len(inputs)} inputs... ", end="", flush=True)
         responses = self.apply_template_generate_response(inputs)
-        print("done.")
+        print("done.", flush=True)
         outputs = []
         for q, r in zip(self.data.keys(), responses):
             t = self.data[q]['template_id']
@@ -231,21 +234,22 @@ if __name__ == '__main__':
 
     else:
         with Path(args.batch).open(encoding='utf-8') as f:
-            configs = json.load(f)
+            queue = json.load(f)
 
-        completed = []
-        print(f"Processing {len(configs)} configs...")
-        for i, config in enumerate(configs.items(), 1):
+        print(f"Processing {len(queue)} configs...")
+        for i, config in enumerate(queue.items(), 1):
             description, config = config
-            print(f"({i}/{len(configs)}) {description}...")
+            print(f"({i}/{len(queue)}) {description}...")
             participant = LLMParticipant(config)
             participant.participate()
-            completed.append(config['DESCRIPTION'])
             print(f"Completed {description}.")
 
-        # remove completed configs from config file
-        for config in completed:
-            configs.remove(config)
+            with Path(args.batch).open('r', encoding='utf-8') as f:
+                partial_queue = json.load(f)
 
-        with Path(args.batch).open('w', encoding='utf-8') as f:
-            json.dump(configs, f, indent=4)
+            # remove key config[0] from queue
+            del partial_queue[description]
+
+
+            with Path(args.batch).open('w', encoding='utf-8') as f:
+                json.dump(partial_queue, f, indent=4)
