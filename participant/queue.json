@@ -1,1 +1,602 @@
-{}
+{
+    "Meta-Llama-3-8B-Instruct:shot=0:temp=0.3": {
+        "MODEL": "/nfs/public/hf/models/meta-llama/Meta-Llama-3-8B-Instruct",
+        "TEMPERATURE": 0.3,
+        "BATCH_SIZE": 20,
+        "SYSTEM_CONTENT": "Your role is to select, from a list of steps, those that are most important for inclusion in a summary explanation of that process. Format your selection as a list. Use the following example to understand your task: [7, 3, 1, 9, 4]. Only output your selection in the form of a list and nothing else.",
+        "EXAMPLE": "[7, 3, 1, 9, 4]",
+        "SHOT": 0,
+        "INPUT": "resources/data/full_study.json",
+        "DESCRIPTION": "Meta-Llama-3-8B-Instruct:shot=0:temp=0.3",
+        "RUN_ID": "f111ad4dc8594710925ac365aeec3ed3",
+        "FORMAT_VERSION": 2
+    },
+    "Meta-Llama-3-8B-Instruct:shot=0:temp=0.5": {
+        "MODEL": "/nfs/public/hf/models/meta-llama/Meta-Llama-3-8B-Instruct",
+        "TEMPERATURE": 0.5,
+        "BATCH_SIZE": 20,
+        "SYSTEM_CONTENT": "Your role is to select, from a list of steps, those that are most important for inclusion in a summary explanation of that process. Format your selection as a list. Use the following example to understand your task: [7, 3, 1, 9, 4]. Only output your selection in the form of a list and nothing else.",
+        "EXAMPLE": "[7, 3, 1, 9, 4]",
+        "SHOT": 0,
+        "INPUT": "resources/data/full_study.json",
+        "DESCRIPTION": "Meta-Llama-3-8B-Instruct:shot=0:temp=0.5",
+        "RUN_ID": "1911920419dc4ed9a86b9f9abcbd2a58",
+        "FORMAT_VERSION": 2
+    },
+    "Meta-Llama-3-8B-Instruct:shot=0:temp=0.7": {
+        "MODEL": "/nfs/public/hf/models/meta-llama/Meta-Llama-3-8B-Instruct",
+        "TEMPERATURE": 0.7,
+        "BATCH_SIZE": 20,
+        "SYSTEM_CONTENT": "Your role is to select, from a list of steps, those that are most important for inclusion in a summary explanation of that process. Format your selection as a list. Use the following example to understand your task: [7, 3, 1, 9, 4]. Only output your selection in the form of a list and nothing else.",
+        "EXAMPLE": "[7, 3, 1, 9, 4]",
+        "SHOT": 0,
+        "INPUT": "resources/data/full_study.json",
+        "DESCRIPTION": "Meta-Llama-3-8B-Instruct:shot=0:temp=0.7",
+        "RUN_ID": "1a1928824d0f43e7a090df1c5d638370",
+        "FORMAT_VERSION": 2
+    },
+    "Mistral-7B-Instruct-v0.3:shot=0:temp=0.3": {
+        "MODEL": "mistralai/Mistral-7B-Instruct-v0.3",
+        "TEMPERATURE": 0.3,
+        "BATCH_SIZE": 20,
+        "SYSTEM_CONTENT": "Your role is to select, from a list of steps, those that are most important for inclusion in a summary explanation of that process. Format your selection as a list. Use the following example to understand your task: [7, 3, 1, 9, 4]. Only output your selection in the form of a list and nothing else.",
+        "EXAMPLE": "[7, 3, 1, 9, 4]",
+        "SHOT": 0,
+        "INPUT": "resources/data/full_study.json",
+        "DESCRIPTION": "Mistral-7B-Instruct-v0.3:shot=0:temp=0.3",
+        "RUN_ID": "13857c89d5814f2f9f4eec377faf1980",
+        "FORMAT_VERSION": 2
+    },
+    "Mistral-7B-Instruct-v0.3:shot=0:temp=0.5": {
+        "MODEL": "mistralai/Mistral-7B-Instruct-v0.3",
+        "TEMPERATURE": 0.5,
+        "BATCH_SIZE": 20,
+        "SYSTEM_CONTENT": "Your role is to select, from a list of steps, those that are most important for inclusion in a summary explanation of that process. Format your selection as a list. Use the following example to understand your task: [7, 3, 1, 9, 4]. Only output your selection in the form of a list and nothing else.",
+        "EXAMPLE": "[7, 3, 1, 9, 4]",
+        "SHOT": 0,
+        "INPUT": "resources/data/full_study.json",
+        "DESCRIPTION": "Mistral-7B-Instruct-v0.3:shot=0:temp=0.5",
+        "RUN_ID": "deb3443ff59c4459bc08a9147b57066a",
+        "FORMAT_VERSION": 2
+    },
+    "Mistral-7B-Instruct-v0.3:shot=0:temp=0.7": {
+        "MODEL": "mistralai/Mistral-7B-Instruct-v0.3",
+        "TEMPERATURE": 0.7,
+        "BATCH_SIZE": 20,
+        "SYSTEM_CONTENT": "Your role is to select, from a list of steps, those that are most important for inclusion in a summary explanation of that process. Format your selection as a list. Use the following example to understand your task: [7, 3, 1, 9, 4]. Only output your selection in the form of a list and nothing else.",
+        "EXAMPLE": "[7, 3, 1, 9, 4]",
+        "SHOT": 0,
+        "INPUT": "resources/data/full_study.json",
+        "DESCRIPTION": "Mistral-7B-Instruct-v0.3:shot=0:temp=0.7",
+        "RUN_ID": "d767980a4c8b4e1991da0ac54ca9a131",
+        "FORMAT_VERSION": 2
+    },
+    "gemma-7b:shot=0:temp=0.3": {
+        "MODEL": "google/gemma-7b",
+        "TEMPERATURE": 0.3,
+        "BATCH_SIZE": 20,
+        "SYSTEM_CONTENT": "Your role is to select, from a list of steps, those that are most important for inclusion in a summary explanation of that process. Format your selection as a list. Use the following example to understand your task: [7, 3, 1, 9, 4]. Only output your selection in the form of a list and nothing else.",
+        "EXAMPLE": "[7, 3, 1, 9, 4]",
+        "SHOT": 0,
+        "INPUT": "resources/data/full_study.json",
+        "DESCRIPTION": "gemma-7b:shot=0:temp=0.3",
+        "RUN_ID": "8430eb8b6bd84195ac8f423448324cfe",
+        "FORMAT_VERSION": 2
+    },
+    "gemma-7b:shot=0:temp=0.5": {
+        "MODEL": "google/gemma-7b",
+        "TEMPERATURE": 0.5,
+        "BATCH_SIZE": 20,
+        "SYSTEM_CONTENT": "Your role is to select, from a list of steps, those that are most important for inclusion in a summary explanation of that process. Format your selection as a list. Use the following example to understand your task: [7, 3, 1, 9, 4]. Only output your selection in the form of a list and nothing else.",
+        "EXAMPLE": "[7, 3, 1, 9, 4]",
+        "SHOT": 0,
+        "INPUT": "resources/data/full_study.json",
+        "DESCRIPTION": "gemma-7b:shot=0:temp=0.5",
+        "RUN_ID": "fbe651f4f9a14869bf3dbb468060b7df",
+        "FORMAT_VERSION": 2
+    },
+    "gemma-7b:shot=0:temp=0.7": {
+        "MODEL": "google/gemma-7b",
+        "TEMPERATURE": 0.7,
+        "BATCH_SIZE": 20,
+        "SYSTEM_CONTENT": "Your role is to select, from a list of steps, those that are most important for inclusion in a summary explanation of that process. Format your selection as a list. Use the following example to understand your task: [7, 3, 1, 9, 4]. Only output your selection in the form of a list and nothing else.",
+        "EXAMPLE": "[7, 3, 1, 9, 4]",
+        "SHOT": 0,
+        "INPUT": "resources/data/full_study.json",
+        "DESCRIPTION": "gemma-7b:shot=0:temp=0.7",
+        "RUN_ID": "386623a62e15431ea7e8f509fc6bc38e",
+        "FORMAT_VERSION": 2
+    },
+    "Phi-3-mini-128k-instruct:shot=0:temp=0.3": {
+        "MODEL": "microsoft/Phi-3-mini-128k-instruct",
+        "TEMPERATURE": 0.3,
+        "BATCH_SIZE": 20,
+        "SYSTEM_CONTENT": "Your role is to select, from a list of steps, those that are most important for inclusion in a summary explanation of that process. Format your selection as a list. Use the following example to understand your task: [7, 3, 1, 9, 4]. Only output your selection in the form of a list and nothing else.",
+        "EXAMPLE": "[7, 3, 1, 9, 4]",
+        "SHOT": 0,
+        "INPUT": "resources/data/full_study.json",
+        "DESCRIPTION": "Phi-3-mini-128k-instruct:shot=0:temp=0.3",
+        "RUN_ID": "dc838a9507684397b9d301b21abfb8e7",
+        "FORMAT_VERSION": 2
+    },
+    "Phi-3-mini-128k-instruct:shot=0:temp=0.5": {
+        "MODEL": "microsoft/Phi-3-mini-128k-instruct",
+        "TEMPERATURE": 0.5,
+        "BATCH_SIZE": 20,
+        "SYSTEM_CONTENT": "Your role is to select, from a list of steps, those that are most important for inclusion in a summary explanation of that process. Format your selection as a list. Use the following example to understand your task: [7, 3, 1, 9, 4]. Only output your selection in the form of a list and nothing else.",
+        "EXAMPLE": "[7, 3, 1, 9, 4]",
+        "SHOT": 0,
+        "INPUT": "resources/data/full_study.json",
+        "DESCRIPTION": "Phi-3-mini-128k-instruct:shot=0:temp=0.5",
+        "RUN_ID": "46e0b13443074867ba8cd3af9cdd0807",
+        "FORMAT_VERSION": 2
+    },
+    "Phi-3-mini-128k-instruct:shot=0:temp=0.7": {
+        "MODEL": "microsoft/Phi-3-mini-128k-instruct",
+        "TEMPERATURE": 0.7,
+        "BATCH_SIZE": 20,
+        "SYSTEM_CONTENT": "Your role is to select, from a list of steps, those that are most important for inclusion in a summary explanation of that process. Format your selection as a list. Use the following example to understand your task: [7, 3, 1, 9, 4]. Only output your selection in the form of a list and nothing else.",
+        "EXAMPLE": "[7, 3, 1, 9, 4]",
+        "SHOT": 0,
+        "INPUT": "resources/data/full_study.json",
+        "DESCRIPTION": "Phi-3-mini-128k-instruct:shot=0:temp=0.7",
+        "RUN_ID": "a833a9bc3a4a4e219e38429e5d2fbbd8",
+        "FORMAT_VERSION": 2
+    },
+    "Phi-3-small-128k-instruct:shot=0:temp=0.3": {
+        "MODEL": "microsoft/Phi-3-small-128k-instruct",
+        "TEMPERATURE": 0.3,
+        "BATCH_SIZE": 20,
+        "SYSTEM_CONTENT": "Your role is to select, from a list of steps, those that are most important for inclusion in a summary explanation of that process. Format your selection as a list. Use the following example to understand your task: [7, 3, 1, 9, 4]. Only output your selection in the form of a list and nothing else.",
+        "EXAMPLE": "[7, 3, 1, 9, 4]",
+        "SHOT": 0,
+        "INPUT": "resources/data/full_study.json",
+        "DESCRIPTION": "Phi-3-small-128k-instruct:shot=0:temp=0.3",
+        "RUN_ID": "0691770132f34d46a8a0887c8554f47f",
+        "FORMAT_VERSION": 2
+    },
+    "Phi-3-small-128k-instruct:shot=0:temp=0.5": {
+        "MODEL": "microsoft/Phi-3-small-128k-instruct",
+        "TEMPERATURE": 0.5,
+        "BATCH_SIZE": 20,
+        "SYSTEM_CONTENT": "Your role is to select, from a list of steps, those that are most important for inclusion in a summary explanation of that process. Format your selection as a list. Use the following example to understand your task: [7, 3, 1, 9, 4]. Only output your selection in the form of a list and nothing else.",
+        "EXAMPLE": "[7, 3, 1, 9, 4]",
+        "SHOT": 0,
+        "INPUT": "resources/data/full_study.json",
+        "DESCRIPTION": "Phi-3-small-128k-instruct:shot=0:temp=0.5",
+        "RUN_ID": "b666f8a163154fe6b127e08b3fb66788",
+        "FORMAT_VERSION": 2
+    },
+    "Phi-3-small-128k-instruct:shot=0:temp=0.7": {
+        "MODEL": "microsoft/Phi-3-small-128k-instruct",
+        "TEMPERATURE": 0.7,
+        "BATCH_SIZE": 20,
+        "SYSTEM_CONTENT": "Your role is to select, from a list of steps, those that are most important for inclusion in a summary explanation of that process. Format your selection as a list. Use the following example to understand your task: [7, 3, 1, 9, 4]. Only output your selection in the form of a list and nothing else.",
+        "EXAMPLE": "[7, 3, 1, 9, 4]",
+        "SHOT": 0,
+        "INPUT": "resources/data/full_study.json",
+        "DESCRIPTION": "Phi-3-small-128k-instruct:shot=0:temp=0.7",
+        "RUN_ID": "3bcea1d2511441fa8d0f3a4e2bddd7b1",
+        "FORMAT_VERSION": 2
+    },
+    "Meta-Llama-3-8B-Instruct:shot=1:temp=0.3": {
+        "MODEL": "/nfs/public/hf/models/meta-llama/Meta-Llama-3-8B-Instruct",
+        "TEMPERATURE": 0.3,
+        "BATCH_SIZE": 20,
+        "SYSTEM_CONTENT": "Your role is to select, from a list of steps, those that are most important for inclusion in a summary explanation of that process. Format your selection as a list. Use the following example to understand your task: Question: In 2027, what will be the GDP of Zambia? Process: 1. Needed to use historic data to predict the GDP of Zambia in 2027 2. Data was found on the GDP of Zambia between 2010 and 2022 3. A predictive model was fit to this data 4. The answer was estimated using this predictive model. Selection: [1, 4]. Only output your selection in the form of a list and nothing else.",
+        "EXAMPLE": "Question: In 2027, what will be the GDP of Zambia? Process: 1. Needed to use historic data to predict the GDP of Zambia in 2027 2. Data was found on the GDP of Zambia between 2010 and 2022 3. A predictive model was fit to this data 4. The answer was estimated using this predictive model. Selection: [1, 4]",
+        "SHOT": 1,
+        "INPUT": "resources/data/full_study.json",
+        "DESCRIPTION": "Meta-Llama-3-8B-Instruct:shot=1:temp=0.3",
+        "RUN_ID": "28c80e9c0a814dd9a887b8e9e02bc011",
+        "FORMAT_VERSION": 2
+    },
+    "Meta-Llama-3-8B-Instruct:shot=1:temp=0.5": {
+        "MODEL": "/nfs/public/hf/models/meta-llama/Meta-Llama-3-8B-Instruct",
+        "TEMPERATURE": 0.5,
+        "BATCH_SIZE": 20,
+        "SYSTEM_CONTENT": "Your role is to select, from a list of steps, those that are most important for inclusion in a summary explanation of that process. Format your selection as a list. Use the following example to understand your task: Question: In 2027, what will be the GDP of Zambia? Process: 1. Needed to use historic data to predict the GDP of Zambia in 2027 2. Data was found on the GDP of Zambia between 2010 and 2022 3. A predictive model was fit to this data 4. The answer was estimated using this predictive model. Selection: [1, 4]. Only output your selection in the form of a list and nothing else.",
+        "EXAMPLE": "Question: In 2027, what will be the GDP of Zambia? Process: 1. Needed to use historic data to predict the GDP of Zambia in 2027 2. Data was found on the GDP of Zambia between 2010 and 2022 3. A predictive model was fit to this data 4. The answer was estimated using this predictive model. Selection: [1, 4]",
+        "SHOT": 1,
+        "INPUT": "resources/data/full_study.json",
+        "DESCRIPTION": "Meta-Llama-3-8B-Instruct:shot=1:temp=0.5",
+        "RUN_ID": "c71934c5fe6c4fea8211270079ecc04a",
+        "FORMAT_VERSION": 2
+    },
+    "Meta-Llama-3-8B-Instruct:shot=1:temp=0.7": {
+        "MODEL": "/nfs/public/hf/models/meta-llama/Meta-Llama-3-8B-Instruct",
+        "TEMPERATURE": 0.7,
+        "BATCH_SIZE": 20,
+        "SYSTEM_CONTENT": "Your role is to select, from a list of steps, those that are most important for inclusion in a summary explanation of that process. Format your selection as a list. Use the following example to understand your task: Question: In 2027, what will be the GDP of Zambia? Process: 1. Needed to use historic data to predict the GDP of Zambia in 2027 2. Data was found on the GDP of Zambia between 2010 and 2022 3. A predictive model was fit to this data 4. The answer was estimated using this predictive model. Selection: [1, 4]. Only output your selection in the form of a list and nothing else.",
+        "EXAMPLE": "Question: In 2027, what will be the GDP of Zambia? Process: 1. Needed to use historic data to predict the GDP of Zambia in 2027 2. Data was found on the GDP of Zambia between 2010 and 2022 3. A predictive model was fit to this data 4. The answer was estimated using this predictive model. Selection: [1, 4]",
+        "SHOT": 1,
+        "INPUT": "resources/data/full_study.json",
+        "DESCRIPTION": "Meta-Llama-3-8B-Instruct:shot=1:temp=0.7",
+        "RUN_ID": "25d38bbf52024d598276f9bbe2039a63",
+        "FORMAT_VERSION": 2
+    },
+    "Mistral-7B-Instruct-v0.3:shot=1:temp=0.3": {
+        "MODEL": "mistralai/Mistral-7B-Instruct-v0.3",
+        "TEMPERATURE": 0.3,
+        "BATCH_SIZE": 20,
+        "SYSTEM_CONTENT": "Your role is to select, from a list of steps, those that are most important for inclusion in a summary explanation of that process. Format your selection as a list. Use the following example to understand your task: Question: In 2027, what will be the GDP of Zambia? Process: 1. Needed to use historic data to predict the GDP of Zambia in 2027 2. Data was found on the GDP of Zambia between 2010 and 2022 3. A predictive model was fit to this data 4. The answer was estimated using this predictive model. Selection: [1, 4]. Only output your selection in the form of a list and nothing else.",
+        "EXAMPLE": "Question: In 2027, what will be the GDP of Zambia? Process: 1. Needed to use historic data to predict the GDP of Zambia in 2027 2. Data was found on the GDP of Zambia between 2010 and 2022 3. A predictive model was fit to this data 4. The answer was estimated using this predictive model. Selection: [1, 4]",
+        "SHOT": 1,
+        "INPUT": "resources/data/full_study.json",
+        "DESCRIPTION": "Mistral-7B-Instruct-v0.3:shot=1:temp=0.3",
+        "RUN_ID": "fd96f35d6003453a8216b6148d1b550d",
+        "FORMAT_VERSION": 2
+    },
+    "Mistral-7B-Instruct-v0.3:shot=1:temp=0.5": {
+        "MODEL": "mistralai/Mistral-7B-Instruct-v0.3",
+        "TEMPERATURE": 0.5,
+        "BATCH_SIZE": 20,
+        "SYSTEM_CONTENT": "Your role is to select, from a list of steps, those that are most important for inclusion in a summary explanation of that process. Format your selection as a list. Use the following example to understand your task: Question: In 2027, what will be the GDP of Zambia? Process: 1. Needed to use historic data to predict the GDP of Zambia in 2027 2. Data was found on the GDP of Zambia between 2010 and 2022 3. A predictive model was fit to this data 4. The answer was estimated using this predictive model. Selection: [1, 4]. Only output your selection in the form of a list and nothing else.",
+        "EXAMPLE": "Question: In 2027, what will be the GDP of Zambia? Process: 1. Needed to use historic data to predict the GDP of Zambia in 2027 2. Data was found on the GDP of Zambia between 2010 and 2022 3. A predictive model was fit to this data 4. The answer was estimated using this predictive model. Selection: [1, 4]",
+        "SHOT": 1,
+        "INPUT": "resources/data/full_study.json",
+        "DESCRIPTION": "Mistral-7B-Instruct-v0.3:shot=1:temp=0.5",
+        "RUN_ID": "006f88f846694db89cbc419787054882",
+        "FORMAT_VERSION": 2
+    },
+    "Mistral-7B-Instruct-v0.3:shot=1:temp=0.7": {
+        "MODEL": "mistralai/Mistral-7B-Instruct-v0.3",
+        "TEMPERATURE": 0.7,
+        "BATCH_SIZE": 20,
+        "SYSTEM_CONTENT": "Your role is to select, from a list of steps, those that are most important for inclusion in a summary explanation of that process. Format your selection as a list. Use the following example to understand your task: Question: In 2027, what will be the GDP of Zambia? Process: 1. Needed to use historic data to predict the GDP of Zambia in 2027 2. Data was found on the GDP of Zambia between 2010 and 2022 3. A predictive model was fit to this data 4. The answer was estimated using this predictive model. Selection: [1, 4]. Only output your selection in the form of a list and nothing else.",
+        "EXAMPLE": "Question: In 2027, what will be the GDP of Zambia? Process: 1. Needed to use historic data to predict the GDP of Zambia in 2027 2. Data was found on the GDP of Zambia between 2010 and 2022 3. A predictive model was fit to this data 4. The answer was estimated using this predictive model. Selection: [1, 4]",
+        "SHOT": 1,
+        "INPUT": "resources/data/full_study.json",
+        "DESCRIPTION": "Mistral-7B-Instruct-v0.3:shot=1:temp=0.7",
+        "RUN_ID": "1b6b722ad6f54530b10c377822a28797",
+        "FORMAT_VERSION": 2
+    },
+    "gemma-7b:shot=1:temp=0.3": {
+        "MODEL": "google/gemma-7b",
+        "TEMPERATURE": 0.3,
+        "BATCH_SIZE": 20,
+        "SYSTEM_CONTENT": "Your role is to select, from a list of steps, those that are most important for inclusion in a summary explanation of that process. Format your selection as a list. Use the following example to understand your task: Question: In 2027, what will be the GDP of Zambia? Process: 1. Needed to use historic data to predict the GDP of Zambia in 2027 2. Data was found on the GDP of Zambia between 2010 and 2022 3. A predictive model was fit to this data 4. The answer was estimated using this predictive model. Selection: [1, 4]. Only output your selection in the form of a list and nothing else.",
+        "EXAMPLE": "Question: In 2027, what will be the GDP of Zambia? Process: 1. Needed to use historic data to predict the GDP of Zambia in 2027 2. Data was found on the GDP of Zambia between 2010 and 2022 3. A predictive model was fit to this data 4. The answer was estimated using this predictive model. Selection: [1, 4]",
+        "SHOT": 1,
+        "INPUT": "resources/data/full_study.json",
+        "DESCRIPTION": "gemma-7b:shot=1:temp=0.3",
+        "RUN_ID": "9f5a0ab0fda44a148578507e4d0d2a0d",
+        "FORMAT_VERSION": 2
+    },
+    "gemma-7b:shot=1:temp=0.5": {
+        "MODEL": "google/gemma-7b",
+        "TEMPERATURE": 0.5,
+        "BATCH_SIZE": 20,
+        "SYSTEM_CONTENT": "Your role is to select, from a list of steps, those that are most important for inclusion in a summary explanation of that process. Format your selection as a list. Use the following example to understand your task: Question: In 2027, what will be the GDP of Zambia? Process: 1. Needed to use historic data to predict the GDP of Zambia in 2027 2. Data was found on the GDP of Zambia between 2010 and 2022 3. A predictive model was fit to this data 4. The answer was estimated using this predictive model. Selection: [1, 4]. Only output your selection in the form of a list and nothing else.",
+        "EXAMPLE": "Question: In 2027, what will be the GDP of Zambia? Process: 1. Needed to use historic data to predict the GDP of Zambia in 2027 2. Data was found on the GDP of Zambia between 2010 and 2022 3. A predictive model was fit to this data 4. The answer was estimated using this predictive model. Selection: [1, 4]",
+        "SHOT": 1,
+        "INPUT": "resources/data/full_study.json",
+        "DESCRIPTION": "gemma-7b:shot=1:temp=0.5",
+        "RUN_ID": "7e3bed02fc0b4586ac175d7ce6bef87d",
+        "FORMAT_VERSION": 2
+    },
+    "gemma-7b:shot=1:temp=0.7": {
+        "MODEL": "google/gemma-7b",
+        "TEMPERATURE": 0.7,
+        "BATCH_SIZE": 20,
+        "SYSTEM_CONTENT": "Your role is to select, from a list of steps, those that are most important for inclusion in a summary explanation of that process. Format your selection as a list. Use the following example to understand your task: Question: In 2027, what will be the GDP of Zambia? Process: 1. Needed to use historic data to predict the GDP of Zambia in 2027 2. Data was found on the GDP of Zambia between 2010 and 2022 3. A predictive model was fit to this data 4. The answer was estimated using this predictive model. Selection: [1, 4]. Only output your selection in the form of a list and nothing else.",
+        "EXAMPLE": "Question: In 2027, what will be the GDP of Zambia? Process: 1. Needed to use historic data to predict the GDP of Zambia in 2027 2. Data was found on the GDP of Zambia between 2010 and 2022 3. A predictive model was fit to this data 4. The answer was estimated using this predictive model. Selection: [1, 4]",
+        "SHOT": 1,
+        "INPUT": "resources/data/full_study.json",
+        "DESCRIPTION": "gemma-7b:shot=1:temp=0.7",
+        "RUN_ID": "1d8b91bcb6084cc79d8f58b4773ed2c4",
+        "FORMAT_VERSION": 2
+    },
+    "Phi-3-mini-128k-instruct:shot=1:temp=0.3": {
+        "MODEL": "microsoft/Phi-3-mini-128k-instruct",
+        "TEMPERATURE": 0.3,
+        "BATCH_SIZE": 20,
+        "SYSTEM_CONTENT": "Your role is to select, from a list of steps, those that are most important for inclusion in a summary explanation of that process. Format your selection as a list. Use the following example to understand your task: Question: In 2027, what will be the GDP of Zambia? Process: 1. Needed to use historic data to predict the GDP of Zambia in 2027 2. Data was found on the GDP of Zambia between 2010 and 2022 3. A predictive model was fit to this data 4. The answer was estimated using this predictive model. Selection: [1, 4]. Only output your selection in the form of a list and nothing else.",
+        "EXAMPLE": "Question: In 2027, what will be the GDP of Zambia? Process: 1. Needed to use historic data to predict the GDP of Zambia in 2027 2. Data was found on the GDP of Zambia between 2010 and 2022 3. A predictive model was fit to this data 4. The answer was estimated using this predictive model. Selection: [1, 4]",
+        "SHOT": 1,
+        "INPUT": "resources/data/full_study.json",
+        "DESCRIPTION": "Phi-3-mini-128k-instruct:shot=1:temp=0.3",
+        "RUN_ID": "c63f3e03964d465a91c8a8d72f61b46b",
+        "FORMAT_VERSION": 2
+    },
+    "Phi-3-mini-128k-instruct:shot=1:temp=0.5": {
+        "MODEL": "microsoft/Phi-3-mini-128k-instruct",
+        "TEMPERATURE": 0.5,
+        "BATCH_SIZE": 20,
+        "SYSTEM_CONTENT": "Your role is to select, from a list of steps, those that are most important for inclusion in a summary explanation of that process. Format your selection as a list. Use the following example to understand your task: Question: In 2027, what will be the GDP of Zambia? Process: 1. Needed to use historic data to predict the GDP of Zambia in 2027 2. Data was found on the GDP of Zambia between 2010 and 2022 3. A predictive model was fit to this data 4. The answer was estimated using this predictive model. Selection: [1, 4]. Only output your selection in the form of a list and nothing else.",
+        "EXAMPLE": "Question: In 2027, what will be the GDP of Zambia? Process: 1. Needed to use historic data to predict the GDP of Zambia in 2027 2. Data was found on the GDP of Zambia between 2010 and 2022 3. A predictive model was fit to this data 4. The answer was estimated using this predictive model. Selection: [1, 4]",
+        "SHOT": 1,
+        "INPUT": "resources/data/full_study.json",
+        "DESCRIPTION": "Phi-3-mini-128k-instruct:shot=1:temp=0.5",
+        "RUN_ID": "38bb766bf2604902bd9015ca32d71b41",
+        "FORMAT_VERSION": 2
+    },
+    "Phi-3-mini-128k-instruct:shot=1:temp=0.7": {
+        "MODEL": "microsoft/Phi-3-mini-128k-instruct",
+        "TEMPERATURE": 0.7,
+        "BATCH_SIZE": 20,
+        "SYSTEM_CONTENT": "Your role is to select, from a list of steps, those that are most important for inclusion in a summary explanation of that process. Format your selection as a list. Use the following example to understand your task: Question: In 2027, what will be the GDP of Zambia? Process: 1. Needed to use historic data to predict the GDP of Zambia in 2027 2. Data was found on the GDP of Zambia between 2010 and 2022 3. A predictive model was fit to this data 4. The answer was estimated using this predictive model. Selection: [1, 4]. Only output your selection in the form of a list and nothing else.",
+        "EXAMPLE": "Question: In 2027, what will be the GDP of Zambia? Process: 1. Needed to use historic data to predict the GDP of Zambia in 2027 2. Data was found on the GDP of Zambia between 2010 and 2022 3. A predictive model was fit to this data 4. The answer was estimated using this predictive model. Selection: [1, 4]",
+        "SHOT": 1,
+        "INPUT": "resources/data/full_study.json",
+        "DESCRIPTION": "Phi-3-mini-128k-instruct:shot=1:temp=0.7",
+        "RUN_ID": "1abb936e5e39467fa5a7687dbd5add2f",
+        "FORMAT_VERSION": 2
+    },
+    "Phi-3-small-128k-instruct:shot=1:temp=0.3": {
+        "MODEL": "microsoft/Phi-3-small-128k-instruct",
+        "TEMPERATURE": 0.3,
+        "BATCH_SIZE": 20,
+        "SYSTEM_CONTENT": "Your role is to select, from a list of steps, those that are most important for inclusion in a summary explanation of that process. Format your selection as a list. Use the following example to understand your task: Question: In 2027, what will be the GDP of Zambia? Process: 1. Needed to use historic data to predict the GDP of Zambia in 2027 2. Data was found on the GDP of Zambia between 2010 and 2022 3. A predictive model was fit to this data 4. The answer was estimated using this predictive model. Selection: [1, 4]. Only output your selection in the form of a list and nothing else.",
+        "EXAMPLE": "Question: In 2027, what will be the GDP of Zambia? Process: 1. Needed to use historic data to predict the GDP of Zambia in 2027 2. Data was found on the GDP of Zambia between 2010 and 2022 3. A predictive model was fit to this data 4. The answer was estimated using this predictive model. Selection: [1, 4]",
+        "SHOT": 1,
+        "INPUT": "resources/data/full_study.json",
+        "DESCRIPTION": "Phi-3-small-128k-instruct:shot=1:temp=0.3",
+        "RUN_ID": "74fd631f912446eca2420ff48bc1c731",
+        "FORMAT_VERSION": 2
+    },
+    "Phi-3-small-128k-instruct:shot=1:temp=0.5": {
+        "MODEL": "microsoft/Phi-3-small-128k-instruct",
+        "TEMPERATURE": 0.5,
+        "BATCH_SIZE": 20,
+        "SYSTEM_CONTENT": "Your role is to select, from a list of steps, those that are most important for inclusion in a summary explanation of that process. Format your selection as a list. Use the following example to understand your task: Question: In 2027, what will be the GDP of Zambia? Process: 1. Needed to use historic data to predict the GDP of Zambia in 2027 2. Data was found on the GDP of Zambia between 2010 and 2022 3. A predictive model was fit to this data 4. The answer was estimated using this predictive model. Selection: [1, 4]. Only output your selection in the form of a list and nothing else.",
+        "EXAMPLE": "Question: In 2027, what will be the GDP of Zambia? Process: 1. Needed to use historic data to predict the GDP of Zambia in 2027 2. Data was found on the GDP of Zambia between 2010 and 2022 3. A predictive model was fit to this data 4. The answer was estimated using this predictive model. Selection: [1, 4]",
+        "SHOT": 1,
+        "INPUT": "resources/data/full_study.json",
+        "DESCRIPTION": "Phi-3-small-128k-instruct:shot=1:temp=0.5",
+        "RUN_ID": "998b8cb07d18458793de699ff8d2147b",
+        "FORMAT_VERSION": 2
+    },
+    "Phi-3-small-128k-instruct:shot=1:temp=0.7": {
+        "MODEL": "microsoft/Phi-3-small-128k-instruct",
+        "TEMPERATURE": 0.7,
+        "BATCH_SIZE": 20,
+        "SYSTEM_CONTENT": "Your role is to select, from a list of steps, those that are most important for inclusion in a summary explanation of that process. Format your selection as a list. Use the following example to understand your task: Question: In 2027, what will be the GDP of Zambia? Process: 1. Needed to use historic data to predict the GDP of Zambia in 2027 2. Data was found on the GDP of Zambia between 2010 and 2022 3. A predictive model was fit to this data 4. The answer was estimated using this predictive model. Selection: [1, 4]. Only output your selection in the form of a list and nothing else.",
+        "EXAMPLE": "Question: In 2027, what will be the GDP of Zambia? Process: 1. Needed to use historic data to predict the GDP of Zambia in 2027 2. Data was found on the GDP of Zambia between 2010 and 2022 3. A predictive model was fit to this data 4. The answer was estimated using this predictive model. Selection: [1, 4]",
+        "SHOT": 1,
+        "INPUT": "resources/data/full_study.json",
+        "DESCRIPTION": "Phi-3-small-128k-instruct:shot=1:temp=0.7",
+        "RUN_ID": "339ed8b56c534574b56a58c8daae07a9",
+        "FORMAT_VERSION": 2
+    },
+    "Meta-Llama-3-8B-Instruct:shot=3:temp=0.3": {
+        "MODEL": "/nfs/public/hf/models/meta-llama/Meta-Llama-3-8B-Instruct",
+        "TEMPERATURE": 0.3,
+        "BATCH_SIZE": 20,
+        "SYSTEM_CONTENT": "Your role is to select, from a list of steps, those that are most important for inclusion in a summary explanation of that process. Format your selection as a list. Use the following example to understand your task: Question: In 2027, what will be the GDP of Zambia? Process: 1. Needed to use historic data to predict the GDP of Zambia in 2027 2. Data was found on the GDP of Zambia between 2010 and 2022 3. A predictive model was fit to this data 4. The answer was estimated using this predictive model. Selection: [1, 4]; Question: Which country in Western Europe had the lowest energy consumption in 2017? Process: 1. An answer using historic data on energy consumption was estimated. 2. 9 countries in Western Europe, including Netherlands, Monaco and Belgium, were found. 3. The energy consumption for each of these countries in 2017 was found. 4. The answer was estimated by comparing the data on energy consumption. Selection: [1, 2]; Question: In 2029, what will be the GDP of the country in South-eastern Asia which had the highest GDP in 2014? Process: The country in South-eastern Asia that had the highest GDP in 2014 had to be found first. 2. To find this, a list of countries located in South-eastern Asia was needed. 3. 11 countries that are in South-eastern Asia were found, including Brunei Darussalam, Cambodia and Myanmar. 4. For each of these countries, the GDP in 2014 had to be found. 5. Data on the GDP of these 11 countries in 2014 was found. 6. The country with the highest GDP in 2014 was found by comparing these values, and was Singapore. 7. Next, the GDP of Singapore in 2029 needed to be estimated. 8. Found data on the GDP of Singapore between 2009 and 2022. 9. A linear regression model was fit to this data. 10. The linear regression model was used to predict the GDP of Singapore in 2029. Selection: [1, 4, 7, 10]. Only output your selection in the form of a list and nothing else.",
+        "EXAMPLE": [
+            "Question: In 2027, what will be the GDP of Zambia? Process: 1. Needed to use historic data to predict the GDP of Zambia in 2027 2. Data was found on the GDP of Zambia between 2010 and 2022 3. A predictive model was fit to this data 4. The answer was estimated using this predictive model. Selection: [1, 4]",
+            "Question: Which country in Western Europe had the lowest energy consumption in 2017? Process: 1. An answer using historic data on energy consumption was estimated. 2. 9 countries in Western Europe, including Netherlands, Monaco and Belgium, were found. 3. The energy consumption for each of these countries in 2017 was found. 4. The answer was estimated by comparing the data on energy consumption. Selection: [1, 2]",
+            "Question: In 2029, what will be the GDP of the country in South-eastern Asia which had the highest GDP in 2014? Process: The country in South-eastern Asia that had the highest GDP in 2014 had to be found first. 2. To find this, a list of countries located in South-eastern Asia was needed. 3. 11 countries that are in South-eastern Asia were found, including Brunei Darussalam, Cambodia and Myanmar. 4. For each of these countries, the GDP in 2014 had to be found. 5. Data on the GDP of these 11 countries in 2014 was found. 6. The country with the highest GDP in 2014 was found by comparing these values, and was Singapore. 7. Next, the GDP of Singapore in 2029 needed to be estimated. 8. Found data on the GDP of Singapore between 2009 and 2022. 9. A linear regression model was fit to this data. 10. The linear regression model was used to predict the GDP of Singapore in 2029. Selection: [1, 4, 7, 10]"
+        ],
+        "SHOT": 3,
+        "INPUT": "resources/data/full_study.json",
+        "DESCRIPTION": "Meta-Llama-3-8B-Instruct:shot=3:temp=0.3",
+        "RUN_ID": "8b6bd524168b4cad9b0e2fd6dea64c6f",
+        "FORMAT_VERSION": 2
+    },
+    "Meta-Llama-3-8B-Instruct:shot=3:temp=0.5": {
+        "MODEL": "/nfs/public/hf/models/meta-llama/Meta-Llama-3-8B-Instruct",
+        "TEMPERATURE": 0.5,
+        "BATCH_SIZE": 20,
+        "SYSTEM_CONTENT": "Your role is to select, from a list of steps, those that are most important for inclusion in a summary explanation of that process. Format your selection as a list. Use the following example to understand your task: Question: In 2027, what will be the GDP of Zambia? Process: 1. Needed to use historic data to predict the GDP of Zambia in 2027 2. Data was found on the GDP of Zambia between 2010 and 2022 3. A predictive model was fit to this data 4. The answer was estimated using this predictive model. Selection: [1, 4]; Question: Which country in Western Europe had the lowest energy consumption in 2017? Process: 1. An answer using historic data on energy consumption was estimated. 2. 9 countries in Western Europe, including Netherlands, Monaco and Belgium, were found. 3. The energy consumption for each of these countries in 2017 was found. 4. The answer was estimated by comparing the data on energy consumption. Selection: [1, 2]; Question: In 2029, what will be the GDP of the country in South-eastern Asia which had the highest GDP in 2014? Process: The country in South-eastern Asia that had the highest GDP in 2014 had to be found first. 2. To find this, a list of countries located in South-eastern Asia was needed. 3. 11 countries that are in South-eastern Asia were found, including Brunei Darussalam, Cambodia and Myanmar. 4. For each of these countries, the GDP in 2014 had to be found. 5. Data on the GDP of these 11 countries in 2014 was found. 6. The country with the highest GDP in 2014 was found by comparing these values, and was Singapore. 7. Next, the GDP of Singapore in 2029 needed to be estimated. 8. Found data on the GDP of Singapore between 2009 and 2022. 9. A linear regression model was fit to this data. 10. The linear regression model was used to predict the GDP of Singapore in 2029. Selection: [1, 4, 7, 10]. Only output your selection in the form of a list and nothing else.",
+        "EXAMPLE": [
+            "Question: In 2027, what will be the GDP of Zambia? Process: 1. Needed to use historic data to predict the GDP of Zambia in 2027 2. Data was found on the GDP of Zambia between 2010 and 2022 3. A predictive model was fit to this data 4. The answer was estimated using this predictive model. Selection: [1, 4]",
+            "Question: Which country in Western Europe had the lowest energy consumption in 2017? Process: 1. An answer using historic data on energy consumption was estimated. 2. 9 countries in Western Europe, including Netherlands, Monaco and Belgium, were found. 3. The energy consumption for each of these countries in 2017 was found. 4. The answer was estimated by comparing the data on energy consumption. Selection: [1, 2]",
+            "Question: In 2029, what will be the GDP of the country in South-eastern Asia which had the highest GDP in 2014? Process: The country in South-eastern Asia that had the highest GDP in 2014 had to be found first. 2. To find this, a list of countries located in South-eastern Asia was needed. 3. 11 countries that are in South-eastern Asia were found, including Brunei Darussalam, Cambodia and Myanmar. 4. For each of these countries, the GDP in 2014 had to be found. 5. Data on the GDP of these 11 countries in 2014 was found. 6. The country with the highest GDP in 2014 was found by comparing these values, and was Singapore. 7. Next, the GDP of Singapore in 2029 needed to be estimated. 8. Found data on the GDP of Singapore between 2009 and 2022. 9. A linear regression model was fit to this data. 10. The linear regression model was used to predict the GDP of Singapore in 2029. Selection: [1, 4, 7, 10]"
+        ],
+        "SHOT": 3,
+        "INPUT": "resources/data/full_study.json",
+        "DESCRIPTION": "Meta-Llama-3-8B-Instruct:shot=3:temp=0.5",
+        "RUN_ID": "2a2e4c04a2e64da186b32747682faeba",
+        "FORMAT_VERSION": 2
+    },
+    "Meta-Llama-3-8B-Instruct:shot=3:temp=0.7": {
+        "MODEL": "/nfs/public/hf/models/meta-llama/Meta-Llama-3-8B-Instruct",
+        "TEMPERATURE": 0.7,
+        "BATCH_SIZE": 20,
+        "SYSTEM_CONTENT": "Your role is to select, from a list of steps, those that are most important for inclusion in a summary explanation of that process. Format your selection as a list. Use the following example to understand your task: Question: In 2027, what will be the GDP of Zambia? Process: 1. Needed to use historic data to predict the GDP of Zambia in 2027 2. Data was found on the GDP of Zambia between 2010 and 2022 3. A predictive model was fit to this data 4. The answer was estimated using this predictive model. Selection: [1, 4]; Question: Which country in Western Europe had the lowest energy consumption in 2017? Process: 1. An answer using historic data on energy consumption was estimated. 2. 9 countries in Western Europe, including Netherlands, Monaco and Belgium, were found. 3. The energy consumption for each of these countries in 2017 was found. 4. The answer was estimated by comparing the data on energy consumption. Selection: [1, 2]; Question: In 2029, what will be the GDP of the country in South-eastern Asia which had the highest GDP in 2014? Process: The country in South-eastern Asia that had the highest GDP in 2014 had to be found first. 2. To find this, a list of countries located in South-eastern Asia was needed. 3. 11 countries that are in South-eastern Asia were found, including Brunei Darussalam, Cambodia and Myanmar. 4. For each of these countries, the GDP in 2014 had to be found. 5. Data on the GDP of these 11 countries in 2014 was found. 6. The country with the highest GDP in 2014 was found by comparing these values, and was Singapore. 7. Next, the GDP of Singapore in 2029 needed to be estimated. 8. Found data on the GDP of Singapore between 2009 and 2022. 9. A linear regression model was fit to this data. 10. The linear regression model was used to predict the GDP of Singapore in 2029. Selection: [1, 4, 7, 10]. Only output your selection in the form of a list and nothing else.",
+        "EXAMPLE": [
+            "Question: In 2027, what will be the GDP of Zambia? Process: 1. Needed to use historic data to predict the GDP of Zambia in 2027 2. Data was found on the GDP of Zambia between 2010 and 2022 3. A predictive model was fit to this data 4. The answer was estimated using this predictive model. Selection: [1, 4]",
+            "Question: Which country in Western Europe had the lowest energy consumption in 2017? Process: 1. An answer using historic data on energy consumption was estimated. 2. 9 countries in Western Europe, including Netherlands, Monaco and Belgium, were found. 3. The energy consumption for each of these countries in 2017 was found. 4. The answer was estimated by comparing the data on energy consumption. Selection: [1, 2]",
+            "Question: In 2029, what will be the GDP of the country in South-eastern Asia which had the highest GDP in 2014? Process: The country in South-eastern Asia that had the highest GDP in 2014 had to be found first. 2. To find this, a list of countries located in South-eastern Asia was needed. 3. 11 countries that are in South-eastern Asia were found, including Brunei Darussalam, Cambodia and Myanmar. 4. For each of these countries, the GDP in 2014 had to be found. 5. Data on the GDP of these 11 countries in 2014 was found. 6. The country with the highest GDP in 2014 was found by comparing these values, and was Singapore. 7. Next, the GDP of Singapore in 2029 needed to be estimated. 8. Found data on the GDP of Singapore between 2009 and 2022. 9. A linear regression model was fit to this data. 10. The linear regression model was used to predict the GDP of Singapore in 2029. Selection: [1, 4, 7, 10]"
+        ],
+        "SHOT": 3,
+        "INPUT": "resources/data/full_study.json",
+        "DESCRIPTION": "Meta-Llama-3-8B-Instruct:shot=3:temp=0.7",
+        "RUN_ID": "38a3db88c7bb4c6ab868735c99c98a43",
+        "FORMAT_VERSION": 2
+    },
+    "Mistral-7B-Instruct-v0.3:shot=3:temp=0.3": {
+        "MODEL": "mistralai/Mistral-7B-Instruct-v0.3",
+        "TEMPERATURE": 0.3,
+        "BATCH_SIZE": 20,
+        "SYSTEM_CONTENT": "Your role is to select, from a list of steps, those that are most important for inclusion in a summary explanation of that process. Format your selection as a list. Use the following example to understand your task: Question: In 2027, what will be the GDP of Zambia? Process: 1. Needed to use historic data to predict the GDP of Zambia in 2027 2. Data was found on the GDP of Zambia between 2010 and 2022 3. A predictive model was fit to this data 4. The answer was estimated using this predictive model. Selection: [1, 4]; Question: Which country in Western Europe had the lowest energy consumption in 2017? Process: 1. An answer using historic data on energy consumption was estimated. 2. 9 countries in Western Europe, including Netherlands, Monaco and Belgium, were found. 3. The energy consumption for each of these countries in 2017 was found. 4. The answer was estimated by comparing the data on energy consumption. Selection: [1, 2]; Question: In 2029, what will be the GDP of the country in South-eastern Asia which had the highest GDP in 2014? Process: The country in South-eastern Asia that had the highest GDP in 2014 had to be found first. 2. To find this, a list of countries located in South-eastern Asia was needed. 3. 11 countries that are in South-eastern Asia were found, including Brunei Darussalam, Cambodia and Myanmar. 4. For each of these countries, the GDP in 2014 had to be found. 5. Data on the GDP of these 11 countries in 2014 was found. 6. The country with the highest GDP in 2014 was found by comparing these values, and was Singapore. 7. Next, the GDP of Singapore in 2029 needed to be estimated. 8. Found data on the GDP of Singapore between 2009 and 2022. 9. A linear regression model was fit to this data. 10. The linear regression model was used to predict the GDP of Singapore in 2029. Selection: [1, 4, 7, 10]. Only output your selection in the form of a list and nothing else.",
+        "EXAMPLE": [
+            "Question: In 2027, what will be the GDP of Zambia? Process: 1. Needed to use historic data to predict the GDP of Zambia in 2027 2. Data was found on the GDP of Zambia between 2010 and 2022 3. A predictive model was fit to this data 4. The answer was estimated using this predictive model. Selection: [1, 4]",
+            "Question: Which country in Western Europe had the lowest energy consumption in 2017? Process: 1. An answer using historic data on energy consumption was estimated. 2. 9 countries in Western Europe, including Netherlands, Monaco and Belgium, were found. 3. The energy consumption for each of these countries in 2017 was found. 4. The answer was estimated by comparing the data on energy consumption. Selection: [1, 2]",
+            "Question: In 2029, what will be the GDP of the country in South-eastern Asia which had the highest GDP in 2014? Process: The country in South-eastern Asia that had the highest GDP in 2014 had to be found first. 2. To find this, a list of countries located in South-eastern Asia was needed. 3. 11 countries that are in South-eastern Asia were found, including Brunei Darussalam, Cambodia and Myanmar. 4. For each of these countries, the GDP in 2014 had to be found. 5. Data on the GDP of these 11 countries in 2014 was found. 6. The country with the highest GDP in 2014 was found by comparing these values, and was Singapore. 7. Next, the GDP of Singapore in 2029 needed to be estimated. 8. Found data on the GDP of Singapore between 2009 and 2022. 9. A linear regression model was fit to this data. 10. The linear regression model was used to predict the GDP of Singapore in 2029. Selection: [1, 4, 7, 10]"
+        ],
+        "SHOT": 3,
+        "INPUT": "resources/data/full_study.json",
+        "DESCRIPTION": "Mistral-7B-Instruct-v0.3:shot=3:temp=0.3",
+        "RUN_ID": "0bd4915cbc084eef8652dad4e552a189",
+        "FORMAT_VERSION": 2
+    },
+    "Mistral-7B-Instruct-v0.3:shot=3:temp=0.5": {
+        "MODEL": "mistralai/Mistral-7B-Instruct-v0.3",
+        "TEMPERATURE": 0.5,
+        "BATCH_SIZE": 20,
+        "SYSTEM_CONTENT": "Your role is to select, from a list of steps, those that are most important for inclusion in a summary explanation of that process. Format your selection as a list. Use the following example to understand your task: Question: In 2027, what will be the GDP of Zambia? Process: 1. Needed to use historic data to predict the GDP of Zambia in 2027 2. Data was found on the GDP of Zambia between 2010 and 2022 3. A predictive model was fit to this data 4. The answer was estimated using this predictive model. Selection: [1, 4]; Question: Which country in Western Europe had the lowest energy consumption in 2017? Process: 1. An answer using historic data on energy consumption was estimated. 2. 9 countries in Western Europe, including Netherlands, Monaco and Belgium, were found. 3. The energy consumption for each of these countries in 2017 was found. 4. The answer was estimated by comparing the data on energy consumption. Selection: [1, 2]; Question: In 2029, what will be the GDP of the country in South-eastern Asia which had the highest GDP in 2014? Process: The country in South-eastern Asia that had the highest GDP in 2014 had to be found first. 2. To find this, a list of countries located in South-eastern Asia was needed. 3. 11 countries that are in South-eastern Asia were found, including Brunei Darussalam, Cambodia and Myanmar. 4. For each of these countries, the GDP in 2014 had to be found. 5. Data on the GDP of these 11 countries in 2014 was found. 6. The country with the highest GDP in 2014 was found by comparing these values, and was Singapore. 7. Next, the GDP of Singapore in 2029 needed to be estimated. 8. Found data on the GDP of Singapore between 2009 and 2022. 9. A linear regression model was fit to this data. 10. The linear regression model was used to predict the GDP of Singapore in 2029. Selection: [1, 4, 7, 10]. Only output your selection in the form of a list and nothing else.",
+        "EXAMPLE": [
+            "Question: In 2027, what will be the GDP of Zambia? Process: 1. Needed to use historic data to predict the GDP of Zambia in 2027 2. Data was found on the GDP of Zambia between 2010 and 2022 3. A predictive model was fit to this data 4. The answer was estimated using this predictive model. Selection: [1, 4]",
+            "Question: Which country in Western Europe had the lowest energy consumption in 2017? Process: 1. An answer using historic data on energy consumption was estimated. 2. 9 countries in Western Europe, including Netherlands, Monaco and Belgium, were found. 3. The energy consumption for each of these countries in 2017 was found. 4. The answer was estimated by comparing the data on energy consumption. Selection: [1, 2]",
+            "Question: In 2029, what will be the GDP of the country in South-eastern Asia which had the highest GDP in 2014? Process: The country in South-eastern Asia that had the highest GDP in 2014 had to be found first. 2. To find this, a list of countries located in South-eastern Asia was needed. 3. 11 countries that are in South-eastern Asia were found, including Brunei Darussalam, Cambodia and Myanmar. 4. For each of these countries, the GDP in 2014 had to be found. 5. Data on the GDP of these 11 countries in 2014 was found. 6. The country with the highest GDP in 2014 was found by comparing these values, and was Singapore. 7. Next, the GDP of Singapore in 2029 needed to be estimated. 8. Found data on the GDP of Singapore between 2009 and 2022. 9. A linear regression model was fit to this data. 10. The linear regression model was used to predict the GDP of Singapore in 2029. Selection: [1, 4, 7, 10]"
+        ],
+        "SHOT": 3,
+        "INPUT": "resources/data/full_study.json",
+        "DESCRIPTION": "Mistral-7B-Instruct-v0.3:shot=3:temp=0.5",
+        "RUN_ID": "594d717382fa496c85028f8c1d32b24d",
+        "FORMAT_VERSION": 2
+    },
+    "Mistral-7B-Instruct-v0.3:shot=3:temp=0.7": {
+        "MODEL": "mistralai/Mistral-7B-Instruct-v0.3",
+        "TEMPERATURE": 0.7,
+        "BATCH_SIZE": 20,
+        "SYSTEM_CONTENT": "Your role is to select, from a list of steps, those that are most important for inclusion in a summary explanation of that process. Format your selection as a list. Use the following example to understand your task: Question: In 2027, what will be the GDP of Zambia? Process: 1. Needed to use historic data to predict the GDP of Zambia in 2027 2. Data was found on the GDP of Zambia between 2010 and 2022 3. A predictive model was fit to this data 4. The answer was estimated using this predictive model. Selection: [1, 4]; Question: Which country in Western Europe had the lowest energy consumption in 2017? Process: 1. An answer using historic data on energy consumption was estimated. 2. 9 countries in Western Europe, including Netherlands, Monaco and Belgium, were found. 3. The energy consumption for each of these countries in 2017 was found. 4. The answer was estimated by comparing the data on energy consumption. Selection: [1, 2]; Question: In 2029, what will be the GDP of the country in South-eastern Asia which had the highest GDP in 2014? Process: The country in South-eastern Asia that had the highest GDP in 2014 had to be found first. 2. To find this, a list of countries located in South-eastern Asia was needed. 3. 11 countries that are in South-eastern Asia were found, including Brunei Darussalam, Cambodia and Myanmar. 4. For each of these countries, the GDP in 2014 had to be found. 5. Data on the GDP of these 11 countries in 2014 was found. 6. The country with the highest GDP in 2014 was found by comparing these values, and was Singapore. 7. Next, the GDP of Singapore in 2029 needed to be estimated. 8. Found data on the GDP of Singapore between 2009 and 2022. 9. A linear regression model was fit to this data. 10. The linear regression model was used to predict the GDP of Singapore in 2029. Selection: [1, 4, 7, 10]. Only output your selection in the form of a list and nothing else.",
+        "EXAMPLE": [
+            "Question: In 2027, what will be the GDP of Zambia? Process: 1. Needed to use historic data to predict the GDP of Zambia in 2027 2. Data was found on the GDP of Zambia between 2010 and 2022 3. A predictive model was fit to this data 4. The answer was estimated using this predictive model. Selection: [1, 4]",
+            "Question: Which country in Western Europe had the lowest energy consumption in 2017? Process: 1. An answer using historic data on energy consumption was estimated. 2. 9 countries in Western Europe, including Netherlands, Monaco and Belgium, were found. 3. The energy consumption for each of these countries in 2017 was found. 4. The answer was estimated by comparing the data on energy consumption. Selection: [1, 2]",
+            "Question: In 2029, what will be the GDP of the country in South-eastern Asia which had the highest GDP in 2014? Process: The country in South-eastern Asia that had the highest GDP in 2014 had to be found first. 2. To find this, a list of countries located in South-eastern Asia was needed. 3. 11 countries that are in South-eastern Asia were found, including Brunei Darussalam, Cambodia and Myanmar. 4. For each of these countries, the GDP in 2014 had to be found. 5. Data on the GDP of these 11 countries in 2014 was found. 6. The country with the highest GDP in 2014 was found by comparing these values, and was Singapore. 7. Next, the GDP of Singapore in 2029 needed to be estimated. 8. Found data on the GDP of Singapore between 2009 and 2022. 9. A linear regression model was fit to this data. 10. The linear regression model was used to predict the GDP of Singapore in 2029. Selection: [1, 4, 7, 10]"
+        ],
+        "SHOT": 3,
+        "INPUT": "resources/data/full_study.json",
+        "DESCRIPTION": "Mistral-7B-Instruct-v0.3:shot=3:temp=0.7",
+        "RUN_ID": "72a8c61ca8744c2db44b162fc32ced34",
+        "FORMAT_VERSION": 2
+    },
+    "gemma-7b:shot=3:temp=0.3": {
+        "MODEL": "google/gemma-7b",
+        "TEMPERATURE": 0.3,
+        "BATCH_SIZE": 20,
+        "SYSTEM_CONTENT": "Your role is to select, from a list of steps, those that are most important for inclusion in a summary explanation of that process. Format your selection as a list. Use the following example to understand your task: Question: In 2027, what will be the GDP of Zambia? Process: 1. Needed to use historic data to predict the GDP of Zambia in 2027 2. Data was found on the GDP of Zambia between 2010 and 2022 3. A predictive model was fit to this data 4. The answer was estimated using this predictive model. Selection: [1, 4]; Question: Which country in Western Europe had the lowest energy consumption in 2017? Process: 1. An answer using historic data on energy consumption was estimated. 2. 9 countries in Western Europe, including Netherlands, Monaco and Belgium, were found. 3. The energy consumption for each of these countries in 2017 was found. 4. The answer was estimated by comparing the data on energy consumption. Selection: [1, 2]; Question: In 2029, what will be the GDP of the country in South-eastern Asia which had the highest GDP in 2014? Process: The country in South-eastern Asia that had the highest GDP in 2014 had to be found first. 2. To find this, a list of countries located in South-eastern Asia was needed. 3. 11 countries that are in South-eastern Asia were found, including Brunei Darussalam, Cambodia and Myanmar. 4. For each of these countries, the GDP in 2014 had to be found. 5. Data on the GDP of these 11 countries in 2014 was found. 6. The country with the highest GDP in 2014 was found by comparing these values, and was Singapore. 7. Next, the GDP of Singapore in 2029 needed to be estimated. 8. Found data on the GDP of Singapore between 2009 and 2022. 9. A linear regression model was fit to this data. 10. The linear regression model was used to predict the GDP of Singapore in 2029. Selection: [1, 4, 7, 10]. Only output your selection in the form of a list and nothing else.",
+        "EXAMPLE": [
+            "Question: In 2027, what will be the GDP of Zambia? Process: 1. Needed to use historic data to predict the GDP of Zambia in 2027 2. Data was found on the GDP of Zambia between 2010 and 2022 3. A predictive model was fit to this data 4. The answer was estimated using this predictive model. Selection: [1, 4]",
+            "Question: Which country in Western Europe had the lowest energy consumption in 2017? Process: 1. An answer using historic data on energy consumption was estimated. 2. 9 countries in Western Europe, including Netherlands, Monaco and Belgium, were found. 3. The energy consumption for each of these countries in 2017 was found. 4. The answer was estimated by comparing the data on energy consumption. Selection: [1, 2]",
+            "Question: In 2029, what will be the GDP of the country in South-eastern Asia which had the highest GDP in 2014? Process: The country in South-eastern Asia that had the highest GDP in 2014 had to be found first. 2. To find this, a list of countries located in South-eastern Asia was needed. 3. 11 countries that are in South-eastern Asia were found, including Brunei Darussalam, Cambodia and Myanmar. 4. For each of these countries, the GDP in 2014 had to be found. 5. Data on the GDP of these 11 countries in 2014 was found. 6. The country with the highest GDP in 2014 was found by comparing these values, and was Singapore. 7. Next, the GDP of Singapore in 2029 needed to be estimated. 8. Found data on the GDP of Singapore between 2009 and 2022. 9. A linear regression model was fit to this data. 10. The linear regression model was used to predict the GDP of Singapore in 2029. Selection: [1, 4, 7, 10]"
+        ],
+        "SHOT": 3,
+        "INPUT": "resources/data/full_study.json",
+        "DESCRIPTION": "gemma-7b:shot=3:temp=0.3",
+        "RUN_ID": "5a5096b0cbbf4e11ba78b8ca0847dcb6",
+        "FORMAT_VERSION": 2
+    },
+    "gemma-7b:shot=3:temp=0.5": {
+        "MODEL": "google/gemma-7b",
+        "TEMPERATURE": 0.5,
+        "BATCH_SIZE": 20,
+        "SYSTEM_CONTENT": "Your role is to select, from a list of steps, those that are most important for inclusion in a summary explanation of that process. Format your selection as a list. Use the following example to understand your task: Question: In 2027, what will be the GDP of Zambia? Process: 1. Needed to use historic data to predict the GDP of Zambia in 2027 2. Data was found on the GDP of Zambia between 2010 and 2022 3. A predictive model was fit to this data 4. The answer was estimated using this predictive model. Selection: [1, 4]; Question: Which country in Western Europe had the lowest energy consumption in 2017? Process: 1. An answer using historic data on energy consumption was estimated. 2. 9 countries in Western Europe, including Netherlands, Monaco and Belgium, were found. 3. The energy consumption for each of these countries in 2017 was found. 4. The answer was estimated by comparing the data on energy consumption. Selection: [1, 2]; Question: In 2029, what will be the GDP of the country in South-eastern Asia which had the highest GDP in 2014? Process: The country in South-eastern Asia that had the highest GDP in 2014 had to be found first. 2. To find this, a list of countries located in South-eastern Asia was needed. 3. 11 countries that are in South-eastern Asia were found, including Brunei Darussalam, Cambodia and Myanmar. 4. For each of these countries, the GDP in 2014 had to be found. 5. Data on the GDP of these 11 countries in 2014 was found. 6. The country with the highest GDP in 2014 was found by comparing these values, and was Singapore. 7. Next, the GDP of Singapore in 2029 needed to be estimated. 8. Found data on the GDP of Singapore between 2009 and 2022. 9. A linear regression model was fit to this data. 10. The linear regression model was used to predict the GDP of Singapore in 2029. Selection: [1, 4, 7, 10]. Only output your selection in the form of a list and nothing else.",
+        "EXAMPLE": [
+            "Question: In 2027, what will be the GDP of Zambia? Process: 1. Needed to use historic data to predict the GDP of Zambia in 2027 2. Data was found on the GDP of Zambia between 2010 and 2022 3. A predictive model was fit to this data 4. The answer was estimated using this predictive model. Selection: [1, 4]",
+            "Question: Which country in Western Europe had the lowest energy consumption in 2017? Process: 1. An answer using historic data on energy consumption was estimated. 2. 9 countries in Western Europe, including Netherlands, Monaco and Belgium, were found. 3. The energy consumption for each of these countries in 2017 was found. 4. The answer was estimated by comparing the data on energy consumption. Selection: [1, 2]",
+            "Question: In 2029, what will be the GDP of the country in South-eastern Asia which had the highest GDP in 2014? Process: The country in South-eastern Asia that had the highest GDP in 2014 had to be found first. 2. To find this, a list of countries located in South-eastern Asia was needed. 3. 11 countries that are in South-eastern Asia were found, including Brunei Darussalam, Cambodia and Myanmar. 4. For each of these countries, the GDP in 2014 had to be found. 5. Data on the GDP of these 11 countries in 2014 was found. 6. The country with the highest GDP in 2014 was found by comparing these values, and was Singapore. 7. Next, the GDP of Singapore in 2029 needed to be estimated. 8. Found data on the GDP of Singapore between 2009 and 2022. 9. A linear regression model was fit to this data. 10. The linear regression model was used to predict the GDP of Singapore in 2029. Selection: [1, 4, 7, 10]"
+        ],
+        "SHOT": 3,
+        "INPUT": "resources/data/full_study.json",
+        "DESCRIPTION": "gemma-7b:shot=3:temp=0.5",
+        "RUN_ID": "79bab7f5940c4252a586d35b1041557d",
+        "FORMAT_VERSION": 2
+    },
+    "gemma-7b:shot=3:temp=0.7": {
+        "MODEL": "google/gemma-7b",
+        "TEMPERATURE": 0.7,
+        "BATCH_SIZE": 20,
+        "SYSTEM_CONTENT": "Your role is to select, from a list of steps, those that are most important for inclusion in a summary explanation of that process. Format your selection as a list. Use the following example to understand your task: Question: In 2027, what will be the GDP of Zambia? Process: 1. Needed to use historic data to predict the GDP of Zambia in 2027 2. Data was found on the GDP of Zambia between 2010 and 2022 3. A predictive model was fit to this data 4. The answer was estimated using this predictive model. Selection: [1, 4]; Question: Which country in Western Europe had the lowest energy consumption in 2017? Process: 1. An answer using historic data on energy consumption was estimated. 2. 9 countries in Western Europe, including Netherlands, Monaco and Belgium, were found. 3. The energy consumption for each of these countries in 2017 was found. 4. The answer was estimated by comparing the data on energy consumption. Selection: [1, 2]; Question: In 2029, what will be the GDP of the country in South-eastern Asia which had the highest GDP in 2014? Process: The country in South-eastern Asia that had the highest GDP in 2014 had to be found first. 2. To find this, a list of countries located in South-eastern Asia was needed. 3. 11 countries that are in South-eastern Asia were found, including Brunei Darussalam, Cambodia and Myanmar. 4. For each of these countries, the GDP in 2014 had to be found. 5. Data on the GDP of these 11 countries in 2014 was found. 6. The country with the highest GDP in 2014 was found by comparing these values, and was Singapore. 7. Next, the GDP of Singapore in 2029 needed to be estimated. 8. Found data on the GDP of Singapore between 2009 and 2022. 9. A linear regression model was fit to this data. 10. The linear regression model was used to predict the GDP of Singapore in 2029. Selection: [1, 4, 7, 10]. Only output your selection in the form of a list and nothing else.",
+        "EXAMPLE": [
+            "Question: In 2027, what will be the GDP of Zambia? Process: 1. Needed to use historic data to predict the GDP of Zambia in 2027 2. Data was found on the GDP of Zambia between 2010 and 2022 3. A predictive model was fit to this data 4. The answer was estimated using this predictive model. Selection: [1, 4]",
+            "Question: Which country in Western Europe had the lowest energy consumption in 2017? Process: 1. An answer using historic data on energy consumption was estimated. 2. 9 countries in Western Europe, including Netherlands, Monaco and Belgium, were found. 3. The energy consumption for each of these countries in 2017 was found. 4. The answer was estimated by comparing the data on energy consumption. Selection: [1, 2]",
+            "Question: In 2029, what will be the GDP of the country in South-eastern Asia which had the highest GDP in 2014? Process: The country in South-eastern Asia that had the highest GDP in 2014 had to be found first. 2. To find this, a list of countries located in South-eastern Asia was needed. 3. 11 countries that are in South-eastern Asia were found, including Brunei Darussalam, Cambodia and Myanmar. 4. For each of these countries, the GDP in 2014 had to be found. 5. Data on the GDP of these 11 countries in 2014 was found. 6. The country with the highest GDP in 2014 was found by comparing these values, and was Singapore. 7. Next, the GDP of Singapore in 2029 needed to be estimated. 8. Found data on the GDP of Singapore between 2009 and 2022. 9. A linear regression model was fit to this data. 10. The linear regression model was used to predict the GDP of Singapore in 2029. Selection: [1, 4, 7, 10]"
+        ],
+        "SHOT": 3,
+        "INPUT": "resources/data/full_study.json",
+        "DESCRIPTION": "gemma-7b:shot=3:temp=0.7",
+        "RUN_ID": "68f93a3a1f514467a872a903d826c7f9",
+        "FORMAT_VERSION": 2
+    },
+    "Phi-3-mini-128k-instruct:shot=3:temp=0.3": {
+        "MODEL": "microsoft/Phi-3-mini-128k-instruct",
+        "TEMPERATURE": 0.3,
+        "BATCH_SIZE": 20,
+        "SYSTEM_CONTENT": "Your role is to select, from a list of steps, those that are most important for inclusion in a summary explanation of that process. Format your selection as a list. Use the following example to understand your task: Question: In 2027, what will be the GDP of Zambia? Process: 1. Needed to use historic data to predict the GDP of Zambia in 2027 2. Data was found on the GDP of Zambia between 2010 and 2022 3. A predictive model was fit to this data 4. The answer was estimated using this predictive model. Selection: [1, 4]; Question: Which country in Western Europe had the lowest energy consumption in 2017? Process: 1. An answer using historic data on energy consumption was estimated. 2. 9 countries in Western Europe, including Netherlands, Monaco and Belgium, were found. 3. The energy consumption for each of these countries in 2017 was found. 4. The answer was estimated by comparing the data on energy consumption. Selection: [1, 2]; Question: In 2029, what will be the GDP of the country in South-eastern Asia which had the highest GDP in 2014? Process: The country in South-eastern Asia that had the highest GDP in 2014 had to be found first. 2. To find this, a list of countries located in South-eastern Asia was needed. 3. 11 countries that are in South-eastern Asia were found, including Brunei Darussalam, Cambodia and Myanmar. 4. For each of these countries, the GDP in 2014 had to be found. 5. Data on the GDP of these 11 countries in 2014 was found. 6. The country with the highest GDP in 2014 was found by comparing these values, and was Singapore. 7. Next, the GDP of Singapore in 2029 needed to be estimated. 8. Found data on the GDP of Singapore between 2009 and 2022. 9. A linear regression model was fit to this data. 10. The linear regression model was used to predict the GDP of Singapore in 2029. Selection: [1, 4, 7, 10]. Only output your selection in the form of a list and nothing else.",
+        "EXAMPLE": [
+            "Question: In 2027, what will be the GDP of Zambia? Process: 1. Needed to use historic data to predict the GDP of Zambia in 2027 2. Data was found on the GDP of Zambia between 2010 and 2022 3. A predictive model was fit to this data 4. The answer was estimated using this predictive model. Selection: [1, 4]",
+            "Question: Which country in Western Europe had the lowest energy consumption in 2017? Process: 1. An answer using historic data on energy consumption was estimated. 2. 9 countries in Western Europe, including Netherlands, Monaco and Belgium, were found. 3. The energy consumption for each of these countries in 2017 was found. 4. The answer was estimated by comparing the data on energy consumption. Selection: [1, 2]",
+            "Question: In 2029, what will be the GDP of the country in South-eastern Asia which had the highest GDP in 2014? Process: The country in South-eastern Asia that had the highest GDP in 2014 had to be found first. 2. To find this, a list of countries located in South-eastern Asia was needed. 3. 11 countries that are in South-eastern Asia were found, including Brunei Darussalam, Cambodia and Myanmar. 4. For each of these countries, the GDP in 2014 had to be found. 5. Data on the GDP of these 11 countries in 2014 was found. 6. The country with the highest GDP in 2014 was found by comparing these values, and was Singapore. 7. Next, the GDP of Singapore in 2029 needed to be estimated. 8. Found data on the GDP of Singapore between 2009 and 2022. 9. A linear regression model was fit to this data. 10. The linear regression model was used to predict the GDP of Singapore in 2029. Selection: [1, 4, 7, 10]"
+        ],
+        "SHOT": 3,
+        "INPUT": "resources/data/full_study.json",
+        "DESCRIPTION": "Phi-3-mini-128k-instruct:shot=3:temp=0.3",
+        "RUN_ID": "34993c5275804db1b835353ea8823e37",
+        "FORMAT_VERSION": 2
+    },
+    "Phi-3-mini-128k-instruct:shot=3:temp=0.5": {
+        "MODEL": "microsoft/Phi-3-mini-128k-instruct",
+        "TEMPERATURE": 0.5,
+        "BATCH_SIZE": 20,
+        "SYSTEM_CONTENT": "Your role is to select, from a list of steps, those that are most important for inclusion in a summary explanation of that process. Format your selection as a list. Use the following example to understand your task: Question: In 2027, what will be the GDP of Zambia? Process: 1. Needed to use historic data to predict the GDP of Zambia in 2027 2. Data was found on the GDP of Zambia between 2010 and 2022 3. A predictive model was fit to this data 4. The answer was estimated using this predictive model. Selection: [1, 4]; Question: Which country in Western Europe had the lowest energy consumption in 2017? Process: 1. An answer using historic data on energy consumption was estimated. 2. 9 countries in Western Europe, including Netherlands, Monaco and Belgium, were found. 3. The energy consumption for each of these countries in 2017 was found. 4. The answer was estimated by comparing the data on energy consumption. Selection: [1, 2]; Question: In 2029, what will be the GDP of the country in South-eastern Asia which had the highest GDP in 2014? Process: The country in South-eastern Asia that had the highest GDP in 2014 had to be found first. 2. To find this, a list of countries located in South-eastern Asia was needed. 3. 11 countries that are in South-eastern Asia were found, including Brunei Darussalam, Cambodia and Myanmar. 4. For each of these countries, the GDP in 2014 had to be found. 5. Data on the GDP of these 11 countries in 2014 was found. 6. The country with the highest GDP in 2014 was found by comparing these values, and was Singapore. 7. Next, the GDP of Singapore in 2029 needed to be estimated. 8. Found data on the GDP of Singapore between 2009 and 2022. 9. A linear regression model was fit to this data. 10. The linear regression model was used to predict the GDP of Singapore in 2029. Selection: [1, 4, 7, 10]. Only output your selection in the form of a list and nothing else.",
+        "EXAMPLE": [
+            "Question: In 2027, what will be the GDP of Zambia? Process: 1. Needed to use historic data to predict the GDP of Zambia in 2027 2. Data was found on the GDP of Zambia between 2010 and 2022 3. A predictive model was fit to this data 4. The answer was estimated using this predictive model. Selection: [1, 4]",
+            "Question: Which country in Western Europe had the lowest energy consumption in 2017? Process: 1. An answer using historic data on energy consumption was estimated. 2. 9 countries in Western Europe, including Netherlands, Monaco and Belgium, were found. 3. The energy consumption for each of these countries in 2017 was found. 4. The answer was estimated by comparing the data on energy consumption. Selection: [1, 2]",
+            "Question: In 2029, what will be the GDP of the country in South-eastern Asia which had the highest GDP in 2014? Process: The country in South-eastern Asia that had the highest GDP in 2014 had to be found first. 2. To find this, a list of countries located in South-eastern Asia was needed. 3. 11 countries that are in South-eastern Asia were found, including Brunei Darussalam, Cambodia and Myanmar. 4. For each of these countries, the GDP in 2014 had to be found. 5. Data on the GDP of these 11 countries in 2014 was found. 6. The country with the highest GDP in 2014 was found by comparing these values, and was Singapore. 7. Next, the GDP of Singapore in 2029 needed to be estimated. 8. Found data on the GDP of Singapore between 2009 and 2022. 9. A linear regression model was fit to this data. 10. The linear regression model was used to predict the GDP of Singapore in 2029. Selection: [1, 4, 7, 10]"
+        ],
+        "SHOT": 3,
+        "INPUT": "resources/data/full_study.json",
+        "DESCRIPTION": "Phi-3-mini-128k-instruct:shot=3:temp=0.5",
+        "RUN_ID": "9de9d211704e407ca29da564742ced15",
+        "FORMAT_VERSION": 2
+    },
+    "Phi-3-mini-128k-instruct:shot=3:temp=0.7": {
+        "MODEL": "microsoft/Phi-3-mini-128k-instruct",
+        "TEMPERATURE": 0.7,
+        "BATCH_SIZE": 20,
+        "SYSTEM_CONTENT": "Your role is to select, from a list of steps, those that are most important for inclusion in a summary explanation of that process. Format your selection as a list. Use the following example to understand your task: Question: In 2027, what will be the GDP of Zambia? Process: 1. Needed to use historic data to predict the GDP of Zambia in 2027 2. Data was found on the GDP of Zambia between 2010 and 2022 3. A predictive model was fit to this data 4. The answer was estimated using this predictive model. Selection: [1, 4]; Question: Which country in Western Europe had the lowest energy consumption in 2017? Process: 1. An answer using historic data on energy consumption was estimated. 2. 9 countries in Western Europe, including Netherlands, Monaco and Belgium, were found. 3. The energy consumption for each of these countries in 2017 was found. 4. The answer was estimated by comparing the data on energy consumption. Selection: [1, 2]; Question: In 2029, what will be the GDP of the country in South-eastern Asia which had the highest GDP in 2014? Process: The country in South-eastern Asia that had the highest GDP in 2014 had to be found first. 2. To find this, a list of countries located in South-eastern Asia was needed. 3. 11 countries that are in South-eastern Asia were found, including Brunei Darussalam, Cambodia and Myanmar. 4. For each of these countries, the GDP in 2014 had to be found. 5. Data on the GDP of these 11 countries in 2014 was found. 6. The country with the highest GDP in 2014 was found by comparing these values, and was Singapore. 7. Next, the GDP of Singapore in 2029 needed to be estimated. 8. Found data on the GDP of Singapore between 2009 and 2022. 9. A linear regression model was fit to this data. 10. The linear regression model was used to predict the GDP of Singapore in 2029. Selection: [1, 4, 7, 10]. Only output your selection in the form of a list and nothing else.",
+        "EXAMPLE": [
+            "Question: In 2027, what will be the GDP of Zambia? Process: 1. Needed to use historic data to predict the GDP of Zambia in 2027 2. Data was found on the GDP of Zambia between 2010 and 2022 3. A predictive model was fit to this data 4. The answer was estimated using this predictive model. Selection: [1, 4]",
+            "Question: Which country in Western Europe had the lowest energy consumption in 2017? Process: 1. An answer using historic data on energy consumption was estimated. 2. 9 countries in Western Europe, including Netherlands, Monaco and Belgium, were found. 3. The energy consumption for each of these countries in 2017 was found. 4. The answer was estimated by comparing the data on energy consumption. Selection: [1, 2]",
+            "Question: In 2029, what will be the GDP of the country in South-eastern Asia which had the highest GDP in 2014? Process: The country in South-eastern Asia that had the highest GDP in 2014 had to be found first. 2. To find this, a list of countries located in South-eastern Asia was needed. 3. 11 countries that are in South-eastern Asia were found, including Brunei Darussalam, Cambodia and Myanmar. 4. For each of these countries, the GDP in 2014 had to be found. 5. Data on the GDP of these 11 countries in 2014 was found. 6. The country with the highest GDP in 2014 was found by comparing these values, and was Singapore. 7. Next, the GDP of Singapore in 2029 needed to be estimated. 8. Found data on the GDP of Singapore between 2009 and 2022. 9. A linear regression model was fit to this data. 10. The linear regression model was used to predict the GDP of Singapore in 2029. Selection: [1, 4, 7, 10]"
+        ],
+        "SHOT": 3,
+        "INPUT": "resources/data/full_study.json",
+        "DESCRIPTION": "Phi-3-mini-128k-instruct:shot=3:temp=0.7",
+        "RUN_ID": "52362eee369941dca25011ce98bf60ef",
+        "FORMAT_VERSION": 2
+    },
+    "Phi-3-small-128k-instruct:shot=3:temp=0.3": {
+        "MODEL": "microsoft/Phi-3-small-128k-instruct",
+        "TEMPERATURE": 0.3,
+        "BATCH_SIZE": 20,
+        "SYSTEM_CONTENT": "Your role is to select, from a list of steps, those that are most important for inclusion in a summary explanation of that process. Format your selection as a list. Use the following example to understand your task: Question: In 2027, what will be the GDP of Zambia? Process: 1. Needed to use historic data to predict the GDP of Zambia in 2027 2. Data was found on the GDP of Zambia between 2010 and 2022 3. A predictive model was fit to this data 4. The answer was estimated using this predictive model. Selection: [1, 4]; Question: Which country in Western Europe had the lowest energy consumption in 2017? Process: 1. An answer using historic data on energy consumption was estimated. 2. 9 countries in Western Europe, including Netherlands, Monaco and Belgium, were found. 3. The energy consumption for each of these countries in 2017 was found. 4. The answer was estimated by comparing the data on energy consumption. Selection: [1, 2]; Question: In 2029, what will be the GDP of the country in South-eastern Asia which had the highest GDP in 2014? Process: The country in South-eastern Asia that had the highest GDP in 2014 had to be found first. 2. To find this, a list of countries located in South-eastern Asia was needed. 3. 11 countries that are in South-eastern Asia were found, including Brunei Darussalam, Cambodia and Myanmar. 4. For each of these countries, the GDP in 2014 had to be found. 5. Data on the GDP of these 11 countries in 2014 was found. 6. The country with the highest GDP in 2014 was found by comparing these values, and was Singapore. 7. Next, the GDP of Singapore in 2029 needed to be estimated. 8. Found data on the GDP of Singapore between 2009 and 2022. 9. A linear regression model was fit to this data. 10. The linear regression model was used to predict the GDP of Singapore in 2029. Selection: [1, 4, 7, 10]. Only output your selection in the form of a list and nothing else.",
+        "EXAMPLE": [
+            "Question: In 2027, what will be the GDP of Zambia? Process: 1. Needed to use historic data to predict the GDP of Zambia in 2027 2. Data was found on the GDP of Zambia between 2010 and 2022 3. A predictive model was fit to this data 4. The answer was estimated using this predictive model. Selection: [1, 4]",
+            "Question: Which country in Western Europe had the lowest energy consumption in 2017? Process: 1. An answer using historic data on energy consumption was estimated. 2. 9 countries in Western Europe, including Netherlands, Monaco and Belgium, were found. 3. The energy consumption for each of these countries in 2017 was found. 4. The answer was estimated by comparing the data on energy consumption. Selection: [1, 2]",
+            "Question: In 2029, what will be the GDP of the country in South-eastern Asia which had the highest GDP in 2014? Process: The country in South-eastern Asia that had the highest GDP in 2014 had to be found first. 2. To find this, a list of countries located in South-eastern Asia was needed. 3. 11 countries that are in South-eastern Asia were found, including Brunei Darussalam, Cambodia and Myanmar. 4. For each of these countries, the GDP in 2014 had to be found. 5. Data on the GDP of these 11 countries in 2014 was found. 6. The country with the highest GDP in 2014 was found by comparing these values, and was Singapore. 7. Next, the GDP of Singapore in 2029 needed to be estimated. 8. Found data on the GDP of Singapore between 2009 and 2022. 9. A linear regression model was fit to this data. 10. The linear regression model was used to predict the GDP of Singapore in 2029. Selection: [1, 4, 7, 10]"
+        ],
+        "SHOT": 3,
+        "INPUT": "resources/data/full_study.json",
+        "DESCRIPTION": "Phi-3-small-128k-instruct:shot=3:temp=0.3",
+        "RUN_ID": "9d8e9756670942239f6d89be8beab4bc",
+        "FORMAT_VERSION": 2
+    },
+    "Phi-3-small-128k-instruct:shot=3:temp=0.5": {
+        "MODEL": "microsoft/Phi-3-small-128k-instruct",
+        "TEMPERATURE": 0.5,
+        "BATCH_SIZE": 20,
+        "SYSTEM_CONTENT": "Your role is to select, from a list of steps, those that are most important for inclusion in a summary explanation of that process. Format your selection as a list. Use the following example to understand your task: Question: In 2027, what will be the GDP of Zambia? Process: 1. Needed to use historic data to predict the GDP of Zambia in 2027 2. Data was found on the GDP of Zambia between 2010 and 2022 3. A predictive model was fit to this data 4. The answer was estimated using this predictive model. Selection: [1, 4]; Question: Which country in Western Europe had the lowest energy consumption in 2017? Process: 1. An answer using historic data on energy consumption was estimated. 2. 9 countries in Western Europe, including Netherlands, Monaco and Belgium, were found. 3. The energy consumption for each of these countries in 2017 was found. 4. The answer was estimated by comparing the data on energy consumption. Selection: [1, 2]; Question: In 2029, what will be the GDP of the country in South-eastern Asia which had the highest GDP in 2014? Process: The country in South-eastern Asia that had the highest GDP in 2014 had to be found first. 2. To find this, a list of countries located in South-eastern Asia was needed. 3. 11 countries that are in South-eastern Asia were found, including Brunei Darussalam, Cambodia and Myanmar. 4. For each of these countries, the GDP in 2014 had to be found. 5. Data on the GDP of these 11 countries in 2014 was found. 6. The country with the highest GDP in 2014 was found by comparing these values, and was Singapore. 7. Next, the GDP of Singapore in 2029 needed to be estimated. 8. Found data on the GDP of Singapore between 2009 and 2022. 9. A linear regression model was fit to this data. 10. The linear regression model was used to predict the GDP of Singapore in 2029. Selection: [1, 4, 7, 10]. Only output your selection in the form of a list and nothing else.",
+        "EXAMPLE": [
+            "Question: In 2027, what will be the GDP of Zambia? Process: 1. Needed to use historic data to predict the GDP of Zambia in 2027 2. Data was found on the GDP of Zambia between 2010 and 2022 3. A predictive model was fit to this data 4. The answer was estimated using this predictive model. Selection: [1, 4]",
+            "Question: Which country in Western Europe had the lowest energy consumption in 2017? Process: 1. An answer using historic data on energy consumption was estimated. 2. 9 countries in Western Europe, including Netherlands, Monaco and Belgium, were found. 3. The energy consumption for each of these countries in 2017 was found. 4. The answer was estimated by comparing the data on energy consumption. Selection: [1, 2]",
+            "Question: In 2029, what will be the GDP of the country in South-eastern Asia which had the highest GDP in 2014? Process: The country in South-eastern Asia that had the highest GDP in 2014 had to be found first. 2. To find this, a list of countries located in South-eastern Asia was needed. 3. 11 countries that are in South-eastern Asia were found, including Brunei Darussalam, Cambodia and Myanmar. 4. For each of these countries, the GDP in 2014 had to be found. 5. Data on the GDP of these 11 countries in 2014 was found. 6. The country with the highest GDP in 2014 was found by comparing these values, and was Singapore. 7. Next, the GDP of Singapore in 2029 needed to be estimated. 8. Found data on the GDP of Singapore between 2009 and 2022. 9. A linear regression model was fit to this data. 10. The linear regression model was used to predict the GDP of Singapore in 2029. Selection: [1, 4, 7, 10]"
+        ],
+        "SHOT": 3,
+        "INPUT": "resources/data/full_study.json",
+        "DESCRIPTION": "Phi-3-small-128k-instruct:shot=3:temp=0.5",
+        "RUN_ID": "67b09892bc974950b910b8ffd74f2881",
+        "FORMAT_VERSION": 2
+    },
+    "Phi-3-small-128k-instruct:shot=3:temp=0.7": {
+        "MODEL": "microsoft/Phi-3-small-128k-instruct",
+        "TEMPERATURE": 0.7,
+        "BATCH_SIZE": 20,
+        "SYSTEM_CONTENT": "Your role is to select, from a list of steps, those that are most important for inclusion in a summary explanation of that process. Format your selection as a list. Use the following example to understand your task: Question: In 2027, what will be the GDP of Zambia? Process: 1. Needed to use historic data to predict the GDP of Zambia in 2027 2. Data was found on the GDP of Zambia between 2010 and 2022 3. A predictive model was fit to this data 4. The answer was estimated using this predictive model. Selection: [1, 4]; Question: Which country in Western Europe had the lowest energy consumption in 2017? Process: 1. An answer using historic data on energy consumption was estimated. 2. 9 countries in Western Europe, including Netherlands, Monaco and Belgium, were found. 3. The energy consumption for each of these countries in 2017 was found. 4. The answer was estimated by comparing the data on energy consumption. Selection: [1, 2]; Question: In 2029, what will be the GDP of the country in South-eastern Asia which had the highest GDP in 2014? Process: The country in South-eastern Asia that had the highest GDP in 2014 had to be found first. 2. To find this, a list of countries located in South-eastern Asia was needed. 3. 11 countries that are in South-eastern Asia were found, including Brunei Darussalam, Cambodia and Myanmar. 4. For each of these countries, the GDP in 2014 had to be found. 5. Data on the GDP of these 11 countries in 2014 was found. 6. The country with the highest GDP in 2014 was found by comparing these values, and was Singapore. 7. Next, the GDP of Singapore in 2029 needed to be estimated. 8. Found data on the GDP of Singapore between 2009 and 2022. 9. A linear regression model was fit to this data. 10. The linear regression model was used to predict the GDP of Singapore in 2029. Selection: [1, 4, 7, 10]. Only output your selection in the form of a list and nothing else.",
+        "EXAMPLE": [
+            "Question: In 2027, what will be the GDP of Zambia? Process: 1. Needed to use historic data to predict the GDP of Zambia in 2027 2. Data was found on the GDP of Zambia between 2010 and 2022 3. A predictive model was fit to this data 4. The answer was estimated using this predictive model. Selection: [1, 4]",
+            "Question: Which country in Western Europe had the lowest energy consumption in 2017? Process: 1. An answer using historic data on energy consumption was estimated. 2. 9 countries in Western Europe, including Netherlands, Monaco and Belgium, were found. 3. The energy consumption for each of these countries in 2017 was found. 4. The answer was estimated by comparing the data on energy consumption. Selection: [1, 2]",
+            "Question: In 2029, what will be the GDP of the country in South-eastern Asia which had the highest GDP in 2014? Process: The country in South-eastern Asia that had the highest GDP in 2014 had to be found first. 2. To find this, a list of countries located in South-eastern Asia was needed. 3. 11 countries that are in South-eastern Asia were found, including Brunei Darussalam, Cambodia and Myanmar. 4. For each of these countries, the GDP in 2014 had to be found. 5. Data on the GDP of these 11 countries in 2014 was found. 6. The country with the highest GDP in 2014 was found by comparing these values, and was Singapore. 7. Next, the GDP of Singapore in 2029 needed to be estimated. 8. Found data on the GDP of Singapore between 2009 and 2022. 9. A linear regression model was fit to this data. 10. The linear regression model was used to predict the GDP of Singapore in 2029. Selection: [1, 4, 7, 10]"
+        ],
+        "SHOT": 3,
+        "INPUT": "resources/data/full_study.json",
+        "DESCRIPTION": "Phi-3-small-128k-instruct:shot=3:temp=0.7",
+        "RUN_ID": "f3e8a8a6686641349908392cd198915e",
+        "FORMAT_VERSION": 2
+    }
+}

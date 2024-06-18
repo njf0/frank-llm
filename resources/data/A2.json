@@ -1,0 +1,3702 @@
+{
+    "A2-123382e2": {
+        "html_choice": "Question<br><strong>What will be Saint Kitts and Nevis's birth rate in 2029?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Saint Kitts and Nevis's birth rate in 2029?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The birth rate of Saint Kitts and Nevis in 2029 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the birth rate of Saint Kitts and Nevis was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data on Saint Kitts and Nevis's birth rate between 2010 and 2023 was found"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "A predictive model for Saint Kitts and Nevis's birth rate was created using this data"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The model was used to predict the birth rate of Saint Kitts and Nevis in 2029"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-3b8ece70": {
+        "html_choice": "Question<br><strong>What will be Germany's GDP in 2027?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Germany's GDP in 2027?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The GDP of Germany in 2027 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the GDP of Germany was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data was found on Germany's GDP between 2011 and 2023"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Using this data, a predictive model for the GDP of Germany was created"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The model was used to predict the GDP of Germany in 2027"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-10ada299": {
+        "html_choice": "Question<br><strong>What will be Ireland's population in 2029?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Ireland's population in 2029?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Ireland's population in 2029 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the population of Ireland was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data was found on Ireland's population between 2009 and 2022"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Using this data, a predictive model for the population of Ireland was created"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The population of Ireland in 2029 was predicted using the model"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-653031b8": {
+        "html_choice": "Question<br><strong>What will be the United States Minor Outlying Islands's population density in 2027?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be the United States Minor Outlying Islands's population density in 2027?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "the United States Minor Outlying Islands's population density in 2027 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the population density of the United States Minor Outlying Islands was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data was found on the United States Minor Outlying Islands's population density between 2010 and 2022"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "A predictive model for the United States Minor Outlying Islands's population density was created using this data"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The population density of the United States Minor Outlying Islands in 2027 was predicted using the model"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-ba62c1ce": {
+        "html_choice": "Question<br><strong>What will be the Netherlands's life expectancy in 2030?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be the Netherlands's life expectancy in 2030?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "the Netherlands's life expectancy in 2030 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the life expectancy of the Netherlands was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data on the Netherlands's life expectancy between 2010 and 2022 was found"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "A predictive model for the Netherlands's life expectancy was created using this data"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The model was used to predict the life expectancy of the Netherlands in 2030"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-cdeda4d9": {
+        "html_choice": "Question<br><strong>What will be Singapore's urban population in 2028?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Singapore's urban population in 2028?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Singapore's urban population in 2028 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the urban population of Singapore was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data was found on Singapore's urban population between 2011 and 2023"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "A predictive model for Singapore's urban population was created using this data"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The model was used to predict the urban population of Singapore in 2028"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-b641c9cd": {
+        "html_choice": "Question<br><strong>What will be Congo's urban population in 2030?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Congo's urban population in 2030?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The urban population of Congo in 2030 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the urban population of Congo was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data was found on Congo's urban population between 2008 and 2021"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Using this data, a predictive model for the urban population of Congo was created"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The urban population of Congo in 2030 was predicted using the model"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-bd50c4bf": {
+        "html_choice": "Question<br><strong>What will be Tuvalu's urban population in 2030?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Tuvalu's urban population in 2030?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The urban population of Tuvalu in 2030 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the urban population of Tuvalu was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data was found on Tuvalu's urban population between 2009 and 2022"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "A predictive model for Tuvalu's urban population was created using this data"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The urban population of Tuvalu in 2030 was predicted using the model"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-48db4aef": {
+        "html_choice": "Question<br><strong>What will be Argentina's energy consumption in 2027?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Argentina's energy consumption in 2027?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The energy consumption of Argentina in 2027 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the energy consumption of Argentina was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data on Argentina's energy consumption between 2011 and 2023 was found"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "A predictive model for Argentina's energy consumption was created using this data"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The energy consumption of Argentina in 2027 was predicted using the model"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-5ed1d116": {
+        "html_choice": "Question<br><strong>What will be the United Arab Emirates's population density in 2030?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be the United Arab Emirates's population density in 2030?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "the United Arab Emirates's population density in 2030 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the population density of the United Arab Emirates was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data on the United Arab Emirates's population density between 2008 and 2023 was found"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "A predictive model for the United Arab Emirates's population density was created using this data"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The model was used to predict the population density of the United Arab Emirates in 2030"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-3c43d888": {
+        "html_choice": "Question<br><strong>What will be Taiwan's urban population in 2026?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Taiwan's urban population in 2026?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The urban population of Taiwan in 2026 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the urban population of Taiwan was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data on Taiwan's urban population between 2009 and 2022 was found"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "A predictive model for Taiwan's urban population was created using this data"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The urban population of Taiwan in 2026 was predicted using the model"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-ee66dcb1": {
+        "html_choice": "Question<br><strong>What will be Afghanistan's population in 2026?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Afghanistan's population in 2026?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The population of Afghanistan in 2026 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the population of Afghanistan was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data was found on Afghanistan's population between 2008 and 2021"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Using this data, a predictive model for the population of Afghanistan was created"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The population of Afghanistan in 2026 was predicted using the model"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-49b1cd0b": {
+        "html_choice": "Question<br><strong>What will be Greece's energy consumption in 2026?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Greece's energy consumption in 2026?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The energy consumption of Greece in 2026 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the energy consumption of Greece was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data was found on Greece's energy consumption between 2011 and 2021"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "A predictive model for Greece's energy consumption was created using this data"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The model was used to predict the energy consumption of Greece in 2026"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-ba8a1a0b": {
+        "html_choice": "Question<br><strong>What will be Saint Lucia's population density in 2026?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Saint Lucia's population density in 2026?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Saint Lucia's population density in 2026 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the population density of Saint Lucia was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data was found on the population density of Saint Lucia between 2011 and 2023"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Using this data, a predictive model for the population density of Saint Lucia was created"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The model was used to predict the population density of Saint Lucia in 2026"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-af71ef9f": {
+        "html_choice": "Question<br><strong>What will be New Zealand's GDP in 2027?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be New Zealand's GDP in 2027?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The GDP of New Zealand in 2027 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the GDP of New Zealand was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data was found on the GDP of New Zealand between 2011 and 2021"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Using this data, a predictive model for the GDP of New Zealand was created"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The model was used to predict the GDP of New Zealand in 2027"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-b392436f": {
+        "html_choice": "Question<br><strong>What will be Cameroon's rural population in 2028?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Cameroon's rural population in 2028?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Cameroon's rural population in 2028 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the rural population of Cameroon was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data on Cameroon's rural population between 2008 and 2021 was found"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "A predictive model for Cameroon's rural population was created using this data"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The model was used to predict the rural population of Cameroon in 2028"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-202462c9": {
+        "html_choice": "Question<br><strong>What will be Austria's GDP in 2030?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Austria's GDP in 2030?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Austria's GDP in 2030 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the GDP of Austria was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data on the GDP of Austria between 2008 and 2022 was found "
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Using this data, a predictive model for the GDP of Austria was created"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The model was used to predict the GDP of Austria in 2030"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-b3aea24c": {
+        "html_choice": "Question<br><strong>What will be Lao's energy consumption in 2029?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Lao's energy consumption in 2029?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Lao's energy consumption in 2029 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the energy consumption of Lao was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data was found on the energy consumption of Lao between 2010 and 2023"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Using this data, a predictive model for the energy consumption of Lao was created"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The energy consumption of Lao in 2029 was predicted using the model"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-439bf1f6": {
+        "html_choice": "Question<br><strong>What will be Georgia's urban population in 2030?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Georgia's urban population in 2030?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The urban population of Georgia in 2030 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the urban population of Georgia was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data on Georgia's urban population between 2011 and 2022 was found"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Using this data, a predictive model for the urban population of Georgia was created"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The urban population of Georgia in 2030 was predicted using the model"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-e4a0840a": {
+        "html_choice": "Question<br><strong>What will be Norfolk Island's population density in 2026?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Norfolk Island's population density in 2026?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Norfolk Island's population density in 2026 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the population density of Norfolk Island was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data was found on the population density of Norfolk Island between 2009 and 2022"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "A predictive model for Norfolk Island's population density was created using this data"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The model was used to predict the population density of Norfolk Island in 2026"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-249b9202": {
+        "html_choice": "Question<br><strong>What will be Bhutan's energy consumption in 2029?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Bhutan's energy consumption in 2029?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The energy consumption of Bhutan in 2029 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the energy consumption of Bhutan was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data was found on Bhutan's energy consumption between 2010 and 2022"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Using this data, a predictive model for the energy consumption of Bhutan was created"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The model was used to predict the energy consumption of Bhutan in 2029"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-9202143d": {
+        "html_choice": "Question<br><strong>What will be Nepal's rural population in 2029?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Nepal's rural population in 2029?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Nepal's rural population in 2029 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the rural population of Nepal was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data on the rural population of Nepal between 2011 and 2022 was found "
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "A predictive model for Nepal's rural population was created using this data"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The model was used to predict the rural population of Nepal in 2029"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-3b984035": {
+        "html_choice": "Question<br><strong>What will be Haiti's urban population in 2026?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Haiti's urban population in 2026?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Haiti's urban population in 2026 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the urban population of Haiti was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data on the urban population of Haiti between 2008 and 2021 was found "
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "A predictive model for Haiti's urban population was created using this data"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The urban population of Haiti in 2026 was predicted using the model"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-f5e0123a": {
+        "html_choice": "Question<br><strong>What will be El Salvador's life expectancy in 2028?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be El Salvador's life expectancy in 2028?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "El Salvador's life expectancy in 2028 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the life expectancy of El Salvador was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data on El Salvador's life expectancy between 2011 and 2023 was found"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Using this data, a predictive model for the life expectancy of El Salvador was created"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The model was used to predict the life expectancy of El Salvador in 2028"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-4edb7225": {
+        "html_choice": "Question<br><strong>What will be Sao Tome and Principe's energy consumption in 2026?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Sao Tome and Principe's energy consumption in 2026?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Sao Tome and Principe's energy consumption in 2026 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the energy consumption of Sao Tome and Principe was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data on the energy consumption of Sao Tome and Principe between 2010 and 2023 was found "
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "A predictive model for Sao Tome and Principe's energy consumption was created using this data"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The model was used to predict the energy consumption of Sao Tome and Principe in 2026"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-c885a3a1": {
+        "html_choice": "Question<br><strong>What will be Guatemala's birth rate in 2027?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Guatemala's birth rate in 2027?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Guatemala's birth rate in 2027 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the birth rate of Guatemala was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data on Guatemala's birth rate between 2010 and 2023 was found"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "A predictive model for Guatemala's birth rate was created using this data"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The birth rate of Guatemala in 2027 was predicted using the model"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-63191efa": {
+        "html_choice": "Question<br><strong>What will be Poland's urban population in 2026?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Poland's urban population in 2026?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The urban population of Poland in 2026 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the urban population of Poland was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data was found on the urban population of Poland between 2008 and 2021"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Using this data, a predictive model for the urban population of Poland was created"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The urban population of Poland in 2026 was predicted using the model"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-5a3973c2": {
+        "html_choice": "Question<br><strong>What will be Jersey's life expectancy in 2028?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Jersey's life expectancy in 2028?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Jersey's life expectancy in 2028 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the life expectancy of Jersey was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data was found on Jersey's life expectancy between 2011 and 2022"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Using this data, a predictive model for the life expectancy of Jersey was created"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The model was used to predict the life expectancy of Jersey in 2028"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-b50481c5": {
+        "html_choice": "Question<br><strong>What will be Tajikistan's life expectancy in 2030?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Tajikistan's life expectancy in 2030?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Tajikistan's life expectancy in 2030 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the life expectancy of Tajikistan was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data was found on the life expectancy of Tajikistan between 2008 and 2021"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Using this data, a predictive model for the life expectancy of Tajikistan was created"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The model was used to predict the life expectancy of Tajikistan in 2030"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-12117b5b": {
+        "html_choice": "Question<br><strong>What will be Botswana's population density in 2029?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Botswana's population density in 2029?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Botswana's population density in 2029 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the population density of Botswana was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data on the population density of Botswana between 2011 and 2023 was found "
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "A predictive model for Botswana's population density was created using this data"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The model was used to predict the population density of Botswana in 2029"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-b80efed0": {
+        "html_choice": "Question<br><strong>What will be Bosnia and Herzegovina's energy consumption in 2026?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Bosnia and Herzegovina's energy consumption in 2026?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The energy consumption of Bosnia and Herzegovina in 2026 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the energy consumption of Bosnia and Herzegovina was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data was found on Bosnia and Herzegovina's energy consumption between 2011 and 2021"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "A predictive model for Bosnia and Herzegovina's energy consumption was created using this data"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The model was used to predict the energy consumption of Bosnia and Herzegovina in 2026"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-3b670c39": {
+        "html_choice": "Question<br><strong>What will be Cameroon's life expectancy in 2027?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Cameroon's life expectancy in 2027?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Cameroon's life expectancy in 2027 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the life expectancy of Cameroon was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data on the life expectancy of Cameroon between 2010 and 2021 was found "
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "A predictive model for Cameroon's life expectancy was created using this data"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The model was used to predict the life expectancy of Cameroon in 2027"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-e71bda82": {
+        "html_choice": "Question<br><strong>What will be Tajikistan's urban population in 2028?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Tajikistan's urban population in 2028?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The urban population of Tajikistan in 2028 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the urban population of Tajikistan was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data on the urban population of Tajikistan between 2011 and 2021 was found "
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Using this data, a predictive model for the urban population of Tajikistan was created"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The urban population of Tajikistan in 2028 was predicted using the model"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-796c9ac0": {
+        "html_choice": "Question<br><strong>What will be Barbados's urban population in 2030?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Barbados's urban population in 2030?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Barbados's urban population in 2030 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the urban population of Barbados was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data on the urban population of Barbados between 2008 and 2022 was found "
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Using this data, a predictive model for the urban population of Barbados was created"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The urban population of Barbados in 2030 was predicted using the model"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-46cb627a": {
+        "html_choice": "Question<br><strong>What will be Tokelau's population density in 2026?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Tokelau's population density in 2026?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The population density of Tokelau in 2026 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the population density of Tokelau was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data was found on the population density of Tokelau between 2011 and 2022"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "A predictive model for Tokelau's population density was created using this data"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The population density of Tokelau in 2026 was predicted using the model"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-538dd22d": {
+        "html_choice": "Question<br><strong>What will be Uzbekistan's urban population in 2029?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Uzbekistan's urban population in 2029?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Uzbekistan's urban population in 2029 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the urban population of Uzbekistan was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data on Uzbekistan's urban population between 2008 and 2022 was found"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Using this data, a predictive model for the urban population of Uzbekistan was created"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The model was used to predict the urban population of Uzbekistan in 2029"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-e2e9d206": {
+        "html_choice": "Question<br><strong>What will be Israel's GDP in 2029?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Israel's GDP in 2029?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The GDP of Israel in 2029 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the GDP of Israel was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data was found on the GDP of Israel between 2009 and 2021"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Using this data, a predictive model for the GDP of Israel was created"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The model was used to predict the GDP of Israel in 2029"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-fcc68992": {
+        "html_choice": "Question<br><strong>What will be Azerbaijan's energy consumption in 2028?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Azerbaijan's energy consumption in 2028?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Azerbaijan's energy consumption in 2028 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the energy consumption of Azerbaijan was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data on the energy consumption of Azerbaijan between 2009 and 2023 was found "
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Using this data, a predictive model for the energy consumption of Azerbaijan was created"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The model was used to predict the energy consumption of Azerbaijan in 2028"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-44dc19cf": {
+        "html_choice": "Question<br><strong>What will be Haiti's life expectancy in 2028?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Haiti's life expectancy in 2028?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Haiti's life expectancy in 2028 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the life expectancy of Haiti was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data on the life expectancy of Haiti between 2008 and 2021 was found "
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "A predictive model for Haiti's life expectancy was created using this data"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The model was used to predict the life expectancy of Haiti in 2028"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-2c04e811": {
+        "html_choice": "Question<br><strong>What will be Tonga's energy consumption in 2026?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Tonga's energy consumption in 2026?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Tonga's energy consumption in 2026 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the energy consumption of Tonga was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data was found on Tonga's energy consumption between 2008 and 2021"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Using this data, a predictive model for the energy consumption of Tonga was created"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The energy consumption of Tonga in 2026 was predicted using the model"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-1e6a0f5e": {
+        "html_choice": "Question<br><strong>What will be Saint Kitts and Nevis's rural population in 2029?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Saint Kitts and Nevis's rural population in 2029?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Saint Kitts and Nevis's rural population in 2029 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the rural population of Saint Kitts and Nevis was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data on Saint Kitts and Nevis's rural population between 2009 and 2021 was found"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "A predictive model for Saint Kitts and Nevis's rural population was created using this data"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The rural population of Saint Kitts and Nevis in 2029 was predicted using the model"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-37e28c4e": {
+        "html_choice": "Question<br><strong>What will be Kazakhstan's birth rate in 2026?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Kazakhstan's birth rate in 2026?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Kazakhstan's birth rate in 2026 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the birth rate of Kazakhstan was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data was found on the birth rate of Kazakhstan between 2011 and 2023"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "A predictive model for Kazakhstan's birth rate was created using this data"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The birth rate of Kazakhstan in 2026 was predicted using the model"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-7739e0a5": {
+        "html_choice": "Question<br><strong>What will be Trinidad and Tobago's rural population in 2027?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Trinidad and Tobago's rural population in 2027?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Trinidad and Tobago's rural population in 2027 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the rural population of Trinidad and Tobago was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data on Trinidad and Tobago's rural population between 2011 and 2021 was found"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Using this data, a predictive model for the rural population of Trinidad and Tobago was created"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The rural population of Trinidad and Tobago in 2027 was predicted using the model"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-094f02bf": {
+        "html_choice": "Question<br><strong>What will be Mauritania's urban population in 2028?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Mauritania's urban population in 2028?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The urban population of Mauritania in 2028 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the urban population of Mauritania was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data on Mauritania's urban population between 2009 and 2021 was found"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "A predictive model for Mauritania's urban population was created using this data"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The model was used to predict the urban population of Mauritania in 2028"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-727b68ff": {
+        "html_choice": "Question<br><strong>What will be Libya's life expectancy in 2027?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Libya's life expectancy in 2027?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Libya's life expectancy in 2027 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the life expectancy of Libya was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data was found on Libya's life expectancy between 2011 and 2022"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Using this data, a predictive model for the life expectancy of Libya was created"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The life expectancy of Libya in 2027 was predicted using the model"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-5160c524": {
+        "html_choice": "Question<br><strong>What will be Zimbabwe's population density in 2029?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Zimbabwe's population density in 2029?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Zimbabwe's population density in 2029 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the population density of Zimbabwe was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data was found on the population density of Zimbabwe between 2011 and 2021"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Using this data, a predictive model for the population density of Zimbabwe was created"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The population density of Zimbabwe in 2029 was predicted using the model"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-a047ab7a": {
+        "html_choice": "Question<br><strong>What will be the United Arab Emirates's life expectancy in 2029?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be the United Arab Emirates's life expectancy in 2029?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "the United Arab Emirates's life expectancy in 2029 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the life expectancy of the United Arab Emirates was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data was found on the United Arab Emirates's life expectancy between 2011 and 2023"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Using this data, a predictive model for the life expectancy of the United Arab Emirates was created"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The model was used to predict the life expectancy of the United Arab Emirates in 2029"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-f6bd0172": {
+        "html_choice": "Question<br><strong>What will be Iceland's urban population in 2026?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Iceland's urban population in 2026?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Iceland's urban population in 2026 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the urban population of Iceland was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data on Iceland's urban population between 2008 and 2021 was found"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "A predictive model for Iceland's urban population was created using this data"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The urban population of Iceland in 2026 was predicted using the model"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-a84b6fc7": {
+        "html_choice": "Question<br><strong>What will be Armenia's urban population in 2026?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Armenia's urban population in 2026?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The urban population of Armenia in 2026 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the urban population of Armenia was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data was found on the urban population of Armenia between 2010 and 2021"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "A predictive model for Armenia's urban population was created using this data"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The model was used to predict the urban population of Armenia in 2026"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-52ff0742": {
+        "html_choice": "Question<br><strong>What will be Tunisia's life expectancy in 2027?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Tunisia's life expectancy in 2027?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The life expectancy of Tunisia in 2027 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the life expectancy of Tunisia was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data on the life expectancy of Tunisia between 2009 and 2023 was found "
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Using this data, a predictive model for the life expectancy of Tunisia was created"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The model was used to predict the life expectancy of Tunisia in 2027"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-8dae7502": {
+        "html_choice": "Question<br><strong>What will be Hungary's life expectancy in 2028?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Hungary's life expectancy in 2028?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Hungary's life expectancy in 2028 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the life expectancy of Hungary was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data on the life expectancy of Hungary between 2010 and 2021 was found "
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Using this data, a predictive model for the life expectancy of Hungary was created"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The model was used to predict the life expectancy of Hungary in 2028"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-68b6cb62": {
+        "html_choice": "Question<br><strong>What will be Iceland's population in 2030?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Iceland's population in 2030?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The population of Iceland in 2030 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the population of Iceland was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data was found on the population of Iceland between 2009 and 2023"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Using this data, a predictive model for the population of Iceland was created"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The model was used to predict the population of Iceland in 2030"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-063a8177": {
+        "html_choice": "Question<br><strong>What will be \u00c5land Islands's birth rate in 2030?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be \u00c5land Islands's birth rate in 2030?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The birth rate of \u00c5land Islands in 2030 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the birth rate of \u00c5land Islands was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data on the birth rate of \u00c5land Islands between 2009 and 2023 was found "
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "A predictive model for \u00c5land Islands's birth rate was created using this data"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The birth rate of \u00c5land Islands in 2030 was predicted using the model"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-ec0268db": {
+        "html_choice": "Question<br><strong>What will be Tokelau's energy consumption in 2028?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Tokelau's energy consumption in 2028?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The energy consumption of Tokelau in 2028 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the energy consumption of Tokelau was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data on Tokelau's energy consumption between 2011 and 2023 was found"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Using this data, a predictive model for the energy consumption of Tokelau was created"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The energy consumption of Tokelau in 2028 was predicted using the model"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-bc67bec9": {
+        "html_choice": "Question<br><strong>What will be Bahrain's GDP in 2028?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Bahrain's GDP in 2028?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The GDP of Bahrain in 2028 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the GDP of Bahrain was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data on Bahrain's GDP between 2011 and 2022 was found"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "A predictive model for Bahrain's GDP was created using this data"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The GDP of Bahrain in 2028 was predicted using the model"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-22c10a1d": {
+        "html_choice": "Question<br><strong>What will be Eritrea's population in 2026?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Eritrea's population in 2026?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The population of Eritrea in 2026 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the population of Eritrea was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data was found on the population of Eritrea between 2009 and 2022"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Using this data, a predictive model for the population of Eritrea was created"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The model was used to predict the population of Eritrea in 2026"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-28bc41a9": {
+        "html_choice": "Question<br><strong>What will be Macao's population in 2029?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Macao's population in 2029?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The population of Macao in 2029 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the population of Macao was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data on Macao's population between 2010 and 2021 was found"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "A predictive model for Macao's population was created using this data"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The model was used to predict the population of Macao in 2029"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-9d25d0cd": {
+        "html_choice": "Question<br><strong>What will be Suriname's population in 2029?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Suriname's population in 2029?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The population of Suriname in 2029 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the population of Suriname was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data on the population of Suriname between 2008 and 2023 was found "
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "A predictive model for Suriname's population was created using this data"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The model was used to predict the population of Suriname in 2029"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-b1a03369": {
+        "html_choice": "Question<br><strong>What will be Paraguay's population density in 2027?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Paraguay's population density in 2027?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Paraguay's population density in 2027 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the population density of Paraguay was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data on Paraguay's population density between 2011 and 2021 was found"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Using this data, a predictive model for the population density of Paraguay was created"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The population density of Paraguay in 2027 was predicted using the model"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-59ab3ae9": {
+        "html_choice": "Question<br><strong>What will be Liberia's energy consumption in 2029?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Liberia's energy consumption in 2029?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Liberia's energy consumption in 2029 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the energy consumption of Liberia was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data on Liberia's energy consumption between 2011 and 2023 was found"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "A predictive model for Liberia's energy consumption was created using this data"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The model was used to predict the energy consumption of Liberia in 2029"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-a83ed839": {
+        "html_choice": "Question<br><strong>What will be Ukraine's birth rate in 2028?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Ukraine's birth rate in 2028?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The birth rate of Ukraine in 2028 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the birth rate of Ukraine was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data on the birth rate of Ukraine between 2011 and 2023 was found "
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Using this data, a predictive model for the birth rate of Ukraine was created"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The model was used to predict the birth rate of Ukraine in 2028"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-b6eaa027": {
+        "html_choice": "Question<br><strong>What will be South Georgia and the South Sandwich Islands's population density in 2029?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be South Georgia and the South Sandwich Islands's population density in 2029?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The population density of South Georgia and the South Sandwich Islands in 2029 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the population density of South Georgia and the South Sandwich Islands was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data on the population density of South Georgia and the South Sandwich Islands between 2011 and 2021 was found "
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "A predictive model for South Georgia and the South Sandwich Islands's population density was created using this data"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The model was used to predict the population density of South Georgia and the South Sandwich Islands in 2029"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-73a61ff2": {
+        "html_choice": "Question<br><strong>What will be Spain's population density in 2027?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Spain's population density in 2027?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Spain's population density in 2027 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the population density of Spain was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data on Spain's population density between 2010 and 2023 was found"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Using this data, a predictive model for the population density of Spain was created"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The model was used to predict the population density of Spain in 2027"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-5b15a955": {
+        "html_choice": "Question<br><strong>What will be Belize's population density in 2028?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Belize's population density in 2028?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The population density of Belize in 2028 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the population density of Belize was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data was found on the population density of Belize between 2011 and 2023"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "A predictive model for Belize's population density was created using this data"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The model was used to predict the population density of Belize in 2028"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-00fb8eea": {
+        "html_choice": "Question<br><strong>What will be Dominica's energy consumption in 2029?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Dominica's energy consumption in 2029?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The energy consumption of Dominica in 2029 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the energy consumption of Dominica was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data on Dominica's energy consumption between 2011 and 2023 was found"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Using this data, a predictive model for the energy consumption of Dominica was created"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The energy consumption of Dominica in 2029 was predicted using the model"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-374de4b8": {
+        "html_choice": "Question<br><strong>What will be Luxembourg's energy consumption in 2028?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Luxembourg's energy consumption in 2028?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The energy consumption of Luxembourg in 2028 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the energy consumption of Luxembourg was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data was found on Luxembourg's energy consumption between 2010 and 2021"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "A predictive model for Luxembourg's energy consumption was created using this data"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The energy consumption of Luxembourg in 2028 was predicted using the model"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-5ec95c86": {
+        "html_choice": "Question<br><strong>What will be Tonga's birth rate in 2029?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Tonga's birth rate in 2029?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Tonga's birth rate in 2029 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the birth rate of Tonga was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data on the birth rate of Tonga between 2008 and 2021 was found "
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "A predictive model for Tonga's birth rate was created using this data"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The model was used to predict the birth rate of Tonga in 2029"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-a53ea6ce": {
+        "html_choice": "Question<br><strong>What will be Hungary's birth rate in 2027?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Hungary's birth rate in 2027?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Hungary's birth rate in 2027 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the birth rate of Hungary was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data on Hungary's birth rate between 2008 and 2022 was found"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Using this data, a predictive model for the birth rate of Hungary was created"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The model was used to predict the birth rate of Hungary in 2027"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-88e7bcbc": {
+        "html_choice": "Question<br><strong>What will be Togo's birth rate in 2029?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Togo's birth rate in 2029?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Togo's birth rate in 2029 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the birth rate of Togo was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data was found on the birth rate of Togo between 2009 and 2023"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Using this data, a predictive model for the birth rate of Togo was created"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The model was used to predict the birth rate of Togo in 2029"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-542d1581": {
+        "html_choice": "Question<br><strong>What will be Palau's population density in 2026?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Palau's population density in 2026?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The population density of Palau in 2026 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the population density of Palau was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data on Palau's population density between 2011 and 2023 was found"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "A predictive model for Palau's population density was created using this data"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The population density of Palau in 2026 was predicted using the model"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-3b2ac816": {
+        "html_choice": "Question<br><strong>What will be French Polynesia's birth rate in 2027?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be French Polynesia's birth rate in 2027?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "French Polynesia's birth rate in 2027 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the birth rate of French Polynesia was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data on French Polynesia's birth rate between 2011 and 2023 was found"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "A predictive model for French Polynesia's birth rate was created using this data"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The birth rate of French Polynesia in 2027 was predicted using the model"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-82deac0c": {
+        "html_choice": "Question<br><strong>What will be Venezuela's urban population in 2029?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Venezuela's urban population in 2029?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The urban population of Venezuela in 2029 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the urban population of Venezuela was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data on Venezuela's urban population between 2009 and 2023 was found"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "A predictive model for Venezuela's urban population was created using this data"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The urban population of Venezuela in 2029 was predicted using the model"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-cbc0e49b": {
+        "html_choice": "Question<br><strong>What will be Saint Barth\u00e9lemy's population density in 2028?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Saint Barth\u00e9lemy's population density in 2028?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Saint Barth\u00e9lemy's population density in 2028 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the population density of Saint Barth\u00e9lemy was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data was found on the population density of Saint Barth\u00e9lemy between 2011 and 2023"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "A predictive model for Saint Barth\u00e9lemy's population density was created using this data"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The model was used to predict the population density of Saint Barth\u00e9lemy in 2028"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-ab2e0d4c": {
+        "html_choice": "Question<br><strong>What will be Eswatini's life expectancy in 2028?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Eswatini's life expectancy in 2028?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The life expectancy of Eswatini in 2028 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the life expectancy of Eswatini was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data on Eswatini's life expectancy between 2008 and 2023 was found"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "A predictive model for Eswatini's life expectancy was created using this data"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The life expectancy of Eswatini in 2028 was predicted using the model"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-750271f0": {
+        "html_choice": "Question<br><strong>What will be Montenegro's birth rate in 2026?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Montenegro's birth rate in 2026?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The birth rate of Montenegro in 2026 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the birth rate of Montenegro was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data was found on Montenegro's birth rate between 2009 and 2021"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Using this data, a predictive model for the birth rate of Montenegro was created"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The birth rate of Montenegro in 2026 was predicted using the model"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-4973db6e": {
+        "html_choice": "Question<br><strong>What will be Eritrea's birth rate in 2026?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Eritrea's birth rate in 2026?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The birth rate of Eritrea in 2026 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the birth rate of Eritrea was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data was found on the birth rate of Eritrea between 2009 and 2023"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "A predictive model for Eritrea's birth rate was created using this data"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The birth rate of Eritrea in 2026 was predicted using the model"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-bf6ccdd1": {
+        "html_choice": "Question<br><strong>What will be Bhutan's urban population in 2027?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Bhutan's urban population in 2027?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The urban population of Bhutan in 2027 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the urban population of Bhutan was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data on the urban population of Bhutan between 2011 and 2023 was found "
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "A predictive model for Bhutan's urban population was created using this data"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The model was used to predict the urban population of Bhutan in 2027"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-4aee66ac": {
+        "html_choice": "Question<br><strong>What will be Kuwait's GDP in 2030?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Kuwait's GDP in 2030?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The GDP of Kuwait in 2030 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the GDP of Kuwait was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data was found on Kuwait's GDP between 2010 and 2022"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Using this data, a predictive model for the GDP of Kuwait was created"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The GDP of Kuwait in 2030 was predicted using the model"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-ed63ea24": {
+        "html_choice": "Question<br><strong>What will be Turks and Caicos Islands's population density in 2029?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Turks and Caicos Islands's population density in 2029?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Turks and Caicos Islands's population density in 2029 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the population density of Turks and Caicos Islands was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data was found on Turks and Caicos Islands's population density between 2010 and 2021"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "A predictive model for Turks and Caicos Islands's population density was created using this data"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The model was used to predict the population density of Turks and Caicos Islands in 2029"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-bfbaf596": {
+        "html_choice": "Question<br><strong>What will be Kiribati's population in 2029?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Kiribati's population in 2029?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Kiribati's population in 2029 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the population of Kiribati was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data on the population of Kiribati between 2010 and 2021 was found "
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Using this data, a predictive model for the population of Kiribati was created"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The population of Kiribati in 2029 was predicted using the model"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-21ef9e1a": {
+        "html_choice": "Question<br><strong>What will be Morocco's urban population in 2026?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Morocco's urban population in 2026?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The urban population of Morocco in 2026 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the urban population of Morocco was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data was found on the urban population of Morocco between 2009 and 2023"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "A predictive model for Morocco's urban population was created using this data"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The model was used to predict the urban population of Morocco in 2026"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-1ef1e945": {
+        "html_choice": "Question<br><strong>What will be Tajikistan's life expectancy in 2028?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Tajikistan's life expectancy in 2028?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The life expectancy of Tajikistan in 2028 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the life expectancy of Tajikistan was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data on the life expectancy of Tajikistan between 2008 and 2021 was found "
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Using this data, a predictive model for the life expectancy of Tajikistan was created"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The life expectancy of Tajikistan in 2028 was predicted using the model"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-e23958a5": {
+        "html_choice": "Question<br><strong>What will be El Salvador's urban population in 2027?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be El Salvador's urban population in 2027?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "El Salvador's urban population in 2027 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the urban population of El Salvador was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data was found on the urban population of El Salvador between 2008 and 2023"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Using this data, a predictive model for the urban population of El Salvador was created"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The urban population of El Salvador in 2027 was predicted using the model"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-03f10041": {
+        "html_choice": "Question<br><strong>What will be Romania's population in 2030?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Romania's population in 2030?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The population of Romania in 2030 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the population of Romania was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data on the population of Romania between 2010 and 2023 was found "
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "A predictive model for Romania's population was created using this data"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The population of Romania in 2030 was predicted using the model"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-b87e35dd": {
+        "html_choice": "Question<br><strong>What will be Guyana's birth rate in 2029?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Guyana's birth rate in 2029?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The birth rate of Guyana in 2029 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the birth rate of Guyana was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data on the birth rate of Guyana between 2008 and 2022 was found "
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Using this data, a predictive model for the birth rate of Guyana was created"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The birth rate of Guyana in 2029 was predicted using the model"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-e226712e": {
+        "html_choice": "Question<br><strong>What will be Taiwan's GDP in 2028?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Taiwan's GDP in 2028?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The GDP of Taiwan in 2028 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the GDP of Taiwan was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data was found on Taiwan's GDP between 2008 and 2023"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "A predictive model for Taiwan's GDP was created using this data"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The model was used to predict the GDP of Taiwan in 2028"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-ffa82b95": {
+        "html_choice": "Question<br><strong>What will be Saint Helena, Ascension and Tristan da Cunha's rural population in 2028?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Saint Helena, Ascension and Tristan da Cunha's rural population in 2028?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Saint Helena, Ascension and Tristan da Cunha's rural population in 2028 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the rural population of Saint Helena, Ascension and Tristan da Cunha was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data was found on Saint Helena, Ascension and Tristan da Cunha's rural population between 2011 and 2021"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "A predictive model for Saint Helena, Ascension and Tristan da Cunha's rural population was created using this data"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The model was used to predict the rural population of Saint Helena, Ascension and Tristan da Cunha in 2028"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-846d4c53": {
+        "html_choice": "Question<br><strong>What will be Tuvalu's GDP in 2027?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Tuvalu's GDP in 2027?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Tuvalu's GDP in 2027 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the GDP of Tuvalu was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data was found on Tuvalu's GDP between 2011 and 2022"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Using this data, a predictive model for the GDP of Tuvalu was created"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The GDP of Tuvalu in 2027 was predicted using the model"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-85cd98f3": {
+        "html_choice": "Question<br><strong>What will be Liberia's life expectancy in 2027?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Liberia's life expectancy in 2027?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The life expectancy of Liberia in 2027 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the life expectancy of Liberia was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data on Liberia's life expectancy between 2010 and 2022 was found"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Using this data, a predictive model for the life expectancy of Liberia was created"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The life expectancy of Liberia in 2027 was predicted using the model"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-b5ed8b7f": {
+        "html_choice": "Question<br><strong>What will be Norfolk Island's population in 2029?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Norfolk Island's population in 2029?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Norfolk Island's population in 2029 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the population of Norfolk Island was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data was found on Norfolk Island's population between 2010 and 2021"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "A predictive model for Norfolk Island's population was created using this data"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The population of Norfolk Island in 2029 was predicted using the model"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-bd42da6b": {
+        "html_choice": "Question<br><strong>What will be Botswana's population in 2027?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Botswana's population in 2027?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The population of Botswana in 2027 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the population of Botswana was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data on Botswana's population between 2008 and 2021 was found"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Using this data, a predictive model for the population of Botswana was created"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The population of Botswana in 2027 was predicted using the model"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-575c9421": {
+        "html_choice": "Question<br><strong>What will be Czechia's life expectancy in 2028?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Czechia's life expectancy in 2028?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Czechia's life expectancy in 2028 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the life expectancy of Czechia was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data was found on Czechia's life expectancy between 2011 and 2023"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Using this data, a predictive model for the life expectancy of Czechia was created"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The model was used to predict the life expectancy of Czechia in 2028"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-bac79b5e": {
+        "html_choice": "Question<br><strong>What will be Montenegro's population in 2030?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Montenegro's population in 2030?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The population of Montenegro in 2030 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the population of Montenegro was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data was found on the population of Montenegro between 2009 and 2021"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "A predictive model for Montenegro's population was created using this data"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The population of Montenegro in 2030 was predicted using the model"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-ecf214a1": {
+        "html_choice": "Question<br><strong>What will be Uzbekistan's rural population in 2030?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Uzbekistan's rural population in 2030?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The rural population of Uzbekistan in 2030 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the rural population of Uzbekistan was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data was found on the rural population of Uzbekistan between 2009 and 2023"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Using this data, a predictive model for the rural population of Uzbekistan was created"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The model was used to predict the rural population of Uzbekistan in 2030"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-2a579607": {
+        "html_choice": "Question<br><strong>What will be Guernsey's urban population in 2029?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Guernsey's urban population in 2029?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Guernsey's urban population in 2029 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the urban population of Guernsey was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data was found on Guernsey's urban population between 2008 and 2023"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Using this data, a predictive model for the urban population of Guernsey was created"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The urban population of Guernsey in 2029 was predicted using the model"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-b654426a": {
+        "html_choice": "Question<br><strong>What will be Christmas Island's rural population in 2030?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Christmas Island's rural population in 2030?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "Christmas Island's rural population in 2030 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the rural population of Christmas Island was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data on the rural population of Christmas Island between 2009 and 2023 was found "
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "A predictive model for Christmas Island's rural population was created using this data"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The model was used to predict the rural population of Christmas Island in 2030"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-45bd92fd": {
+        "html_choice": "Question<br><strong>What will be R\u00e9union's population in 2028?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be R\u00e9union's population in 2028?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "R\u00e9union's population in 2028 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the population of R\u00e9union was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data on R\u00e9union's population between 2010 and 2022 was found"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "A predictive model for R\u00e9union's population was created using this data"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The population of R\u00e9union in 2028 was predicted using the model"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-d9e757e7": {
+        "html_choice": "Question<br><strong>What will be Pakistan's population in 2029?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Pakistan's population in 2029?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The population of Pakistan in 2029 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the population of Pakistan was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data on Pakistan's population between 2011 and 2023 was found"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Using this data, a predictive model for the population of Pakistan was created"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The model was used to predict the population of Pakistan in 2029"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-514fabca": {
+        "html_choice": "Question<br><strong>What will be U.S. Virgin Islands 's GDP in 2029?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be U.S. Virgin Islands 's GDP in 2029?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "U.S. Virgin Islands 's GDP in 2029 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the GDP of U.S. Virgin Islands  was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data was found on the GDP of U.S. Virgin Islands  between 2009 and 2021"
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "A predictive model for U.S. Virgin Islands 's GDP was created using this data"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The GDP of U.S. Virgin Islands  in 2029 was predicted using the model"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    },
+    "A2-abf500d6": {
+        "html_choice": "Question<br><strong>What will be Andorra's GDP in 2027?</strong><br><br>Select the steps that you would include in a&nbsp;<strong>summary</strong>&nbsp;of the process.",
+        "template_id": "A2",
+        "question": "What will be Andorra's GDP in 2027?",
+        "explanation": [
+            {
+                "step": 1,
+                "label": "meta",
+                "explanation": "The GDP of Andorra in 2027 had to be predicted"
+            },
+            {
+                "step": 2,
+                "label": "meta",
+                "explanation": "Historic data on the GDP of Andorra was required"
+            },
+            {
+                "step": 3,
+                "label": "object",
+                "explanation": "Data on the GDP of Andorra between 2011 and 2023 was found "
+            },
+            {
+                "step": 4,
+                "label": "object",
+                "explanation": "Using this data, a predictive model for the GDP of Andorra was created"
+            },
+            {
+                "step": 5,
+                "label": "object",
+                "explanation": "The model was used to predict the GDP of Andorra in 2027"
+            },
+            {
+                "step": 6,
+                "label": "meta",
+                "explanation": "The answer to the question is the value predicted by the model"
+            }
+        ]
+    }
+}

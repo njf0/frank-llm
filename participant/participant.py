@@ -3,6 +3,7 @@ import datetime
 import json
 import logging
 import random
+import re
 from pathlib import Path
 
 import pandas as pd
@@ -11,6 +12,13 @@ from tqdm import tqdm
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
 logging.getLogger('transformers').setLevel(logging.ERROR)
+
+STEP_NUM = {
+            'A1': 4,
+            'B1': 5,
+            'C1': 10,
+            'D1': 5,
+        }
 
 class LLMParticipant:
 
@@ -192,6 +200,225 @@ class LLMParticipant:
         self.save_results(outputs)
 
         return outputs
+
+
+
+
+class AnalyseLLMParticipant:
+    def __init__(self, output_file):
+        self.output_file = output_file
+        self.config, self.results = self.load_data()
+        self.questions = self.load_questions()
+        self.df = self.split_by_prompt()
+        self.parse_generation_for_selection()
+        self.response_eq_example()
+        self.response_length_gt_steps()
+        self.response_eq_all_steps()
+        self.proportion_of_all_steps()
+        self.meta_object_selection()
+
+    def load_data(self):
+        with open(self.output_file) as f:
+            data = json.load(f)
+
+        config = data['config']
+        results = data['results']
+
+        return config, results
+
+    def load_questions(self):
+
+        questions = Path(f'../resources/data/select.json')
+        with open(questions) as f:
+            data = json.load(f)
+
+        return data
+
+    def split_by_prompt(self):
+
+        qids = [r['question_id'] for r in self.results]
+        templates = [r['template_id'] for r in self.results]
+        responses = [r['response'] for r in self.results]
+
+
+        model_family = self.config['MODEL'].split('/')[0]
+        system = []
+        user = []
+        generation = []
+
+        if model_family in ['']:
+
+
+            system_prompt = 'system\n\n'
+            user_prompt = "user\n\n"
+            generation_prompt = 'assistant\n\n'
+
+            for response in responses:
+                system.append(response[len(system_prompt):response.index(user_prompt)])
+                user.append(response[response.index(user_prompt) + len(user_prompt):response.index(generation_prompt)])
+                generation.append(response[response.index(generation_prompt) + len(generation_prompt):])
+
+        elif model_family in ['mistralai']:
+
+            generation_prompt = '   '
+            for response in responses:
+                system.append(None)
+                user.append(response[:response.index(generation_prompt)])
+                generation.append(response[response.index(generation_prompt) + len(generation_prompt):])
+
+        elif model_family in ['google', 'microsoft']:
+
+            # generation simply follows system prompt, so split after system prompt
+            system_prompt = self.config['SYSTEM_CONTENT']
+            # get index at which system prompt ends
+            system_prompt_end = len(system_prompt)
+            for response in responses:
+                system.append(None)
+                user.append(response[:system_prompt_end])
+                generation.append(response[system_prompt_end:])
+
+        # dictionary with {qid: [system, user, generation]}
+        return pd.DataFrame({'qid': qids,
+                             'template': templates,
+                             'num_steps': [STEP_NUM[t] for t in templates],
+                             'system': system,
+                             'user': user,
+                             'generation': generation})
+
+    def get_template_from_qid(
+            self,
+            qid,
+            return_steps_or_id: str = 'steps',
+        ):
+
+        template = self.questions[qid]['template_id']
+
+        if return_steps_or_id == 'steps':
+            return STEP_NUM[template]
+        else:
+            return template
+
+
+    def parse_generation_for_selection(self):
+
+        def matches_format(generation):
+            # regex for matching lists e.g., [1, 2, 3] or [a, b, c]
+            r = re.compile(r'\[.*?\]')
+            matches = r.findall(generation)
+            if matches:
+                match = matches[-1]
+                try:
+                    test = [str(m) for m in match[1:-1].split(',')]
+                except ValueError:
+                    test = None
+                return match
+
+        def valid_generation(template, generation):
+            if generation is not None:
+                try:
+                    valid = [int(m) for m in generation[1:-1].split(',')]
+                except ValueError:
+                    valid = None
+            else:
+                valid = None
+
+            # compare to number in different column
+            if valid is not None and len(valid) <= STEP_NUM[template]:
+                return valid
+
+            return None
+
+        self.df['matches_format'] = self.df['generation'].apply(lambda x: matches_format(x))
+        # compare to number in df['num_steps']
+        self.df['valid_generation'] = self.df[['template', 'matches_format']].apply(lambda x: valid_generation(x['template'], x['matches_format']), axis=1)
+
+
+    def response_eq_example(self):
+
+        example = self.config['EXAMPLE']
+        # count number of times example == df['matches_format']
+        self.df['response_eq_example'] = self.df['matches_format'].apply(lambda x: True if x == example else False)
+
+    def response_length_gt_steps(self):
+
+        # count cases where the assistant generation has more steps than the example
+        self.df['response_length_gt_steps'] = self.df.apply(lambda row: True if row['valid_generation'] is not None and len(row['valid_generation']) > row['num_steps'] else False, axis=1)
+
+    def response_eq_all_steps(self):
+
+        # count cases where assistant generation is just the full list of steps
+        self.df['response_eq_all_steps'] = self.df.apply(lambda row: True if row['valid_generation'] == [i for i in range(1, row['num_steps'] + 1)] else False, axis=1)
+
+    def proportion_of_all_steps(self):
+
+        # calculate the proportion of steps that the model selected
+        def proportion_of_all_steps(generation, template):
+            if generation is not None:
+                return len(generation) / STEP_NUM[template]
+            return None
+
+        self.df['proportion_of_all_steps'] = self.df.apply(lambda row: proportion_of_all_steps(row['valid_generation'], row['template']), axis=1)
+
+    def meta_object_selection(self):
+
+        example = self.questions[list(self.questions.keys())[0]]
+        xp = example['explanation']
+        meta_steps = [i['step'] for i in xp if i['label'] == 'meta']
+        object_steps = [i['step'] for i in xp if i['label'] == 'object']
+
+        def meta_selections(generation):
+            if generation is not None:
+                return [i for i in generation if i in meta_steps]
+            return None
+
+        def meta_selections_pc(generation):
+            if generation is not None:
+                return len([i for i in generation if i in meta_steps]) / len(meta_steps)
+            return None
+
+        def object_selections(generation):
+            if generation is not None:
+                return [i for i in generation if i in object_steps]
+            return None
+
+        def object_selections_pc(generation):
+            if generation is not None:
+                return len([i for i in generation if i in object_steps]) / len(object_steps)
+            return None
+
+        self.df['meta_selections'] = self.df['valid_generation'].apply(lambda x: meta_selections(x))
+        self.df['meta_selections_pc'] = self.df['valid_generation'].apply(lambda x: meta_selections_pc(x))
+        self.df['object_selections'] = self.df['valid_generation'].apply(lambda x: object_selections(x))
+        self.df['object_selections_pc'] = self.df['valid_generation'].apply(lambda x: object_selections_pc(x))
+
+
+
+
+class AnalyseLLMParticipants:
+
+    def __init__(self, shots, output_file):
+        self.shots = shots
+        self.output_file = output_file
+        self.config, self.results = self.load_data()
+        self.questions = self.load_questions()
+
+    def load_questions(self):
+
+        questions = Path(f'../resources/data/select.json')
+        with open(questions) as f:
+            data = json.load(f)
+
+        return data
+
+
+    def load_data(self):
+        with open(self.output_file) as f:
+            data = json.load(f)
+
+        config = data['config']
+        results = data['results']
+
+        return config, results
 
 
 
