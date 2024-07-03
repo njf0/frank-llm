@@ -24,7 +24,7 @@ class Franklin:
 
         inputs = Path(self.config["source"])
         with inputs.open("r") as f:
-            inputs = [v["question"] for k, v in json.load(f).items()]
+            inputs = [v["question"] for k, v in json.load(f).items()][:self.config["examples"]]
 
         return inputs
 
@@ -36,6 +36,11 @@ class Franklin:
 
         if not Path('/app/plan/outputs').exists():
             Path('/app/plan/outputs').mkdir()
+        logfile = Path('/app/plan/outputs/log.csv')
+        if not logfile.exists():
+            with open(logfile, 'w') as f:
+                df = pd.DataFrame()
+                df.to_csv(f, index=True)
 
         df = pd.DataFrame(
             {
@@ -47,6 +52,15 @@ class Franklin:
         filename = datetime.datetime.isoformat(datetime.datetime.now())
 
         df.to_csv(f"/app/plan/outputs/{filename}.csv", index=False)
+
+        with open('/app/plan/outputs/log.csv', 'r') as f:
+            log = pd.read_csv(f, index_col=0)
+
+        df = pd.DataFrame(columns=self.config.keys(), data=[self.config.values()], index=[filename])
+        log = pd.concat([log, df])
+
+        with open('/app/plan/outputs/log.csv', 'w') as f:
+            log.to_csv(f, index=True)
 
         return df
 
@@ -150,6 +164,6 @@ class LlamaTest(Franklin):
         messages = self.assemble_messages(inputs)
         outputs = self.apply_and_generate(messages)
         responses = self.parse_outputs(outputs)
-        # df = self.save_results(inputs, responses)
+        df = self.save_results(inputs, responses)
 
         return {"inputs": inputs, "outputs": responses}

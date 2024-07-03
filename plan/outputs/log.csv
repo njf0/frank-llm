@@ -1,0 +1,3 @@
+,examples,model,temperature,batch_size,source,system_content
+2024-07-03T16:55:04.703444,16,/nfs/public/hf/models/meta-llama/Meta-Llama-3-8B-Instruct,0.2,16,/app/resources/data/full_study.json,Answer the following question.
+2024-07-03T16:56:30.364929,16,/nfs/public/hf/models/meta-llama/Meta-Llama-3-8B-Instruct,0.2,16,/app/resources/data/full_study.json,Answer the following question.
