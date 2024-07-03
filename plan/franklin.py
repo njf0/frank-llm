@@ -1,3 +1,4 @@
+import datetime
 import json
 from pathlib import Path
 
@@ -6,6 +7,7 @@ import torch
 from tqdm import tqdm
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
+# FRANKLIN: Frank Library of Ideal Narratives (?!)
 
 class Franklin:
 
@@ -32,12 +34,19 @@ class Franklin:
         outputs: list,
     ) -> None:
 
+        if not Path('/app/plan/outputs').exists():
+            Path('/app/plan/outputs').mkdir()
+
         df = pd.DataFrame(
             {
                 "input": inputs,
                 "output": outputs,
             }
         )
+
+        filename = datetime.datetime.isoformat(datetime.datetime.now())
+
+        df.to_csv(f"/app/plan/outputs/{filename}.csv", index=False)
 
         return df
 
@@ -128,7 +137,7 @@ class LlamaTest(Franklin):
 
         responses = []
 
-        for output in outputs:
+        for output in tqdm(outputs, desc="Parsing outputs"):
             responses.append(output.split(generation_prompt)[-1].strip())
 
         return responses
