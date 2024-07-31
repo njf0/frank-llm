@@ -24,4 +24,5 @@ code --install-extension pkief.material-icon-theme
 code --install-extension redhat.vscode-yaml
 pip3 install --upgrade pip
 pip3 install -r requirements.txt
-git
+git config --global user.email "goggled.mapping.0p@icloud.com"
+git config --global user.name "njf0"
