@@ -1,5 +1,6 @@
 import datetime
 import json
+import random
 from pathlib import Path
 
 import pandas as pd
@@ -33,7 +34,7 @@ class Franklin:
         """
         inputs = Path(self.config["source"])
         with inputs.open("r", encoding="utf-8") as f:
-            inputs = [v["question"] for k, v in json.load(f).items()][:self.config["examples"]]
+            inputs = [v["question"] for v in random.sample(list(json.load(f).values()), self.config["examples"])]
 
         return inputs
 
@@ -227,4 +228,20 @@ class LlamaTest(Franklin):
         responses = self.parse_outputs(outputs)
         self.save_results(inputs, responses)
 
-        return {"inputs": inputs, "outputs": responses}
+        return list(zip(inputs, responses))
+
+
+if __name__ == "__main__":
+
+    config = {
+        "examples": 16,
+        "model": "/nfs/public/hf/models/meta-llama/Meta-Llama-3-8B-Instruct",
+        "temperature": 0.2,
+        "batch_size": 16,
+        "source": "/app/resources/data/full_study.json",
+        "system_content": "Create a plan, in the form of a list of steps, for answering the following question. Then, execute the steps in that plan to provide an answer.",
+    }
+
+    llama = LlamaTest(config)
+    results = llama.run()
+    print(results)

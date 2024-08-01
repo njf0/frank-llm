@@ -22,8 +22,8 @@ code --install-extension ms-vscode.remote-explorer
 code --install-extension ms-vscode.remote-server
 code --install-extension pkief.material-icon-theme
 code --install-extension redhat.vscode-yaml
-pip3 install --upgrade git+https://www.github.com/frank-lab-ai/franky@njf
 pip3 install --upgrade pip
+pip3 install --upgrade git+https://www.github.com/frank-lab-ai/franky@njf
 pip3 install --upgrade accelerate
 pip3 install --upgrade ipykernel
 pip3 install --upgrade kubejobs
