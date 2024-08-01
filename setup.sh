@@ -22,7 +22,17 @@ code --install-extension ms-vscode.remote-explorer
 code --install-extension ms-vscode.remote-server
 code --install-extension pkief.material-icon-theme
 code --install-extension redhat.vscode-yaml
+pip3 install --upgrade git+https://www.github.com/frank-lab-ai/franky@njf
 pip3 install --upgrade pip
-pip3 install -r requirements.txt
+pip3 install --upgrade accelerate
+pip3 install --upgrade ipykernel
+pip3 install --upgrade kubejobs
+pip3 install --upgrade networkx
+pip3 install --upgrade pandas
+pip3 install --upgrade pytest
+pip3 install --upgrade tiktoken
+pip3 install --upgrade transformers
+pip3 install --upgrade torch
+pip3 install --upgrade flash-attn
 git config --global user.email "goggled.mapping.0p@icloud.com"
 git config --global user.name "njf0"

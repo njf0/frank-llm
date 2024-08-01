@@ -180,7 +180,7 @@ class LlamaTest(Franklin):
 
             outputs = self.model.generate(
                 inputs,
-                max_new_tokens=256,
+                max_new_tokens=512,
                 do_sample=True,
                 temperature=self.config["temperature"],
             )
@@ -217,7 +217,7 @@ class LlamaTest(Franklin):
 
     def run(
         self,
-    ) -> pd.DataFrame:
+    ) -> dict:
         """
         Run the model on the dataset.
         """
