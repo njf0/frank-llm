@@ -10,7 +10,14 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 # FRANKLIN: Frank Library of Ideal Narratives (?!)
 
 class Franklin:
+    """
+    Base class for applying LLMs to dataset of Frank-style questions.
 
+    Parameters
+    ----------
+    config : dict
+        Configuration dictionary containing model and data parameters.
+    """
     def __init__(
         self,
         config: dict,
@@ -21,9 +28,11 @@ class Franklin:
     def load_inputs(
         self,
     ) -> list:
-
+        """
+        Load inputs from source file as given in config.
+        """
         inputs = Path(self.config["source"])
-        with inputs.open("r") as f:
+        with inputs.open("r", encoding="utf-8") as f:
             inputs = [v["question"] for k, v in json.load(f).items()][:self.config["examples"]]
 
         return inputs
@@ -33,12 +42,21 @@ class Franklin:
         inputs: list,
         outputs: list,
     ) -> None:
+        """
+        Save results to output file.
 
+        Parameters
+        ----------
+        inputs : list
+            List of input questions.
+        outputs : list
+            List of generated responses.
+        """
         if not Path('/app/plan/outputs').exists():
             Path('/app/plan/outputs').mkdir()
         logfile = Path('/app/plan/outputs/log.csv')
         if not logfile.exists():
-            with open(logfile, 'w') as f:
+            with open(logfile, 'w', encoding='utf-8') as f:
                 df = pd.DataFrame()
                 df.to_csv(f, index=True)
 
@@ -53,20 +71,27 @@ class Franklin:
 
         df.to_csv(f"/app/plan/outputs/{filename}.csv", index=False)
 
-        with open('/app/plan/outputs/log.csv', 'r') as f:
+        with open('/app/plan/outputs/log.csv', 'r', encoding='utf-8') as f:
             log = pd.read_csv(f, index_col=0)
 
         df = pd.DataFrame(columns=self.config.keys(), data=[self.config.values()], index=[filename])
         log = pd.concat([log, df])
 
-        with open('/app/plan/outputs/log.csv', 'w') as f:
+        with open('/app/plan/outputs/log.csv', 'w', encoding='utf-8') as f:
             log.to_csv(f, index=True)
 
         return df
 
 
 class LlamaTest(Franklin):
+    """
+    Implementation of Llama chat templates etc for application to dataset.
 
+    Parameters
+    ----------
+    config : dict
+        Configuration dictionary containing model and data parameters.
+    """
     def __init__(
         self,
         config: dict,
@@ -95,7 +120,19 @@ class LlamaTest(Franklin):
         self,
         inputs: list[str],
     ) -> list:
+        """
+        Assemble messages for input to model.
 
+        Parameters
+        ----------
+        inputs : list
+            List of input questions.
+
+        Returns
+        -------
+        messages : list
+            List of messages for input to model.
+        """
         messages = []
 
         for i in tqdm(inputs, desc="Assembling messages"):
@@ -112,7 +149,19 @@ class LlamaTest(Franklin):
         self,
         messages: list[str],
     ) -> list[str]:
+        """
+        Apply chat templates and generate responses.
 
+        Parameters
+        ----------
+        messages : list
+            List of messages for input to model.
+
+        Returns
+        -------
+        responses : list
+            List of generated responses.
+        """
         responses = []
 
         batched_inputs = [
@@ -144,9 +193,19 @@ class LlamaTest(Franklin):
         self,
         outputs: list[str],
     ) -> list:
+        """
+        Parse outputs from model.
 
-        system_prompt = "system\n\n"
-        user_prompt = "user\n\n"
+        Parameters
+        ----------
+        outputs : list
+            List of generated responses.
+
+        Returns
+        -------
+        responses : list
+            List of parsed responses.
+        """
         generation_prompt = "assistant\n\n"
 
         responses = []
@@ -159,11 +218,13 @@ class LlamaTest(Franklin):
     def run(
         self,
     ) -> pd.DataFrame:
-
+        """
+        Run the model on the dataset.
+        """
         inputs = self.load_inputs()
         messages = self.assemble_messages(inputs)
         outputs = self.apply_and_generate(messages)
         responses = self.parse_outputs(outputs)
-        df = self.save_results(inputs, responses)
+        self.save_results(inputs, responses)
 
         return {"inputs": inputs, "outputs": responses}
