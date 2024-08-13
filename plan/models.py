@@ -1,128 +1,13 @@
-import datetime
-import json
 import random
-from pathlib import Path
 
-import pandas as pd
 import torch
+from base import GenerationBase
 from tqdm import tqdm
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
 # FRANKLIN: Frank Library of Ideal Narratives (?!)
 
-CONFIG_TYPES = {
-    'batch_size': int,
-    'examples': int,
-    'description': str,
-    'model': str,
-    'temperature': float,
-    'source': str,
-    'system_content': str
-}
-
-class GenerationConfig:
-    '''
-    config = {
-        "batch_size": 16,
-        "description": "Test addition of description column.",
-        "examples": 16,
-        # "model": "/nfs/public/hf/models/meta-llama/Meta-Llama-3-8B-Instruct",
-        'model': 'mistralai/Mistral-7B-Instruct-v0.3',
-        "temperature": 0.2,
-        "source": "/app/resources/data/full_study.json",
-        "system_content": "Answer the following question.",
-    }
-    '''
-    def __init__(
-            self,
-    ) -> None:
-        self.batch_size: int = 16
-        self.examples: int = -1
-        self.description: str = ''
-        self.model: str = ''
-        self.temperature: float = 0.2,
-        self.source: str = '/app/resources/data/full_study.json'
-        self.system_content: str = ''
-
-
-
-class Franklin:
-    """
-    Base class for applying LLMs to dataset of Frank-style questions.
-
-    Parameters
-    ----------
-    config : dict
-        Configuration dictionary containing model and data parameters.
-    """
-    def __init__(
-            self,
-            config: dict,
-    ) -> None:
-
-        # type-check config against CONFIG_TYPES
-
-        self.config = config
-
-    def load_inputs(
-            self,
-    ) -> list:
-        """
-        Load inputs from source file as given in config.
-        """
-        inputs = Path(self.config["source"])
-        with inputs.open("r", encoding="utf-8") as f:
-            inputs = [v["question"] for v in random.sample(list(json.load(f).values()), self.config["examples"])]
-
-        return inputs
-
-    def save_results(
-            self,
-            inputs: list,
-            outputs: list,
-    ) -> None:
-        """
-        Save results to output file.
-
-        Parameters
-        ----------
-        inputs : list
-            List of input questions.
-        outputs : list
-            List of generated responses.
-        """
-        if not Path('/app/plan/outputs').exists():
-            Path('/app/plan/outputs').mkdir()
-        logfile = Path('/app/plan/outputs/log.csv')
-        if not logfile.exists():
-            with open(logfile, 'w', encoding='utf-8') as f:
-                df = pd.DataFrame()
-                df.to_csv(f, index=True)
-
-        df = pd.DataFrame(
-            {
-                "input": inputs,
-                "output": outputs,
-            }
-        )
-
-        filename = datetime.datetime.isoformat(datetime.datetime.now())
-
-        df.to_csv(f"/app/plan/outputs/{filename}.csv", index=False)
-
-        with open('/app/plan/outputs/log.csv', 'r', encoding='utf-8') as f:
-            log = pd.read_csv(f, index_col=0)
-
-        df = pd.DataFrame(columns=self.config.keys(), data=[self.config.values()], index=[filename])
-        log = pd.concat([log, df])
-
-        with open('/app/plan/outputs/log.csv', 'w', encoding='utf-8') as f:
-            log.to_csv(f, index=True)
-
-        return df
-
-
-class Llama(Franklin):
+class Llama(GenerationBase):
     """
     Implementation of Llama chat templates etc for application to dataset.
 
@@ -272,7 +157,7 @@ class Llama(Franklin):
 
         return list(zip(inputs, responses))
 
-class Mistral(Franklin):
+class Mistral(GenerationBase):
     """
     Implementation of Mistral chat templates etc for application to dataset.
 
@@ -426,9 +311,6 @@ class Mistral(Franklin):
 
         return list(zip(inputs, responses))
 
-
-
-
 if __name__ == "__main__":
 
     config = {
@@ -437,9 +319,9 @@ if __name__ == "__main__":
         "examples": 16,
         # "model": "/nfs/public/hf/models/meta-llama/Meta-Llama-3-8B-Instruct",
         'model': 'mistralai/Mistral-7B-Instruct-v0.3',
-        "temperature": 0.2,
         "source": "/app/resources/data/full_study.json",
         "system_content": "Answer the following question.",
+        'temperature': 0.2
     }
 
     test = Mistral(config)
