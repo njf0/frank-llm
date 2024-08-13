@@ -10,6 +10,42 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 
 # FRANKLIN: Frank Library of Ideal Narratives (?!)
 
+CONFIG_TYPES = {
+    'batch_size': int,
+    'examples': int,
+    'description': str,
+    'model': str,
+    'temperature': float,
+    'source': str,
+    'system_content': str
+}
+
+class GenerationConfig:
+    '''
+    config = {
+        "batch_size": 16,
+        "description": "Test addition of description column.",
+        "examples": 16,
+        # "model": "/nfs/public/hf/models/meta-llama/Meta-Llama-3-8B-Instruct",
+        'model': 'mistralai/Mistral-7B-Instruct-v0.3',
+        "temperature": 0.2,
+        "source": "/app/resources/data/full_study.json",
+        "system_content": "Answer the following question.",
+    }
+    '''
+    def __init__(
+            self,
+    ) -> None:
+        self.batch_size: int = 16
+        self.examples: int = -1
+        self.description: str = ''
+        self.model: str = ''
+        self.temperature: float = 0.2,
+        self.source: str = '/app/resources/data/full_study.json'
+        self.system_content: str = ''
+
+
+
 class Franklin:
     """
     Base class for applying LLMs to dataset of Frank-style questions.
@@ -23,6 +59,8 @@ class Franklin:
             self,
             config: dict,
     ) -> None:
+
+        # type-check config against CONFIG_TYPES
 
         self.config = config
 
@@ -389,14 +427,17 @@ class Mistral(Franklin):
         return list(zip(inputs, responses))
 
 
+
+
 if __name__ == "__main__":
 
     config = {
+        "batch_size": 16,
+        "description": "Test addition of description column.",
         "examples": 16,
         # "model": "/nfs/public/hf/models/meta-llama/Meta-Llama-3-8B-Instruct",
         'model': 'mistralai/Mistral-7B-Instruct-v0.3',
         "temperature": 0.2,
-        "batch_size": 16,
         "source": "/app/resources/data/full_study.json",
         "system_content": "Answer the following question.",
     }
