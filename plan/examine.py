@@ -3,7 +3,7 @@ import random
 import subprocess
 from pathlib import Path
 
-files = sorted(list(Path('plan', 'outputs').iterdir()))
+files = sorted(list(Path('/', 'app', 'plan', 'outputs').iterdir()))
 most_recent = files[-2]
 
 with open(most_recent, 'r', encoding='utf-8') as f:

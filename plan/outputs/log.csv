@@ -11,3 +11,5 @@
 2024-08-06T13:30:43.299080,16,/nfs/public/hf/models/meta-llama/Meta-Llama-3.1-8B-Instruct,0.2,16,/app/resources/data/full_study.json,"Create a plan, in the form of a list of steps, for answering the following question. Then, execute the steps in that plan to provide an answer."
 2024-08-06T15:43:37.521213,16,/nfs/public/hf/models/meta-llama/Meta-Llama-3.1-8B-Instruct,0.2,16,/app/resources/data/full_study.json,"Create a plan, in the form of a list of steps, for answering the following question."
 2024-08-06T16:25:18.401457,16,/nfs/public/hf/models/meta-llama/Meta-Llama-3.1-8B-Instruct,0.2,16,/app/resources/data/full_study.json,Answer the following question.
+2024-08-13T11:06:05.442769,16,mistralai/Mistral-7B-Instruct-v0.3,0.2,16,/app/resources/data/full_study.json,Answer the following question.
+2024-08-13T11:15:04.249118,16,mistralai/Mistral-7B-Instruct-v0.3,0.2,16,/app/resources/data/full_study.json,Answer the following question.
