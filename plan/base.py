@@ -81,16 +81,21 @@ class GenerationBase:
             raise ValueError(f"Missing keys in config: {', '.join(missing_keys)}")
 
         self.config = cfg
+        self.filename = ''
 
     def load_inputs(
             self,
-    ) -> list:
+
+        ) -> list:
         """
         Load inputs from source file as given in config.
         """
         inputs = Path(self.config["source"])
         with inputs.open("r", encoding="utf-8") as f:
-            inputs = [v["question"] for v in random.sample(list(json.load(f).values()), self.config["examples"])]
+            if self.config["examples"] == -1:
+                inputs = [v["question"] for v in list(json.load(f).values())]
+            else:
+                inputs = [v["question"] for v in list(json.load(f).values())[:self.config["examples"]]]
 
         return inputs
 
@@ -124,14 +129,14 @@ class GenerationBase:
             }
         )
 
-        filename = datetime.datetime.isoformat(datetime.datetime.now())
+        self.filename = datetime.datetime.isoformat(datetime.datetime.now())
 
-        df.to_csv(f"/app/plan/outputs/{filename}.csv", index=False)
+        df.to_csv(f"/app/plan/outputs/{self.filename}.csv", index=False)
 
         with open('/app/plan/outputs/log.csv', 'r', encoding='utf-8') as f:
             log = pd.read_csv(f, index_col=0)
 
-        df = pd.DataFrame(columns=self.config.keys(), data=[self.config.values()], index=[filename])
+        df = pd.DataFrame(columns=self.config.keys(), data=[self.config.values()], index=[self.filename])
         log = pd.concat([log, df])
 
         with open('/app/plan/outputs/log.csv', 'w', encoding='utf-8') as f:

@@ -14,3 +14,5 @@
 2024-08-13T11:06:05.442769,16,mistralai/Mistral-7B-Instruct-v0.3,0.2,16,/app/resources/data/full_study.json,Answer the following question.,
 2024-08-13T11:15:04.249118,16,mistralai/Mistral-7B-Instruct-v0.3,0.2,16,/app/resources/data/full_study.json,Answer the following question.,
 2024-08-13T15:27:37.416279,16,mistralai/Mistral-7B-Instruct-v0.3,0.2,16,/app/resources/data/full_study.json,Answer the following question.,Test addition of description column.
+2024-08-15T17:03:51.872256,16,/nfs/public/hf/models/meta-llama/Meta-Llama-3-8B-Instruct,0.2,16,/app/resources/data/full_study.json,Answer the following question.,
+2024-08-15T17:13:07.002755,-1,/nfs/public/hf/models/meta-llama/Meta-Llama-3-8B-Instruct,0.2,16,/app/resources/data/full_study.json,Answer the following question.,Full dataset

@@ -1,3 +1,6 @@
+import argparse
+import json
+import logging
 import random
 
 import torch
@@ -6,6 +9,8 @@ from tqdm import tqdm
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
 # FRANKLIN: Frank Library of Ideal Narratives (?!)
+
+logging.getLogger('transformers').setLevel(logging.ERROR)
 
 class MetaLlama(GenerationBase):
     """
@@ -23,7 +28,7 @@ class MetaLlama(GenerationBase):
 
         super().__init__(config)
 
-        assert config['model'].split('/')[0] == 'nfs', 'Model must be a Meta-Llama model.'
+        assert config['model'].split('/')[1] == 'nfs', 'Model must be a Meta-Llama model.'
 
         self.tokenizer = self.tokenizer = AutoTokenizer.from_pretrained(
             self.config["model"],
@@ -584,16 +589,38 @@ class GoogleGemma(GenerationBase):
 
 if __name__ == "__main__":
 
-    config = {
-        "batch_size": 16,
-        "description": "Test addition of description column.",
-        "examples": 16,
-        'model': 'google/gemma-7b',
-        "source": "/app/resources/data/full_study.json",
-        "system_content": "Answer the following question.",
-        'temperature': 0.2
+
+    MODELS = {
+        '/nfs/public/hf/models/meta-llama/Meta-Llama-3-8B-Instruct': MetaLlama,
+        '/nfs/public/hf/models/meta-llama/Meta-Llama-3.1-8B-Instruct': MetaLlama,
+        'mistralai/Mistral-7B-Instruct-v0.3': Mistral,
+        'microsoft/Phi-3-mini-128k-instruct': MicrosoftPhi,
+        'microsoft/Phi-3-small-128k-instruct': MicrosoftPhi,
+        'google/gemma-7b': GoogleGemma,
     }
 
-    test = GoogleGemma(config)
-    results = test.run(save=False)
-    print(*random.sample(results, 10), sep='\n')
+    parser = argparse.ArgumentParser(description='Run model on dataset.')
+    parser.add_argument('--batch_size', type=int, default=16, help='Batch size.')
+    parser.add_argument('--debug', action='store_true', help='Debug mode.')
+    parser.add_argument('--description', type=str, default='', help='Description of run.')
+    parser.add_argument('--examples', type=int, default=-1, help='Number of examples to run.')
+    parser.add_argument('--model', type=str, required=True, help='Model to run.')
+    parser.add_argument('--source', type=str, default='/app/resources/data/full_study.json', help='Source data.')
+    parser.add_argument('--system_content', type=str, default='Answer the following question.', help='System content.')
+    parser.add_argument('--temperature', type=float, default=0.2, help='Generation temperature.')
+    args = parser.parse_args()
+
+    config = {
+        "batch_size": args.batch_size,
+        "description": args.description,
+        "examples": args.examples,
+        "model": args.model,
+        "source": args.source,
+        "system_content": args.system_content,
+        "temperature": args.temperature,
+    }
+
+    print(f"Running with config:\n{json.dumps(config, indent=4)}")
+    model = MODELS[args.model](config)
+    model.run()
+    print(f"Saved to {model.filename}")
