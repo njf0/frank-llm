@@ -1,0 +1,6 @@
+# python models.py --model '/nfs/public/hf/models/meta-llama/Meta-Llama-3-8B-Instruct' --description 'Full dataset'
+# python models.py --model '/nfs/public/hf/models/meta-llama/Meta-Llama-3.1-8B-Instruct' --description 'Full dataset'
+# python models.py --model 'mistralai/Mistral-7B-Instruct-v0.3' --description 'Full dataset'
+# python models.py --model 'microsoft/Phi-3-mini-128k-instruct' --description 'Full dataset'
+# python models.py --model 'microsoft/Phi-3-small-128k-instruct' --description 'Full dataset'
+python models.py --model 'google/gemma-7b' --description 'Full dataset, fixed output parsing'

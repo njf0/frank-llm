@@ -450,7 +450,6 @@ class MicrosoftPhi(GenerationBase):
         responses = []
 
         for in_out_pair in tqdm(zip(inputs, outputs), desc="Parsing outputs"):
-            # responses.append(output[output.index(generation_prompt) + len(generation_prompt):])
             responses.append(in_out_pair[1].split(in_out_pair[0])[-1].strip())
 
         return responses
@@ -569,6 +568,33 @@ class GoogleGemma(GenerationBase):
             )
 
             responses += self.tokenizer.batch_decode(outputs, skip_special_tokens=True)
+
+        return responses
+
+    def parse_outputs(
+            self,
+            inputs: list[str],
+            outputs: list[str],
+    ) -> list:
+        """
+        Parse outputs from model.
+
+        Parameters
+        ----------
+        inputs : list
+            List of input questions.
+        outputs : list
+            List of generated responses.
+
+        Returns
+        -------
+        responses : list
+            List of parsed responses.
+        """
+        responses = []
+
+        for in_out_pair in tqdm(zip(inputs, outputs), desc="Parsing outputs"):
+            responses.append(in_out_pair[1].split(in_out_pair[0])[-1].strip())
 
         return responses
 
