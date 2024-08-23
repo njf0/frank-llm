@@ -5,6 +5,7 @@ import random
 
 import torch
 from base import GenerationBase
+from openai import OpenAI
 from tqdm import tqdm
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
@@ -613,6 +614,82 @@ class GoogleGemma(GenerationBase):
 
         return list(zip(inputs, outputs))
 
+class OpenAI(GenerationBase):
+
+    def __init__(
+            self,
+            config: dict,
+    ) -> None:
+
+        super().__init__(config)
+
+        if config['model'][:3] != 'gpt':
+            raise ValueError("Model(/family) doesn't appear correct.")
+
+    def assemble_messages(
+            self,
+            inputs: list[str],
+    ) -> list:
+        """
+        Assemble messages for input to model.
+
+        Parameters
+        ----------
+        inputs : list
+            List of input questions.
+
+        Returns
+        -------
+        messages : list
+            List of messages for input to model.
+        """
+        messages = []
+
+        for i in tqdm(inputs, desc="Assembling messages"):
+            messages.append(
+                f'{self.config["system_content"]} {i}'
+            )
+
+        return messages
+
+    def apply_and_generate(
+            self,
+            messages: list[str],
+    ) -> list[str]:
+        """
+        Apply chat templates and generate responses.
+
+        Parameters
+        ----------
+        messages : list
+            List of messages for input to model.
+
+        Returns
+        -------
+        responses : list
+            List of generated responses.
+        """
+        responses = []
+
+        for message in tqdm(messages, desc="Generating responses"):
+            response = OpenAI.completion.create(
+                engine=self.config["model"],
+                prompt=message,
+                max_tokens=512,
+                temperature=self.config["temperature"],
+            )
+            responses.append(response.choices[0].text.strip())
+
+        return responses
+
+
+
+
+
+
+
+
+
 if __name__ == "__main__":
 
 
@@ -622,16 +699,18 @@ if __name__ == "__main__":
         'mistralai/Mistral-7B-Instruct-v0.3': Mistral,
         'microsoft/Phi-3-mini-128k-instruct': MicrosoftPhi,
         'microsoft/Phi-3-small-128k-instruct': MicrosoftPhi,
+        'microsoft/Phi-3.5-mini-instruct': MicrosoftPhi,
         'google/gemma-7b': GoogleGemma,
+        'google/gemma-2-9b-it': GoogleGemma,
     }
 
     parser = argparse.ArgumentParser(description='Run model on dataset.')
     parser.add_argument('--batch_size', type=int, default=16, help='Batch size.')
-    parser.add_argument('--debug', action='store_true', help='Debug mode.')
     parser.add_argument('--description', type=str, default='', help='Description of run.')
-    parser.add_argument('--examples', type=int, default=-1, help='Number of examples to run.')
-    parser.add_argument('--model', type=str, required=True, help='Model to run.')
-    parser.add_argument('--source', type=str, default='/app/resources/data/full_study.json', help='Source data.')
+    parser.add_argument('--examples', type=int, default=16, help='Number of examples to run.')
+    parser.add_argument('--model', type=str, default='meta-llama/Meta-Llama-3.1-8B-Instruct', help='Model to run.')
+    parser.add_argument('--save', type=bool, default=False, help='Save results.')
+    parser.add_argument('--source', type=str, default='/app/resources/data/franklin/full_study.json', help='Source data.')
     parser.add_argument('--system_content', type=str, default='Answer the following question.', help='System content.')
     parser.add_argument('--temperature', type=float, default=0.2, help='Generation temperature.')
     args = parser.parse_args()
@@ -648,5 +727,5 @@ if __name__ == "__main__":
 
     print(f"Running with config:\n{json.dumps(config, indent=4)}")
     model = MODELS[args.model](config)
-    model.run()
-    print(f"Saved to {model.filename}")
+    model.run(save=args.save)
+    print(f"Saved to {model.filename}.")

@@ -85,7 +85,6 @@ class GenerationBase:
 
     def load_inputs(
             self,
-
         ) -> list:
         """
         Load inputs from source file as given in config.

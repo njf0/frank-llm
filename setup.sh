@@ -1,14 +1,17 @@
 # Function to display usage
 usage() {
-  echo "Usage: $0 -t <huggingface_token>"
+  echo "Usage: $0 -t HUGGINGFACE_TOKEN -o OPEN_AI_API_KEY" >&2
   exit 1
 }
 
 # Parse command-line arguments
-while getopts ":t:" opt; do
+while getopts ":t:o:" opt; do
   case $opt in
     t)
       HUGGINGFACE_TOKEN=$OPTARG
+      ;;
+    o)
+      OPENAI_API_KEY=$OPTARG
       ;;
     \?)
       echo "Invalid option: -$OPTARG" >&2
@@ -27,8 +30,11 @@ if [ -z "$HUGGINGFACE_TOKEN" ]; then
   usage
 fi
 
-# Configure Hugging Face CLI with the token
-huggingface-cli login --token "$HUGGINGFACE_TOKEN"
+# Check if OPENAI_API_KEY is set
+if [ -z "$OPENAI_API_KEY" ]; then
+  echo "Error: OPENAI_API_KEY is not set. Please provide it using the -o option."
+  usage
+fi
 
 # VSCode extensions
 code --install-extension "github.copilot" --remote $HOSTNAME
@@ -55,9 +61,11 @@ code --install-extension "tecosaur.latex-utilities" --remote $HOSTNAME
 pip3 install --upgrade pip
 pip3 install --upgrade git+https://www.github.com/frank-lab-ai/franky@njf
 pip3 install --upgrade accelerate
+pip3 install --upgrade datasets
 pip3 install --upgrade ipykernel
 pip3 install --upgrade kubejobs
 pip3 install --upgrade networkx
+pip3 install --upgrade openai
 pip3 install --upgrade pandas
 pip3 install --upgrade sentencepiece
 pip3 install --upgrade pytest
@@ -69,3 +77,7 @@ pip3 install --upgrade flash-attn
 # Git configuration
 git config --global user.email "goggled.mapping.0p@icloud.com"
 git config --global user.name "njf0"
+
+# Configure Hugging Face CLI with the token
+huggingface-cli login --token "$HUGGINGFACE_TOKEN"
+export OPENAI_API_KEY="$OPENAI_API_KEY"

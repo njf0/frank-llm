@@ -22,3 +22,4 @@
 2024-08-16T10:42:49.015545,-1,microsoft/Phi-3-small-128k-instruct,0.2,16,/app/resources/data/full_study.json,Answer the following question.,Full dataset
 2024-08-16T10:52:46.096659,-1,google/gemma-7b,0.2,16,/app/resources/data/full_study.json,Answer the following question.,Full dataset
 2024-08-16T14:25:47.390158,-1,google/gemma-7b,0.2,16,/app/resources/data/full_study.json,Answer the following question.,"Full dataset, fixed output parsing"
+2024-08-23T13:58:20.229754,16,google/gemma-2-9b-it,0.2,16,/app/resources/data/franklin/full_study.json,Answer the following question.,
