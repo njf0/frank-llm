@@ -3,6 +3,7 @@ import json
 import logging
 import random
 
+import pandas as pd
 import torch
 from base import GenerationBase
 from openai import OpenAI
@@ -50,7 +51,7 @@ class MetaLlama(GenerationBase):
 
     def assemble_messages(
             self,
-            inputs: list[str],
+            data: pd.DataFrame,
     ) -> list:
         """
         Assemble messages for input to model.
@@ -67,7 +68,7 @@ class MetaLlama(GenerationBase):
         """
         messages = []
 
-        for i in tqdm(inputs, desc="Assembling messages"):
+        for i in tqdm(data["question"], desc="Assembling messages"):
             messages.append(
                 [
                     {"role": "system", "content": self.config["system_content"]},
@@ -75,11 +76,13 @@ class MetaLlama(GenerationBase):
                 ]
             )
 
-        return messages
+        data["messages"] = messages
+
+        return data
 
     def apply_and_generate(
             self,
-            messages: list[str],
+            data: pd.DataFrame,
     ) -> list[str]:
         """
         Apply chat templates and generate responses.
@@ -97,8 +100,8 @@ class MetaLlama(GenerationBase):
         responses = []
 
         batched_inputs = [
-            messages[i : i + self.config["batch_size"]]
-            for i in range(0, len(messages), self.config["batch_size"])
+            data["messages"][i : i + self.config["batch_size"]]
+            for i in range(0, len(data["messages"]), self.config["batch_size"])
         ]
 
         for batch in tqdm(batched_inputs, desc="Generating batch responses"):
@@ -119,11 +122,13 @@ class MetaLlama(GenerationBase):
 
             responses += self.tokenizer.batch_decode(outputs, skip_special_tokens=True)
 
-        return responses
+        data["responses"] = responses
+
+        return data
 
     def parse_outputs(
             self,
-            outputs: list[str],
+            data: pd.DataFrame,
     ) -> list:
         """
         Parse outputs from model.
@@ -142,8 +147,10 @@ class MetaLlama(GenerationBase):
 
         responses = []
 
-        for output in tqdm(outputs, desc="Parsing outputs"):
-            responses.append(output.split(generation_prompt)[-1].strip())
+        for response in tqdm(data["responses"], desc="Parsing responses"):
+            responses.append(response.split(generation_prompt)[-1].strip())
+
+        data["parsed_responses"] = responses
 
         return responses
 
@@ -154,14 +161,14 @@ class MetaLlama(GenerationBase):
         """
         Run the model on the dataset.
         """
-        inputs = self.load_inputs()
-        messages = self.assemble_messages(inputs)
-        outputs = self.apply_and_generate(messages)
-        responses = self.parse_outputs(outputs)
+        df = self.load_inputs()
+        df = self.assemble_messages(df)
+        df = self.apply_and_generate(df)
+        df = self.parse_outputs(df)
         if save:
-            self.save_results(inputs, responses)
+            self.save_results(df)
 
-        return list(zip(inputs, responses))
+        return
 
 class Mistral(GenerationBase):
     """

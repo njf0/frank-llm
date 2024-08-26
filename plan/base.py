@@ -16,6 +16,7 @@ import random
 from pathlib import Path
 
 import pandas as pd
+from data import Franklin, HotpotQA, StrategyQA
 
 CONFIG_TYPES = {
     'batch_size': int,
@@ -89,29 +90,28 @@ class GenerationBase:
         """
         Load inputs from source file as given in config.
         """
-        inputs = Path(self.config["source"])
-        with inputs.open("r", encoding="utf-8") as f:
-            if self.config["examples"] == -1:
-                inputs = [v["question"] for v in list(json.load(f).values())]
-            else:
-                inputs = [v["question"] for v in list(json.load(f).values())[:self.config["examples"]]]
+        if self.config["dataset"] == "franklin":
+            dataset = Franklin(self.config["source_file"])
 
-        return inputs
+        elif self.config["dataset"] == "hotpotqa":
+            dataset = HotpotQA(self.config["source_file"])
+
+        elif self.config["dataset"] == "strategyqa":
+            dataset = StrategyQA(self.config["source_file"])
+
+        return dataset()
 
     def save_results(
             self,
-            inputs: list,
-            outputs: list,
+            df: pd.DataFrame,
     ) -> None:
         """
         Save results to output file.
 
         Parameters
         ----------
-        inputs : list
-            List of input questions.
-        outputs : list
-            List of generated responses.
+        df : pd.DataFrame
+            DataFrame containing results.
         """
         if not Path('/app/plan/outputs').exists():
             Path('/app/plan/outputs').mkdir()
@@ -121,13 +121,6 @@ class GenerationBase:
                 df = pd.DataFrame()
                 df.to_csv(f, index=True)
 
-        df = pd.DataFrame(
-            {
-                "input": inputs,
-                "output": outputs,
-            }
-        )
-
         self.filename = datetime.datetime.isoformat(datetime.datetime.now())
 
         df.to_csv(f"/app/plan/outputs/{self.filename}.csv", index=False)
@@ -135,8 +128,8 @@ class GenerationBase:
         with open('/app/plan/outputs/log.csv', 'r', encoding='utf-8') as f:
             log = pd.read_csv(f, index_col=0)
 
-        df = pd.DataFrame(columns=self.config.keys(), data=[self.config.values()], index=[self.filename])
-        log = pd.concat([log, df])
+        new_log_entry_df = pd.DataFrame(columns=self.config.keys(), data=[self.config.values()], index=[self.filename])
+        log = pd.concat([log, new_log_entry_df])
 
         with open('/app/plan/outputs/log.csv', 'w', encoding='utf-8') as f:
             log.to_csv(f, index=True)
