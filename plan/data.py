@@ -18,16 +18,12 @@ class StrategyQA():
         """
         Initialize the StrategyQA dataset.
         """
-        self.file = file
-        self.name = 'strategyqa'
+        self.path = Path(file)
+        self.dataset = self.path.parent.parts[-1]
+        self.file = self.path.name
 
-    def check_exists(
-            self,
-    ) -> bool:
-        """
-        Check if the StrategyQA dataset is already downloaded.
-        """
-        return Path('/app/plan/resources/data/strategyqa').exists()
+        if self.dataset != 'strategyqa':
+            raise ValueError(f"Dataset '{self.dataset}' not recognized.")
 
     def load_data(
             self,
@@ -36,15 +32,16 @@ class StrategyQA():
         Load the StrategyQA dataset.
         """
         # check if the dataset is already downloaded
-        if not Path('/app/plan/resources/data/strategyqa').exists():
-            Path('/app/plan/resources/data/strategyqa').mkdir()
+        if not self.path.exists():
 
-            df = pd.read_json(data = pd.read_json(f'https://huggingface.co/datasets/njf/StrategyQA/resolve/main/{self.file}.jsonl', lines=True))
+            df = pd.read_json(f'https://huggingface.co/datasets/njf/StrategyQA/resolve/main/{self.file}', lines=True)
             df = pd.DataFrame(df)
-            df.to_json(f'/app/plan/resources/data/strategyqa/{self.file}.jsonl', lines=True)
+            Path('/app/resources/data/strategyqa').mkdir(parents=True)
+            df.to_json(f'/app/resources/data/strategyqa/{self.file}', lines=True, orient='records')
 
         else:
-            df = pd.read_json(f'/app/plan/resources/data/strategyqa/{self.file}.jsonl', lines=True)
+            df = pd.read_json(f'/app/resources/data/strategyqa/{self.file}', lines=True)
+
 
         return df
 
@@ -79,14 +76,6 @@ class HotpotQA:
         self.file = file
         self.name = 'hotpotqa'
 
-    def check_exists(
-            self,
-    ) -> bool:
-        """
-        Check if the HotpotQA dataset is already downloaded.
-        """
-        return Path('/app/plan/resources/data/hotpotqa').exists()
-
     def load_data(
             self,
     ) -> pd.DataFrame:
@@ -94,17 +83,25 @@ class HotpotQA:
         Load the HotpotQA dataset.
         """
         # check if the dataset is already downloaded
-        if not Path('/app/plan/resources/data/hotpotqa').exists():
-            Path('/app/plan/resources/data/hotpotqa').mkdir()
+        if not Path('/app/resources/data/hotpotqa').exists():
 
-            df = pd.read_json(f'https://huggingface.co/datasets/hotpot_qa/resolve/main/{self.file}.json')
+            df = pd.read_json(f'https://huggingface.co/datasets/HotpotQA/resolve/main/{self.file}.json')
             df = pd.DataFrame(df)
-            df.to_json(f'/app/plan/resources/data/hotpotqa/{self.file}.jsonl', lines=True)
 
         else:
-            df = pd.read_json(f'/app/plan/resources/data/hotpotqa/{self.file}.jsonl', lines=True)
+            df = pd.read_json(f'/app/resources/data/hotpotqa/{self.file}.jsonl', lines=True, orient='records')
 
         return df
+
+    def save_data(
+            self,
+            df: pd.DataFrame,
+    ) -> None:
+        """
+        Save the HotpotQA dataset.
+        """
+        Path('/app/resources/data/hotpotqa').mkdir()
+        df.to_json(f'/app/resources/data/hotpotqa/{self.file}.jsonl', lines=True)
 
     def process_data(
             self,
@@ -146,7 +143,7 @@ class Franklin:
         """
         Check if the Franklin dataset is already downloaded.
         """
-        return Path('/app/plan/resources/data/franklin').exists()
+        return Path('/app/resources/data/franklin').exists()
 
     def load_data(
             self,
@@ -169,3 +166,9 @@ class Franklin:
         Load and process the Franklin dataset.
         """
         return self.load_data()
+
+
+if __name__ == '__main__':
+
+    s = StrategyQA('dev.jsonl')
+    print(s())

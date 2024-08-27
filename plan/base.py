@@ -90,14 +90,19 @@ class GenerationBase:
         """
         Load inputs from source file as given in config.
         """
-        if self.config["dataset"] == "franklin":
-            dataset = Franklin(self.config["source_file"])
+        dataset = Path(self.config["source"]).parent.parts[-1]
 
-        elif self.config["dataset"] == "hotpotqa":
-            dataset = HotpotQA(self.config["source_file"])
+        if dataset == 'franklin':
+            dataset = Franklin(self.config["source"])
 
-        elif self.config["dataset"] == "strategyqa":
-            dataset = StrategyQA(self.config["source_file"])
+        elif dataset == 'hotpotqa':
+            dataset = HotpotQA(self.config["source"])
+
+        elif dataset == 'strategyqa':
+            dataset = StrategyQA(self.config["source"])
+
+        else:
+            raise ValueError(f"Dataset '{dataset}' not recognized.")
 
         return dataset()
 
@@ -118,8 +123,8 @@ class GenerationBase:
         logfile = Path('/app/plan/outputs/log.csv')
         if not logfile.exists():
             with open(logfile, 'w', encoding='utf-8') as f:
-                df = pd.DataFrame()
-                df.to_csv(f, index=True)
+                log = pd.DataFrame()
+                log.to_csv(f, index=True)
 
         self.filename = datetime.datetime.isoformat(datetime.datetime.now())
 

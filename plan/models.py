@@ -30,15 +30,18 @@ class MetaLlama(GenerationBase):
 
         super().__init__(config)
 
-        assert config['model'].split('/')[1] == 'nfs', 'Model must be a Meta-Llama model.'
+        assert config['model'].split('/')[0] == 'meta-llama', 'Model must be a Meta-Llama model.'
+
+        local_path = '/nfs/public/hf/models/'
+        full_model_path = local_path + config['model']
 
         self.tokenizer = self.tokenizer = AutoTokenizer.from_pretrained(
-            self.config["model"],
+            full_model_path,
             trust_remote_code=True,
         )
 
         self.model = AutoModelForCausalLM.from_pretrained(
-            self.config["model"],
+            full_model_path,
             device_map="auto",
             trust_remote_code=True,
             torch_dtype=torch.bfloat16,
@@ -98,10 +101,11 @@ class MetaLlama(GenerationBase):
             List of generated responses.
         """
         responses = []
+        messages = data["messages"].tolist()
 
         batched_inputs = [
-            data["messages"][i : i + self.config["batch_size"]]
-            for i in range(0, len(data["messages"]), self.config["batch_size"])
+            messages[i : i + self.config["batch_size"]]
+            for i in range(0, len(messages), self.config["batch_size"])
         ]
 
         for batch in tqdm(batched_inputs, desc="Generating batch responses"):
@@ -152,7 +156,7 @@ class MetaLlama(GenerationBase):
 
         data["parsed_responses"] = responses
 
-        return responses
+        return data
 
     def run(
             self,
@@ -161,7 +165,7 @@ class MetaLlama(GenerationBase):
         """
         Run the model on the dataset.
         """
-        df = self.load_inputs()
+        df = self.load_inputs()[:self.config["examples"]]
         df = self.assemble_messages(df)
         df = self.apply_and_generate(df)
         df = self.parse_outputs(df)
@@ -492,7 +496,7 @@ class GoogleGemma(GenerationBase):
         if config['model'].split('/')[0] != 'google':
             raise ValueError("Model(/family) doesn't appear correct.")
 
-        self.tokenizer = self.tokenizer = AutoTokenizer.from_pretrained(
+        self.tokenizer = AutoTokenizer.from_pretrained(
             self.config["model"],
             trust_remote_code=True,
         )
@@ -701,8 +705,8 @@ if __name__ == "__main__":
 
 
     MODELS = {
-        '/nfs/public/hf/models/meta-llama/Meta-Llama-3-8B-Instruct': MetaLlama,
-        '/nfs/public/hf/models/meta-llama/Meta-Llama-3.1-8B-Instruct': MetaLlama,
+        'meta-llama/Meta-Llama-3-8B-Instruct': MetaLlama,
+        'meta-llama/Meta-Llama-3.1-8B-Instruct': MetaLlama,
         'mistralai/Mistral-7B-Instruct-v0.3': Mistral,
         'microsoft/Phi-3-mini-128k-instruct': MicrosoftPhi,
         'microsoft/Phi-3-small-128k-instruct': MicrosoftPhi,
@@ -717,7 +721,7 @@ if __name__ == "__main__":
     parser.add_argument('--examples', type=int, default=16, help='Number of examples to run.')
     parser.add_argument('--model', type=str, default='meta-llama/Meta-Llama-3.1-8B-Instruct', help='Model to run.')
     parser.add_argument('--save', type=bool, default=False, help='Save results.')
-    parser.add_argument('--source', type=str, default='/app/resources/data/franklin/full_study.json', help='Source data.')
+    parser.add_argument('--source', type=str, default='/app/resources/data/strategyqa/dev.jsonl', help='Source data.')
     parser.add_argument('--system_content', type=str, default='Answer the following question.', help='System content.')
     parser.add_argument('--temperature', type=float, default=0.2, help='Generation temperature.')
     args = parser.parse_args()
