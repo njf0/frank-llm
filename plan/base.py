@@ -90,15 +90,15 @@ class GenerationBase:
         """
         Load inputs from source file as given in config.
         """
-        dataset = Path(self.config["source"]).parent.parts[-1]
+        dataset = str(Path(self.config["source"]).parent)
 
-        if dataset == 'franklin':
+        if dataset == 'Franklin':
             dataset = Franklin(self.config["source"])
 
-        elif dataset == 'hotpotqa':
+        elif dataset == 'HotpotQA':
             dataset = HotpotQA(self.config["source"])
 
-        elif dataset == 'strategyqa':
+        elif dataset == 'StrategyQA':
             dataset = StrategyQA(self.config["source"])
 
         else:

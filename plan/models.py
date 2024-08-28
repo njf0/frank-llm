@@ -172,7 +172,9 @@ class MetaLlama(GenerationBase):
         if save:
             self.save_results(df)
 
-        return
+        print(df.head())
+
+        return df
 
 class Mistral(GenerationBase):
     """
@@ -720,8 +722,8 @@ if __name__ == "__main__":
     parser.add_argument('--description', type=str, default='', help='Description of run.')
     parser.add_argument('--examples', type=int, default=16, help='Number of examples to run.')
     parser.add_argument('--model', type=str, default='meta-llama/Meta-Llama-3.1-8B-Instruct', help='Model to run.')
-    parser.add_argument('--save', type=bool, default=False, help='Save results.')
-    parser.add_argument('--source', type=str, default='/app/resources/data/strategyqa/dev.jsonl', help='Source data.')
+    parser.add_argument('--save', action='store_true', help='Save results.')
+    parser.add_argument('--source', type=str, default='StrategyQA/dev.jsonl', help='Source data.')
     parser.add_argument('--system_content', type=str, default='Answer the following question.', help='System content.')
     parser.add_argument('--temperature', type=float, default=0.2, help='Generation temperature.')
     args = parser.parse_args()

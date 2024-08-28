@@ -7,22 +7,37 @@ from pathlib import Path
 import pandas as pd
 
 
-class StrategyQA():
+class Dataset:
+    '''
+    Base class for loading datasets from huggingface repos/locally
+    '''
+    def __init__(
+            self,
+            source: str,
+    ) -> None:
+        '''
+        Initialize the dataset.
+        '''
+        self.DATA_DIR = Path('/app/resources/data')
+        self.source = Path(source)
+        self.dataset = self.source.parent.parts[-1]
+        self.full_path = self.DATA_DIR / self.source
+
+
+class StrategyQA(Dataset):
     """
     Class for loading and processing the Franklin dataset.
     """
     def __init__(
             self,
-            file: str,
+            source: str,
     ) -> None:
         """
         Initialize the StrategyQA dataset.
         """
-        self.path = Path(file)
-        self.dataset = self.path.parent.parts[-1]
-        self.file = self.path.name
+        super().__init__(source)
 
-        if self.dataset != 'strategyqa':
+        if self.dataset != 'StrategyQA':
             raise ValueError(f"Dataset '{self.dataset}' not recognized.")
 
     def load_data(
@@ -32,15 +47,15 @@ class StrategyQA():
         Load the StrategyQA dataset.
         """
         # check if the dataset is already downloaded
-        if not self.path.exists():
+        if not self.full_path.exists():
 
-            df = pd.read_json(f'https://huggingface.co/datasets/njf/StrategyQA/resolve/main/{self.file}', lines=True)
+            df = pd.read_json(f'https://huggingface.co/datasets/njf/StrategyQA/resolve/main/{self.source.name}', lines=True)
             df = pd.DataFrame(df)
-            Path('/app/resources/data/strategyqa').mkdir(parents=True)
-            df.to_json(f'/app/resources/data/strategyqa/{self.file}', lines=True, orient='records')
+            self.full_path.parent.mkdir(parents=True)
+            df.to_json(self.full_path, lines=True, orient='records')
 
         else:
-            df = pd.read_json(f'/app/resources/data/strategyqa/{self.file}', lines=True)
+            df = pd.read_json(self.full_path, lines=True)
 
 
         return df
@@ -71,10 +86,14 @@ class HotpotQA:
             file: str,
     ) -> None:
         """
-        Initialize the HotpotQA dataset.
+        Initialize the StrategyQA dataset.
         """
-        self.file = file
-        self.name = 'hotpotqa'
+        self.path = Path(file)
+        self.dataset = self.path.parent.parts[-1]
+        self.file = self.path.name
+
+        if self.dataset != 'HotpotQA':
+            raise ValueError(f"Dataset '{self.dataset}' not recognized.")
 
     def load_data(
             self,
@@ -83,25 +102,17 @@ class HotpotQA:
         Load the HotpotQA dataset.
         """
         # check if the dataset is already downloaded
-        if not Path('/app/resources/data/hotpotqa').exists():
+        if not self.path.exists():
 
-            df = pd.read_json(f'https://huggingface.co/datasets/HotpotQA/resolve/main/{self.file}.json')
+            df = pd.read_json(f'https://huggingface.co/datasets/njf/HotpotQA/resolve/main/{self.file}', lines=True)
             df = pd.DataFrame(df)
+            Path('/app/resources/data/HotpotQA').mkdir(parents=True)
+            df.to_json(f'/app/resources/data/HotpotQA/{self.file}', lines=True, orient='records')
 
         else:
-            df = pd.read_json(f'/app/resources/data/hotpotqa/{self.file}.jsonl', lines=True, orient='records')
+            df = pd.read_json(f'/app/resources/data/HotpotQA/{self.file}', lines=True, orient='records')
 
         return df
-
-    def save_data(
-            self,
-            df: pd.DataFrame,
-    ) -> None:
-        """
-        Save the HotpotQA dataset.
-        """
-        Path('/app/resources/data/hotpotqa').mkdir()
-        df.to_json(f'/app/resources/data/hotpotqa/{self.file}.jsonl', lines=True)
 
     def process_data(
             self,
