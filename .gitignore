@@ -1,6 +1,7 @@
 .DS_Store
-hotpotqa
-strategyqa
+GSM8k
+HotpotQA
+StrategyQA
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

@@ -16,7 +16,7 @@ import random
 from pathlib import Path
 
 import pandas as pd
-from data import Franklin, HotpotQA, StrategyQA
+from data import Dataset
 
 CONFIG_TYPES = {
     'batch_size': int,
@@ -84,25 +84,17 @@ class GenerationBase:
         self.config = cfg
         self.filename = ''
 
-    def load_inputs(
-            self,
-        ) -> list:
+    def load_inputs(self) -> list:
         """
         Load inputs from source file as given in config.
         """
-        dataset = str(Path(self.config["source"]).parent)
+        dataset_name = Path(self.config["source"]).parent.name
+        source = self.config["source"]
 
-        if dataset == 'Franklin':
-            dataset = Franklin(self.config["source"])
+        if dataset_name not in Dataset.CONFIG:
+            raise ValueError(f"Dataset '{dataset_name}' not recognized.")
 
-        elif dataset == 'HotpotQA':
-            dataset = HotpotQA(self.config["source"])
-
-        elif dataset == 'StrategyQA':
-            dataset = StrategyQA(self.config["source"])
-
-        else:
-            raise ValueError(f"Dataset '{dataset}' not recognized.")
+        dataset = Dataset(dataset_name, source)
 
         return dataset()
 

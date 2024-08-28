@@ -176,159 +176,159 @@ class MetaLlama(GenerationBase):
 
         return df
 
-class Mistral(GenerationBase):
-    """
-    Implementation of Mistral chat templates etc for application to dataset.
+# class Mistral(GenerationBase):
+#     """
+#     Implementation of Mistral chat templates etc for application to dataset.
 
-    Parameters
-    ----------
-    config : dict
-        Configuration dictionary containing model and data parameters.
-    """
-    def __init__(
-            self,
-            config: dict,
-    ) -> None:
+#     Parameters
+#     ----------
+#     config : dict
+#         Configuration dictionary containing model and data parameters.
+#     """
+#     def __init__(
+#             self,
+#             config: dict,
+#     ) -> None:
 
-        super().__init__(config)
+#         super().__init__(config)
 
-        # check model is a Mistral model
-        if config['model'].split('/')[0] != 'mistralai':
-            raise ValueError("Model(/family) doesn't appear correct.")
+#         # check model is a Mistral model
+#         if config['model'].split('/')[0] != 'mistralai':
+#             raise ValueError("Model(/family) doesn't appear correct.")
 
-        self.tokenizer = self.tokenizer = AutoTokenizer.from_pretrained(
-            self.config["model"],
-            trust_remote_code=True,
-        )
+#         self.tokenizer = self.tokenizer = AutoTokenizer.from_pretrained(
+#             self.config["model"],
+#             trust_remote_code=True,
+#         )
 
-        self.model = AutoModelForCausalLM.from_pretrained(
-            self.config["model"],
-            device_map="auto",
-            trust_remote_code=True,
-            torch_dtype=torch.bfloat16,
-        )
+#         self.model = AutoModelForCausalLM.from_pretrained(
+#             self.config["model"],
+#             device_map="auto",
+#             trust_remote_code=True,
+#             torch_dtype=torch.bfloat16,
+#         )
 
-        self.device = self.model.device
-        self.tokenizer.pad_token = self.tokenizer.eos_token
-        self.tokenizer.pad_token_id = self.tokenizer.eos_token_id
-        self.tokenizer.padding_side = "left"
+#         self.device = self.model.device
+#         self.tokenizer.pad_token = self.tokenizer.eos_token
+#         self.tokenizer.pad_token_id = self.tokenizer.eos_token_id
+#         self.tokenizer.padding_side = "left"
 
-    def assemble_messages(
-            self,
-            inputs: list[str],
-    ) -> list:
-        """
-        Assemble messages for input to model.
+#     def assemble_messages(
+#             self,
+#             data: pd.DataFrame,
+#     ) -> list:
+#         """
+#         Assemble messages for input to model.
 
-        Parameters
-        ----------
-        inputs : list
-            List of input questions.
+#         Parameters
+#         ----------
+#         inputs : list
+#             List of input questions.
 
-        Returns
-        -------
-        messages : list
-            List of messages for input to model.
-        """
-        messages = []
+#         Returns
+#         -------
+#         messages : list
+#             List of messages for input to model.
+#         """
+#         messages = []
 
-        for i in tqdm(inputs, desc="Assembling messages"):
-            messages.append(
-                [
-                    {
-                        "role": "user",
-                        "content": self.config['system_content'] + ' ' + i,
-                    },
-                ]
-            )
+#         for i in tqdm(data["question"], desc="Assembling messages"):
+#             messages.append(
+#                 [
+#                     {
+#                         "role": "user",
+#                         "content": self.config['system_content'] + ' ' + i,
+#                     },
+#                 ]
+#             )
 
-        return messages
+#         return messages
 
-    def apply_and_generate(
-            self,
-            messages: list[str],
-    ) -> list[str]:
-        """
-        Apply chat templates and generate responses.
+#     def apply_and_generate(
+#             self,
+#             messages: list[str],
+#     ) -> list[str]:
+#         """
+#         Apply chat templates and generate responses.
 
-        Parameters
-        ----------
-        messages : list
-            List of messages for input to model.
+#         Parameters
+#         ----------
+#         messages : list
+#             List of messages for input to model.
 
-        Returns
-        -------
-        responses : list
-            List of generated responses.
-        """
-        responses = []
+#         Returns
+#         -------
+#         responses : list
+#             List of generated responses.
+#         """
+#         responses = []
 
-        batched_inputs = [
-            messages[i : i + self.config["batch_size"]]
-            for i in range(0, len(messages), self.config["batch_size"])
-        ]
+#         batched_inputs = [
+#             messages[i : i + self.config["batch_size"]]
+#             for i in range(0, len(messages), self.config["batch_size"])
+#         ]
 
-        for batch in tqdm(batched_inputs, desc="Generating batch responses"):
+#         for batch in tqdm(batched_inputs, desc="Generating batch responses"):
 
-            inputs = self.tokenizer.apply_chat_template(
-                batch,
-                padding=True,
-                return_tensors="pt",
-                add_generation_prompt=True,
-            ).to(self.device)
+#             inputs = self.tokenizer.apply_chat_template(
+#                 batch,
+#                 padding=True,
+#                 return_tensors="pt",
+#                 add_generation_prompt=True,
+#             ).to(self.device)
 
-            outputs = self.model.generate(
-                inputs,
-                max_new_tokens=512,
-                do_sample=True,
-                temperature=self.config["temperature"],
-            )
+#             outputs = self.model.generate(
+#                 inputs,
+#                 max_new_tokens=512,
+#                 do_sample=True,
+#                 temperature=self.config["temperature"],
+#             )
 
-            responses += self.tokenizer.batch_decode(outputs, skip_special_tokens=True)
+#             responses += self.tokenizer.batch_decode(outputs, skip_special_tokens=True)
 
-        return responses
+#         return responses
 
-    def parse_outputs(
-            self,
-            inputs: list[str],
-            outputs: list[str],
-    ) -> list:
-        """
-        Parse outputs from model.
+#     def parse_outputs(
+#             self,
+#             inputs: list[str],
+#             outputs: list[str],
+#     ) -> list:
+#         """
+#         Parse outputs from model.
 
-        Parameters
-        ----------
-        outputs : list
-            List of generated responses.
+#         Parameters
+#         ----------
+#         outputs : list
+#             List of generated responses.
 
-        Returns
-        -------
-        responses : list
-            List of parsed responses.
-        """
-        responses = []
+#         Returns
+#         -------
+#         responses : list
+#             List of parsed responses.
+#         """
+#         responses = []
 
-        for in_out_pair in tqdm(zip(inputs, outputs), desc="Parsing outputs"):
-            # responses.append(output[output.index(generation_prompt) + len(generation_prompt):])
-            responses.append(in_out_pair[1].split(in_out_pair[0])[-1].strip())
+#         for in_out_pair in tqdm(zip(inputs, outputs), desc="Parsing outputs"):
+#             # responses.append(output[output.index(generation_prompt) + len(generation_prompt):])
+#             responses.append(in_out_pair[1].split(in_out_pair[0])[-1].strip())
 
-        return responses
+#         return responses
 
-    def run(
-            self,
-            save: bool = True,
-    ) -> dict:
-        """
-        Run the model on the dataset.
-        """
-        inputs = self.load_inputs()
-        messages = self.assemble_messages(inputs)
-        outputs = self.apply_and_generate(messages)
-        responses = self.parse_outputs(inputs, outputs)
-        if save:
-            self.save_results(inputs, responses)
+#     def run(
+#             self,
+#             save: bool = True,
+#     ) -> dict:
+#         """
+#         Run the model on the dataset.
+#         """
+#         inputs = self.load_inputs()
+#         messages = self.assemble_messages(inputs)
+#         outputs = self.apply_and_generate(messages)
+#         responses = self.parse_outputs(inputs, outputs)
+#         if save:
+#             self.save_results(inputs, responses)
 
-        return list(zip(inputs, responses))
+#         return list(zip(inputs, responses))
 
 
 class MicrosoftPhi(GenerationBase):
@@ -370,7 +370,7 @@ class MicrosoftPhi(GenerationBase):
 
     def assemble_messages(
             self,
-            inputs: list[str],
+            data: pd.DataFrame,
     ) -> list:
         """
         Assemble messages for input to model.
@@ -387,7 +387,7 @@ class MicrosoftPhi(GenerationBase):
         """
         messages = []
 
-        for i in tqdm(inputs, desc="Assembling messages"):
+        for i in tqdm(data["question"], desc="Assembling messages"):
             messages.append(
                 [
                     {
@@ -397,11 +397,13 @@ class MicrosoftPhi(GenerationBase):
                 ]
             )
 
-        return messages
+        data["messages"] = messages
+
+        return data
 
     def apply_and_generate(
             self,
-            messages: list[str],
+            data: pd.DataFrame,
     ) -> list[str]:
         """
         Apply chat templates and generate responses.
@@ -417,6 +419,7 @@ class MicrosoftPhi(GenerationBase):
             List of generated responses.
         """
         responses = []
+        messages = data["messages"].tolist()
 
         batched_inputs = [
             messages[i : i + self.config["batch_size"]]
@@ -441,12 +444,13 @@ class MicrosoftPhi(GenerationBase):
 
             responses += self.tokenizer.batch_decode(outputs, skip_special_tokens=True)
 
-        return responses
+        data["responses"] = responses
+
+        return data
 
     def parse_outputs(
             self,
-            inputs: list[str],
-            outputs: list[str],
+            data: pd.DataFrame,
     ) -> list:
         """
         Parse outputs from model.
@@ -463,10 +467,12 @@ class MicrosoftPhi(GenerationBase):
         """
         responses = []
 
-        for in_out_pair in tqdm(zip(inputs, outputs), desc="Parsing outputs"):
+        for in_out_pair in tqdm(data["responses"], desc="Parsing outputs"):
             responses.append(in_out_pair[1].split(in_out_pair[0])[-1].strip())
 
-        return responses
+        data["parsed_responses"] = responses
+
+        return data
 
     def run(
             self,
@@ -475,14 +481,16 @@ class MicrosoftPhi(GenerationBase):
         """
         Run the model on the dataset.
         """
-        inputs = self.load_inputs()
-        messages = self.assemble_messages(inputs)
-        outputs = self.apply_and_generate(messages)
-        responses = self.parse_outputs(inputs, outputs)
+        df = self.load_inputs()[:self.config["examples"]]
+        df = self.assemble_messages(df)
+        df = self.apply_and_generate(df)
+        df = self.parse_outputs(df)
         if save:
-            self.save_results(inputs, responses)
+            self.save_results(df)
 
-        return list(zip(inputs, responses))
+        print(df.head())
+
+        return df
 
 
 class GoogleGemma(GenerationBase):
@@ -517,7 +525,7 @@ class GoogleGemma(GenerationBase):
 
     def assemble_messages(
             self,
-            inputs: list[str],
+            data: pd.DataFrame,
     ) -> list:
         """
         Assemble messages for input to model.
@@ -534,16 +542,18 @@ class GoogleGemma(GenerationBase):
         """
         messages = []
 
-        for i in tqdm(inputs, desc="Assembling messages"):
+        for i in tqdm(data["question"], desc="Assembling messages"):
             messages.append(
                 f'{self.config["system_content"]} {i}'
             )
 
-        return messages
+        data["messages"] = messages
+
+        return data
 
     def apply_and_generate(
             self,
-            messages: list[str],
+            data: pd.DataFrame,
     ) -> list[str]:
         """
         Apply chat templates and generate responses.
@@ -559,6 +569,7 @@ class GoogleGemma(GenerationBase):
             List of generated responses.
         """
         responses = []
+        messages = data["messages"].tolist()
 
         batched_inputs = [
             messages[i : i + self.config["batch_size"]]
@@ -583,12 +594,13 @@ class GoogleGemma(GenerationBase):
 
             responses += self.tokenizer.batch_decode(outputs, skip_special_tokens=True)
 
-        return responses
+        data["responses"] = responses
+
+        return data
 
     def parse_outputs(
             self,
-            inputs: list[str],
-            outputs: list[str],
+            data: pd.DataFrame,
     ) -> list:
         """
         Parse outputs from model.
@@ -607,10 +619,14 @@ class GoogleGemma(GenerationBase):
         """
         responses = []
 
-        for in_out_pair in tqdm(zip(inputs, outputs), desc="Parsing outputs"):
-            responses.append(in_out_pair[1].split(in_out_pair[0])[-1].strip())
+        for q, r in tqdm(zip(data["question"], data["responses"]), desc="Parsing outputs"):
+            prefix = f'{self.config["system_content"]} {q}'
+            # strip prefix from response
+            responses.append(r[len(prefix):].strip())
 
-        return responses
+        data["parsed_responses"] = responses
+
+        return data
 
     def run(
             self,
@@ -619,81 +635,84 @@ class GoogleGemma(GenerationBase):
         """
         Run the model on the dataset.
         """
-        inputs = self.load_inputs()
-        messages = self.assemble_messages(inputs)
-        outputs = self.apply_and_generate(messages)
+        df = self.load_inputs()[:self.config["examples"]]
+        df = self.assemble_messages(df)
+        df = self.apply_and_generate(df)
+        df = self.parse_outputs(df)
         if save:
-            self.save_results(inputs, outputs)
+            self.save_results(df)
 
-        return list(zip(inputs, outputs))
+        print(df.head())
 
-class OpenAI(GenerationBase):
+        return df
 
-    def __init__(
-            self,
-            config: dict,
-    ) -> None:
+# class OpenAI(GenerationBase):
 
-        super().__init__(config)
+#     def __init__(
+#             self,
+#             config: dict,
+#     ) -> None:
 
-        if config['model'][:3] != 'gpt':
-            raise ValueError("Model(/family) doesn't appear correct.")
+#         super().__init__(config)
 
-    def assemble_messages(
-            self,
-            inputs: list[str],
-    ) -> list:
-        """
-        Assemble messages for input to model.
+#         if config['model'][:3] != 'gpt':
+#             raise ValueError("Model(/family) doesn't appear correct.")
 
-        Parameters
-        ----------
-        inputs : list
-            List of input questions.
+#     def assemble_messages(
+#             self,
+#             inputs: list[str],
+#     ) -> list:
+#         """
+#         Assemble messages for input to model.
 
-        Returns
-        -------
-        messages : list
-            List of messages for input to model.
-        """
-        messages = []
+#         Parameters
+#         ----------
+#         inputs : list
+#             List of input questions.
 
-        for i in tqdm(inputs, desc="Assembling messages"):
-            messages.append(
-                f'{self.config["system_content"]} {i}'
-            )
+#         Returns
+#         -------
+#         messages : list
+#             List of messages for input to model.
+#         """
+#         messages = []
 
-        return messages
+#         for i in tqdm(inputs, desc="Assembling messages"):
+#             messages.append(
+#                 f'{self.config["system_content"]} {i}'
+#             )
 
-    def apply_and_generate(
-            self,
-            messages: list[str],
-    ) -> list[str]:
-        """
-        Apply chat templates and generate responses.
+#         return messages
 
-        Parameters
-        ----------
-        messages : list
-            List of messages for input to model.
+#     def apply_and_generate(
+#             self,
+#             messages: list[str],
+#     ) -> list[str]:
+#         """
+#         Apply chat templates and generate responses.
 
-        Returns
-        -------
-        responses : list
-            List of generated responses.
-        """
-        responses = []
+#         Parameters
+#         ----------
+#         messages : list
+#             List of messages for input to model.
 
-        for message in tqdm(messages, desc="Generating responses"):
-            response = OpenAI.completion.create(
-                engine=self.config["model"],
-                prompt=message,
-                max_tokens=512,
-                temperature=self.config["temperature"],
-            )
-            responses.append(response.choices[0].text.strip())
+#         Returns
+#         -------
+#         responses : list
+#             List of generated responses.
+#         """
+#         responses = []
 
-        return responses
+#         for message in tqdm(messages, desc="Generating responses"):
+#             response = OpenAI.completion.create(
+#                 engine=self.config["model"],
+#                 prompt=message,
+#                 max_tokens=512,
+#                 temperature=self.config["temperature"],
+#             )
+#             responses.append(response.choices[0].text.strip())
+
+#         return responses
 
 
 
@@ -709,7 +728,7 @@ if __name__ == "__main__":
     MODELS = {
         'meta-llama/Meta-Llama-3-8B-Instruct': MetaLlama,
         'meta-llama/Meta-Llama-3.1-8B-Instruct': MetaLlama,
-        'mistralai/Mistral-7B-Instruct-v0.3': Mistral,
+        # 'mistralai/Mistral-7B-Instruct-v0.3': Mistral,
         'microsoft/Phi-3-mini-128k-instruct': MicrosoftPhi,
         'microsoft/Phi-3-small-128k-instruct': MicrosoftPhi,
         'microsoft/Phi-3.5-mini-instruct': MicrosoftPhi,
@@ -721,7 +740,7 @@ if __name__ == "__main__":
     parser.add_argument('--batch_size', type=int, default=16, help='Batch size.')
     parser.add_argument('--description', type=str, default='', help='Description of run.')
     parser.add_argument('--examples', type=int, default=16, help='Number of examples to run.')
-    parser.add_argument('--model', type=str, default='meta-llama/Meta-Llama-3.1-8B-Instruct', help='Model to run.')
+    parser.add_argument('--model', type=str, default='google/gemma-2-9b-it', help='Model to run.')
     parser.add_argument('--save', action='store_true', help='Save results.')
     parser.add_argument('--source', type=str, default='StrategyQA/dev.jsonl', help='Source data.')
     parser.add_argument('--system_content', type=str, default='Answer the following question.', help='System content.')
