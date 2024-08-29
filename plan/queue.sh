@@ -1,12 +1,12 @@
-python generation.py --model 'google/gemma-2-9b-it-7b' --dataset 'Franklin/full_study.jsonl' --description 'Full dataset test'
-python generation.py --model 'google/gemma-2-9b-it-7b' --dataset 'GSM8k/test.jsonl' --description 'Full dataset test'
-python generation.py --model 'google/gemma-2-9b-it-7b' --dataset 'HotpotQA/hotpot_test_fullwiki_v1.jsonl' --description 'Full dataset test'
-python generation.py --model 'google/gemma-2-9b-it-7b' --dataset 'StrategyQA/dev.jsonl' --description 'Full dataset test'
-python generation.py --model 'meta-llama/Meta-Llama-3.1-8B-Instruct' --dataset 'Franklin/full_study.jsonl' --description 'Full dataset test'
-python generation.py --model 'meta-llama/Meta-Llama-3.1-8B-Instruct' --dataset 'GSM8k/test.jsonl' --description 'Full dataset test'
-python generation.py --model 'meta-llama/Meta-Llama-3.1-8B-Instruct' --dataset 'HotpotQA/hotpot_test_fullwiki_v1.jsonl' --description 'Full dataset test'
-python generation.py --model 'meta-llama/Meta-Llama-3.1-8B-Instruct' --dataset 'StrategyQA/dev.jsonl' --description 'Full dataset test'
-python generation.py --model 'microsoft/Phi-3.5-mini-instruct' --dataset 'Franklin/full_study.jsonl' --description 'Full dataset test'
-python generation.py --model 'microsoft/Phi-3.5-mini-instruct' --dataset 'GSM8k/test.jsonl' --description 'Full dataset test'
-python generation.py --model 'microsoft/Phi-3.5-mini-instruct' --dataset 'HotpotQA/hotpot_test_fullwiki_v1.jsonl' --description 'Full dataset test'
-python generation.py --model 'microsoft/Phi-3.5-mini-instruct' --dataset 'StrategyQA/dev.jsonl' --description 'Full dataset test'
+python generation.py --examples "100" --model 'google/gemma-2-9b-it' --source 'Franklin/full_study.jsonl' --description 'Random sample of 100' --save
+python generation.py --examples "100" --model 'google/gemma-2-9b-it' --source 'GSM8k/test.jsonl' --description 'Random sample of 100' --save
+python generation.py --examples "100" --model 'google/gemma-2-9b-it' --source 'HotpotQA/hotpot_test_fullwiki_v1.jsonl' --description 'Random sample of 100' --save
+python generation.py --examples "100" --model 'google/gemma-2-9b-it' --source 'StrategyQA/dev.jsonl' --description 'Random sample of 100' --save
+python generation.py --examples "100" --model 'meta-llama/Meta-Llama-3.1-8B-Instruct' --source 'Franklin/full_study.jsonl' --description 'Random sample of 100' --save
+python generation.py --examples "100" --model 'meta-llama/Meta-Llama-3.1-8B-Instruct' --source 'GSM8k/test.jsonl' --description 'Random sample of 100' --save
+python generation.py --examples "100" --model 'meta-llama/Meta-Llama-3.1-8B-Instruct' --source 'HotpotQA/hotpot_test_fullwiki_v1.jsonl' --description 'Random sample of 100' --save
+python generation.py --examples "100" --model 'meta-llama/Meta-Llama-3.1-8B-Instruct' --source 'StrategyQA/dev.jsonl' --description 'Random sample of 100' --save
+python generation.py --examples "100" --model 'microsoft/Phi-3.5-mini-instruct' --source 'Franklin/full_study.jsonl' --description 'Random sample of 100' --save
+python generation.py --examples "100" --model 'microsoft/Phi-3.5-mini-instruct' --source 'GSM8k/test.jsonl' --description 'Random sample of 100' --save
+python generation.py --examples "100" --model 'microsoft/Phi-3.5-mini-instruct' --source 'HotpotQA/hotpot_test_fullwiki_v1.jsonl' --description 'Random sample of 100' --save
+python generation.py --examples "100" --model 'microsoft/Phi-3.5-mini-instruct' --source 'StrategyQA/dev.jsonl' --description 'Random sample of 100' --save

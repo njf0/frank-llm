@@ -37,15 +37,13 @@ if [ -z "$OPENAI_API_KEY" ]; then
 fi
 
 # VSCode extensions
+code --install-extension "charliermarsh.ruff" --remote $HOSTNAME
 code --install-extension "github.copilot" --remote $HOSTNAME
 code --install-extension "github.copilot-chat" --remote $HOSTNAME
 code --install-extension "mechatroner.rainbow-csv" --remote $HOSTNAME
 code --install-extension "ms-azuretools.vscode-docker" --remote $HOSTNAME
 code --install-extension "ms-kubernetes-tools.vscode-kubernetes-tools" --remote $HOSTNAME
-code --install-extension "ms-python.autopep8" --remote $HOSTNAME
 code --install-extension "ms-python.debugpy" --remote $HOSTNAME
-code --install-extension "ms-python.isort" --remote $HOSTNAME
-code --install-extension "ms-python.pylint" --remote $HOSTNAME
 code --install-extension "ms-python.python" --remote $HOSTNAME
 code --install-extension "ms-python.vscode-pylance" --remote $HOSTNAME
 code --install-extension "ms-toolsai.jupyter" --remote $HOSTNAME
