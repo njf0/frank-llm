@@ -265,7 +265,7 @@ class MetaLlama(GenerationBase):
 
         Parameters
         ----------
-        inputs : list
+        data : list
             List of input questions.
 
         Returns
@@ -552,8 +552,8 @@ class MicrosoftPhi(GenerationBase):
 
         Parameters
         ----------
-        inputs : list
-            List of input questions.
+        data : pd.DataFrame
+            DataFrame containing input questions.
 
         Returns
         -------
@@ -692,7 +692,7 @@ class GoogleGemma(GenerationBase):
 
     def assemble_messages(
         self,
-        data: pd.DataFrame,
+        df: pd.DataFrame,
     ) -> list:
         """
         Assemble messages for input to model.
@@ -709,16 +709,16 @@ class GoogleGemma(GenerationBase):
         """
         messages = []
 
-        for i in tqdm(data["question"], desc="Assembling messages"):
+        for i in tqdm(df["question"], desc="Assembling messages"):
             messages.append(f'{self.config["system_content"]} {i}')
 
-        data["messages"] = messages
+        df["messages"] = messages
 
-        return data
+        return df
 
     def apply_and_generate(
         self,
-        data: pd.DataFrame,
+        df: pd.DataFrame,
     ) -> list[str]:
         """
         Apply chat templates and generate responses.
@@ -734,7 +734,7 @@ class GoogleGemma(GenerationBase):
             List of generated responses.
         """
         responses = []
-        messages = data["messages"].tolist()
+        messages = df["messages"].tolist()
 
         batched_inputs = [
             messages[i : i + self.config["batch_size"]]
@@ -759,9 +759,9 @@ class GoogleGemma(GenerationBase):
 
             responses += self.tokenizer.batch_decode(outputs, skip_special_tokens=True)
 
-        data["responses"] = responses
+        df["responses"] = responses
 
-        return data
+        return df
 
     def parse_outputs(
         self,
