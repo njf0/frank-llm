@@ -1,18 +1,219 @@
+'''
+This module contains the base classes for generating responses using LLMs (Language Model Models) on a dataset of Frank-style questions.
+
+The module includes the following classes:
+
+- `GenerationConfig`: A class representing the configuration for generating responses.
+- `GenerationBase`: A base class for applying LLMs to a dataset of Frank-style questions.
+
+The module also defines a dictionary `CONFIG_TYPES` that maps configuration keys to their corresponding types.
+
+Note: This module assumes the presence of the `pandas` library for handling dataframes and the `json` library for working with JSON files.
+'''
 import argparse
+import datetime
 import json
 import logging
 import random
+from pathlib import Path
 
 import pandas as pd
 import torch
-from base import GenerationBase
+from data import Dataset
 from openai import OpenAI
 from tqdm import tqdm
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-# FRANKLIN: Frank Library of Ideal Narratives (?!)
-
 logging.getLogger('transformers').setLevel(logging.ERROR)
+
+CONFIG_TYPES = {
+    'batch_size': int,
+    'examples': int,
+    'description': str,
+    'model': str,
+    'temperature': float,
+    'source': str,
+    'system_content': str
+}
+
+class GenerationConfig:
+    '''
+    config = {
+        "batch_size": 16,
+        "description": "Test addition of description column.",
+        "examples": 16,
+        # "model": "/nfs/public/hf/models/meta-llama/Meta-Llama-3-8B-Instruct",
+        'model': 'mistralai/Mistral-7B-Instruct-v0.3',
+        "temperature": 0.2,
+        "source": "/app/resources/data/full_study.json",
+        "system_content": "Answer the following question.",
+    }
+    '''
+    def __init__(
+            self,
+    ) -> None:
+        self.batch_size: int = 16
+        self.examples: int = -1
+        self.description: str = ''
+        self.model: str = ''
+        self.temperature: float = 0.2,
+        self.source: str = '/app/resources/data/full_study.json'
+        self.system_content: str = ''
+
+
+
+class GenerationBase:
+    """
+    Base class for applying LLMs to dataset of Frank-style questions.
+
+    Parameters
+    ----------
+    config : dict
+        Configuration dictionary containing model and data parameters.
+    """
+    def __init__(
+            self,
+            cfg: dict,
+    ) -> None:
+
+        # type-check config against CONFIG_TYPES
+        for key, value in cfg.items():
+            if key not in CONFIG_TYPES:
+                raise ValueError(f"Invalid key in config: {key}")
+            if not isinstance(value, CONFIG_TYPES[key]):
+                raise ValueError(f"Invalid type for '{key}' ({type(value)}). Should be {CONFIG_TYPES[key]}.")
+
+        # make sure all keys are present
+        if cfg.keys() != CONFIG_TYPES.keys():
+            # report missing keys
+            missing_keys = set(CONFIG_TYPES.keys()) - set(cfg.keys())
+            raise ValueError(f"Missing keys in config: {', '.join(missing_keys)}")
+
+        self.config = cfg
+        self.filename = ''
+
+    def load_inputs(
+            self
+        ) -> pd.DataFrame:
+        """
+        Load inputs from source file as given in config.
+        """
+        dataset_name = Path(self.config["source"]).parent.name
+        source = self.config["source"]
+
+        if dataset_name not in Dataset.CONFIG:
+            raise ValueError(f"Dataset '{dataset_name}' not recognized.")
+
+        dataset = Dataset(dataset_name, source)
+
+        return dataset()
+
+    def save_results(
+            self,
+            df: pd.DataFrame
+        ) -> pd.DataFrame:
+        """
+        Save results to output file.
+
+        Parameters
+        ----------
+        df : pd.DataFrame
+            DataFrame containing results.
+        """
+        output_dir = Path('/app/plan/outputs/')
+        output_dir.mkdir(parents=True, exist_ok=True)
+
+        self.filename = f'{datetime.datetime.now().replace(microsecond=0).isoformat()}.jsonl'
+        df.to_json(output_dir / self.filename, orient='records', lines=True)
+
+        logfile = output_dir / 'log.jsonl'
+        if logfile.exists():
+            log = pd.read_json(logfile, orient='records', lines=True)
+        else:
+            log = pd.DataFrame()
+
+        self.config.update({'filename': self.filename})
+        new_log_entry_df = pd.DataFrame([self.config])
+        log = pd.concat([log, new_log_entry_df], ignore_index=True)
+
+        log.to_json(logfile, orient='records', lines=True)
+
+        return df
+
+    def assemble_messages(
+            self,
+            df: pd.DataFrame,
+        ) -> NotImplementedError:
+        """
+        Assemble messages for input to model.
+
+        Parameters
+        ----------
+        df : pd.DataFrame
+            DataFrame containing input questions.
+
+        Returns
+        -------
+        df : pd.DataFrame
+            DataFrame with assembled messages.
+        """
+        raise NotImplementedError("This method should be overridden by subclasses")
+
+    def apply_and_generate(
+            self,
+            data: pd.DataFrame,
+        ) -> NotImplementedError:
+        """
+        Apply chat templates and generate responses.
+
+        Parameters
+        ----------
+        data : pd.DataFrame
+            DataFrame containing messages for input to model.
+
+        Returns
+        -------
+        data : pd.DataFrame
+            DataFrame with generated responses.
+        """
+        raise NotImplementedError("This method should be overridden by subclasses")
+
+    def parse_outputs(
+            self,
+            data: pd.DataFrame
+        ) -> NotImplementedError:
+        """
+        Parse outputs from model.
+
+        Parameters
+        ----------
+        data : pd.DataFrame
+            DataFrame containing generated responses.
+
+        Returns
+        -------
+        data : pd.DataFrame
+            DataFrame with parsed responses.
+        """
+        raise NotImplementedError("This method should be overridden by subclasses")
+
+    def run(
+            self,
+            save: bool = True,
+    ) -> dict:
+        """
+        Run the model on the dataset.
+        """
+        df = self.load_inputs()[:self.config["examples"]]
+        df = self.assemble_messages(df)
+        df = self.apply_and_generate(df)
+        df = self.parse_outputs(df)
+        if save:
+            self.save_results(df)
+
+        print(df.head())
+
+        return df
 
 class MetaLlama(GenerationBase):
     """
@@ -158,23 +359,6 @@ class MetaLlama(GenerationBase):
 
         return data
 
-    def run(
-            self,
-            save: bool = True,
-    ) -> dict:
-        """
-        Run the model on the dataset.
-        """
-        df = self.load_inputs()[:self.config["examples"]]
-        df = self.assemble_messages(df)
-        df = self.apply_and_generate(df)
-        df = self.parse_outputs(df)
-        if save:
-            self.save_results(df)
-
-        print(df.head())
-
-        return df
 
 class Mistral(GenerationBase):
     """
@@ -246,7 +430,7 @@ class Mistral(GenerationBase):
 
     def apply_and_generate(
             self,
-            messages: list[str],
+            df: pd.DataFrame,
     ) -> list[str]:
         """
         Apply chat templates and generate responses.
@@ -262,6 +446,7 @@ class Mistral(GenerationBase):
             List of generated responses.
         """
         responses = []
+        messages = df["messages"].tolist()
 
         batched_inputs = [
             messages[i : i + self.config["batch_size"]]
@@ -286,12 +471,13 @@ class Mistral(GenerationBase):
 
             responses += self.tokenizer.batch_decode(outputs, skip_special_tokens=True)
 
-        return responses
+        df["responses"] = responses
+
+        return df
 
     def parse_outputs(
             self,
-            inputs: list[str],
-            outputs: list[str],
+            df: pd.DataFrame,
     ) -> list:
         """
         Parse outputs from model.
@@ -307,29 +493,16 @@ class Mistral(GenerationBase):
             List of parsed responses.
         """
         responses = []
+        inputs = df["question"].tolist()
+        outputs = df["responses"].tolist()
 
         for in_out_pair in tqdm(zip(inputs, outputs), desc="Parsing outputs"):
             # responses.append(output[output.index(generation_prompt) + len(generation_prompt):])
             responses.append(in_out_pair[1].split(in_out_pair[0])[-1].strip())
 
-        return responses
+        df["parsed_responses"] = responses
 
-    def run(
-            self,
-            save: bool = True,
-    ) -> dict:
-        """
-        Run the model on the dataset.
-        """
-        inputs = self.load_inputs()
-        messages = self.assemble_messages(inputs)
-        outputs = self.apply_and_generate(messages)
-        responses = self.parse_outputs(inputs, outputs)
-        if save:
-            self.save_results(inputs, responses)
-
-        return list(zip(inputs, responses))
-
+        return df
 
 class MicrosoftPhi(GenerationBase):
     """
@@ -474,25 +647,6 @@ class MicrosoftPhi(GenerationBase):
 
         return data
 
-    def run(
-            self,
-            save: bool = True,
-    ) -> dict:
-        """
-        Run the model on the dataset.
-        """
-        df = self.load_inputs()[:self.config["examples"]]
-        df = self.assemble_messages(df)
-        df = self.apply_and_generate(df)
-        df = self.parse_outputs(df)
-        if save:
-            self.save_results(df)
-
-        print(df.head())
-
-        return df
-
-
 class GoogleGemma(GenerationBase):
 
     def __init__(
@@ -628,97 +782,9 @@ class GoogleGemma(GenerationBase):
 
         return data
 
-    def run(
-            self,
-            save: bool = True,
-    ) -> dict:
-        """
-        Run the model on the dataset.
-        """
-        df = self.load_inputs()[:self.config["examples"]]
-        df = self.assemble_messages(df)
-        df = self.apply_and_generate(df)
-        df = self.parse_outputs(df)
-        if save:
-            self.save_results(df)
+class OpenAIGPT4mini(GenerationBase):
 
-        print(df.head())
-
-        return df
-
-# class OpenAI(GenerationBase):
-
-#     def __init__(
-#             self,
-#             config: dict,
-#     ) -> None:
-
-#         super().__init__(config)
-
-#         if config['model'][:3] != 'gpt':
-#             raise ValueError("Model(/family) doesn't appear correct.")
-
-#     def assemble_messages(
-#             self,
-#             inputs: list[str],
-#     ) -> list:
-#         """
-#         Assemble messages for input to model.
-
-#         Parameters
-#         ----------
-#         inputs : list
-#             List of input questions.
-
-#         Returns
-#         -------
-#         messages : list
-#             List of messages for input to model.
-#         """
-#         messages = []
-
-#         for i in tqdm(inputs, desc="Assembling messages"):
-#             messages.append(
-#                 f'{self.config["system_content"]} {i}'
-#             )
-
-#         return messages
-
-#     def apply_and_generate(
-#             self,
-#             messages: list[str],
-#     ) -> list[str]:
-#         """
-#         Apply chat templates and generate responses.
-
-#         Parameters
-#         ----------
-#         messages : list
-#             List of messages for input to model.
-
-#         Returns
-#         -------
-#         responses : list
-#             List of generated responses.
-#         """
-#         responses = []
-
-#         for message in tqdm(messages, desc="Generating responses"):
-#             response = OpenAI.completion.create(
-#                 engine=self.config["model"],
-#                 prompt=message,
-#                 max_tokens=512,
-#                 temperature=self.config["temperature"],
-#             )
-#             responses.append(response.choices[0].text.strip())
-
-#         return responses
-
-
-
-
-
-
+    pass
 
 
 
@@ -728,7 +794,7 @@ if __name__ == "__main__":
     MODELS = {
         'meta-llama/Meta-Llama-3-8B-Instruct': MetaLlama,
         'meta-llama/Meta-Llama-3.1-8B-Instruct': MetaLlama,
-        # 'mistralai/Mistral-7B-Instruct-v0.3': Mistral,
+        'mistralai/Mistral-7B-Instruct-v0.3': Mistral,
         'microsoft/Phi-3-mini-128k-instruct': MicrosoftPhi,
         'microsoft/Phi-3-small-128k-instruct': MicrosoftPhi,
         'microsoft/Phi-3.5-mini-instruct': MicrosoftPhi,
