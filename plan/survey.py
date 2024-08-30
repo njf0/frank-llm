@@ -64,32 +64,6 @@ def markdown_to_html(
     return html
 
 
-def generate_outputs(
-    input_file: str,
-) -> pd.DataFrame:
-    """
-    Load the LLM responses from the input file.
-
-    Parameters
-    ----------
-    input_file (str)
-        The input file from outputs/.
-
-    Returns
-    -------
-    pd.DataFrame
-        The LLM responses.
-    """
-    prefix = f"""
-    ***Question: ****
-
-    """
-    df = pd.read_json(input_file, lines=True)
-    df["html"] = df["parsed_responses"].apply(markdown_to_html)
-
-    return df
-
-
 def apply_template(
     question: str,
     response: str,
@@ -109,14 +83,33 @@ def apply_template(
     str
         The formatted question and response.
     """
-    return f"""
-    <div class="question">
-        <h3>{question}</h3>
-    </div>
-    <div class="response">
-        {response}
-    </div>
+    return f"Question: {question}\n\n{response}"
+
+
+def generate_outputs(
+    input_file: str,
+) -> pd.DataFrame:
     """
+    Load the LLM responses from the input file.
+
+    Parameters
+    ----------
+    input_file (str)
+        The input file from outputs/.
+
+    Returns
+    -------
+    pd.DataFrame
+        The LLM responses.
+    """
+    df = pd.read_json(input_file, lines=True, orient="records")
+    df = pd.DataFrame(df)
+    df["with_prefix"] = df.apply(
+        lambda row: apply_template(row["question"], row["parsed_responses"]), axis=1
+    )
+    df["html"] = df.apply(lambda row: markdown_to_html(row["with_prefix"]), axis=1)
+
+    return df
 
 
 if __name__ == "__main__":
