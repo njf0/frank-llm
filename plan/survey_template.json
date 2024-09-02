@@ -13,37 +13,12 @@
         "SurveyExpirationDate": "0000-00-00 00:00:00",
         "SurveyCreationDate": "2024-08-30 04:06:32",
         "CreatorID": "UR_bwm3flppxNejrgy",
-        "LastModified": "2024-08-30 10:03:09",
+        "LastModified": "2024-09-02 06:54:13",
         "LastAccessed": "0000-00-00 00:00:00",
         "LastActivated": "0000-00-00 00:00:00",
         "Deleted": null
     },
     "SurveyElements": [
-        {
-            "SurveyID": "SV_4SIrZLCrIbDc2lo",
-            "Element": "BL",
-            "PrimaryAttribute": "Survey Blocks",
-            "SecondaryAttribute": null,
-            "TertiaryAttribute": null,
-            "Payload": [
-                {
-                    "Type": "Default",
-                    "Description": "Default Question Block",
-                    "ID": "BL_3n6FS6BOa9FgsDk",
-                    "BlockElements": [
-                        {
-                            "Type": "Question",
-                            "QuestionID": "QID1"
-                        }
-                    ]
-                },
-                {
-                    "Type": "Trash",
-                    "Description": "Bin\/Unused Questions",
-                    "ID": "BL_1Lg7NtdLnjUu1Jc"
-                }
-            ]
-        },
         {
             "SurveyID": "SV_4SIrZLCrIbDc2lo",
             "Element": "FL",
@@ -56,10 +31,25 @@
                         "ID": "BL_3n6FS6BOa9FgsDk",
                         "Type": "Block",
                         "FlowID": "FL_2"
+                    },
+                    {
+                        "ID": "BL_5jsBEG8z6G0ur0G",
+                        "Type": "Standard",
+                        "FlowID": "FL_5"
+                    },
+                    {
+                        "ID": "BL_cSKEM4xzMjm71JQ",
+                        "Type": "Standard",
+                        "FlowID": "FL_4"
+                    },
+                    {
+                        "ID": "BL_06xypFu5Eme2Wc6",
+                        "Type": "Standard",
+                        "FlowID": "FL_3"
                     }
                 ],
                 "Properties": {
-                    "Count": 2
+                    "Count": 5
                 },
                 "FlowID": "FL_1",
                 "Type": "Root"
@@ -153,7 +143,7 @@
             "SurveyID": "SV_4SIrZLCrIbDc2lo",
             "Element": "QC",
             "PrimaryAttribute": "Survey Question Count",
-            "SecondaryAttribute": "3",
+            "SecondaryAttribute": "10",
             "TertiaryAttribute": null,
             "Payload": null
         },
@@ -164,91 +154,6 @@
             "SecondaryAttribute": "Default Response Set",
             "TertiaryAttribute": null,
             "Payload": null
-        },
-        {
-            "SurveyID": "SV_4SIrZLCrIbDc2lo",
-            "Element": "SQ",
-            "PrimaryAttribute": "QID1",
-            "SecondaryAttribute": "Question: Will the Albany in Georgia reach a hundred thousand occupants before the one in New Yor...",
-            "TertiaryAttribute": null,
-            "Payload": {
-                "QuestionText": "Question: Will the Albany in Georgia reach a hundred thousand occupants before the one in New York?<br><br>This is a tricky question! Here's why it's difficult to answer and what factors we'd need to consider:<br><br>* <strong>Population Growth Rates:<\/strong> We'd need to know the current populations of both Albany cities and their projected growth rates.  Some cities grow faster than others due to factors like job opportunities, housing costs, and local development.<br>* <strong>Economic Factors:<\/strong>  A strong economy with job creation is a major driver of population growth. We'd need to compare the economic health of the Albany regions in Georgia and New York.<br>* <strong>Migration Patterns:<\/strong>  People move for various reasons (jobs, family, lifestyle). Understanding migration trends to and from both Albany cities would be important.<br>* <strong>Development Plans:<\/strong>  Local governments may have plans for expansion or redevelopment that could influence population growth.<br><br><strong>Where to Find Information:<\/strong><br><br>* <strong>U.S. Census Bureau:<\/strong> Provides population data and projections.<br>* <strong>Local Government Websites:<\/strong> Often have information on economic development and city plans.<br>* <strong>Real Estate Market Data:<\/strong> Can give insights into population trends and housing demand.<br><br><br>Let me know if you want to explore this further with specific data points!\n",
-                "DefaultChoices": false,
-                "DataExportTag": "Q1",
-                "QuestionType": "Matrix",
-                "Selector": "Likert",
-                "DataVisibility": {
-                    "Private": false,
-                    "Hidden": false
-                },
-                "Configuration": {
-                    "QuestionDescriptionOption": "UseText",
-                    "TextPosition": "inline",
-                    "ChoiceColumnWidth": 25,
-                    "MobileFirst": true
-                },
-                "QuestionDescription": "Question: Will the Albany in Georgia reach a hundred thousand occupants before the one in New Yor...",
-                "Choices": {
-                    "1": {
-                        "Display": "The response contains a clearly stated answer to the question."
-                    },
-                    "2": {
-                        "Display": "The response contains a plan, or outlines the intermediate steps used to arrive at an answer."
-                    },
-                    "3": {
-                        "Display": "The model... (object-level)"
-                    },
-                    "4": {
-                        "Display": "If I had asked the question, I would be satisfied with this response."
-                    }
-                },
-                "ChoiceOrder": [
-                    1,
-                    2,
-                    3,
-                    4
-                ],
-                "Validation": {
-                    "Settings": {
-                        "EnforceRange": null,
-                        "ForceResponse": "ON",
-                        "ForceResponseType": "ON",
-                        "Type": "None"
-                    }
-                },
-                "GradingData": [],
-                "Language": [],
-                "NextChoiceId": 5,
-                "NextAnswerId": 6,
-                "Answers": {
-                    "1": {
-                        "Display": "Definitely agree"
-                    },
-                    "2": {
-                        "Display": "Somewhat agree"
-                    },
-                    "3": {
-                        "Display": "Neither agree nor disagree"
-                    },
-                    "4": {
-                        "Display": "Somewhat disagree"
-                    },
-                    "5": {
-                        "Display": "Definitely disagree"
-                    }
-                },
-                "AnswerOrder": [
-                    1,
-                    2,
-                    3,
-                    4,
-                    5
-                ],
-                "ChoiceDataExportTags": false,
-                "QuestionID": "QID1",
-                "ClarifyingSymbolType": "None",
-                "SubSelector": "SingleAnswer"
-            }
         }
     ]
 }

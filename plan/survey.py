@@ -4,10 +4,58 @@ This module contains functions for formatting the output of the LLM responses.
 
 import argparse
 import json
+from pathlib import Path
 import re
-
+from uuid import uuid4
 
 import pandas as pd
+
+
+def concat_all_responses(
+    files: list,
+) -> pd.DataFrame:
+    """
+    Concatenate all LLM responses from the input files.
+
+    Parameters
+    ----------
+    files (list)
+        The input files from outputs/.
+
+    Returns
+    -------
+    pd.DataFrame
+        The concatenated LLM responses.
+    """
+    log = pd.read_json("outputs/log.jsonl", lines=True)
+
+    all_responses_for_survey = pd.DataFrame()
+
+    for file in files:
+        df = pd.read_json(f"outputs/{file}", lines=True)
+        # get dataset name
+        dataset = (
+            log[log["filename"] == file]["source"]
+            .apply(lambda x: x.split("/")[0])
+            .values[0]
+        )
+        new_df = pd.DataFrame()
+        new_df["uuid"] = pd.Series(str(uuid4()) for i in range(len(df)))
+        # new_df["internal_id"] = df["internal_id"]
+        # fill column with len(df) * dataset
+        new_df["dataset"] = pd.Series(dataset for i in range(len(df)))
+        new_df["question"] = df["question"]
+        new_df["parsed_responses"] = df["parsed_responses"]
+        new_df["with_prefix"] = new_df.apply(
+            lambda row: apply_template(row["question"], row["parsed_responses"]), axis=1
+        )
+        new_df["html"] = new_df.apply(
+            lambda row: markdown_to_html(row["with_prefix"]), axis=1
+        )
+
+        all_responses_for_survey = pd.concat([all_responses_for_survey, new_df])
+
+    return all_responses_for_survey
 
 
 def markdown_to_html(
@@ -112,10 +160,114 @@ def generate_outputs(
     return df
 
 
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(
-        description="Convert markdown-formatted LLM responses to HTML."
-    )
-    parser.add_argument("--input", type=str, help="Input file from outputs/")
+class QualtricsSurvey:
+    def __init__(
+        self,
+        inputs: pd.DataFrame,
+    ):
+        self.qid = 1
+        self.inputs = inputs
+        with open("survey_template.json", "r") as f:
+            self.SURVEY = json.load(f)
 
-    args = parser.parse_args()
+        with open("survey_default_question.json", "r") as f:
+            self.DEFAULT_QUESTION = json.load(f)
+
+        with open("survey_default_block.json", "r") as f:
+            self.BLOCKS = json.load(f)
+
+    def add_question_to_survey(
+        self,
+        uuid: str,
+        question: str,
+    ):
+        """
+        Add a question to a Qualtrics survey.
+
+        Parameters
+        ----------
+        question: dict
+            The question.
+        """
+        new_question = self.DEFAULT_QUESTION
+        new_question["PrimaryAttribute"] = f"QID{self.qid}"
+        new_question["SecondaryAttribute"] = uuid
+        new_question["Payload"]["QuestionText"] = question
+        new_question["Payload"]["DataExportTag"] = f"QID{self.qid}"
+        new_question["Payload"]["QuestionDescription"] = uuid
+        new_question["Payload"]["QuestionID"] = f"QID{self.qid}"
+
+        self.SURVEY["SurveyElements"].append(new_question)
+
+    def add_question_to_block(
+        self,
+        dataset: str,
+    ):
+        """
+        Add a question to a block of a Qualtrics survey.
+
+        Parameters
+        ----------
+        dataset: str
+            The block description/dataset name.
+        """
+        # Find the index of the block with the dataset name
+        block_index = next(
+            index
+            for index, block in enumerate(self.BLOCKS["Payload"])
+            if block["Description"] == dataset
+        )
+
+        # Create the new block element
+        new_element = {
+            "Type": "Question",
+            "QuestionID": f"QID{self.qid}",
+        }
+
+        # Append the new element to the block's elements
+        self.BLOCKS["Payload"][block_index]["BlockElements"].append(new_element)
+
+    def fill(
+        self,
+        questions: pd.DataFrame,
+    ):
+        """
+        Fill the survey with questions.
+
+        Parameters
+        ----------
+        questions: pd.DataFrame
+            The questions.
+        """
+        for i, row in questions.iterrows():
+            self.add_question_to_survey(row["uuid"], row["html"])
+            self.add_question_to_block(row["dataset"])
+            self.qid += 1
+
+        self.SURVEY["SurveyElements"].append(self.BLOCKS)
+
+        with open("survey.json", "w") as f:
+            json.dump(self.SURVEY, f, indent=4)
+
+        with open("survey.qsf", "w") as f:
+            f.write(json.dumps(self.SURVEY))
+
+
+if __name__ == "__main__":
+    files = [
+        "2024-08-29T16:48:04.jsonl",
+        "2024-08-29T16:50:12.jsonl",
+        "2024-08-29T16:52:22.jsonl",
+        "2024-08-29T16:53:34.jsonl",
+        "2024-08-29T16:56:09.jsonl",
+        "2024-08-29T16:56:41.jsonl",
+        "2024-08-29T16:58:15.jsonl",
+        "2024-08-29T16:58:59.jsonl",
+        "2024-08-29T17:00:43.jsonl",
+        "2024-08-29T17:03:19.jsonl",
+        "2024-08-29T17:05:57.jsonl",
+        "2024-08-29T17:08:30.jsonl",
+    ]
+
+    all_responses = concat_all_responses(files)
+    QualtricsSurvey(all_responses).fill(all_responses)
