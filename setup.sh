@@ -62,6 +62,7 @@ pip3 install --upgrade accelerate
 pip3 install --upgrade datasets
 pip3 install --upgrade ipykernel
 pip3 install --upgrade kubejobs
+pip3 install --upgrade markdown
 pip3 install --upgrade networkx
 pip3 install --upgrade openai
 pip3 install --upgrade pandas

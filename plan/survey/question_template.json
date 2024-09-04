@@ -1,13 +1,13 @@
 {
     "SurveyID": "SV_4SIrZLCrIbDc2lo",
     "Element": "SQ",
-    "PrimaryAttribute": "QID3",
-    "SecondaryAttribute": "Question: Will the Albany in Georgia reach a hundred thousand occupants before the one in New Yor...",
+    "PrimaryAttribute": "",
+    "SecondaryAttribute": "",
     "TertiaryAttribute": null,
     "Payload": {
-        "QuestionText": "Question: Will the Albany in Georgia reach a hundred thousand occupants before the one in New York?<br><br>This is a tricky question! Here's why it's difficult to answer and what factors we'd need to consider:<br><br>* <strong>Population Growth Rates:<\/strong> We'd need to know the current populations of both Albany cities and their projected growth rates.  Some cities grow faster than others due to factors like job opportunities, housing costs, and local development.<br>* <strong>Economic Factors:<\/strong>  A strong economy with job creation is a major driver of population growth. We'd need to compare the economic health of the Albany regions in Georgia and New York.<br>* <strong>Migration Patterns:<\/strong>  People move for various reasons (jobs, family, lifestyle). Understanding migration trends to and from both Albany cities would be important.<br>* <strong>Development Plans:<\/strong>  Local governments may have plans for expansion or redevelopment that could influence population growth.<br><br><strong>Where to Find Information:<\/strong><br><br>* <strong>U.S. Census Bureau:<\/strong> Provides population data and projections.<br>* <strong>Local Government Websites:<\/strong> Often have information on economic development and city plans.<br>* <strong>Real Estate Market Data:<\/strong> Can give insights into population trends and housing demand.<br><br><br>Let me know if you want to explore this further with specific data points!\n",
+        "QuestionText": "",
         "DefaultChoices": false,
-        "DataExportTag": "Q3",
+        "DataExportTag": "",
         "QuestionType": "Matrix",
         "Selector": "Likert",
         "DataVisibility": {
@@ -20,16 +20,16 @@
             "ChoiceColumnWidth": 25,
             "MobileFirst": true
         },
-        "QuestionDescription": "Question: Will the Albany in Georgia reach a hundred thousand occupants before the one in New Yor...",
+        "QuestionDescription": "",
         "Choices": {
             "1": {
                 "Display": "The response contains a clearly stated answer to the question."
             },
             "2": {
-                "Display": "The response contains a plan, or outlines the intermediate steps used to arrive at an answer."
+                "Display": "The response contains a clear step-by-step plan, or description of the intermediate steps required to arrive at an answer."
             },
             "3": {
-                "Display": "If the response includes this plan, the response executes the steps of this plan."
+                "Display": "The response visibly performed the steps  required to arrive at an answer."
             },
             "4": {
                 "Display": "If I had asked the question, I would be satisfied with this response."
@@ -55,19 +55,19 @@
         "NextAnswerId": 6,
         "Answers": {
             "1": {
-                "Display": "Definitely agree"
+                "Display": "Strongly disagree"
             },
             "2": {
-                "Display": "Somewhat agree"
+                "Display": "Somewhat disagree"
             },
             "3": {
                 "Display": "Neither agree nor disagree"
             },
             "4": {
-                "Display": "Somewhat disagree"
+                "Display": "Somewhat agree"
             },
             "5": {
-                "Display": "Definitely disagree"
+                "Display": "Strongly agree"
             }
         },
         "AnswerOrder": [
@@ -78,7 +78,7 @@
             5
         ],
         "ChoiceDataExportTags": false,
-        "QuestionID": "QID3",
+        "QuestionID": "",
         "ClarifyingSymbolType": "None",
         "SubSelector": "SingleAnswer"
     }

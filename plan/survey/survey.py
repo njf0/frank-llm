@@ -8,6 +8,7 @@ from pathlib import Path
 from uuid import uuid4
 
 import pandas as pd
+from markdown import markdown
 
 PWD = Path.cwd()
 LOG_PATH = Path(PWD, 'plan', 'outputs', 'log').with_suffix('.jsonl')
@@ -117,8 +118,8 @@ def prepare_inputs(
         new_df['dataset'] = pd.Series(dataset for i in range(len(df)))
         new_df['question'] = df['question']
         new_df['parsed_responses'] = df['parsed_responses']
-        new_df['with_prefix'] = new_df.apply(lambda row: f'*{row["question"]}*---{row["parsed_responses"]}', axis=1)
-        new_df['html'] = new_df.apply(lambda row: markdown_to_html(row['with_prefix']), axis=1)
+        new_df['html'] = new_df.apply(lambda row: markdown(row['parsed_responses']), axis=1)
+        new_df['html'] = new_df.apply(lambda row: f'<p><em>{row["question"]}</em></p><hr>{row["html"]}', axis=1)
 
         all_inputs = pd.concat([all_inputs, new_df])
 

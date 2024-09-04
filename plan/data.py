@@ -25,7 +25,7 @@ CONFIG = {
     'Franklin': {
         'url': 'https://huggingface.co/datasets/njf/Franklin/resolve/main/',
         'defaults': ['full_study.jsonl'],
-        'columns': ['qid', 'question'],
+        'columns': ['internal_id', 'question'],
     },
 }
 
