@@ -14,6 +14,8 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 
 logging.getLogger('transformers').setLevel(logging.ERROR)
 
+PWD = Path.cwd()
+
 CONFIG_TYPES = {
     'batch_size': int,
     'examples': int,
@@ -76,10 +78,6 @@ class GenerationBase:
         """
         dataset_name = Path(self.config['source']).parent.name
         source = self.config['source']
-
-        if dataset_name not in Dataset.CONFIG:
-            raise ValueError(f"Dataset '{dataset_name}' not recognized.")
-
         dataset = Dataset(dataset_name, source)
 
         return dataset()
@@ -101,7 +99,7 @@ class GenerationBase:
             DataFrame containing results.
 
         """
-        output_dir = Path('/app/plan/outputs/')
+        output_dir = Path(PWD, 'plan', 'outputs')
         output_dir.mkdir(parents=True, exist_ok=True)
 
         df.to_json(output_dir / self.filename, orient='records', lines=True)

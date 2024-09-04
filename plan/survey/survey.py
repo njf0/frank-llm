@@ -1,11 +1,16 @@
 """Module for formatting the output of the LLM responses."""
 
+import argparse
 import json
 import re
 from copy import deepcopy
+from pathlib import Path
 from uuid import uuid4
 
 import pandas as pd
+
+PWD = Path.cwd()
+LOG_PATH = Path(PWD, 'plan', 'outputs', 'log').with_suffix('.jsonl')
 
 
 def markdown_to_html(
@@ -56,14 +61,34 @@ def markdown_to_html(
     html = re.sub(r'(\n|^)\d+\. (.*?)(\n|$)', r'\1<ol><li>\2</li></ol>\3', html)
     # replace > text with <blockquote>text</blockquote>
     html = re.sub(r'\n> (.*?)\n', r'<blockquote>\1</blockquote>', html)
-    # replace --- or *** with <hr>
-    html = re.sub(r'\n[-*]{3,}\n', r'<hr>', html)
+    # replace --- with <hr>
+    html = re.sub(r'-{3}', r'<hr>', html)
 
     return html
 
 
-def concat_all_responses(
-    files: list,
+def get_files_from_description(
+    description: str,
+) -> list:
+    """Get the files from the description in the log file.
+
+    Parameters
+    ----------
+    description: str
+        The description of the files.
+
+    Returns
+    -------
+    list
+        The files from the description.
+
+    """
+    log = pd.read_json(LOG_PATH, lines=True)
+    return log[log['description'] == description]['filename'].to_list()
+
+
+def prepare_inputs(
+    files: list | None = None,
 ) -> pd.DataFrame:
     """Concatenate all LLM responses from the input files.
 
@@ -78,12 +103,12 @@ def concat_all_responses(
         The concatenated LLM responses.
 
     """
-    log = pd.read_json('/Users/njf/code/frank-llm/plan/outputs/log.jsonl', lines=True)
+    log = pd.read_json(Path(PWD, 'plan', 'outputs', 'log').with_suffix('.jsonl'), lines=True)
 
-    all_responses_for_survey = pd.DataFrame()
+    all_inputs = pd.DataFrame()
 
     for file in files:
-        df = pd.read_json(f'/Users/njf/code/frank-llm/plan/outputs/{file}', lines=True)
+        df = pd.read_json(Path(PWD, 'plan', 'outputs', file), lines=True)
         # get dataset name
         dataset = log[log['filename'] == file]['source'].apply(lambda x: x.split('/')[0]).to_numpy()[0]
         new_df = pd.DataFrame()
@@ -92,12 +117,12 @@ def concat_all_responses(
         new_df['dataset'] = pd.Series(dataset for i in range(len(df)))
         new_df['question'] = df['question']
         new_df['parsed_responses'] = df['parsed_responses']
-        new_df['with_prefix'] = new_df.apply(lambda row: f'*{row["question"]}*\n---\n{row["parsed_responses"]}', axis=1)
+        new_df['with_prefix'] = new_df.apply(lambda row: f'*{row["question"]}*---{row["parsed_responses"]}', axis=1)
         new_df['html'] = new_df.apply(lambda row: markdown_to_html(row['with_prefix']), axis=1)
 
-        all_responses_for_survey = pd.concat([all_responses_for_survey, new_df])
+        all_inputs = pd.concat([all_inputs, new_df])
 
-    return all_responses_for_survey.sample(n=400)
+    return all_inputs
 
 
 class QualtricsSurvey:
@@ -106,6 +131,7 @@ class QualtricsSurvey:
     def __init__(
         self,
         inputs: pd.DataFrame,
+        save_filename: str,
     ):
         """Initialize the Qualtrics survey.
 
@@ -113,17 +139,21 @@ class QualtricsSurvey:
         ----------
         inputs: pd.DataFrame
             The LLM responses.
+        save_filename: str
+            The filename to save the survey.
 
         """
         self.qid = 1
         self.inputs = inputs
-        with open('/Users/njf/code/frank-llm/plan/survey_template.json') as f:
+        self.save_filename = save_filename
+
+        with Path(PWD, 'plan', 'survey', 'survey_template').with_suffix('.json').open() as f:
             self.SURVEY = json.load(f)
 
-        with open('/Users/njf/code/frank-llm/plan/survey_default_question.json') as f:
+        with Path(PWD, 'plan', 'survey', 'question_template').with_suffix('.json').open() as f:
             self.DEFAULT_QUESTION = json.load(f)
 
-        with open('/Users/njf/code/frank-llm/plan/survey_default_block.json') as f:
+        with Path(PWD, 'plan', 'survey', 'block_template').with_suffix('.json').open() as f:
             self.BLOCKS = json.load(f)
 
     def add_question_to_survey(
@@ -194,28 +224,22 @@ class QualtricsSurvey:
 
         self.SURVEY['SurveyElements'].append(self.BLOCKS)
 
-        with open('survey.json', 'w') as f:
+        with Path(PWD, 'plan', 'survey', f'{self.save_filename}').with_suffix('.json').open('w') as f:
             json.dump(self.SURVEY, f, indent=4)
 
-        with open('survey.qsf', 'w') as f:
+        with Path(PWD, 'plan', 'survey', f'{self.save_filename}').with_suffix('.qsf').open('w') as f:
             f.write(json.dumps(self.SURVEY))
 
 
 if __name__ == '__main__':
-    files = [
-        '2024-08-29T16:48:04.jsonl',
-        '2024-08-29T16:50:12.jsonl',
-        '2024-08-29T16:52:22.jsonl',
-        '2024-08-29T16:53:34.jsonl',
-        '2024-08-29T16:56:09.jsonl',
-        '2024-08-29T16:56:41.jsonl',
-        '2024-08-29T16:58:15.jsonl',
-        '2024-08-29T16:58:59.jsonl',
-        '2024-08-29T17:00:43.jsonl',
-        '2024-08-29T17:03:19.jsonl',
-        '2024-08-29T17:05:57.jsonl',
-        '2024-08-29T17:08:30.jsonl',
-    ]
+    parser = argparse.ArgumentParser(description='Prepare inputs for a Qualtrics survey.')
 
-    all_responses = concat_all_responses(files)
-    QualtricsSurvey(all_responses).fill(all_responses)
+    parser.add_argument('--description', type=str, help='The description of the files.')
+    parser.add_argument('--save_filename', default='survey', type=str, help='The filename to save the survey.')
+    args = parser.parse_args()
+
+    files = get_files_from_description(args.description)
+    inputs = prepare_inputs(files)
+    print(inputs.sample(10))
+    survey = QualtricsSurvey(inputs, args.save_filename)
+    survey.fill(inputs)

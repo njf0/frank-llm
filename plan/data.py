@@ -4,7 +4,8 @@ from pathlib import Path
 
 import pandas as pd
 
-DATA_DIR = Path('/app/resources/data')
+PWD = Path.cwd()
+DATA_DIR = Path(PWD, 'resources', 'data')
 CONFIG = {
     'StrategyQA': {
         'url': 'https://huggingface.co/datasets/njf/StrategyQA/resolve/main/',
@@ -49,9 +50,9 @@ class Dataset:
         """
         self.dataset_name = dataset_name
         self.source = Path(source)
-        self.full_path = self.DATA_DIR / self.source
-        self.url = self.CONFIG[dataset_name]['url'] + self.source.name
-        self.columns = self.CONFIG[dataset_name]['columns']
+        self.full_path = DATA_DIR / self.source
+        self.url = CONFIG[dataset_name]['url'] + self.source.name
+        self.columns = CONFIG[dataset_name]['columns']
 
     def load_data(self) -> pd.DataFrame:
         """Load the dataset."""
