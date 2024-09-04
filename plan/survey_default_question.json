@@ -29,7 +29,7 @@
                 "Display": "The response contains a plan, or outlines the intermediate steps used to arrive at an answer."
             },
             "3": {
-                "Display": "The model... (object-level)"
+                "Display": "If the response includes this plan, the response executes the steps of this plan."
             },
             "4": {
                 "Display": "If I had asked the question, I would be satisfied with this response."
