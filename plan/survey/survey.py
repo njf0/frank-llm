@@ -3,7 +3,6 @@
 import argparse
 import json
 import random
-import re
 from copy import deepcopy
 from pathlib import Path
 from uuid import uuid4
@@ -15,58 +14,58 @@ PWD = Path.cwd()
 LOG_PATH = Path(PWD, 'plan', 'outputs', 'log').with_suffix('.jsonl')
 
 
-def markdown_to_html(
-    markdown: str,
-) -> str:
-    """Convert markdown-formatted LLM responses to HTML.
+# def markdown_to_html(
+#     markdown: str,
+# ) -> str:
+#     """Convert markdown-formatted LLM responses to HTML.
 
-    Parameters
-    ----------
-    markdown: str
-        The markdown-formatted LLM response.
+#     Parameters
+#     ----------
+#     markdown: str
+#         The markdown-formatted LLM response.
 
-    Returns
-    -------
-    str
-        The HTML-formatted LLM response.
+#     Returns
+#     -------
+#     str
+#         The HTML-formatted LLM response.
 
-    """
-    # replace **text** with <strong>text</strong>
-    html = re.sub(r'\*\*(.*?)\*\*', r'<strong>\1</strong>', markdown)
-    # replace *text* with <em>text</em>
-    html = re.sub(r'\*(.*?)\*', r'<em>\1</em>', html)
-    # replace # with <h1>
-    html = re.sub(r'\n# (.*?)\n', r'<h1>\1</h1>', html)
-    # replace ## with <h2>
-    html = re.sub(r'\n## (.*?)\n', r'<h2>\1</h2>', html)
-    # replace ### with <h3>
-    html = re.sub(r'\n### (.*?)\n', r'<h3>\1</h3>', html)
-    # replace #### with <h4>
-    html = re.sub(r'\n#### (.*?)\n', r'<h4>\1</h4>', html)
-    # replace ##### with <h5>
-    html = re.sub(r'\n##### (.*?)\n', r'<h5>\1</h5>', html)
-    # replace ###### with <h6>
-    html = re.sub(r'\n###### (.*?)\n', r'<h6>\1</h6>', html)
-    # replace \n with <br>
-    html = re.sub(r'\n', r'<br>', html)
-    # replace ```code``` with <pre><code>code</code></pre>
-    html = re.sub(r'```(.*?)```', r'<pre><code>\1</code></pre>', html, flags=re.DOTALL)
-    # replace `code` with <code>code</code>
-    html = re.sub(r'`(.*?)`', r'<code>\1</code>', html)
-    # replace [text](url) with <a href="url">text</a>
-    html = re.sub(r'\[(.*?)\]\((.*?)\)', r'<a href="\2">\1</a>', html)
-    # replace ![alt text](url) with <img src="url" alt="alt text">
-    html = re.sub(r'!\[(.*?)\]\((.*?)\)', r'<img src="\2" alt="\1">', html)
-    # replace - item or * item with <ul><li>item</li></ul>
-    html = re.sub(r'(\n|^)[*-] (.*?)(\n|$)', r'\1<ul><li>\2</li></ul>\3', html)
-    # replace 1. item with <ol><li>item</li></ol>
-    html = re.sub(r'(\n|^)\d+\. (.*?)(\n|$)', r'\1<ol><li>\2</li></ol>\3', html)
-    # replace > text with <blockquote>text</blockquote>
-    html = re.sub(r'\n> (.*?)\n', r'<blockquote>\1</blockquote>', html)
-    # replace --- with <hr>
-    html = re.sub(r'-{3}', r'<hr>', html)
+#     """
+#     # replace **text** with <strong>text</strong>
+#     html = re.sub(r'\*\*(.*?)\*\*', r'<strong>\1</strong>', markdown)
+#     # replace *text* with <em>text</em>
+#     html = re.sub(r'\*(.*?)\*', r'<em>\1</em>', html)
+#     # replace # with <h1>
+#     html = re.sub(r'\n# (.*?)\n', r'<h1>\1</h1>', html)
+#     # replace ## with <h2>
+#     html = re.sub(r'\n## (.*?)\n', r'<h2>\1</h2>', html)
+#     # replace ### with <h3>
+#     html = re.sub(r'\n### (.*?)\n', r'<h3>\1</h3>', html)
+#     # replace #### with <h4>
+#     html = re.sub(r'\n#### (.*?)\n', r'<h4>\1</h4>', html)
+#     # replace ##### with <h5>
+#     html = re.sub(r'\n##### (.*?)\n', r'<h5>\1</h5>', html)
+#     # replace ###### with <h6>
+#     html = re.sub(r'\n###### (.*?)\n', r'<h6>\1</h6>', html)
+#     # replace \n with <br>
+#     html = re.sub(r'\n', r'<br>', html)
+#     # replace ```code``` with <pre><code>code</code></pre>
+#     html = re.sub(r'```(.*?)```', r'<pre><code>\1</code></pre>', html, flags=re.DOTALL)
+#     # replace `code` with <code>code</code>
+#     html = re.sub(r'`(.*?)`', r'<code>\1</code>', html)
+#     # replace [text](url) with <a href="url">text</a>
+#     html = re.sub(r'\[(.*?)\]\((.*?)\)', r'<a href="\2">\1</a>', html)
+#     # replace ![alt text](url) with <img src="url" alt="alt text">
+#     html = re.sub(r'!\[(.*?)\]\((.*?)\)', r'<img src="\2" alt="\1">', html)
+#     # replace - item or * item with <ul><li>item</li></ul>
+#     html = re.sub(r'(\n|^)[*-] (.*?)(\n|$)', r'\1<ul><li>\2</li></ul>\3', html)
+#     # replace 1. item with <ol><li>item</li></ol>
+#     html = re.sub(r'(\n|^)\d+\. (.*?)(\n|$)', r'\1<ol><li>\2</li></ol>\3', html)
+#     # replace > text with <blockquote>text</blockquote>
+#     html = re.sub(r'\n> (.*?)\n', r'<blockquote>\1</blockquote>', html)
+#     # replace --- with <hr>
+#     html = re.sub(r'-{3}', r'<hr>', html)
 
-    return html
+#     return html
 
 
 def get_files_from_description(
@@ -94,9 +93,9 @@ def insert_attention_checks(
 ) -> pd.DataFrame:
     """Add attention checks to the survey."""
     log = pd.read_json(Path(PWD, 'plan', 'outputs', 'log').with_suffix('.jsonl'), lines=True)
-    ac_file = log[log['description'] == description]['filename'].to_numpy()[0]
+    ac_file = log[log['description'] == description]
 
-    df = pd.read_json(Path(PWD, 'plan', 'outputs', ac_file), lines=True)
+    df = pd.read_json(Path(PWD, 'plan', 'outputs', ac_file['filename'].to_numpy()[0]), lines=True)
     if 'agree' in description:
         ac_text = 'To show that I am paying attention, I will select "strongly agree" as my answers for this question.'
     elif 'disagree' in description:
@@ -113,7 +112,19 @@ def insert_attention_checks(
 
     df['parsed_responses'] = df['parsed_responses'].apply(lambda row: insert_ac(df, row, ac_text))
 
-    return df
+    new_df = pd.DataFrame(
+        {
+            'uuid': [str(uuid4()) for _ in range(len(df))],
+            'is_attention_check': True,
+            'dataset': ac_file['source'].to_numpy()[0],
+            'model': ac_file['model'].to_numpy()[0],
+            'question': df['question'],
+            'parsed_responses': df['parsed_responses'],
+            'html': df['parsed_responses'].apply(markdown),
+        }
+    )
+
+    return new_df
 
 
 def prepare_inputs(
@@ -229,7 +240,7 @@ class QualtricsSurvey:
         self,
         questions: pd.DataFrame,
         attention_checks: tuple | None = None,
-        save_filename: str = 'survey',
+        save: str = 'survey',
     ) -> pd.DataFrame:
         """Fill the survey with questions.
 
@@ -239,6 +250,8 @@ class QualtricsSurvey:
             The questions.
         attention_checks: tuple, optional
             The attention checks.
+        save: str, optional
+            The filename to save the survey.
 
         """
         for _, row in questions.iterrows():
@@ -264,14 +277,15 @@ class QualtricsSurvey:
         self.SURVEY['SurveyElements'].append(self.BLOCKS)
 
         print('\nSaving survey...')
-        with Path(self.save_path, f'{self.save_filename}').with_suffix('.json').open('w') as f:
+        with Path(self.save_path, f'{save}').with_suffix('.json').open('w') as f:
             json.dump(self.SURVEY, f, indent=4)
 
-        with Path(self.save_path, f'{self.save_filename}').with_suffix('.qsf').open('w') as f:
+        with Path(self.save_path, f'{save}').with_suffix('.qsf').open('w') as f:
             f.write(json.dumps(self.SURVEY))
 
         # also save the dataframe as jsonl
-        questions.to_json(Path(self.save_path, f'{self.save_filename}').with_suffix('.jsonl'), orient='records', lines=True)
+        df = pd.concat([questions, agree, disagree], ignore_index=True)
+        df.to_json(Path(self.save_path, f'{save}').with_suffix('.jsonl'), orient='records', lines=True)
 
         return questions
 
@@ -292,6 +306,6 @@ if __name__ == '__main__':
     print('Preparing inputs...')
     inputs = prepare_inputs(files)
     survey = QualtricsSurvey()
-    questions = survey.fill(inputs, attention_checks=(agree, disagree), save_filename=args.save)
+    questions = survey.fill(inputs, attention_checks=(agree, disagree), save=args.save)
     print(questions.sample(10))
-    print(f'Survey saved to {survey.save_path}/{survey.save_filename}.json!')
+    print(f'Survey saved to {survey.save_path}/{args.save}.json!')
