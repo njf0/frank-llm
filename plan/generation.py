@@ -519,14 +519,14 @@ class MicrosoftPhi(GenerationBase):
 
         self.tokenizer = self.tokenizer = AutoTokenizer.from_pretrained(
             self.config['model'],
-            trust_remote_code=True,
         )
 
         self.model = AutoModelForCausalLM.from_pretrained(
             self.config['model'],
-            device_map='auto',
+            attn_implementation='flash_attention_2',
+            device_map='cuda',
+            torch_dtype='auto',
             trust_remote_code=True,
-            torch_dtype=torch.bfloat16,
         )
 
         self.device = self.model.device
