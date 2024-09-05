@@ -1,11 +1,9 @@
-import base64
-
-from kubernetes import client, config
-from kubejobs.jobs import KubernetesJob, KueueQueue
+from kubejobs.jobs import KueueQueue
 from kubejobs.pods import KubernetesPod
+from kubernetes import client, config
 
 
-def check_if_completed(job_name: str, namespace: str = "informatics") -> bool:
+def check_if_completed(job_name: str, namespace: str = 'informatics') -> bool:
     # Load the kube config
     config.load_kube_config()
 
@@ -27,18 +25,18 @@ def check_if_completed(job_name: str, namespace: str = "informatics") -> bool:
         # Check the status conditions
         if job.status.conditions:
             for condition in job.status.conditions:
-                if condition.type == "Complete" and condition.status == "True":
+                if condition.type == 'Complete' and condition.status == 'True':
                     is_completed = True
-                elif condition.type == "Failed" and condition.status == "True":
-                    print(f"Job {job_name} has failed.")
+                elif condition.type == 'Failed' and condition.status == 'True':
+                    print(f'Job {job_name} has failed.')
         else:
-            print(f"Job {job_name} still running or status is unknown.")
+            print(f'Job {job_name} still running or status is unknown.')
 
         if is_completed:
             api_res = api.delete_namespaced_job(
                 name=job_name,
                 namespace=namespace,
-                body=client.V1DeleteOptions(propagation_policy="Foreground"),
+                body=client.V1DeleteOptions(propagation_policy='Foreground'),
             )
             print(f"Job '{job_name}' deleted. Status: {api_res.status}")
     return is_completed
@@ -72,7 +70,7 @@ def check_if_completed(job_name: str, namespace: str = "informatics") -> bool:
 # @hydra.main(config_path="configs", config_name="base", version_base=None)
 def main():
     # cfg = Config(**dict(cfg))
-    job_name = "njf"
+    job_name = 'njf'
     # is_completed = check_if_completed(job_name, namespace="informatics")
 
     # if is_completed is True:
@@ -80,33 +78,31 @@ def main():
 
     # TODO: make this interactive mode or not
     # if cfg.launch.interactive:
-    command = "while true; do sleep 60; done;"
+    command = 'while true; do sleep 60; done;'
     # else:
     #     plancraft_cfg = dict(cfg)["plancraft"]
     #     command = cfg.launch.command
     #     for key, value in plancraft_cfg.items():
     #         command += f" ++plancraft.{key}={value}"
-    print(f"Command: {command}")
+    print(f'Command: {command}')
 
     # Create a Kubernetes Job with a name, container image, and command
-    print(f"Creating job for: {command}")
+    print(f'Creating job for: {command}')
     job = KubernetesPod(
         name=job_name,
         cpu_request=16,
-        ram_request="112Gi",
-        image="docker.io/goggledmapping0p/frank-llm:latest",
-        gpu_type="nvidia.com/gpu",
+        ram_request='112Gi',
+        image='docker.io/goggledmapping0p/frank-llm:latest',
+        gpu_type='nvidia.com/gpu',
         gpu_limit=1,
-        gpu_product="NVIDIA-H100-80GB-HBM3",
+        gpu_product='NVIDIA-H100-80GB-HBM3',
         # backoff_limit=0,
-        command=["/bin/bash", "-c", "--"],
+        command=['/bin/bash', '-c', '--'],
         args=[command],
-        user_email="s2242625@ed.ac.uk",
-        namespace="informatics",
+        user_email='s2242625@ed.ac.uk',
+        namespace='informatics',
         kueue_queue_name=KueueQueue.INFORMATICS,
-        volume_mounts={
-            "nfs": {"mountPath": "/nfs", "server": "10.24.1.255", "path": "/"}
-        },
+        volume_mounts={'nfs': {'mountPath': '/nfs', 'server': '10.24.1.255', 'path': '/'}},
     )
 
     job_yaml = job.generate_yaml()
@@ -115,8 +111,8 @@ def main():
     # Run the Job on the Kubernetes cluster
     job.run()
     # else:
-        # print(f"Job '{job_name}' is still running.")
+    # print(f"Job '{job_name}' is still running.")
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

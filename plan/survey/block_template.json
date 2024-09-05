@@ -33,6 +33,18 @@
             "Description": "StrategyQA",
             "ID": "BL_5jsBEG8z6G0ur0G",
             "BlockElements": []
+        },
+        {
+            "Type": "Standard",
+            "Description": "AttentionCheckAgree",
+            "ID": "attention-check-agree",
+            "BlockElements": []
+        },
+        {
+            "Type": "Standard",
+            "Description": "AttentionCheckDisagree",
+            "ID": "attention-check-disagree",
+            "BlockElements": []
         }
     ]
 }

@@ -9,6 +9,7 @@ from pathlib import Path
 import pandas as pd
 import torch
 from data import Dataset
+from openai import OpenAI
 from tqdm import tqdm
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
@@ -779,22 +780,122 @@ class GoogleGemma(GenerationBase):
         return df
 
 
-class OpenAIGPT4mini(GenerationBase):
+class OpenAIGPT4omini(GenerationBase):
     """Placeholder for OpenAI GPT-4 mini implementation."""
 
-    pass
+    def __init__(
+        self,
+        config: dict,
+    ) -> None:
+        """Initialize the OpenAIGPT4mini instance.
+
+        Parameters
+        ----------
+        config: dict
+            Configuration dictionary containing model and data parameters.
+
+        """
+        super().__init__(config)
+
+        # check model is an OpenAI model
+        self.provider, self.model = config['model'].split('/')
+        if self.provider != 'openai':
+            raise ValueError("Model(/family) doesn't appear correct.")
+
+    def assemble_messages(
+        self,
+        df: pd.DataFrame,
+    ) -> list:
+        """Assemble messages for input to model.
+
+        Parameters
+        ----------
+        df: list
+            List of input questions.
+
+        Returns
+        -------
+        messages: list
+            List of messages for input to model.
+
+        """
+        messages = []
+
+        for q in tqdm(df['question'], desc='Assembling messages'):
+            messages.append([{'role': 'system', 'content': self.config['system_content']}, {'role': 'user', 'content': q}])
+
+        df['messages'] = messages
+
+        return df
+
+    def apply_and_generate(
+        self,
+        df: pd.DataFrame,
+    ) -> list[str]:
+        """Apply chat templates and generate responses.
+
+        Parameters
+        ----------
+        df: list
+            List of messages for input to model.
+
+        Returns
+        -------
+        responses: list
+            List of generated responses.
+
+        """
+        responses = []
+        messages = df['messages'].tolist()
+        client = OpenAI()
+
+        for message in tqdm(messages, desc='Generating batch responses'):
+            response = client.chat.completions.create(
+                messages=message,
+                model=self.model,
+                max_tokens=512,
+                temperature=self.config['temperature'],
+            )
+
+            responses.append(response.choices[0].message.content)
+
+        df['responses'] = responses
+
+        return df
+
+    def parse_outputs(
+        self,
+        df: pd.DataFrame,
+    ) -> list:
+        """Parse outputs from model.
+
+        Parameters
+        ----------
+        df: list
+            List of generated responses.
+
+        Returns
+        -------
+        responses: list
+            List of parsed responses.
+
+        """
+        df['parsed_responses'] = df['responses']
+
+        return df
 
 
 if __name__ == '__main__':
     MODELS = {
+        'google/gemma-7b': GoogleGemma,
+        'google/gemma-2-9b-it': GoogleGemma,
         'meta-llama/Meta-Llama-3-8B-Instruct': MetaLlama,
         'meta-llama/Meta-Llama-3.1-8B-Instruct': MetaLlama,
         'mistralai/Mistral-7B-Instruct-v0.3': Mistral,
         'microsoft/Phi-3-mini-128k-instruct': MicrosoftPhi,
         'microsoft/Phi-3-small-128k-instruct': MicrosoftPhi,
         'microsoft/Phi-3.5-mini-instruct': MicrosoftPhi,
-        'google/gemma-7b': GoogleGemma,
-        'google/gemma-2-9b-it': GoogleGemma,
+        'openai/gpt-4o-mini': OpenAIGPT4omini,
     }
 
     parser = argparse.ArgumentParser(description='Run model on dataset.')

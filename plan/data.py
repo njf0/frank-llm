@@ -10,7 +10,7 @@ CONFIG = {
     'StrategyQA': {
         'url': 'https://huggingface.co/datasets/njf/StrategyQA/resolve/main/',
         'defaults': ['train.jsonl', 'dev.jsonl'],
-        'columns': ['qid', 'question'],
+        'columns': ['internal_id', 'question'],
     },
     'HotpotQA': {
         'url': 'https://huggingface.co/datasets/njf/HotpotQA/resolve/main/',

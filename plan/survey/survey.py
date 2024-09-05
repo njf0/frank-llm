@@ -2,6 +2,7 @@
 
 import argparse
 import json
+import random
 import re
 from copy import deepcopy
 from pathlib import Path
@@ -85,17 +86,44 @@ def get_files_from_description(
 
     """
     log = pd.read_json(LOG_PATH, lines=True)
-    return log[log['description'] == description]['filename'].to_list()
+    return log[log['description'] == description]
+
+
+def insert_attention_checks(
+    description: str,
+) -> pd.DataFrame:
+    """Add attention checks to the survey."""
+    log = pd.read_json(Path(PWD, 'plan', 'outputs', 'log').with_suffix('.jsonl'), lines=True)
+    ac_file = log[log['description'] == description]['filename'].to_numpy()[0]
+
+    df = pd.read_json(Path(PWD, 'plan', 'outputs', ac_file), lines=True)
+    if 'agree' in description:
+        ac_text = 'To show that I am paying attention, I will select "strongly agree" as my answers for this question.'
+    elif 'disagree' in description:
+        ac_text = 'To show that I am paying attention, I will select "strongly disagree" as my answers for this question.'
+    else:
+        raise ValueError('Description must contain "agree" or "disagree".')
+
+    def insert_ac(df, parsed_responses, ac_text):
+        """Insert attention check into a random position in sentences of row['parsed_responses']."""
+        sentences = parsed_responses.split('\n')
+        random_index = random.randint(0, len(sentences) - 1)
+        sentences.insert(random_index, ac_text)
+        return '\n'.join(sentences)
+
+    df['parsed_responses'] = df['parsed_responses'].apply(lambda row: insert_ac(df, row, ac_text))
+
+    return df
 
 
 def prepare_inputs(
-    files: list | None = None,
+    files: pd.DataFrame,
 ) -> pd.DataFrame:
     """Concatenate all LLM responses from the input files.
 
     Parameters
     ----------
-    files: list
+    files: pd.DataFrame
         The input files from outputs/.
 
     Returns
@@ -106,22 +134,25 @@ def prepare_inputs(
     """
     log = pd.read_json(Path(PWD, 'plan', 'outputs', 'log').with_suffix('.jsonl'), lines=True)
 
-    all_inputs = pd.DataFrame()
-
-    for file in files:
+    def process_file(file):
         df = pd.read_json(Path(PWD, 'plan', 'outputs', file), lines=True)
-        # get dataset name
         dataset = log[log['filename'] == file]['source'].apply(lambda x: x.split('/')[0]).to_numpy()[0]
-        new_df = pd.DataFrame()
-        new_df['uuid'] = pd.Series(str(uuid4()) for i in range(len(df)))
-        # new_df["internal_id"] = df["internal_id"]
-        new_df['dataset'] = pd.Series(dataset for i in range(len(df)))
-        new_df['question'] = df['question']
-        new_df['parsed_responses'] = df['parsed_responses']
-        new_df['html'] = new_df.apply(lambda row: markdown(row['parsed_responses']), axis=1)
+        model = log[log['filename'] == file]['model'].to_numpy()[0]
+        new_df = pd.DataFrame(
+            {
+                'uuid': [str(uuid4()) for _ in range(len(df))],
+                'is_attention_check': False,
+                'dataset': dataset,
+                'model': model,
+                'question': df['question'],
+                'parsed_responses': df['parsed_responses'],
+            }
+        )
+        new_df['html'] = new_df['parsed_responses'].apply(markdown)
         new_df['html'] = new_df.apply(lambda row: f'<p><em>{row["question"]}</em></p><hr>{row["html"]}', axis=1)
+        return new_df
 
-        all_inputs = pd.concat([all_inputs, new_df])
+    all_inputs = pd.concat(files['filename'].apply(process_file).tolist(), ignore_index=True)
 
     return all_inputs
 
@@ -131,22 +162,10 @@ class QualtricsSurvey:
 
     def __init__(
         self,
-        inputs: pd.DataFrame,
-        save_filename: str,
     ):
-        """Initialize the Qualtrics survey.
-
-        Parameters
-        ----------
-        inputs: pd.DataFrame
-            The LLM responses.
-        save_filename: str
-            The filename to save the survey.
-
-        """
+        """Initialize the Qualtrics survey."""
         self.qid = 1
-        self.inputs = inputs
-        self.save_filename = save_filename
+        self.save_path = Path(PWD, 'plan', 'survey')
 
         with Path(PWD, 'plan', 'survey', 'survey_template').with_suffix('.json').open() as f:
             self.SURVEY = json.load(f)
@@ -184,18 +203,18 @@ class QualtricsSurvey:
 
     def add_question_to_block(
         self,
-        dataset: str,
+        block_name: str,
     ):
         """Add a question to a block of a Qualtrics survey.
 
         Parameters
         ----------
-        dataset: str
+        block_name: str
             The block description/dataset name.
 
         """
         # Find the index of the block with the dataset name
-        block_index = next(index for index, block in enumerate(self.BLOCKS['Payload']) if block['Description'] == dataset)
+        block_index = next(index for index, block in enumerate(self.BLOCKS['Payload']) if block['Description'] == block_name)
 
         # Create the new block element
         new_element = {
@@ -209,38 +228,70 @@ class QualtricsSurvey:
     def fill(
         self,
         questions: pd.DataFrame,
-    ):
+        attention_checks: tuple | None = None,
+        save_filename: str = 'survey',
+    ) -> pd.DataFrame:
         """Fill the survey with questions.
 
         Parameters
         ----------
         questions: pd.DataFrame
             The questions.
+        attention_checks: tuple, optional
+            The attention checks.
 
         """
         for _, row in questions.iterrows():
+            print(f'Adding question {self.qid} to survey...', end='\r')
             self.add_question_to_survey(row['uuid'], row['html'])
             self.add_question_to_block(row['dataset'])
             self.qid += 1
 
+        agree, disagree = attention_checks
+
+        for _, row in agree.iterrows():
+            print(f'Adding question {self.qid} to survey...', end='\r')
+            self.add_question_to_survey(row['uuid'], row['html'])
+            self.add_question_to_block('attention-check-agree')
+            self.qid += 1
+
+        for _, row in disagree.iterrows():
+            print(f'Adding question {self.qid} to survey...', end='\r')
+            self.add_question_to_survey(row['uuid'], row['html'])
+            self.add_question_to_block('attention-check-disagree')
+            self.qid += 1
+
         self.SURVEY['SurveyElements'].append(self.BLOCKS)
 
-        with Path(PWD, 'plan', 'survey', f'{self.save_filename}').with_suffix('.json').open('w') as f:
+        print('\nSaving survey...')
+        with Path(self.save_path, f'{self.save_filename}').with_suffix('.json').open('w') as f:
             json.dump(self.SURVEY, f, indent=4)
 
-        with Path(PWD, 'plan', 'survey', f'{self.save_filename}').with_suffix('.qsf').open('w') as f:
+        with Path(self.save_path, f'{self.save_filename}').with_suffix('.qsf').open('w') as f:
             f.write(json.dumps(self.SURVEY))
+
+        # also save the dataframe as jsonl
+        questions.to_json(Path(self.save_path, f'{self.save_filename}').with_suffix('.jsonl'), orient='records', lines=True)
+
+        return questions
 
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Prepare inputs for a Qualtrics survey.')
 
     parser.add_argument('--description', type=str, help='The description of the files.')
-    parser.add_argument('--save_filename', default='survey', type=str, help='The filename to save the survey.')
+    parser.add_argument('--save', default='survey', type=str, help='The filename to save the survey.')
     args = parser.parse_args()
 
+    print('Getting files...')
     files = get_files_from_description(args.description)
+    print(files)
+    print('Preparing attention checks...')
+    agree = insert_attention_checks('attention-check-agree')
+    disagree = insert_attention_checks('attention-check-disagree')
+    print('Preparing inputs...')
     inputs = prepare_inputs(files)
-    print(inputs.sample(10))
-    survey = QualtricsSurvey(inputs, args.save_filename)
-    survey.fill(inputs)
+    survey = QualtricsSurvey()
+    questions = survey.fill(inputs, attention_checks=(agree, disagree), save_filename=args.save)
+    print(questions.sample(10))
+    print(f'Survey saved to {survey.save_path}/{survey.save_filename}.json!')

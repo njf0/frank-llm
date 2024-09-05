@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Function to display usage
 usage() {
   echo "Usage: $0 -t HUGGINGFACE_TOKEN -o OPEN_AI_API_KEY" >&2
@@ -5,9 +7,9 @@ usage() {
 }
 
 # Parse command-line arguments
-while getopts ":t:o:" opt; do
+while getopts ":h:o:" opt; do
   case $opt in
-    t)
+    h)
       HUGGINGFACE_TOKEN=$OPTARG
       ;;
     o)
@@ -79,4 +81,6 @@ git config --global user.name "njf0"
 
 # Configure Hugging Face CLI with the token
 huggingface-cli login --token "$HUGGINGFACE_TOKEN"
-export OPENAI_API_KEY="$OPENAI_API_KEY"
+
+# Set OpenAI API key as an environment variable
+export OPENAI_API_KEY=$OPENAI_API_KEY
