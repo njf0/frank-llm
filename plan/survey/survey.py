@@ -92,7 +92,7 @@ def insert_attention_checks(
     description: str,
 ) -> pd.DataFrame:
     """Add attention checks to the survey."""
-    log = pd.read_json(Path(PWD, 'plan', 'outputs', 'log').with_suffix('.jsonl'), lines=True)
+    log = pd.read_json(LOG_PATH, lines=True)
     ac_file = log[log['description'] == description]
 
     df = pd.read_json(Path(PWD, 'plan', 'outputs', ac_file['filename'].to_numpy()[0]), lines=True)

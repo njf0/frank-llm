@@ -26,13 +26,13 @@
                 "Display": "The response contains a clearly stated answer to the question."
             },
             "2": {
-                "Display": "The response contains excessive information, reducing the quality of the answer."
+                "Display": "The response contains too much content."
             },
             "3": {
                 "Display": "The response contains a clear step-by-step plan of how an answer could be found."
             },
             "4": {
-                "Display": "I would be satisfied with this response if I had asked the question."
+                "Display": "I would be satisfied with this answer if I had asked the question."
             }
         },
         "ChoiceOrder": [
@@ -80,6 +80,11 @@
         "ChoiceDataExportTags": false,
         "QuestionID": "",
         "ClarifyingSymbolType": "None",
-        "SubSelector": "SingleAnswer"
+        "SubSelector": "SingleAnswer",
+        "Randomization": {
+            "Advanced": null,
+            "Type": "All",
+            "TotalRandSubset": ""
+        }
     }
 }
