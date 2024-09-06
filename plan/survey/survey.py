@@ -124,11 +124,14 @@ def insert_attention_checks(
         }
     )
 
+    new_df['html'] = new_df.apply(lambda row: f'<p><em>{row["question"]}</em></p><hr>{row["html"]}', axis=1)
+
     return new_df
 
 
 def prepare_inputs(
     files: pd.DataFrame,
+    length: int = -1,
 ) -> pd.DataFrame:
     """Concatenate all LLM responses from the input files.
 
@@ -136,6 +139,8 @@ def prepare_inputs(
     ----------
     files: pd.DataFrame
         The input files from outputs/.
+    length: int, optional
+        The number of questions to add to the survey.
 
     Returns
     -------
@@ -147,8 +152,11 @@ def prepare_inputs(
 
     def process_file(file):
         df = pd.read_json(Path(PWD, 'plan', 'outputs', file), lines=True)
+        df = df.sample(length) if length > 0 else df
+
         dataset = log[log['filename'] == file]['source'].apply(lambda x: x.split('/')[0]).to_numpy()[0]
         model = log[log['filename'] == file]['model'].to_numpy()[0]
+
         new_df = pd.DataFrame(
             {
                 'uuid': [str(uuid4()) for _ in range(len(df))],
@@ -159,8 +167,10 @@ def prepare_inputs(
                 'parsed_responses': df['parsed_responses'],
             }
         )
+
         new_df['html'] = new_df['parsed_responses'].apply(markdown)
         new_df['html'] = new_df.apply(lambda row: f'<p><em>{row["question"]}</em></p><hr>{row["html"]}', axis=1)
+
         return new_df
 
     all_inputs = pd.concat(files['filename'].apply(process_file).tolist(), ignore_index=True)
@@ -225,7 +235,12 @@ class QualtricsSurvey:
 
         """
         # Find the index of the block with the dataset name
-        block_index = next(index for index, block in enumerate(self.BLOCKS['Payload']) if block['Description'] == block_name)
+        try:
+            block_index = next(
+                index for index, block in enumerate(self.BLOCKS['Payload']) if block['Description'] == block_name
+            )
+        except StopIteration:
+            raise ValueError(f'Block "{block_name}" not found.') from StopIteration
 
         # Create the new block element
         new_element = {
@@ -257,7 +272,7 @@ class QualtricsSurvey:
         for _, row in questions.iterrows():
             print(f'Adding question {self.qid} to survey...', end='\r')
             self.add_question_to_survey(row['uuid'], row['html'])
-            self.add_question_to_block(row['dataset'])
+            self.add_question_to_block(f'{row["dataset"]}*{row["model"].replace("/", "_")}')
             self.qid += 1
 
         agree, disagree = attention_checks
@@ -287,7 +302,7 @@ class QualtricsSurvey:
         df = pd.concat([questions, agree, disagree], ignore_index=True)
         df.to_json(Path(self.save_path, f'{save}').with_suffix('.jsonl'), orient='records', lines=True)
 
-        return questions
+        return df
 
 
 if __name__ == '__main__':
@@ -295,6 +310,7 @@ if __name__ == '__main__':
 
     parser.add_argument('--description', type=str, help='The description of the files.')
     parser.add_argument('--save', default='survey', type=str, help='The filename to save the survey.')
+    parser.add_argument('--length', default=-1, type=int, help='The number of questions to add to the survey.')
     args = parser.parse_args()
 
     print('Getting files...')
@@ -304,7 +320,7 @@ if __name__ == '__main__':
     agree = insert_attention_checks('attention-check-agree')
     disagree = insert_attention_checks('attention-check-disagree')
     print('Preparing inputs...')
-    inputs = prepare_inputs(files)
+    inputs = prepare_inputs(files, length=args.length)
     survey = QualtricsSurvey()
     questions = survey.fill(inputs, attention_checks=(agree, disagree), save=args.save)
     print(questions.sample(10))
