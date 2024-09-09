@@ -17,54 +17,93 @@ logging.getLogger('transformers').setLevel(logging.ERROR)
 
 PWD = Path.cwd()
 
-CONFIG_TYPES = {
-    'batch_size': int,
-    'examples': int,
-    'description': str,
-    'model': str,
-    'temperature': float,
-    'source': str,
-    'system_content': str,
-}
 
-
-class GenerationBase:
-    """Base class for applying LLMs to dataset of Frank-style questions.
-
-    Parameters
-    ----------
-    config: dict
-        Configuration dictionary containing model and data parameters.
-
-    """
+class GenerationConfig:
+    """Class for configuration of generation tasks."""
 
     def __init__(
         self,
-        cfg: dict,
+        batch_size: int = 8,
+        description: str = '',
+        examples: int = 16,
+        model: str = 'google/gemma-2-9b-it',
+        save: bool | str = True,
+        source: str = 'StrategyQA/dev.jsonl',
+        system_content='Answer the following question.',
+        temperature=0.2,
+    ):
+        """Initialize the GenerationConfig class.
+
+        Parameters
+        ----------
+        batch_size: int
+            Batch size for generation.
+        description: str
+            Description of the run.
+        examples: int
+            Number of examples to run.
+        model: str
+            Model to run.
+        save: bool | str
+            Whether to save the results.
+        source: str
+            Source data.
+        system_content: str
+            System content.
+        temperature: float
+            Generation temperature.
+
+        """
+        self.batch_size = batch_size
+        self.description = description
+        self.examples = examples
+        if isinstance(save, bool) and save:
+            self.filename = f'{datetime.datetime.now().replace(microsecond=0).isoformat()}.jsonl'
+        self.model = model
+        self.save = save
+        self.source = source
+        self.system_content = system_content
+        self.temperature = temperature
+
+    def load_from_dict(
+        self,
+        config: dict,
+    ) -> None:
+        """Load configuration from dictionary.
+
+        Parameters
+        ----------
+        config: dict
+            Configuration dictionary.
+
+        """
+        for key, value in config.items():
+            if key in self.__dict__.keys():
+                setattr(self, key, value)
+            else:
+                raise ValueError(f'Invalid key in config: {key}')
+
+    def __str__(self):
+        """Return the string representation of the class."""
+        return json.dumps(self.__dict__, indent=4)
+
+
+class GenerationBase:
+    """Base class for applying LLMs to datasets."""
+
+    def __init__(
+        self,
+        config: GenerationConfig,
     ) -> None:
         """Initialize the GenerationBase class.
 
         Parameters
         ----------
-        cfg: dict
-            Configuration dictionary containing model and data parameters.
+        config: GenerationConfig
+            Configuration containing model and data parameters.
 
         """
-        # type-check config against CONFIG_TYPES
-        for key, value in cfg.items():
-            if key not in CONFIG_TYPES:
-                raise ValueError(f'Invalid key in config: {key}')
-            if not isinstance(value, CONFIG_TYPES[key]):
-                raise TypeError(f"Invalid type for '{key}' ({type(value)}). Should be {CONFIG_TYPES[key]}.")
-
-        # make sure all keys are present
-        if cfg.keys() != CONFIG_TYPES.keys():
-            # report missing keys
-            missing_keys = set(CONFIG_TYPES.keys()) - set(cfg.keys())
-            raise ValueError(f"Missing keys in config: {', '.join(missing_keys)}")
-
-        self.config = cfg
-        self.filename = f'{datetime.datetime.now().replace(microsecond=0).isoformat()}.jsonl'
+        self.config = config
 
     def load_inputs(
         self,
@@ -77,11 +116,40 @@ class GenerationBase:
             DataFrame containing input questions.
 
         """
-        dataset_name = Path(self.config['source']).parent.name
-        source = self.config['source']
+        dataset_path = Path(self.config.source)
+        dataset_name = dataset_path.parent.name
+        source = dataset_path.name
         dataset = Dataset(dataset_name, source)
 
-        return dataset()
+        return dataset.load_data()
+
+    def update_log(
+        self,
+        log_path: str | Path = Path(PWD, 'plan', 'outputs', 'log.jsonl'),
+    ) -> pd.DataFrame:
+        """Update log with new entry.
+
+        Parameters
+        ----------
+        log_path: str | Path
+            Path to log file.
+
+        Returns
+        -------
+        new_log_entry_df: pd.DataFrame
+            DataFrame with new log entry.
+
+        """
+        if not Path(log_path).exists():
+            log = pd.DataFrame(columns=sorted(GenerationConfig().__dict__.keys()))
+        else:
+            log = pd.read_json(log_path, orient='records', lines=True)
+
+        new_log_entry_df = pd.DataFrame([self.config.__dict__])
+        log = pd.concat([log, new_log_entry_df], ignore_index=True)
+        log.to_json(log_path, orient='records', lines=True)
+
+        return new_log_entry_df
 
     def save_results(
         self,
@@ -103,15 +171,8 @@ class GenerationBase:
         output_dir = Path(PWD, 'plan', 'outputs')
         output_dir.mkdir(parents=True, exist_ok=True)
 
-        df.to_json(output_dir / self.filename, orient='records', lines=True)
-
-        logfile = output_dir / 'log.jsonl'
-        log = pd.read_json(logfile, orient='records', lines=True) if logfile.exists() else pd.DataFrame()
-
-        self.config.update({'filename': self.filename})
-        new_log_entry_df = pd.DataFrame([self.config])
-        log = pd.concat([log, new_log_entry_df], ignore_index=True)
-        log.to_json(logfile, orient='records', lines=True)
+        df.to_json(output_dir / self.config.filename, orient='records', lines=True)
+        self.update_log()
 
         return df
 
@@ -174,13 +235,12 @@ class GenerationBase:
 
     def run(
         self,
-        save: bool = True,
     ) -> pd.DataFrame:
         """Run the model on the dataset.
 
         Parameters
         ----------
-        save: bool
+        save: bool | str
             Whether to save the results.
 
         Returns
@@ -190,11 +250,11 @@ class GenerationBase:
 
         """
         df = self.load_inputs()
-        df = df.sample(n=self.config['examples'], random_state=72) if self.config['examples'] > 0 else df
+        df = df.sample(n=self.config.examples, random_state=72) if self.config.examples > 0 else df
         df = self.assemble_messages(df)
         df = self.apply_and_generate(df)
         df = self.parse_outputs(df)
-        if save:
+        if self.config.save:
             self.save_results(df)
 
         print(df.head())
@@ -222,10 +282,10 @@ class MetaLlama(GenerationBase):
         """
         super().__init__(config)
 
-        assert config['model'].split('/')[0] == 'meta-llama', 'Model must be a Meta-Llama model.'
+        assert config.model.split('/')[0] == 'meta-llama', 'Model must be a Meta-Llama model.'
 
         local_path = '/nfs/public/hf/models/'
-        full_model_path = local_path + config['model']
+        full_model_path = local_path + config.model
 
         self.tokenizer = self.tokenizer = AutoTokenizer.from_pretrained(
             full_model_path,
@@ -266,7 +326,7 @@ class MetaLlama(GenerationBase):
         for i in tqdm(df['question'], desc='Assembling messages'):
             messages.append(
                 [
-                    {'role': 'system', 'content': self.config['system_content']},
+                    {'role': 'system', 'content': self.config.system_content},
                     {'role': 'user', 'content': i},
                 ]
             )
@@ -295,9 +355,7 @@ class MetaLlama(GenerationBase):
         responses = []
         messages = df['messages'].tolist()
 
-        batched_inputs = [
-            messages[i : i + self.config['batch_size']] for i in range(0, len(messages), self.config['batch_size'])
-        ]
+        batched_inputs = [messages[i : i + self.config.batch_size] for i in range(0, len(messages), self.config.batch_size)]
 
         for batch in tqdm(batched_inputs, desc='Generating batch responses'):
             inputs = self.tokenizer.apply_chat_template(
@@ -311,7 +369,7 @@ class MetaLlama(GenerationBase):
                 inputs,
                 max_new_tokens=512,
                 do_sample=True,
-                temperature=self.config['temperature'],
+                temperature=self.config.temperature,
             )
 
             responses += self.tokenizer.batch_decode(outputs, skip_special_tokens=True)
@@ -367,16 +425,16 @@ class Mistral(GenerationBase):
         super().__init__(config)
 
         # check model is a Mistral model
-        if config['model'].split('/')[0] != 'mistralai':
+        if config.model.split('/')[0] != 'mistralai':
             raise ValueError("Model(/family) doesn't appear correct.")
 
         self.tokenizer = self.tokenizer = AutoTokenizer.from_pretrained(
-            self.config['model'],
+            self.config.model,
             trust_remote_code=True,
         )
 
         self.model = AutoModelForCausalLM.from_pretrained(
-            self.config['model'],
+            self.config.model,
             device_map='auto',
             trust_remote_code=True,
             torch_dtype=torch.bfloat16,
@@ -411,7 +469,7 @@ class Mistral(GenerationBase):
                 [
                     {
                         'role': 'user',
-                        'content': self.config['system_content'] + ' ' + i,
+                        'content': self.config.system_content + ' ' + i,
                     },
                 ]
             )
@@ -438,9 +496,7 @@ class Mistral(GenerationBase):
         responses = []
         messages = df['messages'].tolist()
 
-        batched_inputs = [
-            messages[i : i + self.config['batch_size']] for i in range(0, len(messages), self.config['batch_size'])
-        ]
+        batched_inputs = [messages[i : i + self.config.batch_size] for i in range(0, len(messages), self.config.batch_size)]
 
         for batch in tqdm(batched_inputs, desc='Generating batch responses'):
             inputs = self.tokenizer.apply_chat_template(
@@ -454,7 +510,7 @@ class Mistral(GenerationBase):
                 inputs,
                 max_new_tokens=512,
                 do_sample=True,
-                temperature=self.config['temperature'],
+                temperature=self.config.temperature,
             )
 
             responses += self.tokenizer.batch_decode(outputs, skip_special_tokens=True)
@@ -511,15 +567,15 @@ class MicrosoftPhi(GenerationBase):
         super().__init__(config)
 
         # check model is a Mistral model
-        if config['model'].split('/')[0] != 'microsoft':
+        if config.model.split('/')[0] != 'microsoft':
             raise ValueError("Model(/family) doesn't appear correct.")
 
         self.tokenizer = self.tokenizer = AutoTokenizer.from_pretrained(
-            self.config['model'],
+            self.config.model,
         )
 
         self.model = AutoModelForCausalLM.from_pretrained(
-            self.config['model'],
+            self.config.model,
             attn_implementation='flash_attention_2',
             device_map='cuda',
             torch_dtype='auto',
@@ -555,7 +611,7 @@ class MicrosoftPhi(GenerationBase):
                 [
                     {
                         'role': 'user',
-                        'content': self.config['system_content'] + ' ' + i,
+                        'content': self.config.system_content + ' ' + i,
                     },
                 ]
             )
@@ -584,9 +640,7 @@ class MicrosoftPhi(GenerationBase):
         responses = []
         messages = df['messages'].tolist()
 
-        batched_inputs = [
-            messages[i : i + self.config['batch_size']] for i in range(0, len(messages), self.config['batch_size'])
-        ]
+        batched_inputs = [messages[i : i + self.config.batch_size] for i in range(0, len(messages), self.config.batch_size)]
 
         for batch in tqdm(batched_inputs, desc='Generating batch responses'):
             inputs = self.tokenizer.apply_chat_template(
@@ -600,7 +654,7 @@ class MicrosoftPhi(GenerationBase):
                 inputs,
                 max_new_tokens=512,
                 do_sample=True,
-                temperature=self.config['temperature'],
+                temperature=self.config.temperature,
             )
 
             responses += self.tokenizer.batch_decode(outputs, skip_special_tokens=True)
@@ -629,7 +683,7 @@ class MicrosoftPhi(GenerationBase):
         responses = []
 
         for q, r in tqdm(zip(df['question'], df['responses']), desc='Parsing outputs'):
-            prefix = f'{self.config["system_content"]} {q}'
+            prefix = f'{self.config.system_content} {q}'
             # strip prefix from response
             responses.append(r[len(prefix) :].strip())
 
@@ -656,16 +710,16 @@ class GoogleGemma(GenerationBase):
         super().__init__(config)
 
         # check model is a Mistral model
-        if config['model'].split('/')[0] != 'google':
+        if config.model.split('/')[0] != 'google':
             raise ValueError("Model(/family) doesn't appear correct.")
 
         self.tokenizer = AutoTokenizer.from_pretrained(
-            self.config['model'],
+            self.config.model,
             trust_remote_code=True,
         )
 
         self.model = AutoModelForCausalLM.from_pretrained(
-            self.config['model'],
+            self.config.model,
             device_map='auto',
             trust_remote_code=True,
             torch_dtype=torch.bfloat16,
@@ -696,7 +750,7 @@ class GoogleGemma(GenerationBase):
         messages = []
 
         for i in tqdm(df['question'], desc='Assembling messages'):
-            messages.append(f'{self.config["system_content"]} {i}')
+            messages.append(f'{self.config.system_content} {i}')
 
         df['messages'] = messages
 
@@ -722,9 +776,7 @@ class GoogleGemma(GenerationBase):
         responses = []
         messages = df['messages'].tolist()
 
-        batched_inputs = [
-            messages[i : i + self.config['batch_size']] for i in range(0, len(messages), self.config['batch_size'])
-        ]
+        batched_inputs = [messages[i : i + self.config.batch_size] for i in range(0, len(messages), self.config.batch_size)]
 
         for batch in tqdm(batched_inputs, desc='Generating batch responses'):
             inputs = self.tokenizer(
@@ -739,7 +791,7 @@ class GoogleGemma(GenerationBase):
                 inputs,
                 max_new_tokens=512,
                 do_sample=True,
-                temperature=self.config['temperature'],
+                temperature=self.config.temperature,
             )
 
             responses += self.tokenizer.batch_decode(outputs, skip_special_tokens=True)
@@ -768,7 +820,7 @@ class GoogleGemma(GenerationBase):
         responses = []
 
         for q, r in tqdm(zip(df['question'], df['responses']), desc='Parsing outputs'):
-            prefix = f'{self.config["system_content"]} {q}'
+            prefix = f'{self.config.system_content} {q}'
             # strip prefix from response
             responses.append(r[len(prefix) :].strip())
 
@@ -795,7 +847,7 @@ class OpenAIGPT4omini(GenerationBase):
         super().__init__(config)
 
         # check model is an OpenAI model
-        self.provider, self.model = config['model'].split('/')
+        self.provider, self.model = config.model.split('/')
         if self.provider != 'openai':
             raise ValueError("Model(/family) doesn't appear correct.")
 
@@ -819,7 +871,7 @@ class OpenAIGPT4omini(GenerationBase):
         messages = []
 
         for q in tqdm(df['question'], desc='Assembling messages'):
-            messages.append([{'role': 'system', 'content': self.config['system_content']}, {'role': 'user', 'content': q}])
+            messages.append([{'role': 'system', 'content': self.config.system_content}, {'role': 'user', 'content': q}])
 
         df['messages'] = messages
 
@@ -851,7 +903,7 @@ class OpenAIGPT4omini(GenerationBase):
                 messages=message,
                 model=self.model,
                 max_tokens=512,
-                temperature=self.config['temperature'],
+                temperature=self.config.temperature,
             )
 
             responses.append(response.choices[0].message.content)
@@ -896,11 +948,11 @@ if __name__ == '__main__':
     }
 
     parser = argparse.ArgumentParser(description='Run model on dataset.')
-    parser.add_argument('--batch_size', type=int, default=16, help='Batch size.')
+    parser.add_argument('--batch_size', type=int, default=8, help='Batch size.')
     parser.add_argument('--description', type=str, default='', help='Description of run.')
     parser.add_argument('--examples', type=int, default=16, help='Number of examples to run.')
     parser.add_argument('--model', type=str, default='google/gemma-2-9b-it', help='Model to run.')
-    parser.add_argument('--save', action='store_true', help='Save results.')
+    parser.add_argument('--save', type=bool, default=True, help='Save results.')
     parser.add_argument('--source', type=str, default='StrategyQA/dev.jsonl', help='Source data.')
     parser.add_argument(
         '--system_content',
@@ -911,17 +963,18 @@ if __name__ == '__main__':
     parser.add_argument('--temperature', type=float, default=0.2, help='Generation temperature.')
     args = parser.parse_args()
 
-    config = {
-        'batch_size': args.batch_size,
-        'description': args.description,
-        'examples': int(args.examples),
-        'model': args.model,
-        'source': args.source,
-        'system_content': args.system_content,
-        'temperature': args.temperature,
-    }
+    config = GenerationConfig(
+        batch_size=args.batch_size,
+        description=args.description,
+        examples=args.examples,
+        model=args.model,
+        save=args.save,
+        source=args.source,
+        system_content=args.system_content,
+        temperature=args.temperature,
+    )
 
-    print(f'Running with config:\n{json.dumps(config, indent=4)}')
+    print(f'Running with config:\n{pd.DataFrame([config.__dict__])}')
     model = MODELS[args.model](config)
-    model.run(save=args.save)
-    print(f'Saved to {model.filename}.')
+    model.run()
+    print(f'Saved to {model.config.filename}.')
