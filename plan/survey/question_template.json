@@ -23,23 +23,19 @@
         "QuestionDescription": "",
         "Choices": {
             "1": {
-                "Display": "The response contains a clearly stated answer to the question."
+                "Display": "The response answers the question."
             },
             "2": {
-                "Display": "The response contains too much content."
+                "Display": "The response includes a clear step-by-step plan of how an answer was found."
             },
             "3": {
-                "Display": "The response contains a clear step-by-step plan of how an answer could be found."
-            },
-            "4": {
-                "Display": "I would be satisfied with this answer if I had asked the question."
+                "Display": "I would be satisfied with this response if I had asked the question."
             }
         },
         "ChoiceOrder": [
             1,
             2,
-            3,
-            4
+            3
         ],
         "Validation": {
             "Settings": {
@@ -51,7 +47,7 @@
         },
         "GradingData": [],
         "Language": [],
-        "NextChoiceId": 5,
+        "NextChoiceId": 4,
         "NextAnswerId": 6,
         "Answers": {
             "1": {

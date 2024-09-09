@@ -251,6 +251,9 @@ class QualtricsSurvey:
         # Append the new element to the block's elements
         self.BLOCKS['Payload'][block_index]['BlockElements'].append(new_element)
 
+        # Add QID to random subset
+        self.BLOCKS['Payload'][block_index]['Options']['Randomization']['Advanced']['RandomSubSet'].append(f'QID{self.qid}')
+
     def fill(
         self,
         questions: pd.DataFrame,

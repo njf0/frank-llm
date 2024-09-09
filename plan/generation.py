@@ -106,10 +106,7 @@ class GenerationBase:
         df.to_json(output_dir / self.filename, orient='records', lines=True)
 
         logfile = output_dir / 'log.jsonl'
-        if logfile.exists():
-            log = pd.read_json(logfile, orient='records', lines=True)
-        else:
-            log = pd.DataFrame()
+        log = pd.read_json(logfile, orient='records', lines=True) if logfile.exists() else pd.DataFrame()
 
         self.config.update({'filename': self.filename})
         new_log_entry_df = pd.DataFrame([self.config])
@@ -192,7 +189,7 @@ class GenerationBase:
             DataFrame containing results.
 
         """
-        df = self.load_inputs()[: self.config['examples']]
+        df = self.load_inputs()
         df = df.sample(n=self.config['examples'], random_state=72) if self.config['examples'] > 0 else df
         df = self.assemble_messages(df)
         df = self.apply_and_generate(df)

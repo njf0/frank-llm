@@ -1,4 +1,10 @@
-#!/bin/bash
+# Check if the virtual environment already exists
+if [ ! -d ".env" ]; then
+  python3.10 -m venv .env
+fi
+
+# Activate the virtual environment
+source .env/bin/activate
 
 # Function to display usage
 usage() {
