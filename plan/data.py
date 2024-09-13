@@ -57,16 +57,16 @@ class Dataset:
     def load_data(self) -> pd.DataFrame:
         """Load the dataset."""
         if not self.full_path.exists():
-            print(f'Dataset {self.full_path} not found. Downloading and saving...', end=' ')
+            # print(f'Dataset {self.full_path} not found. Downloading and saving...', end=' ')
             df = pd.read_json(self.url, lines=True)
             df = pd.DataFrame(df)
             self.full_path.parent.mkdir(parents=True, exist_ok=True)
             df.to_json(Path(DATA_DIR, self.dataset_name, self.source), orient='records', lines=True)
-            print('done.')
+            # print('done.')
         else:
-            print(f'Loading dataset from {self.full_path}...', end=' ')
+            # print(f'Loading dataset from {self.full_path}...', end=' ')
             df = pd.read_json(self.full_path, lines=True)
-            print('done.')
+            # print('done.')
 
         return df[self.columns.values()].rename(columns=self.columns)
 

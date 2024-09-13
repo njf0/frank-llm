@@ -4,6 +4,8 @@ import argparse
 import datetime
 import json
 import logging
+import os
+import re
 from pathlib import Path
 
 import pandas as pd
@@ -14,6 +16,9 @@ from tqdm import tqdm
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
 logging.getLogger('transformers').setLevel(logging.ERROR)
+logging.getLogger('datasets').setLevel(logging.ERROR)
+
+os.environ['TRANSFORMERS_NO_TQDM'] = '1'
 
 PWD = Path.cwd()
 
@@ -26,6 +31,7 @@ class GenerationConfig:
         batch_size: int = 8,
         description: str = '',
         examples: int = 16,
+        filename: str = '',
         model: str = 'google/gemma-2-9b-it',
         save: bool | str = True,
         source: str = 'StrategyQA/dev.jsonl',
@@ -42,6 +48,8 @@ class GenerationConfig:
             Description of the run.
         examples: int
             Number of examples to run.
+        filename: str
+            Filename to save the results. Overwritten if save=True. Use save='<filename>' to specify a filename.
         model: str
             Model to run.
         save: bool | str
@@ -59,6 +67,8 @@ class GenerationConfig:
         self.examples = examples
         if isinstance(save, bool) and save:
             self.filename = f'{datetime.datetime.now().replace(microsecond=0).isoformat()}.jsonl'
+        elif isinstance(save, str):
+            self.filename = save
         self.model = model
         self.save = save
         self.source = source
@@ -151,6 +161,32 @@ class GenerationBase:
 
         return new_log_entry_df
 
+    def clean_math(
+        self,
+        response: str,
+    ) -> str:
+        """Clean up LaTeX math in response.
+
+        Parameters
+        ----------
+        response: str
+            Response containing LaTeX math.
+
+        Returns
+        -------
+        response: str
+            Response with LaTeX math cleaned up.
+
+        """
+        response = re.sub(r'\\text\{([^}]*)\}', r'\1', response)  # Replace \text{...} with ...
+        response = re.sub(r'\\boxed\{([^}]*)\}', r'\1', response)  # Replace \boxed{...} with ...
+        response = re.sub(r'\\frac\{([^}]*)\}\{([^}]*)\}', r'\1/\2', response)  # Replace \frac{a}{b} with a/b
+        response = re.sub(r'\\times', 'x', response)  # Replace \times with x
+        response = re.sub(r'\\\[|\\\]', '', response)  # Remove \[ and \]
+        response = re.sub(r'\\\(|\\\)', '', response)  # Remove \( and \)
+
+        return response
+
     def save_results(
         self,
         df: pd.DataFrame,
@@ -214,7 +250,7 @@ class GenerationBase:
         """
         raise NotImplementedError('This method should be overridden by subclasses')
 
-    def parse_outputs(
+    def parse_responses(
         self,
         df: pd.DataFrame,
     ) -> NotImplementedError:
@@ -253,7 +289,7 @@ class GenerationBase:
         df = df.sample(n=self.config.examples, random_state=72) if self.config.examples > 0 else df
         df = self.assemble_messages(df)
         df = self.apply_and_generate(df)
-        df = self.parse_outputs(df)
+        df = self.parse_responses(df)
         if self.config.save:
             self.save_results(df)
 
@@ -323,7 +359,7 @@ class MetaLlama(GenerationBase):
         """
         messages = []
 
-        for i in tqdm(df['question'], desc='Assembling messages'):
+        for i in df['question']:
             messages.append(
                 [
                     {'role': 'system', 'content': self.config.system_content},
@@ -357,7 +393,7 @@ class MetaLlama(GenerationBase):
 
         batched_inputs = [messages[i : i + self.config.batch_size] for i in range(0, len(messages), self.config.batch_size)]
 
-        for batch in tqdm(batched_inputs, desc='Generating batch responses'):
+        for batch in batched_inputs:
             inputs = self.tokenizer.apply_chat_template(
                 batch,
                 padding=True,
@@ -374,11 +410,11 @@ class MetaLlama(GenerationBase):
 
             responses += self.tokenizer.batch_decode(outputs, skip_special_tokens=True)
 
-        df['responses'] = responses
+        df['response'] = responses
 
         return df
 
-    def parse_outputs(
+    def parse_responses(
         self,
         df: pd.DataFrame,
     ) -> list:
@@ -399,10 +435,13 @@ class MetaLlama(GenerationBase):
 
         responses = []
 
-        for response in tqdm(df['responses'], desc='Parsing responses'):
+        for response in df['response']:
             responses.append(response.split(generation_prompt)[-1].strip())
 
-        df['parsed_responses'] = responses
+        # clean up math
+        responses = [self.clean_math(r) for r in responses]
+
+        df['parsed_response'] = responses
 
         return df
 
@@ -464,7 +503,7 @@ class Mistral(GenerationBase):
         """
         messages = []
 
-        for i in tqdm(df['question'], desc='Assembling messages'):
+        for i in df['question']:
             messages.append(
                 [
                     {
@@ -498,7 +537,7 @@ class Mistral(GenerationBase):
 
         batched_inputs = [messages[i : i + self.config.batch_size] for i in range(0, len(messages), self.config.batch_size)]
 
-        for batch in tqdm(batched_inputs, desc='Generating batch responses'):
+        for batch in batched_inputs:
             inputs = self.tokenizer.apply_chat_template(
                 batch,
                 padding=True,
@@ -515,11 +554,11 @@ class Mistral(GenerationBase):
 
             responses += self.tokenizer.batch_decode(outputs, skip_special_tokens=True)
 
-        df['responses'] = responses
+        df['response'] = responses
 
         return df
 
-    def parse_outputs(
+    def parse_responses(
         self,
         df: pd.DataFrame,
     ) -> list:
@@ -538,13 +577,15 @@ class Mistral(GenerationBase):
         """
         responses = []
         inputs = df['question'].tolist()
-        outputs = df['responses'].tolist()
+        outputs = df['response'].tolist()
 
-        for in_out_pair in tqdm(zip(inputs, outputs), desc='Parsing outputs'):
-            # responses.append(output[output.index(generation_prompt) + len(generation_prompt):])
+        for in_out_pair in zip(inputs, outputs):
             responses.append(in_out_pair[1].split(in_out_pair[0])[-1].strip())
 
-        df['parsed_responses'] = responses
+        # clean up math
+        responses = [self.clean_math(r) for r in responses]
+
+        df['parsed_response'] = responses
 
         return df
 
@@ -606,7 +647,7 @@ class MicrosoftPhi(GenerationBase):
         """
         messages = []
 
-        for i in tqdm(df['question'], desc='Assembling messages'):
+        for i in df['question']:
             messages.append(
                 [
                     {
@@ -642,7 +683,7 @@ class MicrosoftPhi(GenerationBase):
 
         batched_inputs = [messages[i : i + self.config.batch_size] for i in range(0, len(messages), self.config.batch_size)]
 
-        for batch in tqdm(batched_inputs, desc='Generating batch responses'):
+        for batch in batched_inputs:
             inputs = self.tokenizer.apply_chat_template(
                 batch,
                 padding=True,
@@ -659,11 +700,11 @@ class MicrosoftPhi(GenerationBase):
 
             responses += self.tokenizer.batch_decode(outputs, skip_special_tokens=True)
 
-        df['responses'] = responses
+        df['response'] = responses
 
         return df
 
-    def parse_outputs(
+    def parse_responses(
         self,
         df: pd.DataFrame,
     ) -> list:
@@ -682,12 +723,15 @@ class MicrosoftPhi(GenerationBase):
         """
         responses = []
 
-        for q, r in tqdm(zip(df['question'], df['responses']), desc='Parsing outputs'):
+        for q, r in zip(df['question'], df['response']):
             prefix = f'{self.config.system_content} {q}'
             # strip prefix from response
             responses.append(r[len(prefix) :].strip())
 
-        df['parsed_responses'] = responses
+        # clean up math
+        responses = [self.clean_math(r) for r in responses]
+
+        df['parsed_response'] = responses
 
         return df
 
@@ -749,7 +793,7 @@ class GoogleGemma(GenerationBase):
         """
         messages = []
 
-        for i in tqdm(df['question'], desc='Assembling messages'):
+        for i in df['question']:
             messages.append(f'{self.config.system_content} {i}')
 
         df['messages'] = messages
@@ -778,7 +822,7 @@ class GoogleGemma(GenerationBase):
 
         batched_inputs = [messages[i : i + self.config.batch_size] for i in range(0, len(messages), self.config.batch_size)]
 
-        for batch in tqdm(batched_inputs, desc='Generating batch responses'):
+        for batch in batched_inputs:
             inputs = self.tokenizer(
                 batch,
                 padding=True,
@@ -796,11 +840,11 @@ class GoogleGemma(GenerationBase):
 
             responses += self.tokenizer.batch_decode(outputs, skip_special_tokens=True)
 
-        df['responses'] = responses
+        df['response'] = responses
 
         return df
 
-    def parse_outputs(
+    def parse_responses(
         self,
         df: pd.DataFrame,
     ) -> list:
@@ -819,12 +863,15 @@ class GoogleGemma(GenerationBase):
         """
         responses = []
 
-        for q, r in tqdm(zip(df['question'], df['responses']), desc='Parsing outputs'):
+        for q, r in zip(df['question'], df['response']):
             prefix = f'{self.config.system_content} {q}'
             # strip prefix from response
             responses.append(r[len(prefix) :].strip())
 
-        df['parsed_responses'] = responses
+        # clean up math
+        responses = [self.clean_math(r) for r in responses]
+
+        df['parsed_response'] = responses
 
         return df
 
@@ -870,7 +917,7 @@ class OpenAIGPT4omini(GenerationBase):
         """
         messages = []
 
-        for q in tqdm(df['question'], desc='Assembling messages'):
+        for q in df['question']:
             messages.append([{'role': 'system', 'content': self.config.system_content}, {'role': 'user', 'content': q}])
 
         df['messages'] = messages
@@ -898,7 +945,7 @@ class OpenAIGPT4omini(GenerationBase):
         messages = df['messages'].tolist()
         client = OpenAI()
 
-        for message in tqdm(messages, desc='Generating batch responses'):
+        for message in messages:
             response = client.chat.completions.create(
                 messages=message,
                 model=self.model,
@@ -908,11 +955,11 @@ class OpenAIGPT4omini(GenerationBase):
 
             responses.append(response.choices[0].message.content)
 
-        df['responses'] = responses
+        df['response'] = responses
 
         return df
 
-    def parse_outputs(
+    def parse_responses(
         self,
         df: pd.DataFrame,
     ) -> list:
@@ -929,12 +976,36 @@ class OpenAIGPT4omini(GenerationBase):
             List of parsed responses.
 
         """
-        df['parsed_responses'] = df['responses']
+        df['parsed_response'] = df['response']
+
+        # clean up math
+        df['parsed_response'] = [self.clean_math(r) for r in df['parsed_response']]
 
         return df
 
 
 if __name__ == '__main__':
+
+    def batch(
+        filepath: str,
+    ) -> None:
+        """Load config from file and run model on dataset.
+
+        Parameters
+        ----------
+        filepath: str
+            Path to config file.
+
+        """
+        cfgs = pd.read_json(filepath, orient='records', lines=True)
+        cfgs = cfgs.to_dict(orient='records')
+
+        for cfg in tqdm(cfgs, desc='Running batch'):
+            # tqdm.write(f'Running with config={cfg}')
+            config = GenerationConfig(**cfg)
+            model = MODELS[config.model](config)
+            model.run()
+
     MODELS = {
         'google/gemma-7b': GoogleGemma,
         'google/gemma-2-9b-it': GoogleGemma,
@@ -948,14 +1019,15 @@ if __name__ == '__main__':
     }
 
     parser = argparse.ArgumentParser(description='Run model on dataset.')
+    parser.add_argument('--batch', type=str, default='', help='Batch file.')
     parser.add_argument('--batch_size', type=int, default=8, help='Batch size.')
     parser.add_argument('--description', type=str, default='', help='Description of run.')
     parser.add_argument('--examples', type=int, default=16, help='Number of examples to run.')
     parser.add_argument('--model', type=str, default='google/gemma-2-9b-it', help='Model to run.')
     parser.add_argument('--save', type=bool, default=True, help='Save results.')
-    parser.add_argument('--source', type=str, default='StrategyQA/dev.jsonl', help='Source data.')
+    parser.add_argument('--source', type=str, default='Franklin/full_study.jsonl', help='Source data.')
     parser.add_argument(
-        '--system_content',
+        '--system-content',
         type=str,
         default='Answer the following question.',
         help='System content.',
@@ -963,18 +1035,22 @@ if __name__ == '__main__':
     parser.add_argument('--temperature', type=float, default=0.2, help='Generation temperature.')
     args = parser.parse_args()
 
-    config = GenerationConfig(
-        batch_size=args.batch_size,
-        description=args.description,
-        examples=args.examples,
-        model=args.model,
-        save=args.save,
-        source=args.source,
-        system_content=args.system_content,
-        temperature=args.temperature,
-    )
+    if args.batch:
+        batch(args.batch)
 
-    print(f'Running with config:\n{pd.DataFrame([config.__dict__])}')
-    model = MODELS[args.model](config)
-    model.run()
-    print(f'Saved to {model.config.filename}.')
+    else:
+        config = GenerationConfig(
+            batch_size=args.batch_size,
+            description=args.description,
+            examples=args.examples,
+            model=args.model,
+            save=args.save,
+            source=args.source,
+            system_content=args.system_content,
+            temperature=args.temperature,
+        )
+
+        print(f'Running with config:\n{pd.DataFrame([config.__dict__])}')
+        model = MODELS[args.model](config)
+        model.run()
+        print(f'Saved to {model.config.filename}.')

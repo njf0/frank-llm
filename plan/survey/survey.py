@@ -104,13 +104,13 @@ def insert_attention_checks(
         raise ValueError('Description must contain "agree" or "disagree".')
 
     def insert_ac(df, parsed_responses, ac_text):
-        """Insert attention check into a random position in sentences of row['parsed_responses']."""
+        """Insert attention check into a random position in sentences of row['parsed_response']."""
         sentences = parsed_responses.split('\n')
         random_index = random.randint(0, len(sentences) - 1)
         sentences.insert(random_index, ac_text)
         return '\n'.join(sentences)
 
-    df['parsed_responses'] = df['parsed_responses'].apply(lambda row: insert_ac(df, row, ac_text))
+    df['parsed_response'] = df['parsed_response'].apply(lambda row: insert_ac(df, row, ac_text))
 
     new_df = pd.DataFrame(
         {
@@ -119,8 +119,8 @@ def insert_attention_checks(
             'dataset': ac_file['source'].to_numpy()[0],
             'model': ac_file['model'].to_numpy()[0],
             'question': df['question'],
-            'parsed_responses': df['parsed_responses'],
-            'html': df['parsed_responses'].apply(markdown),
+            'parsed_response': df['parsed_response'],
+            'html': df['parsed_response'].apply(markdown),
         }
     )
 
@@ -164,11 +164,11 @@ def prepare_inputs(
                 'dataset': dataset,
                 'model': model,
                 'question': df['question'],
-                'parsed_responses': df['parsed_responses'],
+                'parsed_response': df['parsed_response'],
             }
         )
 
-        new_df['html'] = new_df['parsed_responses'].apply(markdown)
+        new_df['html'] = new_df['parsed_response'].apply(markdown)
         new_df['html'] = new_df.apply(lambda row: f'<p><em>{row["question"]}</em></p><hr>{row["html"]}', axis=1)
 
         return new_df
