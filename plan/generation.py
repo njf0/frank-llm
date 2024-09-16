@@ -1050,7 +1050,7 @@ if __name__ == '__main__':
             temperature=args.temperature,
         )
 
-        print(f'Running with config:\n{pd.DataFrame([config.__dict__])}')
+        print(f'Running with config:\n{json.dumps(config.__dict__, indent=4)}')
         model = MODELS[args.model](config)
         model.run()
         print(f'Saved to {model.config.filename}.')
