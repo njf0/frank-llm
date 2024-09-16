@@ -393,7 +393,7 @@ class MetaLlama(GenerationBase):
 
         batched_inputs = [messages[i : i + self.config.batch_size] for i in range(0, len(messages), self.config.batch_size)]
 
-        for batch in batched_inputs:
+        for batch in tqdm(batched_inputs, desc='Generating responses'):
             inputs = self.tokenizer.apply_chat_template(
                 batch,
                 padding=True,
@@ -537,7 +537,7 @@ class Mistral(GenerationBase):
 
         batched_inputs = [messages[i : i + self.config.batch_size] for i in range(0, len(messages), self.config.batch_size)]
 
-        for batch in batched_inputs:
+        for batch in tqdm(batched_inputs, desc='Generating responses'):
             inputs = self.tokenizer.apply_chat_template(
                 batch,
                 padding=True,
@@ -683,7 +683,7 @@ class MicrosoftPhi(GenerationBase):
 
         batched_inputs = [messages[i : i + self.config.batch_size] for i in range(0, len(messages), self.config.batch_size)]
 
-        for batch in batched_inputs:
+        for batch in tqdm(batched_inputs, desc='Generating responses'):
             inputs = self.tokenizer.apply_chat_template(
                 batch,
                 padding=True,
@@ -822,7 +822,7 @@ class GoogleGemma(GenerationBase):
 
         batched_inputs = [messages[i : i + self.config.batch_size] for i in range(0, len(messages), self.config.batch_size)]
 
-        for batch in batched_inputs:
+        for batch in tqdm(batched_inputs, desc='Generating responses'):
             inputs = self.tokenizer(
                 batch,
                 padding=True,
@@ -1023,7 +1023,7 @@ if __name__ == '__main__':
     parser.add_argument('--batch_size', type=int, default=8, help='Batch size.')
     parser.add_argument('--description', type=str, default='', help='Description of run.')
     parser.add_argument('--examples', type=int, default=16, help='Number of examples to run.')
-    parser.add_argument('--model', type=str, default='google/gemma-2-9b-it', help='Model to run.')
+    parser.add_argument('--model', type=str, default='meta-llama/Meta-Llama-3.1-8B-Instruct', help='Model to run.')
     parser.add_argument('--save', type=bool, default=True, help='Save results.')
     parser.add_argument('--source', type=str, default='Franklin/full_study.jsonl', help='Source data.')
     parser.add_argument(
