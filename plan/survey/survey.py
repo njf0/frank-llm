@@ -14,6 +14,11 @@ PWD = Path.cwd()
 LOG_PATH = Path(PWD, 'plan', 'outputs', 'log').with_suffix('.jsonl')
 
 
+def get_log() -> pd.DataFrame:
+    """Get the log file."""
+    return pd.read_json(LOG_PATH, lines=True)
+
+
 def get_files_from_description(
     description: str,
 ) -> list:
@@ -34,11 +39,33 @@ def get_files_from_description(
     return log[log['description'] == description]
 
 
+def format_qualtrics_question(
+    question: str,
+    answer: str,
+) -> str:
+    """Format a question for Qualtrics.
+
+    Parameters
+    ----------
+    question: str
+        The question to format.
+    answer: str
+        The answer to the question. Must be formatted as HTML, not Markdown.
+
+    Returns
+    -------
+    str
+        The formatted question.
+
+    """
+    return f'<p><em>{question}</em></p><hr>{answer}'
+
+
 def insert_attention_checks(
     description: str,
 ) -> pd.DataFrame:
     """Add attention checks to the survey."""
-    log = pd.read_json(LOG_PATH, lines=True)
+    log = get_log()
     ac_file = log[log['description'] == description]
 
     df = pd.read_json(Path(PWD, 'plan', 'outputs', ac_file['filename'].to_numpy()[0]), lines=True)
@@ -94,7 +121,7 @@ def prepare_inputs(
         The concatenated LLM responses.
 
     """
-    log = pd.read_json(Path(PWD, 'plan', 'outputs', 'log').with_suffix('.jsonl'), lines=True)
+    log = get_log()
 
     def process_file(file):
         df = pd.read_json(Path(PWD, 'plan', 'outputs', file), lines=True)
