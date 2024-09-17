@@ -1006,6 +1006,13 @@ if __name__ == '__main__':
             model = MODELS[config.model](config)
             model.run()
 
+    SOURCES = [
+        'Franklin/full_study.jsonl',
+        'GSM8k/dev.jsonl',
+        'HotpotQA/hotpot_test_fullwiki_v1.jsonl',
+        'StrategyQA/dev_decomp_3_plus.jsonl',
+    ]
+
     MODELS = {
         'google/gemma-7b': GoogleGemma,
         'google/gemma-2-9b-it': GoogleGemma,
@@ -1023,9 +1030,21 @@ if __name__ == '__main__':
     parser.add_argument('--batch_size', type=int, default=8, help='Batch size.')
     parser.add_argument('--description', type=str, default='', help='Description of run.')
     parser.add_argument('--examples', type=int, default=16, help='Number of examples to run.')
-    parser.add_argument('--model', type=str, default='meta-llama/Meta-Llama-3.1-8B-Instruct', help='Model to run.')
+    parser.add_argument(
+        '--model',
+        type=str,
+        default='meta-llama/Meta-Llama-3.1-8B-Instruct',
+        help='Model to run.',
+        choices=MODELS.keys(),
+    )
     parser.add_argument('--save', type=bool, default=True, help='Save results.')
-    parser.add_argument('--source', type=str, default='Franklin/full_study.jsonl', help='Source data.')
+    parser.add_argument(
+        '--source',
+        type=str,
+        default='Franklin/full_study.jsonl',
+        help='Source data.',
+        choices=SOURCES,
+    )
     parser.add_argument(
         '--system-content',
         type=str,
