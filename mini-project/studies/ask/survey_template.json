@@ -1,0 +1,160 @@
+{
+    "SurveyEntry": {
+        "SurveyID": "SV_eDrehQ0gvpsuH1c",
+        "SurveyName": "Untitled project",
+        "SurveyDescription": null,
+        "SurveyOwnerID": "UR_bwm3flppxNejrgy",
+        "SurveyBrandID": "edinburghinformatics",
+        "DivisionID": null,
+        "SurveyLanguage": "EN-GB",
+        "SurveyActiveResponseSet": "RS_3EEwalRHcCEqRWm",
+        "SurveyStatus": "Inactive",
+        "SurveyStartDate": "0000-00-00 00:00:00",
+        "SurveyExpirationDate": "0000-00-00 00:00:00",
+        "SurveyCreationDate": "2024-09-05 10:07:12",
+        "CreatorID": "UR_bwm3flppxNejrgy",
+        "LastModified": "2024-09-05 10:08:04",
+        "LastAccessed": "0000-00-00 00:00:00",
+        "LastActivated": "0000-00-00 00:00:00",
+        "Deleted": null
+    },
+    "SurveyElements": [
+        {
+            "SurveyID": "SV_eDrehQ0gvpsuH1c",
+            "Element": "FL",
+            "PrimaryAttribute": "Survey Flow",
+            "SecondaryAttribute": null,
+            "TertiaryAttribute": null,
+            "Payload": {
+                "Flow": [
+                    {
+                        "ID": "BL_7PdZlbAEQ8n64gS",
+                        "Type": "Block",
+                        "FlowID": "FL_2"
+                    },
+                    {
+                        "ID": "BL_0fj4ppRTW9h3Q7c",
+                        "Type": "Standard",
+                        "FlowID": "FL_3"
+                    },
+                    {
+                        "ID": "BL_0VsPIqnPoDO9qHs",
+                        "Type": "Standard",
+                        "FlowID": "FL_4"
+                    },
+                    {
+                        "ID": "BL_em5DAR095M4z8yy",
+                        "Type": "Standard",
+                        "FlowID": "FL_5"
+                    },
+                    {
+                        "ID": "BL_8JiFSuIVIKsM41o",
+                        "Type": "Standard",
+                        "FlowID": "FL_6"
+                    },
+                    {
+                        "ID": "BL_9v4YdLJuwWwjVXg",
+                        "Type": "Standard",
+                        "FlowID": "FL_7"
+                    }
+                ],
+                "Properties": {
+                    "Count": 7
+                },
+                "FlowID": "FL_1",
+                "Type": "Root"
+            }
+        },
+        {
+            "SurveyID": "SV_eDrehQ0gvpsuH1c",
+            "Element": "PL",
+            "PrimaryAttribute": "Preview Link",
+            "SecondaryAttribute": null,
+            "TertiaryAttribute": null,
+            "Payload": {
+                "PreviewType": "Brand",
+                "PreviewID": "39f05615-b918-4cd5-b8df-e46d4d175ae4"
+            }
+        },
+        {
+            "SurveyID": "SV_eDrehQ0gvpsuH1c",
+            "Element": "SO",
+            "PrimaryAttribute": "Survey Options",
+            "SecondaryAttribute": null,
+            "TertiaryAttribute": null,
+            "Payload": {
+                "BackButton": "false",
+                "SaveAndContinue": "true",
+                "SurveyProtection": "PublicSurvey",
+                "BallotBoxStuffingPrevention": "false",
+                "NoIndex": "Yes",
+                "SecureResponseFiles": "true",
+                "SurveyExpiration": "None",
+                "SurveyTermination": "DefaultMessage",
+                "Header": "",
+                "Footer": "",
+                "ProgressBarDisplay": "None",
+                "PartialData": "+1 week",
+                "ValidationMessage": "",
+                "PreviousButton": "",
+                "NextButton": "",
+                "SurveyTitle": "Qualtrics Survey | Qualtrics Experience Management",
+                "SkinLibrary": "Qualtrics",
+                "SkinType": "templated",
+                "Skin": {
+                    "brandingId": null,
+                    "templateId": "*base",
+                    "overrides": null
+                },
+                "NewScoring": 1,
+                "SurveyMetaDescription": "The most powerful, simple and trusted way to gather experience data. Start your journey to experience management and try a free account today."
+            }
+        },
+        {
+            "SurveyID": "SV_eDrehQ0gvpsuH1c",
+            "Element": "SCO",
+            "PrimaryAttribute": "Scoring",
+            "SecondaryAttribute": null,
+            "TertiaryAttribute": null,
+            "Payload": {
+                "ScoringCategories": [],
+                "ScoringCategoryGroups": [],
+                "ScoringSummaryCategory": null,
+                "ScoringSummaryAfterQuestions": 0,
+                "ScoringSummaryAfterSurvey": 0,
+                "DefaultScoringCategory": null,
+                "AutoScoringCategory": null
+            }
+        },
+        {
+            "SurveyID": "SV_eDrehQ0gvpsuH1c",
+            "Element": "PROJ",
+            "PrimaryAttribute": "CORE",
+            "SecondaryAttribute": null,
+            "TertiaryAttribute": "1.1.0",
+            "Payload": {
+                "ProjectCategory": "CORE",
+                "SchemaVersion": "1.1.0"
+            }
+        },
+        {
+            "SurveyID": "SV_eDrehQ0gvpsuH1c",
+            "Element": "STAT",
+            "PrimaryAttribute": "Survey Statistics",
+            "SecondaryAttribute": null,
+            "TertiaryAttribute": null,
+            "Payload": {
+                "MobileCompatible": true,
+                "ID": "Survey Statistics"
+            }
+        },
+        {
+            "SurveyID": "SV_eDrehQ0gvpsuH1c",
+            "Element": "QC",
+            "PrimaryAttribute": "Survey Question Count",
+            "SecondaryAttribute": "6",
+            "TertiaryAttribute": null,
+            "Payload": null
+        }
+    ]
+}
