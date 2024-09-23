@@ -35,7 +35,7 @@ def get_files_from_description(
         The files from the description.
 
     """
-    log = pd.read_json(LOG_PATH, lines=True)
+    log = ~pd.read_json(LOG_PATH, lines=True)
     return log[log['description'] == description]
 
 
