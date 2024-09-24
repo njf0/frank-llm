@@ -135,7 +135,7 @@ class ConversationBase:
 
     def update_log(
         self,
-        log_path: str | Path = Path(PWD, 'mini-project', 'plan', 'output', 'log.jsonl'),
+        log_path: str | Path = Path(PWD, 'mini-project', 'studies', 'plan', 'output', 'log.jsonl'),
     ) -> pd.DataFrame:
         """Update log with new entry.
 
@@ -204,7 +204,7 @@ class ConversationBase:
             DataFrame containing results.
 
         """
-        output_dir = Path(PWD, 'mini-project', 'plan', 'output')
+        output_dir = Path(PWD, 'mini-project', 'studies', 'plan', 'output')
         output_dir.mkdir(parents=True, exist_ok=True)
 
         df.to_json(output_dir / self.config.filename, orient='records', lines=True)
@@ -362,7 +362,7 @@ class MetaLlama(ConversationBase):
         for i in df['question']:
             conversations.append(
                 [
-                    {'role': 'system', 'content': self.config.system_content},
+                    {'role': 'system', 'content': self.config.system_content[0]},
                     {'role': 'user', 'content': i},
                 ]
             )
@@ -389,13 +389,13 @@ class MetaLlama(ConversationBase):
         conversations = df['conversations'].tolist()
         # each conversation looks like:
         # [
-        #     {'role': 'system', 'content': self.config.system_content},
+        #     {'role': 'system', 'content': self.config.system_content[0]},
         #     {'role': 'user', 'content': i},
         # ]
 
         # we want them to look like
         # [
-        #     {'role': 'system', 'content': self.config.system_content},
+        #     {'role': 'system', 'content': self.config.system_content[0]},
         #     {'role': 'user', 'content': i},
         #     {'role': 'assistant', 'content': '...'},
         #     {'role': 'user', 'content': 'Now perform the steps in the plan you created.'},
@@ -421,7 +421,7 @@ class MetaLlama(ConversationBase):
             history.append({'role': 'assistant', 'content': self.tokenizer.decode(outputs[0], skip_special_tokens=True)})
 
             # add a user message to prompt the assistant to perform the steps in the plan
-            history.append({'role': 'user', 'content': 'Now perform the steps in the plan you created.'})
+            history.append({'role': 'user', 'content': self.config.system_content[1]})
 
             # generate the response
             inputs = self.tokenizer.apply_chat_template(
@@ -438,7 +438,8 @@ class MetaLlama(ConversationBase):
                 temperature=self.config.temperature,
             )
 
-            responses.append(self.tokenizer.decode(outputs[0], skip_special_tokens=True))
+            history.append(self.tokenizer.decode(outputs[0], skip_special_tokens=True))
+            responses.append(history)
 
         df['response'] = responses
 
@@ -538,7 +539,7 @@ class Mistral(ConversationBase):
                 [
                     {
                         'role': 'user',
-                        'content': self.config.system_content + ' ' + i,
+                        'content': self.config.system_content[0] + ' ' + i,
                     },
                 ]
             )
@@ -684,7 +685,7 @@ class MicrosoftPhi(ConversationBase):
                 [
                     {
                         'role': 'user',
-                        'content': self.config.system_content + ' ' + i,
+                        'content': self.config.system_content[0] + ' ' + i,
                     },
                 ]
             )
@@ -758,7 +759,7 @@ class MicrosoftPhi(ConversationBase):
         responses = []
 
         for q, r in zip(df['question'], df['response']):
-            prefix = f'{self.config.system_content} {q}'
+            prefix = f'{self.config.system_content[0]} {q}'
             # strip prefix from response
             responses.append(r[len(prefix) :].strip())
 
@@ -828,7 +829,7 @@ class GoogleGemma(ConversationBase):
         conversations = []
 
         for i in df['question']:
-            conversations.append(f'{self.config.system_content} {i}')
+            conversations.append(f'{self.config.system_content[0]} {i}')
 
         df['conversations'] = conversations
 
@@ -900,7 +901,7 @@ class GoogleGemma(ConversationBase):
         responses = []
 
         for q, r in zip(df['question'], df['response']):
-            prefix = f'{self.config.system_content} {q}'
+            prefix = f'{self.config.system_content[0]} {q}'
             # strip prefix from response
             responses.append(r[len(prefix) :].strip())
 
@@ -954,7 +955,7 @@ class OpenAIGPT4omini(ConversationBase):
         conversations = []
 
         for q in df['question']:
-            conversations.append([{'role': 'system', 'content': self.config.system_content}, {'role': 'user', 'content': q}])
+            conversations.append([{'role': 'system', 'content': self.config.system_content[0]}, {'role': 'user', 'content': q}])
 
         df['conversations'] = conversations
 
@@ -1083,8 +1084,11 @@ if __name__ == '__main__':
     )
     parser.add_argument(
         '--system-content',
-        type=str,
-        default='Answer the following question.',
+        type=list,
+        default=[
+            'Create a step-by-step plan for finding the answer to the following problem. Do not perform the actions in the plan.',
+            'Now perform the steps in the plan you created using the most accurate and up-to-date data available. Balance detail and brevity in your response.',
+        ],
         help='System content.',
     )
     parser.add_argument('--temperature', type=float, default=0.2, help='Generation temperature.')
