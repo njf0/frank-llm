@@ -88,7 +88,7 @@ class GenerationConfig:
 
         """
         for key, value in config.items():
-            if key in self.__dict__.keys():
+            if key in self.__dict__:
                 setattr(self, key, value)
             else:
                 raise ValueError(f'Invalid key in config: {key}')
