@@ -1087,7 +1087,7 @@ if __name__ == '__main__':
         type=list,
         default=[
             'Create a step-by-step plan for finding the answer to the following problem. Do not perform the actions in the plan.',
-            'Now perform the steps in the plan you created using the most accurate and up-to-date data available. Balance detail and brevity in your response.',
+            'Now perform the steps in the plan you created.',
         ],
         help='System content.',
     )
