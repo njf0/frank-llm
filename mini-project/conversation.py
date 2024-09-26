@@ -630,7 +630,7 @@ class MicrosoftPhi(ConversationBase):
             prefix = f'{self.config.system_content[0]} {row["question"]}'
             meta_response = meta_response[len(prefix) :].strip()
 
-            object_responses = row['response'][4]['content']
+            object_responses = row['response'][-1]['content']
             prefix += f' {self.config.system_content[0]} {row["question"]} {self.config.system_content[1]} {meta_response}'
             object_response = object_responses[len(prefix) :].strip()
 
@@ -732,14 +732,14 @@ class GoogleGemma(ConversationBase):
         for conversation in tqdm(conversations, desc='Generating responses'):
             history = conversation
             inputs = self.tokenizer(
-                *[' '.join(self.config.system_content), history[-1]['content']],
+                history,
                 padding=True,
                 truncation=True,
                 max_length=512,
                 return_tensors='pt',
             ).to(self.device)['input_ids']
 
-            outputs = model.generate(
+            outputs = self.model.generate(
                 inputs,
                 max_new_tokens=512,
                 do_sample=True,
@@ -769,8 +769,13 @@ class GoogleGemma(ConversationBase):
             List of parsed responses.
 
         """
-        prefix = f'{" ".join(self.config.system_content)} {df["question"][df.index[0]]}'
-        df['parsed_response'] = df['response'][df.index[0]][len(prefix) :].strip(' \n')
+
+        def parse_response(row):
+            prefix = f'{" ".join(self.config.system_content)} {row["question"]}'
+            return row['response'][len(prefix) :].strip(' \n')
+
+        # prefix = f'{" ".join(self.config.system_content)} {df["question"][df.index[0]]}'
+        df['parsed_response'] = df.apply(lambda row: parse_response(row), axis=1)
 
         return df
 
@@ -847,7 +852,7 @@ class OpenAIGPT4omini(ConversationBase):
         for conversation in conversations:
             # Generate initial response
             initial_response = client.chat.completions.create(
-                conversations=conversation,
+                messages=conversation,
                 model=self.model,
                 max_tokens=512,
                 temperature=self.config.temperature,
@@ -861,7 +866,7 @@ class OpenAIGPT4omini(ConversationBase):
 
             # Generate final response
             final_response = client.chat.completions.create(
-                conversations=conversation,
+                messages=conversation,
                 model=self.model,
                 max_tokens=512,
                 temperature=self.config.temperature,
