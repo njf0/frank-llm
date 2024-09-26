@@ -922,7 +922,6 @@ if __name__ == '__main__':
         'google/gemma-2-9b-it': GoogleGemma,
         'meta-llama/Meta-Llama-3-8B-Instruct': MetaLlama,
         'meta-llama/Meta-Llama-3.1-8B-Instruct': MetaLlama,
-        'mistralai/Mistral-7B-Instruct-v0.3': Mistral,
         'microsoft/Phi-3-mini-128k-instruct': MicrosoftPhi,
         'microsoft/Phi-3-small-128k-instruct': MicrosoftPhi,
         'microsoft/Phi-3.5-mini-instruct': MicrosoftPhi,
