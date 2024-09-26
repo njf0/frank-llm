@@ -323,7 +323,7 @@ class MetaLlama(ConversationBase):
         local_path = '/nfs/public/hf/models/'
         full_model_path = local_path + config.model
 
-        self.tokenizer = self.tokenizer = AutoTokenizer.from_pretrained(
+        self.tokenizer = AutoTokenizer.from_pretrained(
             full_model_path,
             trust_remote_code=True,
         )
@@ -387,21 +387,13 @@ class MetaLlama(ConversationBase):
         """
         responses = []
         conversations = df['conversations'].tolist()
-        # each conversation looks like:
         # [
-        #     {'role': 'system', 'content': self.config.system_content[0]},
-        #     {'role': 'user', 'content': i},
-        # ]
-
-        # we want them to look like
-        # [
-        #     {'role': 'system', 'content': self.config.system_content[0]},
+        #     {'role': 'system', 'content': config.system_content[0]},
         #     {'role': 'user', 'content': i},
         #     {'role': 'assistant', 'content': '...'},
         #     {'role': 'user', 'content': 'Now perform the steps in the plan you created.'},
         #     {'role': 'assistant', 'content': '...'},
         # ]
-
         for conversation in tqdm(conversations, desc='Generating responses'):
             history = conversation
             inputs = self.tokenizer.apply_chat_template(
@@ -438,7 +430,7 @@ class MetaLlama(ConversationBase):
                 temperature=self.config.temperature,
             )
 
-            history.append(self.tokenizer.decode(outputs[0], skip_special_tokens=True))
+            history.append({'role': 'assistant', 'content': self.tokenizer.decode(outputs[0], skip_special_tokens=True)})
             responses.append(history)
 
         df['response'] = responses
@@ -462,163 +454,12 @@ class MetaLlama(ConversationBase):
             List of parsed responses.
 
         """
-        generation_prompt = 'assistant\n\n'
+        meta_response = df['response'][df.index[0]][2]['content']
+        object_response = df['response'][df.index[0]][4]['content']
+        meta_response = meta_response.split('assistant')[-1].strip('\n')
+        object_response = object_response.split('assistant')[-1].strip('\n')
 
-        responses = []
-
-        for response in df['response']:
-            responses.append(response.split(generation_prompt)[-1].strip())
-
-        # clean up math
-        responses = [self.clean_math(r) for r in responses]
-
-        df['parsed_response'] = responses
-
-        return df
-
-
-class Mistral(ConversationBase):
-    """Implementation of Mistral chat templates etc for application to dataset."""
-
-    def __init__(
-        self,
-        config: dict,
-    ) -> None:
-        """Initialize the Mistral instance.
-
-        Parameters
-        ----------
-        config: dict
-            Configuration dictionary containing model and data parameters.
-
-        """
-        super().__init__(config)
-
-        # check model is a Mistral model
-        if config.model.split('/')[0] != 'mistralai':
-            raise ValueError("Model(/family) doesn't appear correct.")
-
-        self.tokenizer = self.tokenizer = AutoTokenizer.from_pretrained(
-            self.config.model,
-            trust_remote_code=True,
-        )
-
-        self.model = AutoModelForCausalLM.from_pretrained(
-            self.config.model,
-            device_map='auto',
-            trust_remote_code=True,
-            torch_dtype=torch.bfloat16,
-        )
-
-        self.device = self.model.device
-        self.tokenizer.pad_token = self.tokenizer.eos_token
-        self.tokenizer.pad_token_id = self.tokenizer.eos_token_id
-        self.tokenizer.padding_side = 'left'
-
-    def assemble_conversations(
-        self,
-        df: pd.DataFrame,
-    ) -> list:
-        """Assemble conversations for input to model.
-
-        Parameters
-        ----------
-        df: list
-            List of input questions.
-
-        Returns
-        -------
-        conversations: list
-            List of conversations for input to model.
-
-        """
-        conversations = []
-
-        for i in df['question']:
-            conversations.append(
-                [
-                    {
-                        'role': 'user',
-                        'content': self.config.system_content[0] + ' ' + i,
-                    },
-                ]
-            )
-
-        return conversations
-
-    def apply_and_generate(
-        self,
-        df: pd.DataFrame,
-    ) -> list[str]:
-        """Apply chat templates and generate responses.
-
-        Parameters
-        ----------
-        df: list
-            List of conversations for input to model.
-
-        Returns
-        -------
-        responses: list
-            List of generated responses.
-
-        """
-        responses = []
-        conversations = df['conversations'].tolist()
-
-        batched_inputs = [
-            conversations[i : i + self.config.batch_size] for i in range(0, len(conversations), self.config.batch_size)
-        ]
-
-        for batch in tqdm(batched_inputs, desc='Generating responses'):
-            inputs = self.tokenizer.apply_chat_template(
-                batch,
-                padding=True,
-                return_tensors='pt',
-                add_generation_prompt=True,
-            ).to(self.device)
-
-            outputs = self.model.generate(
-                inputs,
-                max_new_tokens=512,
-                do_sample=True,
-                temperature=self.config.temperature,
-            )
-
-            responses += self.tokenizer.batch_decode(outputs, skip_special_tokens=True)
-
-        df['response'] = responses
-
-        return df
-
-    def parse_responses(
-        self,
-        df: pd.DataFrame,
-    ) -> list:
-        """Parse outputs from model.
-
-        Parameters
-        ----------
-        df: list
-            List of generated responses.
-
-        Returns
-        -------
-        responses: list
-            List of parsed responses.
-
-        """
-        responses = []
-        inputs = df['question'].tolist()
-        outputs = df['response'].tolist()
-
-        for in_out_pair in zip(inputs, outputs):
-            responses.append(in_out_pair[1].split(in_out_pair[0])[-1].strip())
-
-        # clean up math
-        responses = [self.clean_math(r) for r in responses]
-
-        df['parsed_response'] = responses
+        df['parsed_response'] = object_response
 
         return df
 
@@ -644,7 +485,7 @@ class MicrosoftPhi(ConversationBase):
         if config.model.split('/')[0] != 'microsoft':
             raise ValueError("Model(/family) doesn't appear correct.")
 
-        self.tokenizer = self.tokenizer = AutoTokenizer.from_pretrained(
+        self.tokenizer = AutoTokenizer.from_pretrained(
             self.config.model,
         )
 
@@ -656,6 +497,7 @@ class MicrosoftPhi(ConversationBase):
             trust_remote_code=True,
         )
 
+        self.model.use_flash_attention = True
         self.device = self.model.device
         self.tokenizer.pad_token = self.tokenizer.eos_token
         self.tokenizer.pad_token_id = self.tokenizer.eos_token_id
@@ -713,14 +555,17 @@ class MicrosoftPhi(ConversationBase):
         """
         responses = []
         conversations = df['conversations'].tolist()
-
-        batched_inputs = [
-            conversations[i : i + self.config.batch_size] for i in range(0, len(conversations), self.config.batch_size)
-        ]
-
-        for batch in tqdm(batched_inputs, desc='Generating responses'):
+        # [
+        #     {'role': 'system', 'content': config.system_content[0]},
+        #     {'role': 'user', 'content': i},
+        #     {'role': 'assistant', 'content': '...'},
+        #     {'role': 'user', 'content': 'Now perform the steps in the plan you created.'},
+        #     {'role': 'assistant', 'content': '...'},
+        # ]
+        for conversation in tqdm(conversations, desc='Generating responses'):
+            history = conversation
             inputs = self.tokenizer.apply_chat_template(
-                batch,
+                history,
                 padding=True,
                 return_tensors='pt',
                 add_generation_prompt=True,
@@ -733,7 +578,28 @@ class MicrosoftPhi(ConversationBase):
                 temperature=self.config.temperature,
             )
 
-            responses += self.tokenizer.batch_decode(outputs, skip_special_tokens=True)
+            history.append({'role': 'assistant', 'content': self.tokenizer.decode(outputs[0], skip_special_tokens=True)})
+
+            # add a user message to prompt the assistant to perform the steps in the plan
+            history.append({'role': 'user', 'content': self.config.system_content[1]})
+
+            # generate the response
+            inputs = self.tokenizer.apply_chat_template(
+                history,
+                padding=True,
+                return_tensors='pt',
+                add_generation_prompt=True,
+            ).to(self.device)
+
+            outputs = self.model.generate(
+                inputs,
+                max_new_tokens=512,
+                do_sample=True,
+                temperature=self.config.temperature,
+            )
+
+            history.append({'role': 'assistant', 'content': self.tokenizer.decode(outputs[0], skip_special_tokens=True)})
+            responses.append(history)
 
         df['response'] = responses
 
@@ -756,17 +622,18 @@ class MicrosoftPhi(ConversationBase):
             List of parsed responses.
 
         """
-        responses = []
+        meta_response = df['response'][df.index[0]][2]['content']
+        object_response = df['response'][df.index[0]][4]['content']
 
-        for q, r in zip(df['question'], df['response']):
-            prefix = f'{self.config.system_content[0]} {q}'
-            # strip prefix from response
-            responses.append(r[len(prefix) :].strip())
+        prefix = f'{self.config.system_content[0]} {df["question"][df.index[0]]}'
+        meta_response = meta_response[len(prefix) :].strip()
 
-        # clean up math
-        responses = [self.clean_math(r) for r in responses]
+        prefix += (
+            f' {self.config.system_content[0]} {df["question"][df.index[0]]} {self.config.system_content[1]} {meta_response}'
+        )
+        object_response = object_response[len(prefix) :].strip()
 
-        df['parsed_response'] = responses
+        df['parsed_response'] = object_response
 
         return df
 
