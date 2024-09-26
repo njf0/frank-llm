@@ -454,12 +454,14 @@ class MetaLlama(ConversationBase):
             List of parsed responses.
 
         """
-        meta_response = df['response'][df.index[0]][2]['content']
-        object_response = df['response'][df.index[0]][4]['content']
-        meta_response = meta_response.split('assistant')[-1].strip('\n')
-        object_response = object_response.split('assistant')[-1].strip('\n')
 
-        df['parsed_response'] = object_response
+        def parse_response(row):
+            object_response = row['response'][4]['content'].split('assistant')[-1].strip('\n')
+            return object_response
+
+        # object_responses = df['response'].apply(lambda cell: cell[4]['content'].split('assistant')[-1].strip('\n'))
+
+        df['parsed_response'] = df.apply(lambda row: parse_response(row), axis=1)
 
         return df
 
@@ -622,18 +624,19 @@ class MicrosoftPhi(ConversationBase):
             List of parsed responses.
 
         """
-        meta_response = df['response'][df.index[0]][2]['content']
-        object_response = df['response'][df.index[0]][4]['content']
 
-        prefix = f'{self.config.system_content[0]} {df["question"][df.index[0]]}'
-        meta_response = meta_response[len(prefix) :].strip()
+        def parse_response(row):
+            meta_response = row['response'][2]['content']
+            prefix = f'{self.config.system_content[0]} {row["question"]}'
+            meta_response = meta_response[len(prefix) :].strip()
 
-        prefix += (
-            f' {self.config.system_content[0]} {df["question"][df.index[0]]} {self.config.system_content[1]} {meta_response}'
-        )
-        object_response = object_response[len(prefix) :].strip()
+            object_responses = row['response'][4]['content']
+            prefix += f' {self.config.system_content[0]} {row["question"]} {self.config.system_content[1]} {meta_response}'
+            object_response = object_responses[len(prefix) :].strip()
 
-        df['parsed_response'] = object_response
+            return object_response
+
+        df['parsed_response'] = df.apply(lambda row: parse_response(row), axis=1)
 
         return df
 
@@ -696,7 +699,7 @@ class GoogleGemma(ConversationBase):
         conversations = []
 
         for i in df['question']:
-            conversations.append(f'{self.config.system_content[0]} {i}')
+            conversations.append(f'{self.config.system_content[0]} {self.config.system_content[1]} {i}')
 
         df['conversations'] = conversations
 
@@ -722,27 +725,28 @@ class GoogleGemma(ConversationBase):
         responses = []
         conversations = df['conversations'].tolist()
 
-        batched_inputs = [
-            conversations[i : i + self.config.batch_size] for i in range(0, len(conversations), self.config.batch_size)
-        ]
+        # batched_inputs = [
+        #     conversations[i : i + self.config.batch_size] for i in range(0, len(conversations), self.config.batch_size)
+        # ]
 
-        for batch in tqdm(batched_inputs, desc='Generating responses'):
+        for conversation in tqdm(conversations, desc='Generating responses'):
+            history = conversation
             inputs = self.tokenizer(
-                batch,
+                *[' '.join(self.config.system_content), history[-1]['content']],
                 padding=True,
                 truncation=True,
                 max_length=512,
                 return_tensors='pt',
             ).to(self.device)['input_ids']
 
-            outputs = self.model.generate(
+            outputs = model.generate(
                 inputs,
                 max_new_tokens=512,
                 do_sample=True,
                 temperature=self.config.temperature,
             )
 
-            responses += self.tokenizer.batch_decode(outputs, skip_special_tokens=True)
+            responses.append(self.tokenizer.decode(outputs[0], skip_special_tokens=True))
 
         df['response'] = responses
 
@@ -765,17 +769,8 @@ class GoogleGemma(ConversationBase):
             List of parsed responses.
 
         """
-        responses = []
-
-        for q, r in zip(df['question'], df['response']):
-            prefix = f'{self.config.system_content[0]} {q}'
-            # strip prefix from response
-            responses.append(r[len(prefix) :].strip())
-
-        # clean up math
-        responses = [self.clean_math(r) for r in responses]
-
-        df['parsed_response'] = responses
+        prefix = f'{" ".join(self.config.system_content)} {df["question"][df.index[0]]}'
+        df['parsed_response'] = df['response'][df.index[0]][len(prefix) :].strip(' \n')
 
         return df
 
@@ -831,33 +826,48 @@ class OpenAIGPT4omini(ConversationBase):
     def apply_and_generate(
         self,
         df: pd.DataFrame,
-    ) -> list[str]:
+    ) -> pd.DataFrame:
         """Apply chat templates and generate responses.
 
         Parameters
         ----------
-        df: list
-            List of conversations for input to model.
+        df: pd.DataFrame
+            DataFrame of conversations for input to model.
 
         Returns
         -------
-        responses: list
-            List of generated responses.
+        df: pd.DataFrame
+            DataFrame with generated responses.
 
         """
         responses = []
         conversations = df['conversations'].tolist()
         client = OpenAI()
 
-        for message in conversations:
-            response = client.chat.completions.create(
-                conversations=message,
+        for conversation in conversations:
+            # Generate initial response
+            initial_response = client.chat.completions.create(
+                conversations=conversation,
                 model=self.model,
                 max_tokens=512,
                 temperature=self.config.temperature,
             )
 
-            responses.append(response.choices[0].message.content)
+            # Append model's response to conversation history
+            conversation.append({'role': 'assistant', 'content': initial_response.choices[0].message.content})
+
+            # Append another user prompt (assuming it's provided in the DataFrame)
+            conversation.append({'role': 'user', 'content': self.config.system_content[1]})
+
+            # Generate final response
+            final_response = client.chat.completions.create(
+                conversations=conversation,
+                model=self.model,
+                max_tokens=512,
+                temperature=self.config.temperature,
+            )
+
+            responses.append(final_response.choices[0].message.content)
 
         df['response'] = responses
 
@@ -952,8 +962,8 @@ if __name__ == '__main__':
         '--system-content',
         type=list,
         default=[
-            'Create a step-by-step plan for finding the answer to the following problem. Do not perform the actions in the plan.',
-            'Now perform the steps in the plan you created.',
+            'Create a step-by-step plan for finding the answer to the following problem. Do not answer the question. Do not perform the actions in the plan. Your only task is to outline the steps involved in a concise and clear manner.',
+            'Now perform the steps in the plan you created. Use the most precise, accurate and up-to-date information available. To save space, be very concise when describing the actions. Conclude by stating the answer that you reached by following the steps you outlined.',
         ],
         help='System content.',
     )
