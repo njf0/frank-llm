@@ -1,0 +1,86 @@
+{
+    "SurveyID": "SV_eDrehQ0gvpsuH1c",
+    "Element": "SQ",
+    "PrimaryAttribute": "",
+    "SecondaryAttribute": "",
+    "TertiaryAttribute": null,
+    "Payload": {
+        "QuestionText": "",
+        "DefaultChoices": false,
+        "DataExportTag": "",
+        "QuestionType": "Matrix",
+        "Selector": "Likert",
+        "DataVisibility": {
+            "Private": false,
+            "Hidden": false
+        },
+        "Configuration": {
+            "QuestionDescriptionOption": "UseText",
+            "TextPosition": "inline",
+            "ChoiceColumnWidth": 25,
+            "MobileFirst": true
+        },
+        "QuestionDescription": "",
+        "Choices": {
+            "1": {
+                "Display": "The response answers the question."
+            },
+            "2": {
+                "Display": "The response includes a clear step-by-step plan of how an answer was found."
+            },
+            "3": {
+                "Display": "I would be satisfied with this response if I had asked the question."
+            }
+        },
+        "ChoiceOrder": [
+            1,
+            2,
+            3
+        ],
+        "Validation": {
+            "Settings": {
+                "EnforceRange": null,
+                "ForceResponse": "ON",
+                "ForceResponseType": "ON",
+                "Type": "None"
+            }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 4,
+        "NextAnswerId": 6,
+        "Answers": {
+            "1": {
+                "Display": "Strongly disagree"
+            },
+            "2": {
+                "Display": "Somewhat disagree"
+            },
+            "3": {
+                "Display": "Neither agree nor disagree"
+            },
+            "4": {
+                "Display": "Somewhat agree"
+            },
+            "5": {
+                "Display": "Strongly agree"
+            }
+        },
+        "AnswerOrder": [
+            1,
+            2,
+            3,
+            4,
+            5
+        ],
+        "ChoiceDataExportTags": false,
+        "QuestionID": "",
+        "ClarifyingSymbolType": "None",
+        "SubSelector": "SingleAnswer",
+        "Randomization": {
+            "Advanced": null,
+            "Type": "All",
+            "TotalRandSubset": ""
+        }
+    }
+}

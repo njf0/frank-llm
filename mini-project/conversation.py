@@ -33,7 +33,7 @@ class ConversationConfig:
         examples: int = 16,
         filename: str = '',
         model: str = 'meta-llama/Meta-Llama-3.1-8B-Instruct',
-        save: bool | str = True,
+        save: bool = False,
         source: str = 'StrategyQA/dev.jsonl',
         system_content: list | None = None,
         temperature: float = 0.2,
@@ -65,10 +65,8 @@ class ConversationConfig:
         self.batch_size = batch_size
         self.description = description
         self.examples = examples
-        if isinstance(save, bool) and save:
+        if save:
             self.filename = f'{datetime.datetime.now().replace(microsecond=0).isoformat()}.jsonl'
-        elif isinstance(save, str):
-            self.filename = save
         self.model = model
         self.save = save
         self.source = source
@@ -915,8 +913,8 @@ if __name__ == '__main__':
         cfgs = pd.read_json(filepath, orient='records', lines=True)
         cfgs = cfgs.to_dict(orient='records')
 
-        for cfg in tqdm(cfgs, desc='Running batch'):
-            # tqdm.write(f'Running with config={cfg}')
+        for cfg in cfgs:
+            print(f'Running with config:\n{json.dumps(cfg, indent=4)}')
             config = ConversationConfig(**cfg)
             model = MODELS[config.model](config)
             model.run()
@@ -951,7 +949,7 @@ if __name__ == '__main__':
         help='Model to run.',
         choices=MODELS.keys(),
     )
-    parser.add_argument('--save', type=bool, default=False, help='Save results.')
+    parser.add_argument('--save', action='store_true', help='Save results.')
     parser.add_argument(
         '--source',
         type=str,
