@@ -66,13 +66,13 @@ class QualtricsSurvey:
         self.save_directory = Path(PWD, 'mini-project', 'studies', self.source)
         self.log_path = Path(PWD, 'mini-project', 'studies', self.source, 'output', 'log').with_suffix('.jsonl')
 
-        with Path(PWD, 'mini-project', 'studies', self.source, 'survey_template').with_suffix('.json').open() as f:
+        with Path(PWD, 'mini-project', 'studies', self.source, 'surveys', 'survey_template').with_suffix('.json').open() as f:
             self.survey = json.load(f)
 
-        with Path(PWD, 'mini-project', 'studies', self.source, 'question_template').with_suffix('.json').open() as f:
+        with Path(PWD, 'mini-project', 'studies', self.source, 'surveys', 'question_template').with_suffix('.json').open() as f:
             self.question_template = json.load(f)
 
-        with Path(PWD, 'mini-project', 'studies', self.source, 'block_template').with_suffix('.json').open() as f:
+        with Path(PWD, 'mini-project', 'studies', self.source, 'surveys', 'block_template').with_suffix('.json').open() as f:
             self.blocks = json.load(f)
 
     def get_log(
@@ -98,7 +98,7 @@ class QualtricsSurvey:
             The files from the description.
 
         """
-        log = ~pd.read_json(self.log_path, lines=True)
+        log = pd.read_json(self.log_path, lines=True)
         return log[log['description'] == description]
 
     def format_qualtrics_question(
@@ -146,7 +146,7 @@ class QualtricsSurvey:
         log = self.get_log()
 
         def process_file(file):
-            df = pd.read_json(Path(PWD, 'mini-project', 'outputs', file), lines=True)
+            df = pd.read_json(Path(PWD, 'mini-project', 'studies', 'plan', 'output', file), lines=True)
             df = df.sample(length) if length > 0 else df
 
             dataset = log[log['filename'] == file]['source'].apply(lambda x: x.split('/')[0]).to_numpy()[0]
@@ -163,10 +163,9 @@ class QualtricsSurvey:
                 }
             )
 
-            survey_questions['html'] = (
-                survey_questions['parsed_response']
-                .apply(markdown)
-                .apply(lambda row: f'<p><em>{row["question"]}</em></p><hr>{row["html"]}', axis=1)
+            survey_questions['html'] = survey_questions['parsed_response'].apply(markdown)
+            survey_questions['html'] = survey_questions.apply(
+                lambda row: f'<p><em>{row["question"]}</em></p><hr>{row["html"]}', axis=1
             )
 
             return survey_questions
@@ -255,19 +254,19 @@ class QualtricsSurvey:
             self.add_question_to_block(f'{row["dataset"]}*{row["model"].replace("/", "_")}')
             self.qid += 1
 
-        agree, disagree = attention_checks
+        # agree, disagree = attention_checks
 
-        for _, row in agree.iterrows():
-            print(f'Adding question {self.qid} to survey...', end='\r')
-            self.add_question_to_survey(row['uuid'], row['html'])
-            self.add_question_to_block('attention-check-agree')
-            self.qid += 1
+        # for _, row in agree.iterrows():
+        #     print(f'Adding question {self.qid} to survey...', end='\r')
+        #     self.add_question_to_survey(row['uuid'], row['html'])
+        #     self.add_question_to_block('attention-check-agree')
+        #     self.qid += 1
 
-        for _, row in disagree.iterrows():
-            print(f'Adding question {self.qid} to survey...', end='\r')
-            self.add_question_to_survey(row['uuid'], row['html'])
-            self.add_question_to_block('attention-check-disagree')
-            self.qid += 1
+        # for _, row in disagree.iterrows():
+        #     print(f'Adding question {self.qid} to survey...', end='\r')
+        #     self.add_question_to_survey(row['uuid'], row['html'])
+        #     self.add_question_to_block('attention-check-disagree')
+        #     self.qid += 1
 
         self.survey['SurveyElements'].append(self.blocks)
 
@@ -292,7 +291,7 @@ class QualtricsSurvey:
             f.write(json.dumps(self.survey))
 
         # also save the dataframe as jsonl
-        # df = pd.concat([questions, agree, disagree], ignore_index=True)
+        # df = pd.concat([qestions, agree, disagree], ignore_index=True)
 
         questions.to_json(Path(self.save_directory, f'{save}').with_suffix('.jsonl'), orient='records', lines=True)
 
@@ -318,7 +317,7 @@ if __name__ == '__main__':
     print('Preparing inputs...')
     all_input_questions = Q.process_files(input_files, length=args.length)
     Q.fill(all_input_questions)
-    survey = Q.save_survey(args.save)
+    survey = Q.save_survey(all_input_questions, args.save)
 
     print(survey.sample(10))
-    print(f'Survey saved to {survey.save_path}/{args.save}.json!')
+    print(f'Survey saved to {Q.save_directory}/{args.save}.json!')
