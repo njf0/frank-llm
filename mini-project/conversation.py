@@ -626,13 +626,9 @@ class MicrosoftPhi(ConversationBase):
         """
 
         def parse_response(row):
-            meta_response = row['response'][2]['content']
-            prefix = f'{self.config.system_content[0]} {row["question"]}'
-            meta_response = meta_response[len(prefix) :].strip()
-
-            object_responses = row['response'][-1]['content']
-            prefix += f' {self.config.system_content[0]} {row["question"]} {self.config.system_content[1]} {meta_response}'
-            object_response = object_responses[len(prefix) :].strip()
+            response = row['response']
+            prefix = f"{response[0]['content']} {response[1]['content']} {response[2]['content']}"
+            object_response = response[3]['content'][len(prefix) :].strip(' \n')
 
             return object_response
 
@@ -968,7 +964,7 @@ if __name__ == '__main__':
         type=list,
         default=[
             'Create a step-by-step plan for finding the answer to the following problem. Do not answer the question. Do not perform the actions in the plan. Your only task is to outline the steps involved in a concise and clear manner.',
-            'Now perform the steps in the plan you created. Use the most precise, accurate and up-to-date information available. To save space, be very concise when describing the actions. Conclude by stating the answer that you reached by following the steps you outlined.',
+            'Now perform the steps in the plan you created. Use the most precise, accurate and up-to-date information available. To save space, be concise when describing the actions. Conclude by stating the answer that you reached by following the steps you outlined.',
         ],
         help='System content.',
     )

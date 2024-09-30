@@ -8,7 +8,7 @@
 
 # Function to display usage
 usage() {
-  echo "Usage: $0 -t HUGGINGFACE_TOKEN -o OPEN_AI_API_KEY" >&2
+  echo "Usage: $0 -t HUGGINGFACE_TOKEN -o OPENAI_API_KEY" >&2
   exit 1
 }
 
@@ -89,4 +89,10 @@ git config --global user.name "njf0"
 huggingface-cli login --token "$HUGGINGFACE_TOKEN"
 
 # Set OpenAI API key as an environment variable
+echo "Setting OpenAI API key..."
 export OPENAI_API_KEY=$OPENAI_API_KEY
+# test the key
+echo "Testing OpenAI API key..."
+openai api usage
+
+echo "Setup complete."
