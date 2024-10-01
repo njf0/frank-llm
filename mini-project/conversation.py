@@ -383,8 +383,7 @@ class MetaLlama(ConversationBase):
             DataFrame with generated responses.
 
         """
-        initial_responses = []
-        final_responses = []
+        responses = []
         conversations = df['conversations'].tolist()
         # [
         #     {'role': 'system', 'content': config.system_content[0]},
@@ -409,9 +408,7 @@ class MetaLlama(ConversationBase):
                 temperature=self.config.temperature,
             )
 
-            response = self.tokenizer.decode(outputs[0], skip_special_tokens=True)
-            history.append({'role': 'assistant', 'content': response})
-            initial_responses.append(response)
+            history.append({'role': 'assistant', 'content': self.tokenizer.decode(outputs[0], skip_special_tokens=True)})
 
             # add a user message to prompt the assistant to perform the steps in the plan
             history.append({'role': 'user', 'content': self.config.system_content[1]})
@@ -431,12 +428,10 @@ class MetaLlama(ConversationBase):
                 temperature=self.config.temperature,
             )
 
-            response = self.tokenizer.decode(outputs[0], skip_special_tokens=True)
-            history.append({'role': 'assistant', 'content': response})
-            final_responses.append(response)
+            history.append({'role': 'assistant', 'content': self.tokenizer.decode(outputs[0], skip_special_tokens=True)})
+            responses.append(history)
 
-        df['initial_response'] = initial_responses
-        df['final_response'] = final_responses
+        df['response'] = responses
 
         return df
 
@@ -459,7 +454,7 @@ class MetaLlama(ConversationBase):
         """
 
         def parse_response(row):
-            object_response = row['final_response'][4]['content'].split('assistant')[-1].strip('\n')
+            object_response = row['response'][4]['content'].split('assistant')[-1].strip('\n')
             return object_response
 
         # object_responses = df['response'].apply(lambda cell: cell[4]['content'].split('assistant')[-1].strip('\n'))
@@ -558,8 +553,7 @@ class MicrosoftPhi(ConversationBase):
             List of generated responses.
 
         """
-        initial_responses = []
-        final_responses = []
+        responses = []
         conversations = df['conversations'].tolist()
         # [
         #     {'role': 'system', 'content': config.system_content[0]},
@@ -584,9 +578,7 @@ class MicrosoftPhi(ConversationBase):
                 temperature=self.config.temperature,
             )
 
-            response = self.tokenizer.decode(outputs[0], skip_special_tokens=True)
-            history.append({'role': 'assistant', 'content': response})
-            initial_responses.append(response)
+            history.append({'role': 'assistant', 'content': self.tokenizer.decode(outputs[0], skip_special_tokens=True)})
 
             # add a user message to prompt the assistant to perform the steps in the plan
             history.append({'role': 'user', 'content': self.config.system_content[1]})
@@ -606,12 +598,10 @@ class MicrosoftPhi(ConversationBase):
                 temperature=self.config.temperature,
             )
 
-            response = self.tokenizer.decode(outputs[0], skip_special_tokens=True)
-            history.append({'role': 'assistant', 'content': response})
-            final_responses.append(response)
+            history.append({'role': 'assistant', 'content': self.tokenizer.decode(outputs[0], skip_special_tokens=True)})
+            responses.append(history)
 
-        df['initial_response'] = initial_responses
-        df['final_response'] = final_responses
+        df['response'] = responses
 
         return df
 
@@ -634,7 +624,7 @@ class MicrosoftPhi(ConversationBase):
         """
 
         def parse_response(row):
-            response = row['final_response']
+            response = row['response']
             prefix = f"{response[0]['content']} {response[1]['content']} {response[2]['content']}"
             object_response = response[3]['content'][len(prefix) :].strip(' \n')
 
