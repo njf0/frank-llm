@@ -63,7 +63,7 @@ class QualtricsSurvey:
         self.qid = 1
         self.source = source
 
-        self.save_directory = Path(PWD, 'mini-project', 'studies', self.source)
+        self.save_directory = Path(PWD, 'mini-project', 'studies', self.source, 'surveys')
         self.log_path = Path(PWD, 'mini-project', 'studies', self.source, 'output', 'log').with_suffix('.jsonl')
 
         with Path(PWD, 'mini-project', 'studies', self.source, 'surveys', 'survey_template').with_suffix('.json').open() as f:

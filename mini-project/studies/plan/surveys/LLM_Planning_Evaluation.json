@@ -1,24 +1,50 @@
 {
     "SurveyEntry": {
         "SurveyID": "SV_6JyTX4FjQy2yqvI",
-        "SurveyName": "Untitled project",
+        "SurveyName": "LLM Planning Evaluation",
         "SurveyDescription": null,
         "SurveyOwnerID": "UR_bwm3flppxNejrgy",
         "SurveyBrandID": "edinburghinformatics",
         "DivisionID": null,
         "SurveyLanguage": "EN-GB",
-        "SurveyActiveResponseSet": "RS_3EEwalRHcCEqRWm",
+        "SurveyActiveResponseSet": "RS_6FjE6DR11hz57Qa",
         "SurveyStatus": "Inactive",
         "SurveyStartDate": "0000-00-00 00:00:00",
         "SurveyExpirationDate": "0000-00-00 00:00:00",
-        "SurveyCreationDate": "2024-09-05 10:07:12",
+        "SurveyCreationDate": "2024-09-30 09:56:53",
         "CreatorID": "UR_bwm3flppxNejrgy",
-        "LastModified": "2024-09-05 10:08:04",
+        "LastModified": "2024-09-30 09:57:22",
         "LastAccessed": "0000-00-00 00:00:00",
         "LastActivated": "0000-00-00 00:00:00",
         "Deleted": null
     },
     "SurveyElements": [
+        {
+            "SurveyID": "SV_6JyTX4FjQy2yqvI",
+            "Element": "BL",
+            "PrimaryAttribute": "Survey Blocks",
+            "SecondaryAttribute": null,
+            "TertiaryAttribute": null,
+            "Payload": {
+                "1": {
+                    "Type": "Trash",
+                    "Description": "Bin\/Unused Questions",
+                    "ID": "BL_7QwW7lbRdU5XzM2",
+                    "BlockElements": [
+                        {
+                            "Type": "Question",
+                            "QuestionID": "QID1"
+                        }
+                    ]
+                },
+                "2": {
+                    "Type": "Standard",
+                    "SubType": "",
+                    "Description": "Default Question Block",
+                    "ID": "BL_2fRXMruyl1eyPf8"
+                }
+            }
+        },
         {
             "SurveyID": "SV_6JyTX4FjQy2yqvI",
             "Element": "FL",
@@ -28,38 +54,13 @@
             "Payload": {
                 "Flow": [
                     {
-                        "ID": "BL_7PdZlbAEQ8n64gS",
-                        "Type": "Block",
-                        "FlowID": "FL_2"
-                    },
-                    {
-                        "ID": "BL_0fj4ppRTW9h3Q7c",
+                        "ID": "BL_2fRXMruyl1eyPf8",
                         "Type": "Standard",
                         "FlowID": "FL_3"
-                    },
-                    {
-                        "ID": "BL_0VsPIqnPoDO9qHs",
-                        "Type": "Standard",
-                        "FlowID": "FL_4"
-                    },
-                    {
-                        "ID": "BL_em5DAR095M4z8yy",
-                        "Type": "Standard",
-                        "FlowID": "FL_5"
-                    },
-                    {
-                        "ID": "BL_8JiFSuIVIKsM41o",
-                        "Type": "Standard",
-                        "FlowID": "FL_6"
-                    },
-                    {
-                        "ID": "BL_9v4YdLJuwWwjVXg",
-                        "Type": "Standard",
-                        "FlowID": "FL_7"
                     }
                 ],
                 "Properties": {
-                    "Count": 7
+                    "Count": 3
                 },
                 "FlowID": "FL_1",
                 "Type": "Root"
@@ -73,7 +74,7 @@
             "TertiaryAttribute": null,
             "Payload": {
                 "PreviewType": "Brand",
-                "PreviewID": "39f05615-b918-4cd5-b8df-e46d4d175ae4"
+                "PreviewID": "7034b7f8-9dfa-4bde-9a6f-a7906528e370"
             }
         },
         {
@@ -152,7 +153,63 @@
             "SurveyID": "SV_6JyTX4FjQy2yqvI",
             "Element": "QC",
             "PrimaryAttribute": "Survey Question Count",
-            "SecondaryAttribute": "6",
+            "SecondaryAttribute": "1",
+            "TertiaryAttribute": null,
+            "Payload": null
+        },
+        {
+            "SurveyID": "SV_6JyTX4FjQy2yqvI",
+            "Element": "SQ",
+            "PrimaryAttribute": "QID1",
+            "SecondaryAttribute": "Click to write the question text",
+            "TertiaryAttribute": null,
+            "Payload": {
+                "QuestionText": "Click to write the question text",
+                "DataExportTag": "Q1",
+                "QuestionType": "MC",
+                "Selector": "SAVR",
+                "SubSelector": "TX",
+                "DataVisibility": {
+                    "Private": false,
+                    "Hidden": false
+                },
+                "Configuration": {
+                    "QuestionDescriptionOption": "UseText"
+                },
+                "QuestionDescription": "Click to write the question text",
+                "Choices": {
+                    "1": {
+                        "Display": "Click to write Choice 1"
+                    },
+                    "2": {
+                        "Display": "Click to write Choice 2"
+                    },
+                    "3": {
+                        "Display": "Click to write Choice 3"
+                    }
+                },
+                "ChoiceOrder": [
+                    "1",
+                    "2",
+                    "3"
+                ],
+                "Validation": {
+                    "Settings": {
+                        "ForceResponse": "OFF",
+                        "Type": "None"
+                    }
+                },
+                "Language": [],
+                "NextChoiceId": 4,
+                "NextAnswerId": 1,
+                "QuestionID": "QID1"
+            }
+        },
+        {
+            "SurveyID": "SV_6JyTX4FjQy2yqvI",
+            "Element": "RS",
+            "PrimaryAttribute": "RS_6FjE6DR11hz57Qa",
+            "SecondaryAttribute": "Default Response Set",
             "TertiaryAttribute": null,
             "Payload": null
         }

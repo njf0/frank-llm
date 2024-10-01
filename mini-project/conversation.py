@@ -383,7 +383,8 @@ class MetaLlama(ConversationBase):
             DataFrame with generated responses.
 
         """
-        responses = []
+        initial_responses = []
+        final_responses = []
         conversations = df['conversations'].tolist()
         # [
         #     {'role': 'system', 'content': config.system_content[0]},
@@ -408,7 +409,9 @@ class MetaLlama(ConversationBase):
                 temperature=self.config.temperature,
             )
 
-            history.append({'role': 'assistant', 'content': self.tokenizer.decode(outputs[0], skip_special_tokens=True)})
+            response = self.tokenizer.decode(outputs[0], skip_special_tokens=True)
+            history.append({'role': 'assistant', 'content': response})
+            initial_responses.append(response)
 
             # add a user message to prompt the assistant to perform the steps in the plan
             history.append({'role': 'user', 'content': self.config.system_content[1]})
@@ -428,10 +431,12 @@ class MetaLlama(ConversationBase):
                 temperature=self.config.temperature,
             )
 
-            history.append({'role': 'assistant', 'content': self.tokenizer.decode(outputs[0], skip_special_tokens=True)})
-            responses.append(history)
+            response = self.tokenizer.decode(outputs[0], skip_special_tokens=True)
+            history.append({'role': 'assistant', 'content': response})
+            final_responses.append(response)
 
-        df['response'] = responses
+        df['initial_response'] = initial_responses
+        df['final_response'] = final_responses
 
         return df
 
@@ -454,7 +459,7 @@ class MetaLlama(ConversationBase):
         """
 
         def parse_response(row):
-            object_response = row['response'][4]['content'].split('assistant')[-1].strip('\n')
+            object_response = row['final_response'][4]['content'].split('assistant')[-1].strip('\n')
             return object_response
 
         # object_responses = df['response'].apply(lambda cell: cell[4]['content'].split('assistant')[-1].strip('\n'))
@@ -553,7 +558,8 @@ class MicrosoftPhi(ConversationBase):
             List of generated responses.
 
         """
-        responses = []
+        initial_responses = []
+        final_responses = []
         conversations = df['conversations'].tolist()
         # [
         #     {'role': 'system', 'content': config.system_content[0]},
@@ -578,7 +584,9 @@ class MicrosoftPhi(ConversationBase):
                 temperature=self.config.temperature,
             )
 
-            history.append({'role': 'assistant', 'content': self.tokenizer.decode(outputs[0], skip_special_tokens=True)})
+            response = self.tokenizer.decode(outputs[0], skip_special_tokens=True)
+            history.append({'role': 'assistant', 'content': response})
+            initial_responses.append(response)
 
             # add a user message to prompt the assistant to perform the steps in the plan
             history.append({'role': 'user', 'content': self.config.system_content[1]})
@@ -598,10 +606,12 @@ class MicrosoftPhi(ConversationBase):
                 temperature=self.config.temperature,
             )
 
-            history.append({'role': 'assistant', 'content': self.tokenizer.decode(outputs[0], skip_special_tokens=True)})
-            responses.append(history)
+            response = self.tokenizer.decode(outputs[0], skip_special_tokens=True)
+            history.append({'role': 'assistant', 'content': response})
+            final_responses.append(response)
 
-        df['response'] = responses
+        df['initial_response'] = initial_responses
+        df['final_response'] = final_responses
 
         return df
 
@@ -624,7 +634,7 @@ class MicrosoftPhi(ConversationBase):
         """
 
         def parse_response(row):
-            response = row['response']
+            response = row['final_response']
             prefix = f"{response[0]['content']} {response[1]['content']} {response[2]['content']}"
             object_response = response[3]['content'][len(prefix) :].strip(' \n')
 
@@ -839,7 +849,8 @@ class OpenAIGPT4omini(ConversationBase):
             DataFrame with generated responses.
 
         """
-        responses = []
+        initial_responses = []
+        final_responses = []
         conversations = df['conversations'].tolist()
         client = OpenAI()
 
@@ -854,6 +865,7 @@ class OpenAIGPT4omini(ConversationBase):
 
             # Append model's response to conversation history
             conversation.append({'role': 'assistant', 'content': initial_response.choices[0].message.content})
+            initial_responses.append(initial_response.choices[0].message.content)
 
             # Append another user prompt (assuming it's provided in the DataFrame)
             conversation.append({'role': 'user', 'content': self.config.system_content[1]})
@@ -866,9 +878,12 @@ class OpenAIGPT4omini(ConversationBase):
                 temperature=self.config.temperature,
             )
 
-            responses.append(final_response.choices[0].message.content)
+            conversations.append({'role': 'assistant', 'content': final_response.choices[0].message.content})
 
-        df['response'] = responses
+            final_responses.append(final_response.choices[0].message.content)
+
+        df['initial_response'] = initial_responses
+        df['final_response'] = final_responses
 
         return df
 
@@ -889,8 +904,7 @@ class OpenAIGPT4omini(ConversationBase):
             List of parsed responses.
 
         """
-        df['parsed_response'] = df['response']
-
+        df['parsed_response'] = df.apply(lambda row: row['initial_response'] + '\n\n' + row['final_response'], axis=1)
         # clean up math
         df['parsed_response'] = [self.clean_math(r) for r in df['parsed_response']]
 

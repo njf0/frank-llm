@@ -23,19 +23,23 @@
         "QuestionDescription": "",
         "Choices": {
             "1": {
-                "Display": "The response answers the question."
+                "Display": "The response contains an answer to the question."
             },
             "2": {
-                "Display": "The response includes a clear step-by-step plan of how an answer was found."
+                "Display": "The response contains a clear step-by-step plan of how an answer can be found."
             },
             "3": {
-                "Display": "I would be satisfied with this response if I had asked the question."
+                "Display": "Each step in the plan is visibly performed."
+            },
+            "4": {
+                "Display": "The plan outlined is a rational approach to answering the question."
             }
         },
         "ChoiceOrder": [
             1,
             2,
-            3
+            3,
+            4
         ],
         "Validation": {
             "Settings": {
@@ -47,7 +51,7 @@
         },
         "GradingData": [],
         "Language": [],
-        "NextChoiceId": 4,
+        "NextChoiceId": 5,
         "NextAnswerId": 6,
         "Answers": {
             "1": {
