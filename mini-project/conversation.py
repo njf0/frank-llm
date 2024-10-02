@@ -5,6 +5,7 @@ import datetime
 import json
 import logging
 import os
+from tqdm import tqdm
 import re
 from pathlib import Path
 
@@ -205,6 +206,7 @@ class ConversationBase:
         output_dir.mkdir(parents=True, exist_ok=True)
 
         df.to_json(output_dir / self.config.filename, orient='records', lines=True)
+        print(f'Outputs saved to {output_dir / self.config.filename}.')
         self.update_log()
 
         return df
@@ -392,11 +394,11 @@ class MetaLlama(ConversationBase):
         #     {'role': 'user', 'content': 'Now perform the steps in the plan you created.'},
         #     {'role': 'assistant', 'content': '...'},
         # ]
-        cols = os.get_terminal_size().columns
-        for i, conversation in enumerate(conversations, 1):
+        subconfig = {k: v for k, v in self.config.__dict__.items() if k in ['model', 'source']}
+        for conversation in tqdm(conversations, desc=str(subconfig)):
             history = conversation
-            print(f'Generating response {i}/{len(conversations)}')
             # print last part of history[0]
+            cols = os.get_terminal_size().columns
             print(str(history[0])[:cols])
             print(str(history[1])[:cols])
             inputs = self.tokenizer.apply_chat_template(
@@ -580,13 +582,13 @@ class MicrosoftPhi(ConversationBase):
         #     {'role': 'user', 'content': 'Now perform the steps in the plan you created.'},
         #     {'role': 'assistant', 'content': '...'},
         # ]
-        cols = os.get_terminal_size().columns
-        for i, conversation in enumerate(conversations, 1):
+        subconfig = {k: v for k, v in self.config.__dict__.items() if k in ['model', 'source']}
+        for conversation in tqdm(conversations, desc=str(subconfig)):
             history = conversation
-            print(f'Generating response {i}/{len(conversations)}')
-            # print last part of history[0]
+            cols = os.get_terminal_size().columns
             print(str(history[0])[:cols])
             print(str(history[1])[:cols])
+
             inputs = self.tokenizer.apply_chat_template(
                 history,
                 padding=True,
@@ -760,10 +762,10 @@ class GoogleGemma(ConversationBase):
         # batched_inputs = [
         #     conversations[i : i + self.config.batch_size] for i in range(0, len(conversations), self.config.batch_size)
         # ]
-        cols = os.get_terminal_size().columns
-        for i, conversation in enumerate(conversations, 1):
+        subconfig = {k: v for k, v in self.config.__dict__.items() if k in ['model', 'source']}
+        for conversation in tqdm(conversations, desc=str(subconfig)):
             history = conversation[0]
-            print(f'Generating response {i}/{len(conversations)}')
+            cols = os.get_terminal_size().columns
             print(history[:cols])
 
             inputs = self.tokenizer(
@@ -783,7 +785,7 @@ class GoogleGemma(ConversationBase):
 
             response = self.tokenizer.decode(outputs[0], skip_special_tokens=True)
             parsed_response = response[len(history) :].strip(' \n')
-            print(parsed_response[:cols])
+            print(repr(parsed_response)[:cols]) # print response including special characters
             full_conversations.append([history, parsed_response])
             parsed_final_responses.append(parsed_response)
 
@@ -889,11 +891,10 @@ class OpenAIGPT4omini(ConversationBase):
         conversations = df['conversations'].tolist()
         client = OpenAI()
 
-        cols = os.get_terminal_size().columns
-        for conversation in conversations:
-            # Generate initial response
+        subconfig = {k: v for k, v in self.config.__dict__.items() if k in ['model', 'source']}
+        for conversation in tqdm(conversations, desc=str(subconfig)):
             history = conversation
-            print(f'Generating response {len(full_conversations) + 1}/{len(conversations)}')
+            cols = os.get_terminal_size().columns
             print(str(history[0])[:cols])
             print(str(history[1])[:cols])
 
