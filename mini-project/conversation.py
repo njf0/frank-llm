@@ -33,6 +33,7 @@ class ConversationConfig:
         examples: int = 16,
         filename: str = '',
         model: str = 'meta-llama/Meta-Llama-3.1-8B-Instruct',
+        random_seed: int = 72, # default for survey generation
         save: bool = False,
         source: str = 'StrategyQA/dev.jsonl',
         system_content: list | None = None,
@@ -52,6 +53,8 @@ class ConversationConfig:
             Filename to save the results. Overwritten if save=True. Use save='<filename>' to specify a filename.
         model: str
             Model to run.
+        random_seed: int
+            Random seed for generation.
         save: bool | str
             Whether to save the results.
         source: str
@@ -68,6 +71,7 @@ class ConversationConfig:
         if save:
             self.filename = f'{datetime.datetime.now().replace(microsecond=0).isoformat()}.jsonl'
         self.model = model
+        self.random_seed = random_seed
         self.save = save
         self.source = source
         self.system_content = system_content
@@ -285,7 +289,7 @@ class ConversationBase:
 
         """
         df = self.load_inputs()
-        df = df.sample(n=self.config.examples, random_state=72) if self.config.examples > 0 else df
+        df = df.sample(n=self.config.examples, random_state=self.config.random_seed) if self.config.examples > 0 else df
         df = self.assemble_conversations(df)
         df = self.apply_and_generate(df)
         df = self.parse_responses(df)
@@ -1013,6 +1017,7 @@ if __name__ == '__main__':
         help='Model to run.',
         choices=MODELS.keys(),
     )
+    parser.add_argument('--random_seed', type=int, default=72, help='Random seed for generation. 72 is default for survey generation.')
     parser.add_argument('--save', action='store_true', help='Save results.')
     parser.add_argument(
         '--source',
@@ -1042,6 +1047,7 @@ if __name__ == '__main__':
             description=args.description,
             examples=args.examples,
             model=args.model,
+            random_seed=args.random_seed,
             save=args.save,
             source=args.source,
             system_content=args.system_content,
