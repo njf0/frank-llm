@@ -5,7 +5,6 @@ import datetime
 import json
 import logging
 import os
-from tqdm import tqdm
 import re
 from pathlib import Path
 
@@ -13,6 +12,7 @@ import pandas as pd
 import torch
 from data import Dataset
 from openai import OpenAI
+from tqdm import tqdm
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
 logging.getLogger('transformers').setLevel(logging.ERROR)
@@ -33,7 +33,7 @@ class ConversationConfig:
         examples: int = 16,
         filename: str = '',
         model: str = 'meta-llama/Meta-Llama-3.1-8B-Instruct',
-        random_seed: int = 72, # default for survey generation
+        random_seed: int = 72,  # default for survey generation
         save: bool = False,
         source: str = 'StrategyQA/dev.jsonl',
         system_content: list | None = None,
@@ -789,7 +789,7 @@ class GoogleGemma(ConversationBase):
 
             response = self.tokenizer.decode(outputs[0], skip_special_tokens=True)
             parsed_response = response[len(history) :].strip(' \n')
-            print(repr(parsed_response)[:cols]) # print response including special characters
+            print(repr(parsed_response)[:cols])  # print response including special characters
             full_conversations.append([history, parsed_response])
             parsed_final_responses.append(parsed_response)
 
@@ -1017,7 +1017,9 @@ if __name__ == '__main__':
         help='Model to run.',
         choices=MODELS.keys(),
     )
-    parser.add_argument('--random_seed', type=int, default=72, help='Random seed for generation. 72 is default for survey generation.')
+    parser.add_argument(
+        '--random_seed', type=int, default=72, help='Random seed for generation. 72 is default for survey generation.'
+    )
     parser.add_argument('--save', action='store_true', help='Save results.')
     parser.add_argument(
         '--source',
@@ -1045,7 +1047,7 @@ if __name__ == '__main__':
         config = ConversationConfig(
             batch_size=args.batch_size,
             description=args.description,
-            examples=args.examples,
+            examples=args.num_of_examples,
             model=args.model,
             random_seed=args.random_seed,
             save=args.save,
