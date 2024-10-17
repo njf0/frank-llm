@@ -44,6 +44,33 @@ def t2i(
     return mapping.get(text, None)
 
 
+def i2i(
+    integer: int,
+) -> int:
+    """Convert 5-point scale integer to 3-point scale integer.
+
+    Parameters
+    ----------
+    integer : int
+        Integer to convert.
+
+    Returns
+    -------
+    int
+        Integer on 3-point scale.
+
+    """
+    mapping = {
+        1: 1,
+        2: 1,
+        3: 2,
+        4: 3,
+        5: 3,
+    }
+
+    return mapping.get(integer)
+
+
 def i2t(
     integer: int,
     point_scale: int = 5,
@@ -146,8 +173,8 @@ def majority_vote(
     for (dataset, model), df in df_dict.items():
         # for each column in df
         for column in df.columns:
-            # get the most common value(s) in the column, averaging if there are multiple
-            most_common = df[column].mode().mean()
+            # get the most common value(s) in the column
+            most_common = df[column].mode().to_numpy()[0]
             # set all values in the column to the most common value
             df[column] = most_common
 
