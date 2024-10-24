@@ -341,6 +341,70 @@ def counts_gt_n(
     return pd.DataFrame(results)
 
 
+def counts_lt_n(
+    df_dict: dict[tuple, pd.DataFrame],
+    n: int,
+) -> pd.DataFrame:
+    """Get the counts of values greater than n for each dataset and model.
+
+    Parameters
+    ----------
+    df_dict : dict[tuple, pd.DataFrame]
+        A dictionary containing dataframes with the key being a tuple of the dataset and model.
+    n : int
+        The value to compare against.
+
+
+    Returns
+    -------
+    pd.DataFrame
+        A dataframe containing the marginalised data.
+
+    """
+    results = []
+    for (dataset, model), df in df_dict.items():
+        # get counts for each value in the dataframe
+        counts = pd.Series(df.to_numpy().flatten()).value_counts()
+        # get total counts
+        total_counts = counts.sum()
+        # get counts greater than n
+        counts_gt = counts[counts.index < n].sum()
+        # get proportion of counts greater than n
+        prop_gt = round(counts_gt / total_counts, 2)
+        # append to results
+        results.append(
+            {
+                'dataset': dataset,
+                'model': model,
+                f'counts_greater_than_{n}': prop_gt,
+            }
+        )
+
+    return pd.DataFrame(results)
+
+
+def pivot_latex_table(df):
+    """Turn a dataframe with dataset and model columns into a pivot table with latex formatting.
+
+    Parameters
+    ----------
+    df: pd.DataFrame
+        The dataframe to convert.
+
+    Returns
+    -------
+    str
+    The table formatted for latex.
+
+    """
+    # get the column name which is not 'dataset' or 'model'
+    col = next(c for c in df.columns if c not in ['dataset', 'model'])
+    pivot = df.pivot_table(index='model', columns='dataset', values=col)
+    latex = pivot.to_latex(float_format='%.2f')
+
+    return latex
+
+
 # def satisfaction_with_plan(
 #     df_dict_plan: dict[tuple, pd.DataFrame],
 #     df_dict_sat: dict[tuple, pd.DataFrame],
