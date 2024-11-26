@@ -156,6 +156,7 @@ def remove_outliers(
 
 def majority_vote(
     df_dict: dict[tuple, pd.DataFrame],
+    n: int = 5,
 ) -> pd.DataFrame:
     """Majority vote for a dataframe.
 
@@ -163,6 +164,8 @@ def majority_vote(
     ----------
     df_dict : dict[tuple, pd.DataFrame]
         A dictionary containing dataframes with the key being a tuple of the dataset and model.
+    n : int, optional
+        Number of points on Likert scale, by default 5.
 
     Returns
     -------
@@ -329,12 +332,17 @@ def counts_gt_n(
         counts_gt = counts[counts.index > n].sum()
         # get proportion of counts greater than n
         prop_gt = round(counts_gt / total_counts, 2)
+        # get some sort of error bar/uncertainty
+        unc = np.sqrt(prop_gt * (1 - prop_gt) / total_counts)
+        # round to 2 decimal places
+        unc = round(unc, 2)
         # append to results
         results.append(
             {
                 'dataset': dataset,
                 'model': model,
                 f'counts_greater_than_{n}': prop_gt,
+                'uncertainty': unc,
             }
         )
 
@@ -371,12 +379,17 @@ def counts_lt_n(
         counts_gt = counts[counts.index < n].sum()
         # get proportion of counts greater than n
         prop_gt = round(counts_gt / total_counts, 2)
+        # standard deviation of the proportion
+        unc = np.sqrt(prop_gt * (1 - prop_gt) / total_counts)
+        # round to 2 decimal places
+        unc = round(unc, 2)
         # append to results
         results.append(
             {
                 'dataset': dataset,
                 'model': model,
                 f'counts_greater_than_{n}': prop_gt,
+                'uncertainty': unc,
             }
         )
 
